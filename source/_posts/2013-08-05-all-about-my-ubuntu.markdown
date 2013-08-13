@@ -1,0 +1,46 @@
+---
+layout: post
+title: "我的Ubuntu/Linux的正确打开方式"
+date: 2013-08-05 20:06
+comments: true
+categories: 
+---
+
+没钱买Mac...所以说，一直在用Linux。又实在折腾不动Arch，于是就很开心的使用Ubuntu了。
+
+说实话，感觉Linux的社区并不友好，就算是很亲近的朋友，我说到我用Linux有什么问题时，他们就一定会说“是你不会用，Balabala...”。每次出问题时我也很不好意思求助，同学帮忙的时候总会有些不耐烦，而网上找资料很耗时，而且很多东西很难找到...Linux只是一套操作系统，并不是一种宗教，相对于Windows，更稳定，但也不是说它不会死机。此外要想用好Linux，就要花出很多的时间去了解，去学习。此外，很多资料还是要用英文来查，汉语的很少。
+
+现在用的是Ubuntu 13.04 + XFCE 4.10 + FCITX。
+
+## FCITX安装
+官网上说的安装方法不够完整，还是会碰到各种问题。比如说，和ibus的冲突什么的。参考[这里](http://www.cnblogs.com/yuemengke/archive/2013/04/09/3010207.html)，输入以下命令就好：
+
+```
+sudo add-apt-repository ppa:wengxt/fcitx-nightly #把fcitx的ppa加入ubuntu的源中，apt-get中的fcitx版本太老
+sudo apt-get update #更新源，这步是必须的
+sudo apt-get install fcitx fcitx-config-gtk fcitx-sunpinyin #最后那条看上去是云拼音，我没用过...
+sudo apt-get install fcitx-table-all #安装码表，我只安五笔拼音 fcitx-table-wbpy
+im-switch -s fcitx -z default #安装好后假如系统内有多个输入法的话，则输入下面命令，把fcitx设置为默认输入法
+sudo apt-get install ttf-arphic-uming #为了防止乱码，安装uming字体，继续输入下面命令。
+```
+之后需要重启，注销都是不起作用的。重启后就没问题了。
+
+## 我的Vim攻略
+Vim是人见人爱的文本编辑器(Emacs经常是三四个键一起按，不能忍...看了一眼就没有用它的冲动)。但学习Vim是很痛苦的事情...我自己的路线是这样的：
+
+1. Vim自带的tutor: Windows下的“开始”菜单中就能找到tutor.bat，点开就好。Linux下直接输入`vimtutor`命令就好。这里是最基本的命令，也就是说，学明白它了，你就能把vim当记事本用了。我当时是每天跑一次这个教程，跑了五天吧，一次40分钟的样子。
+
+2. [简明vim练级攻略](http://coolshell.cn/articles/5426.html)，有些很好用的命令，比如说在同一行内按f定位，这里都有讲到，而1中的则没有。搞明白它以后，用vim就比用记事本要高效了。但这里面的某些操作我现在都没搞明白...
+
+3. vim的配置：[fqj](http://fqj.me)推荐用[spf13](https://github.com/spf13/spf13-vim)。这个配置相当的全，只是会很卡，而且因为插件太多，同一插件也有各个版本的问题，导致可能会出各种问题。此外，要用它的话，你首先要安git什么的。
+
+4. [我的vim配置](https://github.com/guori12321/vim)：做些最简单的绑定就好...现在还懒得写...
+
+此外，我用的是Gvim，而不是Vim，因为Vim是在终端里跑的，所以字体什么的不好调整，而Gvim就可以绑定快捷键了。此外，Vim下的主题的颜色有点问题，Gvim下就好多了。但注意下，配置Gvim的时候就写在`.vimrc`里就好，别写在`.gvimrc`里。我曾经就碰到过[写到.gvimrc里而出问题](http://www.v2ex.com/t/60346#reply4)。最后还是在stackoverflow上得到了回复。
+
+## gvim下fcitx的小bug
+之前在Gvim用fcitx，发现每打一个汉字，fcitx就自动退出了。但在vim下就没这个问题。
+
+在[豆瓣上找到了答案](http://www.douban.com/group/topic/36307854/)，在使用fcitx时按下Ctrl + Alt + P，关闭预编辑区就好。
+
+
