@@ -85,6 +85,9 @@ task :preview do
     [jekyllPid, compassPid, rackupPid].each { |pid| Process.kill(9, pid) rescue Errno::ESRCH }
     exit 0
   }
+  #######
+  system "google-chrome 127.0.0.1:4000"
+  #######
 
   [jekyllPid, compassPid, rackupPid].each { |pid| Process.wait(pid) }
 end
@@ -261,7 +264,7 @@ multitask :push do
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m \"#{message}\""
     puts "\n## Pushing generated #{deploy_dir} website"
-    system "git push -f origin #{deploy_branch}"
+    system "git push origin #{deploy_branch}"
     puts "\n## Github Pages deploy complete"
   end
 end
