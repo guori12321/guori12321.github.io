@@ -115,6 +115,7 @@ task :new_post, :title do |t, args|
     post.puts "comments: true"
     post.puts "categories: "
     post.puts "---"
+    system "gvim #{filename}"
   end
 end
 

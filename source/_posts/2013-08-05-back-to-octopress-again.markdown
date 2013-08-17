@@ -12,9 +12,7 @@ categories:
 
 细数下我碰到的问题，也许对以后的各位有帮助吧。
 
-* 安装RVM
-
-我是通过RVM来安装Ruby的。按照[RVM的官方指南](https://rvm.io/rvm/install)，在执行
+* 安装RVM:我是通过RVM来安装Ruby的。按照[RVM的官方指南](https://rvm.io/rvm/install)，在执行
 ```
 \curl -L https://get.rvm.io | bash
 ```
@@ -23,7 +21,6 @@ categories:
 ouldn't get RVM from https://github.com/wayneeseguin/rvm/archive/stable.tar.gz
 Curl returned error 22
 ```
-
 后来发现是下载时跳转到codeload.github上了，而这个域名下面的东西经常不能访问。不仅仅是在我这里（香港），而且[其它地方也经常不能访问](http://www.v2ex.com/t/76033)。找了半天也没找到那个包的其它下载方式。但是，虽然有报错安装失败，但我试了下，rvm的命令是好用的，也就是说已经安上了。总之这个问题莫名其妙的发生了，也莫名其妙的解决了。
 PS: 今天早上再试了一下，就不存在这个问题了。
 
@@ -31,12 +28,9 @@ PS: 今天早上再试了一下，就不存在这个问题了。
 ```
 `RVM is not a function
 ```
-
 最后在StackOverflow上查到了[答案](http://stackoverflow.com/questions/9336596/rvm-installation-not-working-rvm-is-not-a-function)：要用login形式的Shell.
 
-* 安装依赖的问题
-
-bundle install的时候报错如下
+* 安装依赖的问题:bundle install的时候报错如下
 ```
 An error occured while installing RedCloth (4.2.9), and Bundler cannot continue.
 Make sure that `gem install RedCloth -v '4.2.9'` succeeds before bundling.
@@ -46,13 +40,9 @@ Make sure that `gem install RedCloth -v '4.2.9'` succeeds before bundling.
 sudo apt-get install ruby1.9.1-full
 ```
 
-* 版本库的分枝合并问题
+* 版本库的分枝合并问题: 因为之前用过Octopress，所以这次再用的时候，发现没办法合并到原先的库中，因为要合并的两个分枝没有关联。我在octopress/Rakefile中找到了git push的语句，在其中加了个 -f 的参数，也就是强行push，就好了。
 
-因为之前用过Octopress，所以这次再用的时候，发现没办法合并到原先的库中，因为要合并的两个分枝没有关联。我在octopress/Rakefile中找到了git push的语句，在其中加了个 -f 的参数，也就是强行push，就好了。
-
-* github.com和github.io的关系
-
-deploy到user.github.com库之后，浏览相应的域名，发现并没有发生变化。这是因为github把personal page从user.github.com移到user.github.io了。把.com的库删掉，重新开个.io的库，再deploy，就好了。
+* github.com和github.io的关系:deploy到user.github.com库之后，浏览相应的域名，发现并没有发生变化。这是因为github把personal page从user.github.com移到user.github.io了。把.com的库删掉，重新开个.io的库，再deploy，就好了。
 
 * Rakefile的修改：在octopress的根目录下修改Rakefile，在第88行加入
 ```
