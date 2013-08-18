@@ -12,6 +12,8 @@ categories:
 
 细数下我碰到的问题，也许对以后的各位有帮助吧。
 
+<!-- more -->
+
 * 安装RVM:我是通过RVM来安装Ruby的。按照[RVM的官方指南](https://rvm.io/rvm/install)，在执行
 ```
 \curl -L https://get.rvm.io | bash

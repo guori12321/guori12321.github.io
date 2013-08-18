@@ -12,6 +12,8 @@ categories:
 
 现在用的是Ubuntu 13.04 + XFCE 4.10 + FCITX。
 
+<!-- more -->
+
 ## FCITX安装
 官网上说的安装方法不够完整，还是会碰到各种问题。比如说，和ibus的冲突什么的。参考[这里](http://www.cnblogs.com/yuemengke/archive/2013/04/09/3010207.html)，输入以下命令就好：
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "我的git路线"
+title: "我的git路线图"
 date: 2013-08-18 01:13
 comments: true
 categories: 
@@ -8,6 +8,8 @@ categories:
 Git是广大人民群众喜闻乐见的版本控制器。以前写代码的时候经常碰到这种情况：想尝试着加点新功能，结果发现出了很严重的bug，想回滚代码，却没有办法，只能根据回忆一点点删改新加入的代码。后来，每当要进行大的变动时，就把原来的代码打个包，备份下。这样做非常的笨。Git就解决了这种问题。
 
 可是，虽然所有人都说git简单易用，但我入门时还是费了很多力气的。以下是我使用git的路线图：
+
+<!-- more -->
 
 * 入门教材：[看日记学git](http://www.21andy.com/blog/uploads/downloads/2010/12/git_tutorial.pdf)，这是我见过的最好的git学习资料了。看了前十几天的内容就好。
 
