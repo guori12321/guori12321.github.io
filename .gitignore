@@ -12,7 +12,7 @@ source/stylesheets/screen.css
 vendor
 node_modules
 #######
-source/_posts/private/
+source/_posts/private/*
 article
 *.~
 *.swp
