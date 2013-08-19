@@ -18,3 +18,14 @@ categories:
 * 在右侧导航栏中加入诸如Github项目之类的条目。
 
 少花点时间水人人，多花点时间写博客，写代码...感觉自己好荒费人生...
+
+最近对blog进行了一些加工，都写在这里吧。
+
+## 如何添加3D标签云
+
+具体的效果就是右边边栏上的那个了。要做两件事情：
+
+1. 安生成标签云的插件。具体的做法我已经写在[我的github](https://github.com/guori12321/octopress-cumulus)里了。
+
+2. 改标签的编码方式。因为3D标签云点击以后，是跳转到用汉字编码的路径，而octopress默认的路径是用`汉语拼音`标注的（别问我为什么这么神奇，另外多音字怎么办...），所以说，我们要改下这个默认路径的编码方式。[这位老兄的博客里写了解决方案](http://notes.liyaos.com/blog/2013/01/18/octopress/)，但我试了下发现不好用啊，于是我直接从[他的github库中的plugins/categories_generator.rb](https://github.com/lastland/octopress)粘过来覆盖了我的。
+
