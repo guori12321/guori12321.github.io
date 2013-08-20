@@ -3,7 +3,7 @@ layout: post
 title: "Blog的新主题"
 date: 2013-08-17 23:57
 comments: true
-categories: 
+categories: [各种折腾, octopress]
 ---
 一直觉得Octopress的旧主题不够欢乐，生活已经够凄凉的了，就不要再看到了黑色风格的默认主题吧。
 
@@ -27,5 +27,5 @@ categories:
 
 1. 安生成标签云的插件。具体的做法我已经写在[我的github](https://github.com/guori12321/octopress-cumulus)里了。
 
-2. 改标签的编码方式。~~因为3D标签云点击以后，是跳转到用汉字编码的路径，而octopress默认的路径是用`汉语拼音`标注的（别问我为什么这么神奇，另外多音字怎么办...），所以说，我们要改下这个默认路径的编码方式。[这位老兄的博客里写了解决方案](http://notes.liyaos.com/blog/2013/01/18/octopress/)，但我试了下发现不好用啊，于是我直接从[他的github库中的plugins/categories_generator.rb](https://github.com/lastland/octopress)粘过来覆盖了我的。~~以上方法在preview的时候好使，但deploy以后就不好使了，怀疑和github服务端的编码方式有关。
+2. 改标签的编码方式。~~因为3D标签云点击以后，是跳转到用汉字编码的路径，而octopress默认的路径是用`汉语拼音`标注的（别问我为什么这么神奇，另外多音字怎么办...），所以说，我们要改下这个默认路径的编码方式。[这位老兄的博客里写了解决方案](http://notes.liyaos.com/blog/2013/01/18/octopress/)，但我试了下发现不好用啊，于是我直接从[他的github库中的plugins/categories_generator.rb](https://github.com/lastland/octopress)粘过来覆盖了我的。~~以上方法在preview的时候好使，但deploy以后就不好使了，怀疑和github服务端的编码方式有关。新写了[一篇文章](https://guori12321.githbu.com/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/)来解决这个问题。
 

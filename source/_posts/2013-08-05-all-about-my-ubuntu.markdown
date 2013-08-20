@@ -3,7 +3,7 @@ layout: post
 title: "我的Ubuntu/Linux的正确打开方式"
 date: 2013-08-05 20:06
 comments: true
-categories: 
+categories: [学习笔记, linux, ubuntu, vim, fcitx]
 ---
 
 没钱买Mac...所以说，一直在用Linux。又实在折腾不动Arch，于是就很开心的使用Ubuntu了。
@@ -13,6 +13,14 @@ categories:
 现在用的是Ubuntu 13.04 + XFCE 4.10 + FCITX。
 
 <!-- more -->
+
+## Linux下双屏的设置
+
+先输入`xrandr`命令来看看自己的两个显示器的名称，然后输入类似以下的命令就好。
+
+```
+xrandr --output VGA-0 --auto --left-of LVDS
+```
 
 ## FCITX安装
 官网上说的安装方法不够完整，还是会碰到各种问题。比如说，和ibus的冲突什么的。参考[这里](http://www.cnblogs.com/yuemengke/archive/2013/04/09/3010207.html)，输入以下命令就好：
@@ -44,5 +52,4 @@ Vim是人见人爱的文本编辑器(Emacs经常是三四个键一起按，不�
 之前在Gvim用fcitx，发现每打一个汉字，fcitx就自动退出了。但在vim下就没这个问题。
 
 在[豆瓣上找到了答案](http://www.douban.com/group/topic/36307854/)，在使用fcitx时按下Ctrl + Alt + P，关闭预编辑区就好。
-
 

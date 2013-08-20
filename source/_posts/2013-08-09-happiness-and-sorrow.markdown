@@ -3,7 +3,7 @@ layout: post
 title: "Happiness and sorrow"
 date: 2013-08-09 17:47
 comments: true
-categories: 
+categories: [生活剪影]
 ---
 今天犯了点小错误：因为着急用台式机布署爬虫，草草的备份了home目录下的内容，同时把之前备份的两块没能mount成功的硬盘镜像给删掉了。这给相关的负责的同学带来了很大的麻烦。也使我很内疚，心情非常不好。
 

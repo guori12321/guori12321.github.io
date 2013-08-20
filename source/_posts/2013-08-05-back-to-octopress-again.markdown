@@ -3,7 +3,7 @@ layout: post
 title: "再次回到octopress"
 date: 2013-08-05 10:21
 comments: true
-categories: 
+categories: [各种折腾, octopress]
 ---
 
 一直有搭blog的念头，只可惜，总是反反复复，加上自己太懒。这次，我又回到了Octopress~
@@ -55,5 +55,3 @@ system "google-chrome 127.0.0.1:4000"
 ##总体感觉
 
 octopress的配置还是非常麻烦。我第一次用了两周才搞好，这次也花了一个晚上，碰到各种问题。总体来说ruby还不够成熟，除了安装的源不稳定外（我在墙外，所以不能怪GFW了），各个版本，各种依赖之间的关系也非常乱，整个Octopress是要求1.9.3以上的ruby的，但有些依赖，比如上面提到的Redcloth，就要求1.9.1。要解决这些问题，只能多查Stackoverflow和Google了，另外多用英语查询吧，汉语的资料太少。
-
-
