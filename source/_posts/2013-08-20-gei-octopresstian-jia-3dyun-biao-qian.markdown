@@ -10,9 +10,21 @@ categories: [各种折腾, octopress, 生活剪影, 学习笔记, 旅途分享, 
 
 具体做法是：
 
-1. 下载源代码: [https://github.com/guori12321/octopress-cumulus/archive/master.zip](https://github.com/guori12321/octopress-cumulus/archive/master.zip)
+1. 从我的github库中[下载源代码](https://github.com/guori12321/octopress-cumulus/archive/master.zip)
 
-2. 把相应的文件粘到自己octopress下就好。具体参考我的github上的[README](https://github.com/guori12321/octopress-cumulus)。
+2. 把相应的文件粘到自己octopress，另外在边栏那里把它显示出来就好。具体参考我的github上的[README](https://github.com/guori12321/octopress-cumulus)。
+
+## Octopress 3D categories/tags-cloud configuration for non-English tags
+
+You can see my 3D categories-tag at the right sidebar. It's awesome! However, the origin version doesn't support **non-English** tags, so I revised the codes and put them in my github. It now works!
+
+It's easy to configuration:
+
+1. Download the source codes from my [github repo](https://github.com/guori12321/octopress-cumulus/archive/master.zip)
+
+2. Copy the codes to your octopress. The detail is given at [my github repo README](https://github.com/guori12321/octopress-cumulus)
+
+<!--more-->
 
 ##我之前碰到的问题
 
