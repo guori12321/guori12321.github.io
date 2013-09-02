@@ -42,6 +42,18 @@ Make sure that `gem install RedCloth -v '4.2.9'` succeeds before bundling.
 sudo apt-get install ruby1.9.1-full
 ```
 
+* 执行rake命令时报错
+```
+Could not find rake-0.9.2.2 in any of the sources
+Run `bundle install` to install missing gems.
+```
+最后通过以下命令解决：
+```
+sudo gem install rake -v=0.9.2.2
+bundle update
+
+```
+
 * 版本库的分枝合并问题: 因为之前用过Octopress，所以这次再用的时候，发现没办法合并到原先的库中，因为要合并的两个分枝没有关联。我在octopress/Rakefile中找到了git push的语句，在其中加了个 -f 的参数，也就是强行push，就好了。
 
 * github.com和github.io的关系:deploy到user.github.com库之后，浏览相应的域名，发现并没有发生变化。这是因为github把personal page从user.github.com移到user.github.io了。把.com的库删掉，重新开个.io的库，再deploy，就好了。
