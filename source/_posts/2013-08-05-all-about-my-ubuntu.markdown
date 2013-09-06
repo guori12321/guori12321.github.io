@@ -46,7 +46,12 @@ Vim是人见人爱的文本编辑器(Emacs经常是三四个键一起按，不�
 
 4. [我的vim配置](https://github.com/guori12321/vim)：做些最简单的绑定就好...现在还懒得写...
 
-此外，我用的是Gvim，而不是Vim，因为Vim是在终端里跑的，所以字体什么的不好调整，而Gvim就可以绑定快捷键了。此外，Vim下的主题的颜色有点问题，Gvim下就好多了。但注意下，配置Gvim的时候就写在`.vimrc`里就好，别写在`.gvimrc`里。我曾经就碰到过[写到.gvimrc里而出问题](http://www.v2ex.com/t/60346#reply4)。最后还是在stackoverflow上得到了回复。
+5. 一些小技巧：把`Caps Lock`键当成额外的ESC:
+```
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+```
+
+此外，我用的是Gvim，而不是Vim，因为Vim是在终端里跑的，所以字体什么的不好调整，而Gvim就可以绑定快捷键。此外，Vim下的主题的颜色有点问题，Gvim下就好多了。但注意下，配置Gvim的时候就写在`.vimrc`里就好，别写在`.gvimrc`里。我曾经就碰到过[写到.gvimrc里而出问题](http://www.v2ex.com/t/60346#reply4)。最后还是在stackoverflow上得到了回复。
 
 ## gvim下fcitx的小bug
 之前在Gvim用fcitx，发现每打一个汉字，fcitx就自动退出了。但在vim下就没这个问题。
