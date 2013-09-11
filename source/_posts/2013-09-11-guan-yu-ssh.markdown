@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "关于ssh"
+title: "关于linux常用命令"
 date: 2013-09-11 16:23
 comments: true
 categories: [linux]
@@ -9,6 +9,8 @@ categories: [linux]
 ssh这些linux常用的命令，大家应该都听过，但我自己一直不怎么会用...
 
 现在在香港实习，就要多多的请教啊～～
+
+<!--more-->
 
 ##ssh
 ssh username@ServerDomain 然后输入密码就好...
@@ -78,4 +80,11 @@ scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
 
 ## ps aux
 查看系统当前进程。结合grep可以很方便的查找指定的进程。如`ps aux | grep mongo`就能找到mongoDB的进程。
+
+## 查看硬盘剩余空间
+因为在香港做的东西很吃硬盘，所以说，要判断下硬盘的剩余空间够不够。可以用下面这句话来看/tmp的剩余空间
+```
+bash-4.1$ df | grep tmpfs | awk '{print $4}'
+```
+df就是查看硬盘空间了，grep是把tmp抓出来（/tmp就叫tmpfs这个名字），然后再用awk把第4列（注意这里的列数是从1开始的），也就是可用空间抓出来。
 
