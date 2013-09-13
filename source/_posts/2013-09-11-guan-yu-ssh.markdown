@@ -81,10 +81,25 @@ scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
 ## ps aux
 查看系统当前进程。结合grep可以很方便的查找指定的进程。如`ps aux | grep mongo`就能找到mongoDB的进程。
 
-## 查看硬盘剩余空间
+## df
 因为在香港做的东西很吃硬盘，所以说，要判断下硬盘的剩余空间够不够。可以用下面这句话来看/tmp的剩余空间
 ```
 bash-4.1$ df | grep tmpfs | awk '{print $4}'
 ```
 df就是查看硬盘空间了，grep是把tmp抓出来（/tmp就叫tmpfs这个名字），然后再用awk把第4列（注意这里的列数是从1开始的），也就是可用空间抓出来。
+
+在python中调用以上命令，用[commands模块](http://www.cnblogs.com/xuxm2007/archive/2011/01/17/1937220.html)
+```
+>>> import commands
+>>> dir(commands)
+['__all__', '__builtins__', '__doc__', '__file__', '__name__', 'getoutput', 'getstatus','getstatusoutput', 'mk2arg', 'mkarg']
+>>> commands.getstatusoutput("date")
+(0, 'Wed Jun 10 19:40:41 CST 2009')
+```
+
+## kill
+`kill -9 pid`，记得传-9这个参数，这样就直接干掉进程了（好残忍的感觉...)
+
+## mkdir
+这个命令就不多说了。只是用它建立新文件夹的时候，要建立多层的文件夹时，是加`-p`，而不是像其它命令一样是`-r`。
 
