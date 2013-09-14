@@ -22,5 +22,12 @@ Git是广大人民群众喜闻乐见的版本控制器。以前写代码的时�
 
 * `git reset`与`git revert`的区别：前者是撤销某次commit，后者是回滚代码到某一次commit。此外，前者会删改git的历史（比如说，你撤销了某次commit，这样的话，git的历史中就不会记录这次commit了），而后者不会（事实上，revert会把当前工作区中的代码恢复到以前的某次commit，然后新增加一次新的commit）。有点晕是吧，[stackOverflow上有很详细的讲解](http://stackoverflow.com/questions/8358035/whats-the-difference-between-git-revert-checkout-and-reset/8358039#8358039)。当然，更晕的是，通过加不同的参数，这两个命令，有时可以起同样的作用。不要研究太深，需要用到的时候再去查就好。
 
+## git submodule
+
+有些时候我们会想在一个版本库中调用另一个版本库的代码，或者像我在香港实习时遇到的要保持本机上和服务器上某些代码一致的问题。这时候，用git submodule就是非常好的选择。
+
+[官方文档](http://git-scm.com/book/en/Git-Tools-Submodules)对它的介绍已经很完善了。只是，这东西怎么看着都不靠谱啊！比如说，各个submodule的版本问题，[有些时候会比较坑](http://blog.devtang.com/blog/2013/05/08/git-submodule-issues/)，另外，就连官方文档里都有"It’s strange, but it works."和"Then, you e-mail that guy and yell at him."。
+
+现在看来，各个版本库之间的关系有点乱，很容易出现问题。所以说，大家要小心~
 
 未完待续...
