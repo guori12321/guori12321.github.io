@@ -28,6 +28,6 @@ Git是广大人民群众喜闻乐见的版本控制器。以前写代码的时�
 
 [官方文档](http://git-scm.com/book/en/Git-Tools-Submodules)对它的介绍已经很完善了。只是，这东西怎么看着都不靠谱啊！比如说，各个submodule的版本问题，[有些时候会比较坑](http://blog.devtang.com/blog/2013/05/08/git-submodule-issues/)，另外，就连官方文档里都有"It’s strange, but it works."和"Then, you e-mail that guy and yell at him."。
 
-现在看来，各个版本库之间的关系有点乱，很容易出现问题。所以说，大家要小心~
+现在看来，各个版本库之间的关系有点乱，很容易出现问题。所以说，大家要小心~另外发现这么一篇[黑它的文章](http://codingkilledthecat.wordpress.com/2012/04/28/why-your-company-shouldnt-use-git-submodules/)...
 
 未完待续...
