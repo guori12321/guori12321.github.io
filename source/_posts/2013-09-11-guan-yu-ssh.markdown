@@ -27,6 +27,22 @@ cat _rsa.pub >> authorized_keys
 '''
 之后再ssh时就不用输入密码了。
 
+##ssh -D
+因为一些众所周知的原因，我们经常要翻来翻去。翻墙最快捷的方法还是物理翻墙，但如果暂时没办法物理翻，那就只能各种代理了。
+`ssh -D`，传这个参数，就相当于在本地搞了个代理的端口，然后把网络流量导向这个端口就好。
+
+##ssh Config
+ssh时要输入用户名和密码。我们可以通过上面提到过的ssh key的办法来不输密码。同时，我们可以通过配置ssh config文件来不输入账号。
+ssh config文件具体的位置是在`.ssh/config`，在里面直接写就好，可以写入多个账号。格式如下：
+```
+Host alias
+HostName your_host_name
+User your_user_name
+ServerAliveCountMax 20
+ServerdomainverAliveInterval 240
+```
+之后，就直接`ssh alias`，就相当于你输入了`ssh your_user_name@your_host_name`了。
+
 ##scp
 通过ssh，来从本地往远程服务器上拷数据，或者从远程往本地拷数据都用这个命令。
 具体的介绍在[这里](http://www.vpser.net/manage/scp.html)。以下是我粘过来的部分内容。
@@ -80,6 +96,9 @@ scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
 
 ## ps aux
 查看系统当前进程。结合grep可以很方便的查找指定的进程。如`ps aux | grep mongo`就能找到mongoDB的进程。
+参数中，a是指显示所有程序，包括其它用户的程序，u表示以用户为主的格式显示，x表示显示不以终端来区分程序。
+我也不知道具体是什么意思...会用就好...
+详细的参数可以查看[这里](http://www.360doc.com/content/11/0530/23/2104556_120606853.shtml)
 
 ## df
 因为在香港做的东西很吃硬盘，所以说，要判断下硬盘的剩余空间够不够。可以用下面这句话来看/tmp的剩余空间
@@ -97,9 +116,23 @@ df就是查看硬盘空间了，grep是把tmp抓出来（/tmp就叫tmpfs这个�
 (0, 'Wed Jun 10 19:40:41 CST 2009')
 ```
 
+## du
+这是一个查看文件大小的命令。常用`du -sh`来显示当前路径下所有文件的总的大小。
+
+## awk
+因为在Server上跑python时，想强行退出只能先Ctrl + z，于是就有了一堆进程在后台等待。
+pili过来查看了下，直接输入一行命令，就干掉了所有的python进程：
+```
+ps aux | grep python | awk '{print $2}' | xargs kill -9
+```
+先说awk，它是一个很强大的文本分析工具，`awk '{print $2}'`就是把第二列取出来，更多的介绍可以查看[这里](http://www.cnblogs.com/ggjucheng/archive/2013/01/13/2858470.html)。
+
+## xargs
+另一个强大的工具，将之前命令产生的参数列表拆散成多个子串，然后对每个子串调用要执行的命令。
+具体的来看[wikipedia](http://zh.wikipedia.org/wiki/Xargs)吧。
+
 ## kill
 `kill -9 pid`，记得传-9这个参数，这样就直接干掉进程了（好残忍的感觉...)
 
 ## mkdir
 这个命令就不多说了。只是用它建立新文件夹的时候，要建立多层的文件夹时，是加`-p`，而不是像其它命令一样是`-r`。
-
