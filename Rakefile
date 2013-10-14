@@ -86,7 +86,7 @@ task :preview do
     exit 0
   }
   #######
-  system "google-chrome 127.0.0.1:4000"
+  #system "open -a Google\ chrome 127.0.0.1:4000"
   #######
 
   [jekyllPid, compassPid, rackupPid].each { |pid| Process.wait(pid) }
@@ -115,7 +115,7 @@ task :new_post, :title do |t, args|
     post.puts "comments: true"
     post.puts "categories: "
     post.puts "---"
-    system "gvim #{filename}"
+    system "vim #{filename}"
   end
 end
 
