@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>MongoDB路线图 - Ray12321</title>
+  <meta name="author" content="Ray12321">
+
+  
+  <meta name="description" content="MongoDB是非常有名的No SQL数据库，话说还真是适应不了No SQL的思维，每次都想着先建表&hellip;。以下是我学习MongoDB的路线图： 路线图 首先肯定是看看官网的资料了。这里面有最初级的教程，以及最详细权威的文档。走一遍它的教程后，相信你会对MongoDB有最初步的了解， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Ray12321" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43183679-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+</hgroup>
+
+</header>
+  <!-- <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:guori12321.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav> -->
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">MongoDB路线图</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-02T15:48:00+08:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><code>MongoDB</code>是非常有名的No SQL数据库，话说还真是适应不了No SQL的思维，每次都想着先建表&hellip;。以下是我学习MongoDB的路线图：</p>
+
+<!--more-->
+
+
+<h2>路线图</h2>
+
+<ol>
+<li><p>首先肯定是看看<a href="http://www.mongodb.org/">官网的资料了</a>。这里面有最初级的教程，以及最详细权威的文档。走一遍它的教程后，相信你会对MongoDB有最初步的了解，学习深入后，再来这里查询文档。只是，这里没有难度适中的教程。要么有太多的细节，要么太过简略了。</p></li>
+<li><p>一篇很好的<a href="http://www.eduyo.com/database/nosql/805.html">中文简易教程</a>，看一遍就知道MongoDB有哪些神奇的功能了～</p></li>
+<li><p><a href="http://blog.nosqlfan.com/html/2989.html">python使用Mongo的教程</a></p></li>
+</ol>
+
+
+<h2>关于Mongod和Mongo命令</h2>
+
+<p>听pili讲了好一会，才有了一点概念：Mongod比Mongo高一层，Mongod可以指定路径(&mdash;dbpath)，Mongo则是指定端口。同一个Mongod可以有好几个Mongo。总体感觉Mongod相当于SQL中的connection，如果两个Mongod指向不同的路径，那么它俩就没有交互，可以独立的读写，而不用担心读和写同时进行，而让数据乱掉。</p>
+
+<p>我现在对它俩的关系的理解就是，Mongod相当于C++中的流，Mongo就是具体的文件。</p>
+
+<p>可以为Mongod和Mongo指定端口。不同的Mongod必须使用不同的端口。不同的Mongo可以使用同一端口。当Mongo和Mongod使用同一端口的时候，这个Mongo就挂到Mongod上了。具体在python中，Mongod相当于一个connection。</p>
+
+<h2>其它要注意的</h2>
+
+<ul>
+<li><p>MongoDB的索引值只能为<strong>string</strong>，很神奇~</p></li>
+<li><p>要想指定ObjectID，只用在插入的时候，指定&#8221;_id&#8221;参数就好</p></li>
+<li><p>关于同一个collection的大小：之前在用MySQL存微博上的数据的时候，同一张表中存入10万条微博，读写的速度都在0.04秒左右，一旦上百万级，就要5秒左右，完全不可以接受。当时把百万级的数据分成了十个表。关于MongoDB存多少合适，我的实验结果是四亿条数据（每条数据都只有一个_id和一个int型的属性值）内都没有问题，一早上插入了4亿条数据，耗时在0.1秒以内就找到了，整个库有50多G。在测试时，每插入5万条左右的数据，就会卡那么一秒，之后再接着插入。应该是MongoDB内部在新建一些结构吧。</p></li>
+<li><p>Mongodb的索引只能是string类型，但_id的类型可以是int</p></li>
+</ul>
+
+
+<p>未完待续&hellip;</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ray12321</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-02T15:48:00+08:00" pubdate data-updated="true">Sep 2<span>nd</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/mongodb/'>MongoDB</a>, <a class='category' href='/blog/categories/xue-xi-bi-ji/'>学习笔记</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu/" data-via="" data-counturl="http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/08/25/hackerrank-k-mismatchti-jie/" title="Previous Post: HackerRank K-mismatch题解">&laquo; HackerRank K-mismatch题解</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/09/04/zhe-teng-vim/" title="Next Post: 折腾vim">折腾vim &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<h1>Category</h1>
+<ul>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/sheng-huo-jian-ying/">生活剪影</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/xue-xi-bi-ji/">学习笔记</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/lu-tu-fen-xiang/">旅途分享</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/shu-ping-ying-ping/">书评影评</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/ge-chong-zhe-teng/">各种折腾</a>
+    </li>
+</ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ffcitx%27+style%3D%27font-size%3A+20.0%25%27%3Efcitx%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgit%27+style%3D%27font-size%3A+20.0%25%27%3Egit%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhackerrank%27+style%3D%27font-size%3A+20.0%25%27%3Ehackerrank%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+30.0%25%27%3Elinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmongodb%27+style%3D%27font-size%3A+20.0%25%27%3EMongoDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Foctopress%27+style%3D%27font-size%3A+40.0%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fscott-young%27+style%3D%27font-size%3A+20.0%25%27%3EScott+Young%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fubuntu%27+style%3D%27font-size%3A+20.0%25%27%3Eubuntu%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fvim%27+style%3D%27font-size%3A+30.0%25%27%3Evim%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshu-ping-ying-ping%27+style%3D%27font-size%3A+20.0%25%27%3E%E4%B9%A6%E8%AF%84%E5%BD%B1%E8%AF%84%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-zhe-teng%27+style%3D%27font-size%3A+50.0%25%27%3E%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-she-bei%27+style%3D%27font-size%3A+20.0%25%27%3E%E5%90%84%E7%A7%8D%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxue-xi-bi-ji%27+style%3D%27font-size%3A+50.0%25%27%3E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxiao-mi%27+style%3D%27font-size%3A+20.0%25%27%3E%E5%B0%8F%E7%B1%B3%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgong-zuo%27+style%3D%27font-size%3A+20.0%25%27%3E%E5%B7%A5%E4%BD%9C%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flu-tu-fen-xiang%27+style%3D%27font-size%3A+20.0%25%27%3E%E6%97%85%E9%80%94%E5%88%86%E4%BA%AB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fsheng-huo-jian-ying%27+style%3D%27font-size%3A+30.0%25%27%3E%E7%94%9F%E6%B4%BB%E5%89%AA%E5%BD%B1%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmian-shi%27+style%3D%27font-size%3A+20.0%25%27%3E%E9%9D%A2%E8%AF%95%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fti-jie%27+style%3D%27font-size%3A+20.0%25%27%3E%E9%A2%98%E8%A7%A3%3C%2Fa%3E+%3C%2Ftags%3E"></span>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/13/xiao-mi-2sde-shi-yong-gan-shou/">小米2S的使用感受</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/17/zhao-a-zhao-gong-zuo/">找啊找工作</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/guan-yu-scott-youngxue-xi-fang-fa/">关于Scott Young学习方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/11/guan-yu-ssh/">关于linux常用命令</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/04/zhe-teng-vim/">折腾vim</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/guori12321">@guori12321</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'guori12321',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ray12321 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'ray12321';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu/';
+        var disqus_url = 'http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

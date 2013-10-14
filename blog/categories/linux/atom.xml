@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: linux | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2013-10-14T09:50:21+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[关于linux常用命令]]></title>
+    <link href="http://guori12321.github.io/blog/2013/09/11/guan-yu-ssh/"/>
+    <updated>2013-09-11T16:23:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/09/11/guan-yu-ssh</id>
+    <content type="html"><![CDATA[<p>ssh这些linux常用的命令，大家应该都听过，但我自己一直不怎么会用&hellip;</p>
+
+<p>现在在香港实习，就要多多的请教啊～～</p>
+
+<!--more-->
+
+
+<h2>ssh</h2>
+
+<p>ssh username@ServerDomain 然后输入密码就好&hellip;</p>
+
+<h2>ssh key配置</h2>
+
+<p>在home下建立.ssh文件夹，然后通过下面的scp命令把本地的ssh pub key拷到这个文件下。
+之后通过<a href="http://blog.csdn.net/haydenwang8287/article/details/1753883">chomd命令</a>来给.ssh文件夹一些权限：
+<code>
+chmod 700 .ssh # 只有所有者有读和写以及执行的权限
+</code>
+之后使用cat命令把拷过来的pub key拷到.ssh下的authorized_keys文件中去
+&lsquo;&rsquo;&lsquo;
+cat _rsa.pub >> authorized_keys
+&rsquo;&lsquo;&rsquo;
+之后再ssh时就不用输入密码了。</p>
+
+<h2>ssh -D</h2>
+
+<p>因为一些众所周知的原因，我们经常要翻来翻去。翻墙最快捷的方法还是物理翻墙，但如果暂时没办法物理翻，那就只能各种代理了。
+<code>ssh -D</code>，传这个参数，就相当于在本地搞了个代理的端口，然后把网络流量导向这个端口就好。</p>
+
+<h2>ssh Config</h2>
+
+<p>ssh时要输入用户名和密码。我们可以通过上面提到过的ssh key的办法来不输密码。同时，我们可以通过配置ssh config文件来不输入账号。
+ssh config文件具体的位置是在<code>.ssh/config</code>，在里面直接写就好，可以写入多个账号。格式如下：
+<code>
+Host alias
+HostName your_host_name
+User your_user_name
+ServerAliveCountMax 20
+ServerdomainverAliveInterval 240
+</code>
+之后，就直接<code>ssh alias</code>，就相当于你输入了<code>ssh your_user_name@your_host_name</code>了。</p>
+
+<h2>scp</h2>
+
+<p>通过ssh，来从本地往远程服务器上拷数据，或者从远程往本地拷数据都用这个命令。
+具体的介绍在<a href="http://www.vpser.net/manage/scp.html">这里</a>。以下是我粘过来的部分内容。</p>
+
+<p>1、获取远程服务器上的文件
+&lsquo;&rsquo;&lsquo;
+scp -P 2222 root@www.vpser.net:/root/lnmp0.4.tar.gz /home/lnmp0.4.tar.gz
+&rsquo;&lsquo;&rsquo;
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#114;&#x6f;&#x6f;&#116;&#64;&#x77;&#119;&#119;&#46;&#118;&#x70;&#115;&#x65;&#114;&#x2e;&#x6e;&#101;&#116;">&#x72;&#111;&#111;&#116;&#64;&#x77;&#x77;&#x77;&#46;&#x76;&#x70;&#115;&#x65;&#x72;&#46;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
+
+<p>2、获取远程服务器上的目录
+&lsquo;&rsquo;&lsquo;
+scp -P 2222 -r root@www.vpser.net:/root/lnmp0.4/ /home/lnmp0.4/
+&rsquo;&lsquo;&rsquo;
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#114;&#x6f;&#x6f;&#116;&#x40;&#x77;&#x77;&#x77;&#x2e;&#x76;&#x70;&#x73;&#x65;&#x72;&#x2e;&#110;&#101;&#116;">&#114;&#x6f;&#111;&#x74;&#x40;&#119;&#x77;&#119;&#x2e;&#x76;&#x70;&#115;&#x65;&#x72;&#x2e;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
+
+<p>3、将本地文件上传到服务器上
+&lsquo;&rsquo;&lsquo;
+scp -P 2222 /home/lnmp0.4.tar.gz root@www.vpser.net:/root/lnmp0.4.tar.gz
+&rsquo;&lsquo;&rsquo;
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#58;&#x72;&#111;&#111;&#x74;&#64;&#119;&#x77;&#x77;&#46;&#118;&#x70;&#115;&#x65;&#x72;&#46;&#110;&#101;&#116;">&#x72;&#x6f;&#x6f;&#116;&#x40;&#x77;&#119;&#x77;&#46;&#x76;&#x70;&#x73;&#101;&#114;&#x2e;&#110;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
+
+<p>4、将本地目录上传到服务器上
+&lsquo;&rsquo;&lsquo;
+scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
+&rsquo;&lsquo;&rsquo;
+上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#109;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x72;&#x6f;&#111;&#116;&#x40;&#119;&#x77;&#119;&#x2e;&#x76;&#x70;&#115;&#x65;&#x72;&#x2e;&#x6e;&#101;&#116;">&#x72;&#x6f;&#111;&#x74;&#x40;&#x77;&#x77;&#119;&#46;&#x76;&#112;&#115;&#x65;&#114;&#x2e;&#110;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
+
+<p>5、可能有用的几个参数 :
+```
+-v 和大多数 linux 命令中的 -v 意思一样 , 用来显示进度 . 可以用来查看连接 , 认证 , 或是配置错误 .</p>
+
+<p>-C 使能压缩选项 .</p>
+
+<p>-4 强行使用 IPV4 地址 .</p>
+
+<p>-6 强行使用 IPV6 地址 .
+```</p>
+
+<h2>history</h2>
+
+<p>使用这个命令可以查看输入的shell命令的历史。</p>
+
+<h2>pip</h2>
+
+<p>用来安装python的包的，可以用<code>pip install XXX</code>来代替<code>sudo apt-get install python-XXX</code>。</p>
+
+<p>具体看<a href="http://www.jsxubar.info/install-pip.html">这里</a>。</p>
+
+<p>注意:
+* 要将文件安到当前用户的路径下时（即你没有root权限时），输入<code>pip install --user PackageName</code>就好。另外注意<code>pip install</code>这种子命令的<code>help</code>手册是在<code>pip</code>之外的。所以查<code>--user</code>参数时，要输入<code>pip install -h</code>来找。
+* IE Dept.的服务器终端默认是跑比较老的终端版本。所以说，在~/.login最后加入一句<code>exec bash</code>。</p>
+
+<h2>ps aux</h2>
+
+<p>查看系统当前进程。结合grep可以很方便的查找指定的进程。如<code>ps aux | grep mongo</code>就能找到mongoDB的进程。
+参数中，a是指显示所有程序，包括其它用户的程序，u表示以用户为主的格式显示，x表示显示不以终端来区分程序。
+我也不知道具体是什么意思&hellip;会用就好&hellip;
+详细的参数可以查看<a href="http://www.360doc.com/content/11/0530/23/2104556_120606853.shtml">这里</a></p>
+
+<h2>df</h2>
+
+<p>因为在香港做的东西很吃硬盘，所以说，要判断下硬盘的剩余空间够不够。可以用下面这句话来看/tmp的剩余空间
+<code>
+bash-4.1$ df | grep tmpfs | awk '{print $4}'
+</code>
+df就是查看硬盘空间了，grep是把tmp抓出来（/tmp就叫tmpfs这个名字），然后再用awk把第4列（注意这里的列数是从1开始的），也就是可用空间抓出来。</p>
+
+<p>在python中调用以上命令，用<a href="http://www.cnblogs.com/xuxm2007/archive/2011/01/17/1937220.html">commands模块</a>
+```</p>
+
+<blockquote><blockquote><blockquote><p>import commands
+dir(commands)
+[&lsquo;<strong>all</strong>&rsquo;, &lsquo;<strong>builtins</strong>&rsquo;, &lsquo;<strong>doc</strong>&rsquo;, &lsquo;<strong>file</strong>&rsquo;, &lsquo;<strong>name</strong>&rsquo;, &lsquo;getoutput&rsquo;, &lsquo;getstatus&rsquo;,&lsquo;getstatusoutput&rsquo;, &lsquo;mk2arg&rsquo;, &lsquo;mkarg&rsquo;]
+commands.getstatusoutput(&ldquo;date&rdquo;)
+(0, &lsquo;Wed Jun 10 19:40:41 CST 2009&rsquo;)
+```</p></blockquote></blockquote></blockquote>
+
+<h2>du</h2>
+
+<p>这是一个查看文件大小的命令。常用<code>du -sh</code>来显示当前路径下所有文件的总的大小。</p>
+
+<h2>awk</h2>
+
+<p>因为在Server上跑python时，想强行退出只能先Ctrl + z，于是就有了一堆进程在后台等待。
+pili过来查看了下，直接输入一行命令，就干掉了所有的python进程：
+<code>
+ps aux | grep python | awk '{print $2}' | xargs kill -9
+</code>
+先说awk，它是一个很强大的文本分析工具，<code>awk '{print $2}'</code>就是把第二列取出来，更多的介绍可以查看<a href="http://www.cnblogs.com/ggjucheng/archive/2013/01/13/2858470.html">这里</a>。</p>
+
+<h2>xargs</h2>
+
+<p>另一个强大的工具，将之前命令产生的参数列表拆散成多个子串，然后对每个子串调用要执行的命令。
+具体的来看<a href="http://zh.wikipedia.org/wiki/Xargs">wikipedia</a>吧。</p>
+
+<h2>kill</h2>
+
+<p><code>kill -9 pid</code>，记得传-9这个参数，这样就直接干掉进程了（好残忍的感觉&hellip;)</p>
+
+<h2>mkdir</h2>
+
+<p>这个命令就不多说了。只是用它建立新文件夹的时候，要建立多层的文件夹时，是加<code>-p</code>，而不是像其它命令一样是<code>-r</code>。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的Ubuntu/Linux的正确打开方式]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/05/all-about-my-ubuntu/"/>
+    <updated>2013-08-05T20:06:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/05/all-about-my-ubuntu</id>
+    <content type="html"><![CDATA[<p>没钱买Mac&hellip;所以说，一直在用Linux。又实在折腾不动Arch，于是就很开心的使用Ubuntu了。</p>
+
+<p>说实话，感觉Linux的社区并不友好，就算是很亲近的朋友，我说到我用Linux有什么问题时，他们就一定会说“是你不会用，Balabala&hellip;”。每次出问题时我也很不好意思求助，同学帮忙的时候总会有些不耐烦，而网上找资料很耗时，而且很多东西很难找到&hellip;Linux只是一套操作系统，并不是一种宗教，相对于Windows，更稳定，但也不是说它不会死机。此外要想用好Linux，就要花出很多的时间去了解，去学习。此外，很多资料还是要用英文来查，汉语的很少。</p>
+
+<p>现在用的是Ubuntu 13.04 + XFCE 4.10 + FCITX。</p>
+
+<!-- more -->
+
+
+<h2>Linux下双屏的设置</h2>
+
+<p>先输入<code>xrandr</code>命令来看看自己的两个显示器的名称，然后输入类似以下的命令就好。</p>
+
+<p><code>
+xrandr --output VGA-0 --auto --left-of LVDS
+</code></p>
+
+<h2>FCITX安装</h2>
+
+<p>官网上说的安装方法不够完整，还是会碰到各种问题。比如说，和ibus的冲突什么的。参考<a href="http://www.cnblogs.com/yuemengke/archive/2013/04/09/3010207.html">这里</a>，输入以下命令就好：</p>
+
+<p><code>
+sudo add-apt-repository ppa:wengxt/fcitx-nightly #把fcitx的ppa加入ubuntu的源中，apt-get中的fcitx版本太老
+sudo apt-get update #更新源，这步是必须的
+sudo apt-get install fcitx fcitx-config-gtk fcitx-sunpinyin #最后那条看上去是云拼音，我没用过...
+sudo apt-get install fcitx-table-all #安装码表，我只安五笔拼音 fcitx-table-wbpy
+im-switch -s fcitx -z default #安装好后假如系统内有多个输入法的话，则输入下面命令，把fcitx设置为默认输入法
+sudo apt-get install ttf-arphic-uming #为了防止乱码，安装uming字体，继续输入下面命令。
+</code>
+之后需要重启，注销都是不起作用的。重启后就没问题了。</p>
+
+<h2>我的Vim攻略</h2>
+
+<p>Vim是人见人爱的文本编辑器(Emacs经常是三四个键一起按，不能忍&hellip;看了一眼就没有用它的冲动)。但学习Vim是很痛苦的事情&hellip;我自己的路线是这样的：</p>
+
+<ol>
+<li><p>Vim自带的tutor: Windows下的“开始”菜单中就能找到tutor.bat，点开就好。Linux下直接输入<code>vimtutor</code>命令就好。这里是最基本的命令，也就是说，学明白它了，你就能把vim当记事本用了。我当时是每天跑一次这个教程，跑了五天吧，一次40分钟的样子。</p></li>
+<li><p><a href="http://coolshell.cn/articles/5426.html">简明vim练级攻略</a>，有些很好用的命令，比如说在同一行内按f定位，这里都有讲到，而1中的则没有。搞明白它以后，用vim就比用记事本要高效了。但这里面的某些操作我现在都没搞明白&hellip;</p></li>
+<li><p>vim的配置：<a href="http://fqj.me">fqj</a>推荐用<a href="https://github.com/spf13/spf13-vim">spf13</a>。这个配置相当的全，只是会很卡，而且因为插件太多，同一插件也有各个版本的问题，导致可能会出各种问题。此外，要用它的话，你首先要安git什么的。</p></li>
+<li><p><a href="https://github.com/guori12321/vim">我的vim配置</a>：做些最简单的绑定就好&hellip;现在还懒得写&hellip;</p></li>
+<li><p>一些小技巧：把<code>Caps Lock</code>键当成额外的ESC:
+<code>
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+</code></p></li>
+</ol>
+
+
+<p>此外，我用的是Gvim，而不是Vim，因为Vim是在终端里跑的，所以字体什么的不好调整，而Gvim就可以绑定快捷键。此外，Vim下的主题的颜色有点问题，Gvim下就好多了。但注意下，配置Gvim的时候就写在<code>.vimrc</code>里就好，别写在<code>.gvimrc</code>里。我曾经就碰到过<a href="http://www.v2ex.com/t/60346#reply4">写到.gvimrc里而出问题</a>。最后还是在stackoverflow上得到了回复。</p>
+
+<h2>gvim下fcitx的小bug</h2>
+
+<p>之前在Gvim用fcitx，发现每打一个汉字，fcitx就自动退出了。但在vim下就没这个问题。</p>
+
+<p>在<a href="http://www.douban.com/group/topic/36307854/">豆瓣上找到了答案</a>，在使用fcitx时按下Ctrl + Alt + P，关闭预编辑区就好。</p>
+]]></content>
+  </entry>
+  
+</feed>

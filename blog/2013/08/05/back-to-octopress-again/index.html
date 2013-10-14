@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>再次回到octopress - Ray12321</title>
+  <meta name="author" content="Ray12321">
+
+  
+  <meta name="description" content="一直有搭blog的念头，只可惜，总是反反复复，加上自己太懒。这次，我又回到了Octopress~ 和上次一样，搭建Linux下的Octopress总会有各种各样的问题。又折腾了一个晚上，才搞定最基本的环境。 细数下我碰到的问题，也许对以后的各位有帮助吧。 安装RVM:我是通过RVM来安装Ruby的 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Ray12321" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43183679-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+</hgroup>
+
+</header>
+  <!-- <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:guori12321.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav> -->
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">再次回到octopress</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-05T10:21:00+08:00" pubdate data-updated="true">Aug 5<span>th</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>一直有搭blog的念头，只可惜，总是反反复复，加上自己太懒。这次，我又回到了Octopress~</p>
+
+<p>和上次一样，搭建Linux下的Octopress总会有各种各样的问题。又折腾了一个晚上，才搞定最基本的环境。</p>
+
+<p>细数下我碰到的问题，也许对以后的各位有帮助吧。</p>
+
+<!-- more -->
+
+
+<ul>
+<li>安装RVM:我是通过RVM来安装Ruby的。按照<a href="https://rvm.io/rvm/install">RVM的官方指南</a>，在执行</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\curl -L https://get.rvm.io | bash</span></code></pre></td></tr></table></div></figure>
+
+
+<p>的时候报错：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ouldn't get RVM from https://github.com/wayneeseguin/rvm/archive/stable.tar.gz
+</span><span class='line'>Curl returned error 22</span></code></pre></td></tr></table></div></figure>
+
+
+<p>后来发现是下载时跳转到codeload.github上了，而这个域名下面的东西经常不能访问。不仅仅是在我这里（香港），而且<a href="http://www.v2ex.com/t/76033">其它地方也经常不能访问</a>。找了半天也没找到那个包的其它下载方式。但是，虽然有报错安装失败，但我试了下，rvm的命令是好用的，也就是说已经安上了。总之这个问题莫名其妙的发生了，也莫名其妙的解决了。
+PS: 今天早上再试了一下，就不存在这个问题了。</p>
+
+<ul>
+<li>使用RVM install 命令的时候报错：</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>`RVM is not a function</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后在StackOverflow上查到了<a href="http://stackoverflow.com/questions/9336596/rvm-installation-not-working-rvm-is-not-a-function">答案</a>：要用login形式的Shell.</p>
+
+<ul>
+<li>安装依赖的问题:bundle install的时候报错如下</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>An error occured while installing RedCloth (4.2.9), and Bundler cannot continue.
+</span><span class='line'>Make sure that `gem install RedCloth -v '4.2.9'` succeeds before bundling.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>同样在<a href="http://stackoverflow.com/questions/12119138/failed-to-build-gem-native-extension-when-install-redcloth-4-2-9-install-linux">Stackoverflow上找到了答案</a>，但引起这个错误的原因有好几个，别人适用的方法自己不一定适用。我是安装了ruby 1.9.1 full后好用了</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install ruby1.9.1-full</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>执行rake命令时报错</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Could not find rake-0.9.2.2 in any of the sources
+</span><span class='line'>Run `bundle install` to install missing gems.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后通过以下命令解决：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gem install rake -v=0.9.2.2
+</span><span class='line'>bundle update
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>版本库的分枝合并问题: 因为之前用过Octopress，所以这次再用的时候，发现没办法合并到原先的库中，因为要合并的两个分枝没有关联。我在octopress/Rakefile中找到了git push的语句，在其中加了个 -f 的参数，也就是强行push，就好了。</p></li>
+<li><p>github.com和github.io的关系:deploy到user.github.com库之后，浏览相应的域名，发现并没有发生变化。这是因为github把personal page从user.github.com移到user.github.io了。把.com的库删掉，重新开个.io的库，再deploy，就好了。</p></li>
+<li><p>Rakefile的修改：在octopress的根目录下修改Rakefile，在第88行加入</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>system "google-chrome 127.0.0.1:4000"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这样就可以在<code>rake preview</code>之后自动打开浏览器，来预览了。</p>
+
+<h2>总体感觉</h2>
+
+<p>octopress的配置还是非常麻烦。我第一次用了两周才搞好，这次也花了一个晚上，碰到各种问题。总体来说ruby还不够成熟，除了安装的源不稳定外（我在墙外，所以不能怪GFW了），各个版本，各种依赖之间的关系也非常乱，整个Octopress是要求1.9.3以上的ruby的，但有些依赖，比如上面提到的Redcloth，就要求1.9.1。要解决这些问题，只能多查Stackoverflow和Google了，另外多用英语查询吧，汉语的资料太少。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ray12321</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-05T10:21:00+08:00" pubdate data-updated="true">Aug 5<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>octopress</a>, <a class='category' href='/blog/categories/ge-chong-zhe-teng/'>各种折腾</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again/" data-via="" data-counturl="http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/08/05/all-about-my-ubuntu/" title="Next Post: 我的Ubuntu/Linux的正确打开方式">我的Ubuntu/Linux的正确打开方式 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<h1>Category</h1>
+<ul>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/sheng-huo-jian-ying/">生活剪影</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/xue-xi-bi-ji/">学习笔记</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/lu-tu-fen-xiang/">旅途分享</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/shu-ping-ying-ping/">书评影评</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/ge-chong-zhe-teng/">各种折腾</a>
+    </li>
+</ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ffcitx%27+style%3D%27font-size%3A+20.0%25%27%3Efcitx%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgit%27+style%3D%27font-size%3A+20.0%25%27%3Egit%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhackerrank%27+style%3D%27font-size%3A+20.0%25%27%3Ehackerrank%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+30.0%25%27%3Elinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmongodb%27+style%3D%27font-size%3A+20.0%25%27%3EMongoDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Foctopress%27+style%3D%27font-size%3A+40.0%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fscott-young%27+style%3D%27font-size%3A+20.0%25%27%3EScott+Young%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fubuntu%27+style%3D%27font-size%3A+20.0%25%27%3Eubuntu%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fvim%27+style%3D%27font-size%3A+30.0%25%27%3Evim%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshu-ping-ying-ping%27+style%3D%27font-size%3A+20.0%25%27%3E%E4%B9%A6%E8%AF%84%E5%BD%B1%E8%AF%84%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-zhe-teng%27+style%3D%27font-size%3A+50.0%25%27%3E%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-she-bei%27+style%3D%27font-size%3A+20.0%25%27%3E%E5%90%84%E7%A7%8D%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxue-xi-bi-ji%27+style%3D%27font-size%3A+50.0%25%27%3E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxiao-mi%27+style%3D%27font-size%3A+20.0%25%27%3E%E5%B0%8F%E7%B1%B3%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgong-zuo%27+style%3D%27font-size%3A+20.0%25%27%3E%E5%B7%A5%E4%BD%9C%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flu-tu-fen-xiang%27+style%3D%27font-size%3A+20.0%25%27%3E%E6%97%85%E9%80%94%E5%88%86%E4%BA%AB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fsheng-huo-jian-ying%27+style%3D%27font-size%3A+30.0%25%27%3E%E7%94%9F%E6%B4%BB%E5%89%AA%E5%BD%B1%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmian-shi%27+style%3D%27font-size%3A+20.0%25%27%3E%E9%9D%A2%E8%AF%95%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fti-jie%27+style%3D%27font-size%3A+20.0%25%27%3E%E9%A2%98%E8%A7%A3%3C%2Fa%3E+%3C%2Ftags%3E"></span>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/13/xiao-mi-2sde-shi-yong-gan-shou/">小米2S的使用感受</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/17/zhao-a-zhao-gong-zuo/">找啊找工作</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/guan-yu-scott-youngxue-xi-fang-fa/">关于Scott Young学习方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/11/guan-yu-ssh/">关于linux常用命令</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/04/zhe-teng-vim/">折腾vim</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/guori12321">@guori12321</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'guori12321',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ray12321 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'ray12321';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again/';
+        var disqus_url = 'http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

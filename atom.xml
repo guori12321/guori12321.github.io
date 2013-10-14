@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Ray12321]]></title>
+  <link href="http://guori12321.github.io/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2013-10-14T09:50:18+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[小米2S的使用感受]]></title>
+    <link href="http://guori12321.github.io/blog/2013/10/13/xiao-mi-2sde-shi-yong-gan-shou/"/>
+    <updated>2013-10-13T23:18:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/10/13/xiao-mi-2sde-shi-yong-gan-shou</id>
+    <content type="html"><![CDATA[<p>在香港实习的时候，实在无法忍受NOKIA E63不带GPS，无法导航的问题，于是，在香港买了一部小米2S(虽然买到以后我因为没有香港身份证，不能上台，办不了手机流量，一样没办法导航&hellip;)。小米香港的商网就是<a href="xiaomi.hk">xiaomi.hk</a>，定起来也比较麻烦，一会有货一会没货的，还不能用大陆的信用卡来支付。后来让实验室的师兄帮我付了。价格比大陆贵了几十块，但起码能抢的到。于是，就很开心的换新手机了~~</p>
+
+<!--more-->
+
+
+<h2>2S的直观感受</h2>
+
+<p>拿到手上，想像中要厚和重一些。不过这些都无所谓。塑料的后盖，摸上去还算有质感，只是拆开以后就觉得，只是薄薄的一层塑料了。说到拆盖，真是很技巧，不只一个同学告诉我拆小米的盖子非常困难，主流的做法反而是用指甲沿着盖子划一圈。其实用大拇指和食指就足够，食指跪在后盖MI Logo附近，然后大拇指使点劲就搞定了。</p>
+
+<p>开机后，感觉屏幕挺不错，不管是分辨率还是可视角度，都挺好，至少比E63强多了。跑了几个自带的APP，速度上并不卡。一些游戏加载比较慢，但跑起来也不卡。</p>
+
+<p>不过玩的时间长了以后，散热比较大。用手握着就十分不舒服了。这个时候，就休息下，一方面散热，另一方面，也是保护眼睛~</p>
+
+<h2>关于MIUI</h2>
+
+<p>小米一直主打MIUI，用它自己的话说，MIUI才是它的核心竞争力。坊间传说，MIUI还是比较好用，比较方便。我没用过其它安卓手机，只能说，我觉得MIUI做的还算方便。一些主要的功能，比如说开启WIFI，直接就是状态菜单中的一个按钮，点一下就好了。自带的流量统计真是业界良心，在中国的移动运营商丧尽天良的时候(香港上台的手机号，一个月60块，1700分钟本地通话，不限流量)，有这么个功能，我们可以省多少流量钱。</p>
+
+<p>小米有很多用户非常需要的功能，这是多少次迭代之后的产物，当年的MIUI可是每周都有更新。。用了MIUI，就不用再装各种手机管理软件了。但是，MIUI据说还是卡。身边也有同学刷Ubuntu的，据说刷了之后，明显快多了。</p>
+
+<h2>2S的缺点</h2>
+
+<p>有这么几点非常重要的缺点：</p>
+
+<ol>
+<li><p>当电量耗尽而关机后，要经过很长时间充电才能再次启动手机。也就是说，电池的用电保护做的不好。我去厦门玩的时候，晚上没关机，早上刚出车站，把手机插上移动电源，然后发现很久都无法开机。还好我当时带着E63，还能联系到朋友。之后每当手机快没电时我就关机，免得出现类似情况。</p></li>
+<li><p>偶尔会死机。我在一次电话面试中，电话打到一半手机就死机了。平时还好说，但这种情况下真是不能忍。</p></li>
+<li><p>APP有时会意外退出。这个问题每天都能碰到。主要是知乎的客户端，刷到一半就挂掉了，很不爽。</p></li>
+<li><p>发热和耗电。这个可以说是安卓手机的通病吧。但小米不能忍的一点是，<strong>插着电</strong>，开着WIFI玩3D游戏，玩着玩着因为<strong>没电</strong>关机。这也太神奇了！</p></li>
+</ol>
+
+
+<h2>2S的APP推荐</h2>
+
+<p>微信QQ什么的就不多说了，推荐一些比较小众但好用的软件。</p>
+
+<ul>
+<li><p>Any DO. : 这是Sunner推荐的GTD软件。用着确实方便。它再加上Google Calcander，已经满足我的需要了。</p></li>
+<li><p>Evernote : 很有名的软件。只是我还不太明白怎么使用这种笔记类软件，手机上的便贴对我已经够用了。</p></li>
+</ul>
+
+
+<p>其它的想起来再说~大家也一起推荐吧~~</p>
+
+<p>就先写这么多。其实小米3已经出来了，2S用的人也会越来越少了。写这篇博文全当是一个记录了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[找啊找工作]]></title>
+    <link href="http://guori12321.github.io/blog/2013/09/17/zhao-a-zhao-gong-zuo/"/>
+    <updated>2013-09-17T14:55:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/09/17/zhao-a-zhao-gong-zuo</id>
+    <content type="html"><![CDATA[<p>刚刚面完某国内的大型软件公司测试部门的四面，是HR面，谈谈毕业时间，对工作期望什么的。然后就是等结果了。从七月下旬，到九月中旬，这个事情耽误了很久。期间因为来香港实习，没能安排三面，后来HR又写邮件给我，再接着面试。总之算是一段不错的经历。下面来讲讲自己关于这次面试的感受:</p>
+
+<!--more-->
+
+
+<h2>面试的难度</h2>
+
+<p>因为我这个算是校招的提前批，所以除了一面问了几个技术问题，二面就只问了一个，三四面就谈人生谈理想了。技术问题的难度并不大，不会的话也不要紧，把自己的思路说出来就好。</p>
+
+<p>一面是女面试官，问我，你是怎么理解XXX的。我答，什么是XXX？没听过，简单介绍下吧&hellip;她说，啊？好，我们过。我觉得她的声音好萌好萌啊～二面和三面都是男面试官，四面是女HR，对于女面试官，我明显更有热情，说的更多啊&hellip;二面的问题，我没有想到标准的解法，想出的是同一时间复杂度，但常数很大的算法。后来看来是没有影响我的面试结果。</p>
+
+<p>关于一面和二面中的技术问题，都是很传统很常规的面试题，如果真心准备找工作的话，这些问题都应该是原题才对。我面试的时候前三面都是打电话，四面是skype语音，一行代码都没有写。但我觉得，还是像国外公司那样，写写代码比较靠谱。</p>
+
+<h2>面试的细节</h2>
+
+<p>细节这个东西，还是尽量注意吧。比如说，把自己邮箱的发件人姓名设置好（以前我都是直接用汉语，现在用的是拼音，姓在前，大写，这也是这家公司的发件人的设置）。简历最好还是中英两份，做成一个pdf（除了MSRA要求是中英，其它公司都要求汉语或英语就好，但国内公司如果有英文简历肯定会让面试官更有好感）。</p>
+
+<p>比较重要的，是<strong>电话一定开机</strong>。这家公司没给我发过短信，都是直接打电话的。不要想着公司会主动找你，如果你的电话打不通，他们就去联系能打通电话的人了。我因为在香港，大陆电话接不到，HR又写邮件联系我，但我当时二面已经通过。如果没有通过的话，可能就失去这个机会了。</p>
+
+<h2>面试的感觉</h2>
+
+<p>这家公司很接地气，或者说这家公司很不靠谱。HR要了我的skype，为了保险，还要了我的QQ(当年在工大，HR留了个QQ邮箱，大家都以为是骗子&hellip;)。写邮件过了两天还没回，我打电话过去，她说她现在很忙，如果今天晚上还没给我安排面试，就晚上再催她下。虽然感觉不靠谱，但至少HR在用她自己的方式在解决问题。所以还是很感谢的。</p>
+
+<p>另外，这家公司也算是中国最顶级的了，但三四面前，两位不同的HR都联系过我，要我在香港的联系方式，他们内部都没有沟通过吗？搞的我每次都要强调自己要去/已经在香港，而且下次还会再问我在香港的电话的。</p>
+
+<p>总体上，感觉和国外的公司，差距太大。</p>
+
+<p>最后说一点，投简历什么的，不要怕挂。我曾经投了很多次简历，都没人理会，搞的我质疑自己能力了。但这次面试，至少算是对我的一个认可吧，让我知道自己还不是太弱。</p>
+
+<p>祝大家找工作什么的愉快～</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[关于Scott Young学习方法]]></title>
+    <link href="http://guori12321.github.io/blog/2013/09/14/guan-yu-scott-youngxue-xi-fang-fa/"/>
+    <updated>2013-09-14T18:11:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/09/14/guan-yu-scott-youngxue-xi-fang-fa</id>
+    <content type="html"><![CDATA[<p>这两天整理邮件，翻出来Scott Young的one-week learn faster bootcamp的邮件。Scott Young以<a href="http://blog.renren.com/share/287284388/14623696425">他的MIT挑战</a>而知名。我第一次也是在人人网上看到关于他的帖子。想了解他和他做的事情已经很久了，周六就来看看这七封邮件吧。他在<a href="http://www.scotthyoung.com/blog/day-1-bootcamp-2013/">他的网站上</a>发布了这些内容。</p>
+
+<!--more-->
+
+
+<h2>Day 1: The principle you can use to amplify your focus and stop procrastinating</h2>
+
+<p>首先是讲了些拖延症的生理上的解释。拖延症，与传统意义上的懒不一样。懒，是个十分舒适的词，但拖延症，我的感觉是，非常的煎熬，相当于把应该用来干活的时间，都用来思路斗争，结果就是，活没干完，自己也非常难受，之后再无比的自责。说起来，就是这么简单的一个循环。大家都知道，早点干活，之后就轻松，但，真做起来，对我来说还是非常难。</p>
+
+<p>扯远了。Scott讲，人之所以不能专注，并不是说我们懒，而是说，大脑内是有一些维持我们注意力的资源，当这种资源短缺时，我们就难以专注。实验表明，多喝点带糖的饮料，都能使人更专注。那么，专注，就不是一个天赋的问题，而是一个技巧的问题：怎样才能不断的补充自己的维持注意力的资源。</p>
+
+<p>除了简单的喝糖水外，我们可以通过压缩学习时间的方式来达到这一目的。这就像老师从小教导我们的：先写完作业再玩一样。Scott说，他晚上七点以后从来不学习，周六也绝不看书（老外的每周从周日开始，所以周六是每周最后一天）。这样，其实每周六天，每天10小时的学习，并不算夸张。有时候我们效率低的原因，就是因为安排的时间太多，搞的自己太累。</p>
+
+<p>邮件的其余部分就没什么新意了。就像老师从小教导的那样，对于知识，要<strong>理解</strong>。用他的话来说，尽量让<em>消极(passive)</em>的任务变得<em>积极(active)</em>一些。比如说，看书的时候，每看一页，就回忆10秒，这页主要讲了啥。另外，看书的时候，要多反思，想想自己没搞明白的地方是哪里。邮件的最后给大家留了个小作业：找点自己要学的东西，并反思怎么改进自己的学习方法。</p>
+
+<p>说实话，这些大道理，搞的像中学老师经常唠叨的一样。</p>
+
+<h2>Day 2: How to remember huge quantities of information quickly and permanently</h2>
+
+<p>今天的题目比较有意思：记忆。对被GRE伤害过好久好久，并因此不停质疑人生意义的我来说，满满都是泪啊！</p>
+
+<p>同Day 1一样，刚开始同样是颠覆一个常识观点：记忆力，是可以训练的。举的例子是，Joshua Foer在研究并准备了一年之后，拿下了2005年美国记忆比赛的冠军，而他之前的记忆力只是平均水平。诀窍就是：形象的东西好记，枯燥的东西难记。之后他给了几个小技巧，如联想记忆，分组记忆等等。</p>
+
+<p>感觉没多少有用的啊&hellip;</p>
+
+<h2>以下我有心情再看&hellip;</h2>
+
+<p>Day 3: Develop the deep intuitions that allow you to &ldquo;get&rdquo; any subject</p>
+
+<p>Day 4: Why the 10,000 hour rule is broken (and how to learn skills faster)</p>
+
+<p>Day 5: How to have total confidence in your knowledge</p>
+
+<p>Day 6: The routine I used during the MIT Challenge to learn hard classes in under a week</p>
+
+<p>Day 7: The most important tool for learning better</p>
+
+<h2>一点感受</h2>
+
+<p>我想，对我来说，最重要的并不是具体的方法，而是简简单单的，少想，多做。现在的各种正能量的帖子泛滥，什么“你不逼自己一把就永远不知道自己有多优秀”，什么“你必须十分努力才能看起来毫不费力”。真正的世界是，你必须十分努力，才能显得别人毫不费力。永远想live life to the fullest，然后把计划安排的满满的，直到自己再也不可能实现为止，然后就拖延着什么都不做，于是在期望与失望中纠结的度过一天天。何必想那么多，做些自己能做到的，就足够了。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[关于linux常用命令]]></title>
+    <link href="http://guori12321.github.io/blog/2013/09/11/guan-yu-ssh/"/>
+    <updated>2013-09-11T16:23:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/09/11/guan-yu-ssh</id>
+    <content type="html"><![CDATA[<p>ssh这些linux常用的命令，大家应该都听过，但我自己一直不怎么会用&hellip;</p>
+
+<p>现在在香港实习，就要多多的请教啊～～</p>
+
+<!--more-->
+
+
+<h2>ssh</h2>
+
+<p>ssh username@ServerDomain 然后输入密码就好&hellip;</p>
+
+<h2>ssh key配置</h2>
+
+<p>在home下建立.ssh文件夹，然后通过下面的scp命令把本地的ssh pub key拷到这个文件下。
+之后通过<a href="http://blog.csdn.net/haydenwang8287/article/details/1753883">chomd命令</a>来给.ssh文件夹一些权限：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>chmod 700 .ssh # 只有所有者有读和写以及执行的权限</span></code></pre></td></tr></table></div></figure>
+
+
+<p>之后使用cat命令把拷过来的pub key拷到.ssh下的authorized_keys文件中去
+&lsquo;&rsquo;&lsquo;
+cat _rsa.pub >> authorized_keys
+&rsquo;&lsquo;&rsquo;
+之后再ssh时就不用输入密码了。</p>
+
+<h2>ssh -D</h2>
+
+<p>因为一些众所周知的原因，我们经常要翻来翻去。翻墙最快捷的方法还是物理翻墙，但如果暂时没办法物理翻，那就只能各种代理了。
+<code>ssh -D</code>，传这个参数，就相当于在本地搞了个代理的端口，然后把网络流量导向这个端口就好。</p>
+
+<h2>ssh Config</h2>
+
+<p>ssh时要输入用户名和密码。我们可以通过上面提到过的ssh key的办法来不输密码。同时，我们可以通过配置ssh config文件来不输入账号。
+ssh config文件具体的位置是在<code>.ssh/config</code>，在里面直接写就好，可以写入多个账号。格式如下：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Host alias
+</span><span class='line'>HostName your_host_name
+</span><span class='line'>User your_user_name
+</span><span class='line'>ServerAliveCountMax 20
+</span><span class='line'>ServerdomainverAliveInterval 240</span></code></pre></td></tr></table></div></figure>
+
+
+<p>之后，就直接<code>ssh alias</code>，就相当于你输入了<code>ssh your_user_name@your_host_name</code>了。</p>
+
+<h2>scp</h2>
+
+<p>通过ssh，来从本地往远程服务器上拷数据，或者从远程往本地拷数据都用这个命令。
+具体的介绍在<a href="http://www.vpser.net/manage/scp.html">这里</a>。以下是我粘过来的部分内容。</p>
+
+<p>1、获取远程服务器上的文件
+&lsquo;&rsquo;&lsquo;
+scp -P 2222 root@www.vpser.net:/root/lnmp0.4.tar.gz /home/lnmp0.4.tar.gz
+&rsquo;&lsquo;&rsquo;
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#114;&#111;&#111;&#x74;&#x40;&#119;&#119;&#119;&#x2e;&#118;&#x70;&#115;&#101;&#114;&#46;&#x6e;&#101;&#116;">&#114;&#x6f;&#x6f;&#116;&#x40;&#119;&#119;&#x77;&#46;&#118;&#x70;&#115;&#101;&#x72;&#46;&#110;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
+
+<p>2、获取远程服务器上的目录
+&lsquo;&rsquo;&lsquo;
+scp -P 2222 -r root@www.vpser.net:/root/lnmp0.4/ /home/lnmp0.4/
+&rsquo;&lsquo;&rsquo;
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#114;&#x6f;&#111;&#x74;&#x40;&#119;&#x77;&#x77;&#x2e;&#118;&#112;&#x73;&#101;&#x72;&#x2e;&#110;&#101;&#x74;">&#x72;&#x6f;&#x6f;&#x74;&#x40;&#119;&#119;&#x77;&#46;&#x76;&#x70;&#x73;&#x65;&#114;&#46;&#x6e;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
+
+<p>3、将本地文件上传到服务器上
+&lsquo;&rsquo;&lsquo;
+scp -P 2222 /home/lnmp0.4.tar.gz root@www.vpser.net:/root/lnmp0.4.tar.gz
+&rsquo;&lsquo;&rsquo;
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x72;&#x6f;&#111;&#116;&#x40;&#x77;&#x77;&#119;&#46;&#118;&#x70;&#115;&#101;&#114;&#46;&#110;&#101;&#x74;">&#x72;&#111;&#x6f;&#116;&#x40;&#x77;&#x77;&#119;&#x2e;&#x76;&#x70;&#115;&#101;&#x72;&#x2e;&#110;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
+
+<p>4、将本地目录上传到服务器上
+&lsquo;&rsquo;&lsquo;
+scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
+&rsquo;&lsquo;&rsquo;
+上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x72;&#x6f;&#111;&#x74;&#x40;&#x77;&#119;&#x77;&#x2e;&#118;&#x70;&#115;&#x65;&#x72;&#x2e;&#110;&#x65;&#x74;">&#114;&#111;&#x6f;&#116;&#x40;&#119;&#x77;&#x77;&#x2e;&#118;&#x70;&#115;&#x65;&#114;&#46;&#x6e;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
+
+<p>5、可能有用的几个参数 :</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-v 和大多数 linux 命令中的 -v 意思一样 , 用来显示进度 . 可以用来查看连接 , 认证 , 或是配置错误 .
+</span><span class='line'>
+</span><span class='line'>-C 使能压缩选项 .
+</span><span class='line'>
+</span><span class='line'>-4 强行使用 IPV4 地址 .
+</span><span class='line'>
+</span><span class='line'>-6 强行使用 IPV6 地址 .</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>history</h2>
+
+<p>使用这个命令可以查看输入的shell命令的历史。</p>
+
+<h2>pip</h2>
+
+<p>用来安装python的包的，可以用<code>pip install XXX</code>来代替<code>sudo apt-get install python-XXX</code>。</p>
+
+<p>具体看<a href="http://www.jsxubar.info/install-pip.html">这里</a>。</p>
+
+<p>注意:
+* 要将文件安到当前用户的路径下时（即你没有root权限时），输入<code>pip install --user PackageName</code>就好。另外注意<code>pip install</code>这种子命令的<code>help</code>手册是在<code>pip</code>之外的。所以查<code>--user</code>参数时，要输入<code>pip install -h</code>来找。
+* IE Dept.的服务器终端默认是跑比较老的终端版本。所以说，在~/.login最后加入一句<code>exec bash</code>。</p>
+
+<h2>ps aux</h2>
+
+<p>查看系统当前进程。结合grep可以很方便的查找指定的进程。如<code>ps aux | grep mongo</code>就能找到mongoDB的进程。
+参数中，a是指显示所有程序，包括其它用户的程序，u表示以用户为主的格式显示，x表示显示不以终端来区分程序。
+我也不知道具体是什么意思&hellip;会用就好&hellip;
+详细的参数可以查看<a href="http://www.360doc.com/content/11/0530/23/2104556_120606853.shtml">这里</a></p>
+
+<h2>df</h2>
+
+<p>因为在香港做的东西很吃硬盘，所以说，要判断下硬盘的剩余空间够不够。可以用下面这句话来看/tmp的剩余空间</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bash-4.1$ df | grep tmpfs | awk '{print $4}'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>df就是查看硬盘空间了，grep是把tmp抓出来（/tmp就叫tmpfs这个名字），然后再用awk把第4列（注意这里的列数是从1开始的），也就是可用空间抓出来。</p>
+
+<p>在python中调用以上命令，用<a href="http://www.cnblogs.com/xuxm2007/archive/2011/01/17/1937220.html">commands模块</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&gt;&gt;&gt; import commands
+</span><span class='line'>&gt;&gt;&gt; dir(commands)
+</span><span class='line'>['__all__', '__builtins__', '__doc__', '__file__', '__name__', 'getoutput', 'getstatus','getstatusoutput', 'mk2arg', 'mkarg']
+</span><span class='line'>&gt;&gt;&gt; commands.getstatusoutput("date")
+</span><span class='line'>(0, 'Wed Jun 10 19:40:41 CST 2009')</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>du</h2>
+
+<p>这是一个查看文件大小的命令。常用<code>du -sh</code>来显示当前路径下所有文件的总的大小。</p>
+
+<h2>awk</h2>
+
+<p>因为在Server上跑python时，想强行退出只能先Ctrl + z，于是就有了一堆进程在后台等待。
+pili过来查看了下，直接输入一行命令，就干掉了所有的python进程：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ps aux | grep python | awk '{print $2}' | xargs kill -9</span></code></pre></td></tr></table></div></figure>
+
+
+<p>先说awk，它是一个很强大的文本分析工具，<code>awk '{print $2}'</code>就是把第二列取出来，更多的介绍可以查看<a href="http://www.cnblogs.com/ggjucheng/archive/2013/01/13/2858470.html">这里</a>。</p>
+
+<h2>xargs</h2>
+
+<p>另一个强大的工具，将之前命令产生的参数列表拆散成多个子串，然后对每个子串调用要执行的命令。
+具体的来看<a href="http://zh.wikipedia.org/wiki/Xargs">wikipedia</a>吧。</p>
+
+<h2>kill</h2>
+
+<p><code>kill -9 pid</code>，记得传-9这个参数，这样就直接干掉进程了（好残忍的感觉&hellip;)</p>
+
+<h2>mkdir</h2>
+
+<p>这个命令就不多说了。只是用它建立新文件夹的时候，要建立多层的文件夹时，是加<code>-p</code>，而不是像其它命令一样是<code>-r</code>。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[折腾vim]]></title>
+    <link href="http://guori12321.github.io/blog/2013/09/04/zhe-teng-vim/"/>
+    <updated>2013-09-04T10:38:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/09/04/zhe-teng-vim</id>
+    <content type="html"><![CDATA[<p>现在用vim仅仅是比用记事本高效，很多功能还没搞明白&hellip;</p>
+
+<p>配置vim是个很折腾的过程，我用的是<a href="https://github.com/spf13/spf13-vim">spf13</a>，只可惜用这个配置，一样有很多地方要改动。我的使用习惯是：</p>
+
+<ul>
+<li><p>在它的.vimrc中把所有&#8217;nowrap&#8217;改为&#8217;wrap&#8217;。写代码的时候不自动折行还好，但写日志等文本内容，不折行就没法用了。</p></li>
+<li><p>spf13中每次保存的时候都会自动帮你编译一下，并报出所有的语法错误。只是这种做法带来很多问题：语法检查过于严格，声明完变量不使用都会报错；报错时会新建一个分栏，每次报错后我都要自己关掉它；最不能忍的是，有时候保存一下，然后vim就会自动退出。我还没搞明白怎么解决&hellip;</p></li>
+<li><p>我习惯在Insert中把&lt;C-H>绑定为向左，&lt;C-L>为向右。在.vimrc或.vimrc.local中设置都会失效。同没搞明白怎么解决&hellip;</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MongoDB路线图]]></title>
+    <link href="http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu/"/>
+    <updated>2013-09-02T15:48:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu</id>
+    <content type="html"><![CDATA[<p><code>MongoDB</code>是非常有名的No SQL数据库，话说还真是适应不了No SQL的思维，每次都想着先建表&hellip;。以下是我学习MongoDB的路线图：</p>
+
+<!--more-->
+
+
+<h2>路线图</h2>
+
+<ol>
+<li><p>首先肯定是看看<a href="http://www.mongodb.org/">官网的资料了</a>。这里面有最初级的教程，以及最详细权威的文档。走一遍它的教程后，相信你会对MongoDB有最初步的了解，学习深入后，再来这里查询文档。只是，这里没有难度适中的教程。要么有太多的细节，要么太过简略了。</p></li>
+<li><p>一篇很好的<a href="http://www.eduyo.com/database/nosql/805.html">中文简易教程</a>，看一遍就知道MongoDB有哪些神奇的功能了～</p></li>
+<li><p><a href="http://blog.nosqlfan.com/html/2989.html">python使用Mongo的教程</a></p></li>
+</ol>
+
+
+<h2>关于Mongod和Mongo命令</h2>
+
+<p>听pili讲了好一会，才有了一点概念：Mongod比Mongo高一层，Mongod可以指定路径(&mdash;dbpath)，Mongo则是指定端口。同一个Mongod可以有好几个Mongo。总体感觉Mongod相当于SQL中的connection，如果两个Mongod指向不同的路径，那么它俩就没有交互，可以独立的读写，而不用担心读和写同时进行，而让数据乱掉。</p>
+
+<p>我现在对它俩的关系的理解就是，Mongod相当于C++中的流，Mongo就是具体的文件。</p>
+
+<p>可以为Mongod和Mongo指定端口。不同的Mongod必须使用不同的端口。不同的Mongo可以使用同一端口。当Mongo和Mongod使用同一端口的时候，这个Mongo就挂到Mongod上了。具体在python中，Mongod相当于一个connection。</p>
+
+<h2>其它要注意的</h2>
+
+<ul>
+<li><p>MongoDB的索引值只能为<strong>string</strong>，很神奇~</p></li>
+<li><p>要想指定ObjectID，只用在插入的时候，指定&#8221;_id&#8221;参数就好</p></li>
+<li><p>关于同一个collection的大小：之前在用MySQL存微博上的数据的时候，同一张表中存入10万条微博，读写的速度都在0.04秒左右，一旦上百万级，就要5秒左右，完全不可以接受。当时把百万级的数据分成了十个表。关于MongoDB存多少合适，我的实验结果是四亿条数据（每条数据都只有一个_id和一个int型的属性值）内都没有问题，一早上插入了4亿条数据，耗时在0.1秒以内就找到了，整个库有50多G。在测试时，每插入5万条左右的数据，就会卡那么一秒，之后再接着插入。应该是MongoDB内部在新建一些结构吧。</p></li>
+<li><p>Mongodb的索引只能是string类型，但_id的类型可以是int</p></li>
+</ul>
+
+
+<p>未完待续&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[HackerRank K-mismatch题解]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/25/hackerrank-k-mismatchti-jie/"/>
+    <updated>2013-08-25T14:39:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/25/hackerrank-k-mismatchti-jie</id>
+    <content type="html"><![CDATA[<p>其实算不上题解，只是讲讲自己的解题的思路吧。最后也没做出来，50分拿了25分。</p>
+
+<p><a href="https://www.hackerrank.com/contests/quantium/challenges/k-mismatch">题目地址</a></p>
+
+<p>给定一个字符串，对它的任意两个长度相同的子串，若这两个子串的同一位置处的不同的字符的个数少于一个阈值k，就将这两个子串统计下来。问，一共有多少个满足要求的子串对。</p>
+
+<!--more-->
+
+
+<p>同一个字符串，有很多子串，子串对就更多了。因此这道题目对算法的效率的要求就比较高了。最朴素的办法，是，先枚举子串的长度，再枚举第一个和第二个子串的起始位置，之后再比较两个子串的不同字符的个数。这样的话，是O(N<sup>4</sup>)的复杂度。</p>
+
+<p>分析下上面的思路，有哪里做了<strong>重复工作</strong>呢？是最后比较的那里，因为对于长度相同而位置只差一位的两个子串来说，它两只是错了一位而已，没必要全部重新比较下。我们可以用<strong>扩展</strong>的办法，来进行子串的比较。</p>
+
+<p>具体就是：先枚举第一个和第二个子串起点的差值（即这两个子串的距离），再枚举第一，二个子串的起点。刚开始的时候，把两个子串所有位置都比较一次，把不同的字符的个数记录下来。之后，这两二个子串分别向后移动了一位，这时，只用比较移出去的那位字符，和移进来的新字符是否相同就好了，根据这两位字符的情况，在上一次的记录上加减就好了。这样对空间的要求也不高，只用了一个临时的记录不同字符的int而已。（事实上我先是开了很大的数组，后来才发现可以优化）</p>
+
+<p>代码如下：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># -*- coding: utf-8 -*-
+</span><span class='line'>
+</span><span class='line'>def mismatch(a, b):
+</span><span class='line'>    global K
+</span><span class='line'>    tot = 0
+</span><span class='line'>    for i in range(len(a)):
+</span><span class='line'>        if a[i] != b[i]:
+</span><span class='line'>            tot += 1
+</span><span class='line'>            if tot &gt; K:
+</span><span class='line'>                return K+1
+</span><span class='line'>    return tot
+</span><span class='line'>
+</span><span class='line'>K = int(raw_input())
+</span><span class='line'>S = raw_input()
+</span><span class='line'>
+</span><span class='line'>ans = 0
+</span><span class='line'>team = []
+</span><span class='line'>
+</span><span class='line'>#先计算小于 或 等于K的子串对
+</span><span class='line'>for i in xrange(1,K+1):
+</span><span class='line'>    ans += ((len(S) - i + 1)*(len(S) - i)) / 2
+</span><span class='line'>
+</span><span class='line'>#枚举两个子串的位置的差值 边界值：第一个子串固定，第二个一直移动到最后
+</span><span class='line'>for i in xrange(1, len(S) - (K+1)+1):
+</span><span class='line'>    #misMatrix[0][i] = mismatch(S[0:K+1], S[i:i+K+1])
+</span><span class='line'>    mis0 = mismatch(S[0:K+1], S[i:i+K+1])
+</span><span class='line'>    if mis0 &lt;= K:
+</span><span class='line'>        ans += 1
+</span><span class='line'>
+</span><span class='line'>    #枚举第一个子串的其它位置，第二个子串和它距离为i
+</span><span class='line'>    for j in xrange(1, len(S)-(K+1)):
+</span><span class='line'>        if j+i+K &gt;= len(S):
+</span><span class='line'>            break
+</span><span class='line'>        #misMatrix[j][j+i] = misMatrix[j-1][j+i-1]
+</span><span class='line'>        mis = mis0
+</span><span class='line'>        if S[j-1] != S[j+i-1]:
+</span><span class='line'>            mis -= 1
+</span><span class='line'>        if S[j+K] != S[j+i+K]:
+</span><span class='line'>            mis += 1
+</span><span class='line'>        if mis &lt;= K:
+</span><span class='line'>            ans += 1
+</span><span class='line'>
+</span><span class='line'>            zz = 0
+</span><span class='line'>            t = mis
+</span><span class='line'>            while j-zz &gt;= 0 and t &lt;= K:
+</span><span class='line'>                zz += 1
+</span><span class='line'>                if j-zz &lt; 0:
+</span><span class='line'>                    break
+</span><span class='line'>                if S[j-zz] != S[j+i-zz]:
+</span><span class='line'>                    t += 1
+</span><span class='line'>                    if t &lt;= K:
+</span><span class='line'>                        ans += 1
+</span><span class='line'>                    else:
+</span><span class='line'>                        break
+</span><span class='line'>                else:
+</span><span class='line'>                    ans += 1
+</span><span class='line'>
+</span><span class='line'>        mis0 = mis
+</span><span class='line'>print ans</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后就只拿了25分&hellip;做这个题目花了很久的时间，加起来三四个小时了吧，因为一些边界和变量名打错的bug一直没调出来&hellip;写代码还是要头脑清醒啊。</p>
+
+<p>谁会做告诉我下吧&hellip;谢谢&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[给octopress添加3D标签云]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/"/>
+    <updated>2013-08-20T13:26:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian</id>
+    <content type="html"><![CDATA[<p>3D标签云的效果看右栏。很炫很神奇～</p>
+
+<p>具体做法是：</p>
+
+<ol>
+<li><p>从我的github库中<a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">下载源代码</a></p></li>
+<li><p>把相应的文件粘到自己octopress，另外在边栏那里把它显示出来就好。具体参考我的github上的<a href="https://github.com/guori12321/octopress-cumulus">README</a>。</p></li>
+</ol>
+
+
+<h2>Octopress 3D categories/tags-cloud configuration for non-English tags</h2>
+
+<p>You can see my 3D categories-tag at the right sidebar. It&rsquo;s awesome! However, the origin version doesn&rsquo;t support <strong>non-English</strong> tags, so I revised the codes and put them in my github. It now works!</p>
+
+<p>It&rsquo;s easy to configuration:</p>
+
+<ol>
+<li><p>Download the source codes from my <a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">github repo</a></p></li>
+<li><p>Copy the codes to your octopress. The detail is given at <a href="https://github.com/guori12321/octopress-cumulus">my github repo README</a></p></li>
+</ol>
+
+
+<!--more-->
+
+
+<h2>我之前碰到的问题</h2>
+
+<p>主要是不支持汉语标签。虽然这个插件的作者是中国人，但是他俩的博客都是全英文，所以不存在这个问题。我还是很想用汉语标签的。octopress本身支持汉语标签，点击汉语标签后，会发现它把路径中的汉字转成<strong>拼音</strong>了，所以说就不存在汉语路径的问题。</p>
+
+<p>这个插件原本是直接用汉语作路径的，于是我就按照<a href="http://notes.liyaos.com/blog/2013/01/18/octopress/">这篇文章</a>把标签的路径设定为汉语的了。在本地上preview没问题，但deploy到github上就无法识别，会报404错误。怀疑与github那边的编码方式有关。</p>
+
+<p>既然无法用汉语作路径，那还是按octopress原先的办法，用拼音作路径吧。于是我对这个插件进行了<a href="https://github.com/guori12321/octopress-cumulus/commit/0af2339ba1f2ce574a8a17d706e56b3aee6835a1">小小的改动</a>。终于，一切正常了～～</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的git路线图]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian/"/>
+    <updated>2013-08-18T01:13:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian</id>
+    <content type="html"><![CDATA[<p>Git是广大人民群众喜闻乐见的版本控制器。以前写代码的时候经常碰到这种情况：想尝试着加点新功能，结果发现出了很严重的bug，想回滚代码，却没有办法，只能根据回忆一点点删改新加入的代码。后来，每当要进行大的变动时，就把原来的代码打个包，备份下。这样做非常的笨。Git就解决了这种问题。</p>
+
+<p>可是，虽然所有人都说git简单易用，但我入门时还是费了很多力气的。以下是我使用git的路线图：</p>
+
+<!-- more -->
+
+
+<ul>
+<li><p>入门教材：<a href="http://www.21andy.com/blog/uploads/downloads/2010/12/git_tutorial.pdf">看日记学git</a>，这是我见过的最好的git学习资料了。看了前十几天的内容就好。</p></li>
+<li><p><code>git rm</code>与<code>rm</code>的同步问题：在git下使用<code>rm</code>命令的时候，会将工作区的文件删掉，但是，git仓库中的文件并不会被删掉。也就是说，现在看来，文件确实是没了，但在commit之后再回滚回来，那些文件，又会出来了。解决办法是，用<code>git rm</code>命令，这样，仓库中的文件也被删掉。不过，我经常忘记用<code>git rm</code>，怎么办呢？很简单，下次add的时候，多加个参数：<code>git add -u</code>，这样会自动刷新暂存区，之后暂存区中的文件就与工作区中的文件一一对应了。git add -h中的介绍是</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-u, --update          update tracked files</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p><code>git rm --cached filename</code>: 与上一条的区别是，这仅仅删除index中的文件，而不会删除working tree中的文件。适用于不小心push了不想公开的文件到github上。这时，在本地rm &mdash;cached之后，别<code>git add .</code>，直接commit就好。</p></li>
+<li><p><code>git reset</code>与<code>git revert</code>的区别：前者是撤销某次commit，后者是回滚代码到某一次commit。此外，前者会删改git的历史（比如说，你撤销了某次commit，这样的话，git的历史中就不会记录这次commit了），而后者不会（事实上，revert会把当前工作区中的代码恢复到以前的某次commit，然后新增加一次新的commit）。有点晕是吧，<a href="http://stackoverflow.com/questions/8358035/whats-the-difference-between-git-revert-checkout-and-reset/8358039#8358039">stackOverflow上有很详细的讲解</a>。当然，更晕的是，通过加不同的参数，这两个命令，有时可以起同样的作用。不要研究太深，需要用到的时候再去查就好。</p></li>
+</ul>
+
+
+<h2>git submodule</h2>
+
+<p>有些时候我们会想在一个版本库中调用另一个版本库的代码，或者像我在香港实习时遇到的要保持本机上和服务器上某些代码一致的问题。这时候，用git submodule就是非常好的选择。</p>
+
+<p><a href="http://git-scm.com/book/en/Git-Tools-Submodules">官方文档</a>对它的介绍已经很完善了。只是，这东西怎么看着都不靠谱啊！比如说，各个submodule的版本问题，<a href="http://blog.devtang.com/blog/2013/05/08/git-submodule-issues/">有些时候会比较坑</a>，另外，就连官方文档里都有&#8221;It’s strange, but it works.&ldquo;和&#8221;Then, you e-mail that guy and yell at him.&#8221;。</p>
+
+<p>现在看来，各个版本库之间的关系有点乱，很容易出现问题。所以说，大家要小心~另外发现这么一篇<a href="http://codingkilledthecat.wordpress.com/2012/04/28/why-your-company-shouldnt-use-git-submodules/">黑它的文章</a>&hellip;</p>
+
+<p>未完待续&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blog的新主题]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/17/blogde-xin-zhu-ti/"/>
+    <updated>2013-08-17T23:57:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/17/blogde-xin-zhu-ti</id>
+    <content type="html"><![CDATA[<p>一直觉得Octopress的旧主题不够欢乐，生活已经够凄凉的了，就不要再看到了黑色风格的默认主题吧。</p>
+
+<p>这个主题是在<a href="http://opthemes.com/">这个网站</a>上挑出来的，来源于<a href="https://github.com/roberto/oct2-orange">这个github项目</a>。我还是很喜欢这个格调的。</p>
+
+<p>不过，对于这个主题，我还想做以下的变动：</p>
+
+<!--more-->
+
+
+<ul>
+<li><p><del>在最上方加一个导航栏，就像默认主题中的那样，因为还是很必要将文章分类的。另外，就算是将页面拉下来以后，导航栏还是保留在浏览器的上方，这样想看其它类别的文章就会很方便。</del>现在觉得在右侧边栏加就好，在上方加太影响美观。<del>不过现在还没开始研究标签功能。</del>努力加入3D标签云中&hellip;另外，应该把标签放到文章的最上面，而不是最下面，此外尝试下在文章的展示目录中就显示出来标签。</p></li>
+<li><p>像原主题一样，在右上方加入email等按钮。</p></li>
+<li><p>在右侧导航栏中加入诸如Github项目之类的条目。</p></li>
+</ul>
+
+
+<p>少花点时间水人人，多花点时间写博客，写代码&hellip;感觉自己好荒费人生&hellip;</p>
+
+<p>最近对blog进行了一些加工，都写在这里吧。</p>
+
+<h2>如何添加3D标签云</h2>
+
+<p>具体的效果就是右边边栏上的那个了。要做两件事情：</p>
+
+<ol>
+<li><p>安生成标签云的插件。具体的做法我已经写在<a href="https://github.com/guori12321/octopress-cumulus">我的github</a>里了。</p></li>
+<li><p>改标签的编码方式。<del>因为3D标签云点击以后，是跳转到用汉字编码的路径，而octopress默认的路径是用<code>汉语拼音</code>标注的（别问我为什么这么神奇，另外多音字怎么办&hellip;），所以说，我们要改下这个默认路径的编码方式。<a href="http://notes.liyaos.com/blog/2013/01/18/octopress/">这位老兄的博客里写了解决方案</a>，但我试了下发现不好用啊，于是我直接从<a href="https://github.com/lastland/octopress">他的github库中的plugins/categories_generator.rb</a>粘过来覆盖了我的。</del>以上方法在preview的时候好使，但deploy以后就不好使了，怀疑和github服务端的编码方式有关。新写了<a href="https://guori12321.githbu.com/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/">一篇文章</a>来解决这个问题。</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Happiness and sorrow]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/09/happiness-and-sorrow/"/>
+    <updated>2013-08-09T17:47:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/09/happiness-and-sorrow</id>
+    <content type="html"><![CDATA[<p>今天犯了点小错误：因为着急用台式机布署爬虫，草草的备份了home目录下的内容，同时把之前备份的两块没能mount成功的硬盘镜像给删掉了。这给相关的负责的同学带来了很大的麻烦。也使我很内疚，心情非常不好。</p>
+
+<p>折腾了一下午的爬虫，照例爬到山上去喝红豆冰。最喜欢香港的下午苶时间了，休息一下，爬爬山，到山顶上买整个中大最赞最便宜的红豆冰，多么开心。出了楼才发现，外面是多么阳光明媚。因为香港的地皮太紧张，整个学校都是盖在山上（中大已经是香港占地最大的大学了），而我所在的实验室，只有很小的窗户，整个屋子类似于写字间，白天都要开着灯。这样，我就不知道外面到底是昼是夜。</p>
+
+<!-- more -->
+
+
+<p>不管数据恢复如何困难，也不管现在做的工作多么纠结，原来，屋外一样是阳光，一样是成片成片的森林，一样是波光粼粼的大海。很喜欢中大这种依山傍海，周围环绕着树林的感觉。真有种深山老林的感觉。</p>
+
+<p>一直以来，为了前程，都觉得好闹心，但希望还是那么迷茫。只是，休息一下，出去看看山，看看海，世界还是一样运转。我们还有很多好玩的地方没有去，中大的每个角落都让我觉得神奇；我们还有好多好玩的事情没有做，从摄影，到游泳，再到MongoDB，有太多的东西值得我们去尝试，去学习。</p>
+
+<p>日子，一天天，就在忧伤与欢乐中度过&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的Ubuntu/Linux的正确打开方式]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/05/all-about-my-ubuntu/"/>
+    <updated>2013-08-05T20:06:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/05/all-about-my-ubuntu</id>
+    <content type="html"><![CDATA[<p>没钱买Mac&hellip;所以说，一直在用Linux。又实在折腾不动Arch，于是就很开心的使用Ubuntu了。</p>
+
+<p>说实话，感觉Linux的社区并不友好，就算是很亲近的朋友，我说到我用Linux有什么问题时，他们就一定会说“是你不会用，Balabala&hellip;”。每次出问题时我也很不好意思求助，同学帮忙的时候总会有些不耐烦，而网上找资料很耗时，而且很多东西很难找到&hellip;Linux只是一套操作系统，并不是一种宗教，相对于Windows，更稳定，但也不是说它不会死机。此外要想用好Linux，就要花出很多的时间去了解，去学习。此外，很多资料还是要用英文来查，汉语的很少。</p>
+
+<p>现在用的是Ubuntu 13.04 + XFCE 4.10 + FCITX。</p>
+
+<!-- more -->
+
+
+<h2>Linux下双屏的设置</h2>
+
+<p>先输入<code>xrandr</code>命令来看看自己的两个显示器的名称，然后输入类似以下的命令就好。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>xrandr --output VGA-0 --auto --left-of LVDS</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>FCITX安装</h2>
+
+<p>官网上说的安装方法不够完整，还是会碰到各种问题。比如说，和ibus的冲突什么的。参考<a href="http://www.cnblogs.com/yuemengke/archive/2013/04/09/3010207.html">这里</a>，输入以下命令就好：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:wengxt/fcitx-nightly #把fcitx的ppa加入ubuntu的源中，apt-get中的fcitx版本太老
+</span><span class='line'>sudo apt-get update #更新源，这步是必须的
+</span><span class='line'>sudo apt-get install fcitx fcitx-config-gtk fcitx-sunpinyin #最后那条看上去是云拼音，我没用过...
+</span><span class='line'>sudo apt-get install fcitx-table-all #安装码表，我只安五笔拼音 fcitx-table-wbpy
+</span><span class='line'>im-switch -s fcitx -z default #安装好后假如系统内有多个输入法的话，则输入下面命令，把fcitx设置为默认输入法
+</span><span class='line'>sudo apt-get install ttf-arphic-uming #为了防止乱码，安装uming字体，继续输入下面命令。</span></code></pre></td></tr></table></div></figure>
+
+
+<p>之后需要重启，注销都是不起作用的。重启后就没问题了。</p>
+
+<h2>我的Vim攻略</h2>
+
+<p>Vim是人见人爱的文本编辑器(Emacs经常是三四个键一起按，不能忍&hellip;看了一眼就没有用它的冲动)。但学习Vim是很痛苦的事情&hellip;我自己的路线是这样的：</p>
+
+<ol>
+<li><p>Vim自带的tutor: Windows下的“开始”菜单中就能找到tutor.bat，点开就好。Linux下直接输入<code>vimtutor</code>命令就好。这里是最基本的命令，也就是说，学明白它了，你就能把vim当记事本用了。我当时是每天跑一次这个教程，跑了五天吧，一次40分钟的样子。</p></li>
+<li><p><a href="http://coolshell.cn/articles/5426.html">简明vim练级攻略</a>，有些很好用的命令，比如说在同一行内按f定位，这里都有讲到，而1中的则没有。搞明白它以后，用vim就比用记事本要高效了。但这里面的某些操作我现在都没搞明白&hellip;</p></li>
+<li><p>vim的配置：<a href="http://fqj.me">fqj</a>推荐用<a href="https://github.com/spf13/spf13-vim">spf13</a>。这个配置相当的全，只是会很卡，而且因为插件太多，同一插件也有各个版本的问题，导致可能会出各种问题。此外，要用它的话，你首先要安git什么的。</p></li>
+<li><p><a href="https://github.com/guori12321/vim">我的vim配置</a>：做些最简单的绑定就好&hellip;现在还懒得写&hellip;</p></li>
+<li><p>一些小技巧：把<code>Caps Lock</code>键当成额外的ESC:</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>此外，我用的是Gvim，而不是Vim，因为Vim是在终端里跑的，所以字体什么的不好调整，而Gvim就可以绑定快捷键。此外，Vim下的主题的颜色有点问题，Gvim下就好多了。但注意下，配置Gvim的时候就写在<code>.vimrc</code>里就好，别写在<code>.gvimrc</code>里。我曾经就碰到过<a href="http://www.v2ex.com/t/60346#reply4">写到.gvimrc里而出问题</a>。最后还是在stackoverflow上得到了回复。</p>
+
+<h2>gvim下fcitx的小bug</h2>
+
+<p>之前在Gvim用fcitx，发现每打一个汉字，fcitx就自动退出了。但在vim下就没这个问题。</p>
+
+<p>在<a href="http://www.douban.com/group/topic/36307854/">豆瓣上找到了答案</a>，在使用fcitx时按下Ctrl + Alt + P，关闭预编辑区就好。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[再次回到octopress]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again/"/>
+    <updated>2013-08-05T10:21:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again</id>
+    <content type="html"><![CDATA[<p>一直有搭blog的念头，只可惜，总是反反复复，加上自己太懒。这次，我又回到了Octopress~</p>
+
+<p>和上次一样，搭建Linux下的Octopress总会有各种各样的问题。又折腾了一个晚上，才搞定最基本的环境。</p>
+
+<p>细数下我碰到的问题，也许对以后的各位有帮助吧。</p>
+
+<!-- more -->
+
+
+<ul>
+<li>安装RVM:我是通过RVM来安装Ruby的。按照<a href="https://rvm.io/rvm/install">RVM的官方指南</a>，在执行</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\curl -L https://get.rvm.io | bash</span></code></pre></td></tr></table></div></figure>
+
+
+<p>的时候报错：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ouldn't get RVM from https://github.com/wayneeseguin/rvm/archive/stable.tar.gz
+</span><span class='line'>Curl returned error 22</span></code></pre></td></tr></table></div></figure>
+
+
+<p>后来发现是下载时跳转到codeload.github上了，而这个域名下面的东西经常不能访问。不仅仅是在我这里（香港），而且<a href="http://www.v2ex.com/t/76033">其它地方也经常不能访问</a>。找了半天也没找到那个包的其它下载方式。但是，虽然有报错安装失败，但我试了下，rvm的命令是好用的，也就是说已经安上了。总之这个问题莫名其妙的发生了，也莫名其妙的解决了。
+PS: 今天早上再试了一下，就不存在这个问题了。</p>
+
+<ul>
+<li>使用RVM install 命令的时候报错：</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>`RVM is not a function</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后在StackOverflow上查到了<a href="http://stackoverflow.com/questions/9336596/rvm-installation-not-working-rvm-is-not-a-function">答案</a>：要用login形式的Shell.</p>
+
+<ul>
+<li>安装依赖的问题:bundle install的时候报错如下</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>An error occured while installing RedCloth (4.2.9), and Bundler cannot continue.
+</span><span class='line'>Make sure that `gem install RedCloth -v '4.2.9'` succeeds before bundling.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>同样在<a href="http://stackoverflow.com/questions/12119138/failed-to-build-gem-native-extension-when-install-redcloth-4-2-9-install-linux">Stackoverflow上找到了答案</a>，但引起这个错误的原因有好几个，别人适用的方法自己不一定适用。我是安装了ruby 1.9.1 full后好用了</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install ruby1.9.1-full</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>执行rake命令时报错</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Could not find rake-0.9.2.2 in any of the sources
+</span><span class='line'>Run `bundle install` to install missing gems.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>最后通过以下命令解决：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gem install rake -v=0.9.2.2
+</span><span class='line'>bundle update
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>版本库的分枝合并问题: 因为之前用过Octopress，所以这次再用的时候，发现没办法合并到原先的库中，因为要合并的两个分枝没有关联。我在octopress/Rakefile中找到了git push的语句，在其中加了个 -f 的参数，也就是强行push，就好了。</p></li>
+<li><p>github.com和github.io的关系:deploy到user.github.com库之后，浏览相应的域名，发现并没有发生变化。这是因为github把personal page从user.github.com移到user.github.io了。把.com的库删掉，重新开个.io的库，再deploy，就好了。</p></li>
+<li><p>Rakefile的修改：在octopress的根目录下修改Rakefile，在第88行加入</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>system "google-chrome 127.0.0.1:4000"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这样就可以在<code>rake preview</code>之后自动打开浏览器，来预览了。</p>
+
+<h2>总体感觉</h2>
+
+<p>octopress的配置还是非常麻烦。我第一次用了两周才搞好，这次也花了一个晚上，碰到各种问题。总体来说ruby还不够成熟，除了安装的源不稳定外（我在墙外，所以不能怪GFW了），各个版本，各种依赖之间的关系也非常乱，整个Octopress是要求1.9.3以上的ruby的，但有些依赖，比如上面提到的Redcloth，就要求1.9.1。要解决这些问题，只能多查Stackoverflow和Google了，另外多用英语查询吧，汉语的资料太少。</p>
+]]></content>
+  </entry>
+  
+</feed>

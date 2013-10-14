@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>我的git路线图 - Ray12321</title>
+  <meta name="author" content="Ray12321">
+
+  
+  <meta name="description" content="Git是广大人民群众喜闻乐见的版本控制器。以前写代码的时候经常碰到这种情况：想尝试着加点新功能，结果发现出了很严重的bug，想回滚代码，却没有办法，只能根据回忆一点点删改新加入的代码。后来，每当要进行大的变动时，就把原来的代码打个包，备份下。这样做非常的笨。Git就解决了这种问题。 可是， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Ray12321" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43183679-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+</hgroup>
+
+</header>
+  <!-- <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:guori12321.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav> -->
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">我的git路线图</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-18T01:13:00+08:00" pubdate data-updated="true">Aug 18<span>th</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Git是广大人民群众喜闻乐见的版本控制器。以前写代码的时候经常碰到这种情况：想尝试着加点新功能，结果发现出了很严重的bug，想回滚代码，却没有办法，只能根据回忆一点点删改新加入的代码。后来，每当要进行大的变动时，就把原来的代码打个包，备份下。这样做非常的笨。Git就解决了这种问题。</p>
+
+<p>可是，虽然所有人都说git简单易用，但我入门时还是费了很多力气的。以下是我使用git的路线图：</p>
+
+<!-- more -->
+
+
+<ul>
+<li><p>入门教材：<a href="http://www.21andy.com/blog/uploads/downloads/2010/12/git_tutorial.pdf">看日记学git</a>，这是我见过的最好的git学习资料了。看了前十几天的内容就好。</p></li>
+<li><p><code>git rm</code>与<code>rm</code>的同步问题：在git下使用<code>rm</code>命令的时候，会将工作区的文件删掉，但是，git仓库中的文件并不会被删掉。也就是说，现在看来，文件确实是没了，但在commit之后再回滚回来，那些文件，又会出来了。解决办法是，用<code>git rm</code>命令，这样，仓库中的文件也被删掉。不过，我经常忘记用<code>git rm</code>，怎么办呢？很简单，下次add的时候，多加个参数：<code>git add -u</code>，这样会自动刷新暂存区，之后暂存区中的文件就与工作区中的文件一一对应了。git add -h中的介绍是</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-u, --update          update tracked files</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p><code>git rm --cached filename</code>: 与上一条的区别是，这仅仅删除index中的文件，而不会删除working tree中的文件。适用于不小心push了不想公开的文件到github上。这时，在本地rm &mdash;cached之后，别<code>git add .</code>，直接commit就好。</p></li>
+<li><p><code>git reset</code>与<code>git revert</code>的区别：前者是撤销某次commit，后者是回滚代码到某一次commit。此外，前者会删改git的历史（比如说，你撤销了某次commit，这样的话，git的历史中就不会记录这次commit了），而后者不会（事实上，revert会把当前工作区中的代码恢复到以前的某次commit，然后新增加一次新的commit）。有点晕是吧，<a href="http://stackoverflow.com/questions/8358035/whats-the-difference-between-git-revert-checkout-and-reset/8358039#8358039">stackOverflow上有很详细的讲解</a>。当然，更晕的是，通过加不同的参数，这两个命令，有时可以起同样的作用。不要研究太深，需要用到的时候再去查就好。</p></li>
+</ul>
+
+
+<h2>git submodule</h2>
+
+<p>有些时候我们会想在一个版本库中调用另一个版本库的代码，或者像我在香港实习时遇到的要保持本机上和服务器上某些代码一致的问题。这时候，用git submodule就是非常好的选择。</p>
+
+<p><a href="http://git-scm.com/book/en/Git-Tools-Submodules">官方文档</a>对它的介绍已经很完善了。只是，这东西怎么看着都不靠谱啊！比如说，各个submodule的版本问题，<a href="http://blog.devtang.com/blog/2013/05/08/git-submodule-issues/">有些时候会比较坑</a>，另外，就连官方文档里都有&#8221;It’s strange, but it works.&ldquo;和&#8221;Then, you e-mail that guy and yell at him.&#8221;。</p>
+
+<p>现在看来，各个版本库之间的关系有点乱，很容易出现问题。所以说，大家要小心~另外发现这么一篇<a href="http://codingkilledthecat.wordpress.com/2012/04/28/why-your-company-shouldnt-use-git-submodules/">黑它的文章</a>&hellip;</p>
+
+<p>未完待续&hellip;</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ray12321</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-18T01:13:00+08:00" pubdate data-updated="true">Aug 18<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/xue-xi-bi-ji/'>学习笔记</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian/" data-via="" data-counturl="http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/08/17/blogde-xin-zhu-ti/" title="Previous Post: Blog的新主题">&laquo; Blog的新主题</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/" title="Next Post: 给octopress添加3D标签云">给octopress添加3D标签云 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<h1>Category</h1>
+<ul>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/sheng-huo-jian-ying/">生活剪影</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/xue-xi-bi-ji/">学习笔记</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/lu-tu-fen-xiang/">旅途分享</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/shu-ping-ying-ping/">书评影评</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/ge-chong-zhe-teng/">各种折腾</a>
+    </li>
+</ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ffcitx%27+style%3D%27font-size%3A+20.0%25%27%3Efcitx%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgit%27+style%3D%27font-size%3A+20.0%25%27%3Egit%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhackerrank%27+style%3D%27font-size%3A+20.0%25%27%3Ehackerrank%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+30.0%25%27%3Elinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmongodb%27+style%3D%27font-size%3A+20.0%25%27%3EMongoDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Foctopress%27+style%3D%27font-size%3A+40.0%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fscott-young%27+style%3D%27font-size%3A+20.0%25%27%3EScott+Young%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fubuntu%27+style%3D%27font-size%3A+20.0%25%27%3Eubuntu%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fvim%27+style%3D%27font-size%3A+30.0%25%27%3Evim%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshu-ping-ying-ping%27+style%3D%27font-size%3A+20.0%25%27%3E%E4%B9%A6%E8%AF%84%E5%BD%B1%E8%AF%84%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-zhe-teng%27+style%3D%27font-size%3A+50.0%25%27%3E%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-she-bei%27+style%3D%27font-size%3A+20.0%25%27%3E%E5%90%84%E7%A7%8D%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxue-xi-bi-ji%27+style%3D%27font-size%3A+50.0%25%27%3E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxiao-mi%27+style%3D%27font-size%3A+20.0%25%27%3E%E5%B0%8F%E7%B1%B3%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgong-zuo%27+style%3D%27font-size%3A+20.0%25%27%3E%E5%B7%A5%E4%BD%9C%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flu-tu-fen-xiang%27+style%3D%27font-size%3A+20.0%25%27%3E%E6%97%85%E9%80%94%E5%88%86%E4%BA%AB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fsheng-huo-jian-ying%27+style%3D%27font-size%3A+30.0%25%27%3E%E7%94%9F%E6%B4%BB%E5%89%AA%E5%BD%B1%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmian-shi%27+style%3D%27font-size%3A+20.0%25%27%3E%E9%9D%A2%E8%AF%95%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fti-jie%27+style%3D%27font-size%3A+20.0%25%27%3E%E9%A2%98%E8%A7%A3%3C%2Fa%3E+%3C%2Ftags%3E"></span>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/13/xiao-mi-2sde-shi-yong-gan-shou/">小米2S的使用感受</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/17/zhao-a-zhao-gong-zuo/">找啊找工作</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/14/guan-yu-scott-youngxue-xi-fang-fa/">关于Scott Young学习方法</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/11/guan-yu-ssh/">关于linux常用命令</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/09/04/zhe-teng-vim/">折腾vim</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/guori12321">@guori12321</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'guori12321',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ray12321 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'ray12321';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian/';
+        var disqus_url = 'http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 各种折腾 | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/ge-chong-zhe-teng/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2013-10-14T09:50:21+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[给octopress添加3D标签云]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/"/>
+    <updated>2013-08-20T13:26:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian</id>
+    <content type="html"><![CDATA[<p>3D标签云的效果看右栏。很炫很神奇～</p>
+
+<p>具体做法是：</p>
+
+<ol>
+<li><p>从我的github库中<a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">下载源代码</a></p></li>
+<li><p>把相应的文件粘到自己octopress，另外在边栏那里把它显示出来就好。具体参考我的github上的<a href="https://github.com/guori12321/octopress-cumulus">README</a>。</p></li>
+</ol>
+
+
+<h2>Octopress 3D categories/tags-cloud configuration for non-English tags</h2>
+
+<p>You can see my 3D categories-tag at the right sidebar. It&rsquo;s awesome! However, the origin version doesn&rsquo;t support <strong>non-English</strong> tags, so I revised the codes and put them in my github. It now works!</p>
+
+<p>It&rsquo;s easy to configuration:</p>
+
+<ol>
+<li><p>Download the source codes from my <a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">github repo</a></p></li>
+<li><p>Copy the codes to your octopress. The detail is given at <a href="https://github.com/guori12321/octopress-cumulus">my github repo README</a></p></li>
+</ol>
+
+
+<!--more-->
+
+
+<h2>我之前碰到的问题</h2>
+
+<p>主要是不支持汉语标签。虽然这个插件的作者是中国人，但是他俩的博客都是全英文，所以不存在这个问题。我还是很想用汉语标签的。octopress本身支持汉语标签，点击汉语标签后，会发现它把路径中的汉字转成<strong>拼音</strong>了，所以说就不存在汉语路径的问题。</p>
+
+<p>这个插件原本是直接用汉语作路径的，于是我就按照<a href="http://notes.liyaos.com/blog/2013/01/18/octopress/">这篇文章</a>把标签的路径设定为汉语的了。在本地上preview没问题，但deploy到github上就无法识别，会报404错误。怀疑与github那边的编码方式有关。</p>
+
+<p>既然无法用汉语作路径，那还是按octopress原先的办法，用拼音作路径吧。于是我对这个插件进行了<a href="https://github.com/guori12321/octopress-cumulus/commit/0af2339ba1f2ce574a8a17d706e56b3aee6835a1">小小的改动</a>。终于，一切正常了～～</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[给octopress添加3D标签云]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/"/>
+    <updated>2013-08-20T13:26:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian</id>
+    <content type="html"><![CDATA[<p>3D标签云的效果看右栏。很炫很神奇～</p>
+
+<p>具体做法是：</p>
+
+<ol>
+<li><p>从我的github库中<a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">下载源代码</a></p></li>
+<li><p>把相应的文件粘到自己octopress，另外在边栏那里把它显示出来就好。具体参考我的github上的<a href="https://github.com/guori12321/octopress-cumulus">README</a>。</p></li>
+</ol>
+
+
+<h2>Octopress 3D categories/tags-cloud configuration for non-English tags</h2>
+
+<p>You can see my 3D categories-tag at the right sidebar. It&rsquo;s awesome! However, the origin version doesn&rsquo;t support <strong>non-English</strong> tags, so I revised the codes and put them in my github. It now works!</p>
+
+<p>It&rsquo;s easy to configuration:</p>
+
+<ol>
+<li><p>Download the source codes from my <a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">github repo</a></p></li>
+<li><p>Copy the codes to your octopress. The detail is given at <a href="https://github.com/guori12321/octopress-cumulus">my github repo README</a></p></li>
+</ol>
+
+
+<!--more-->
+
+
+<h2>我之前碰到的问题</h2>
+
+<p>主要是不支持汉语标签。虽然这个插件的作者是中国人，但是他俩的博客都是全英文，所以不存在这个问题。我还是很想用汉语标签的。octopress本身支持汉语标签，点击汉语标签后，会发现它把路径中的汉字转成<strong>拼音</strong>了，所以说就不存在汉语路径的问题。</p>
+
+<p>这个插件原本是直接用汉语作路径的，于是我就按照<a href="http://notes.liyaos.com/blog/2013/01/18/octopress/">这篇文章</a>把标签的路径设定为汉语的了。在本地上preview没问题，但deploy到github上就无法识别，会报404错误。怀疑与github那边的编码方式有关。</p>
+
+<p>既然无法用汉语作路径，那还是按octopress原先的办法，用拼音作路径吧。于是我对这个插件进行了<a href="https://github.com/guori12321/octopress-cumulus/commit/0af2339ba1f2ce574a8a17d706e56b3aee6835a1">小小的改动</a>。终于，一切正常了～～</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blog的新主题]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/17/blogde-xin-zhu-ti/"/>
+    <updated>2013-08-17T23:57:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/17/blogde-xin-zhu-ti</id>
+    <content type="html"><![CDATA[<p>一直觉得Octopress的旧主题不够欢乐，生活已经够凄凉的了，就不要再看到了黑色风格的默认主题吧。</p>
+
+<p>这个主题是在<a href="http://opthemes.com/">这个网站</a>上挑出来的，来源于<a href="https://github.com/roberto/oct2-orange">这个github项目</a>。我还是很喜欢这个格调的。</p>
+
+<p>不过，对于这个主题，我还想做以下的变动：</p>
+
+<!--more-->
+
+
+<ul>
+<li><p><del>在最上方加一个导航栏，就像默认主题中的那样，因为还是很必要将文章分类的。另外，就算是将页面拉下来以后，导航栏还是保留在浏览器的上方，这样想看其它类别的文章就会很方便。</del>现在觉得在右侧边栏加就好，在上方加太影响美观。<del>不过现在还没开始研究标签功能。</del>努力加入3D标签云中&hellip;另外，应该把标签放到文章的最上面，而不是最下面，此外尝试下在文章的展示目录中就显示出来标签。</p></li>
+<li><p>像原主题一样，在右上方加入email等按钮。</p></li>
+<li><p>在右侧导航栏中加入诸如Github项目之类的条目。</p></li>
+</ul>
+
+
+<p>少花点时间水人人，多花点时间写博客，写代码&hellip;感觉自己好荒费人生&hellip;</p>
+
+<p>最近对blog进行了一些加工，都写在这里吧。</p>
+
+<h2>如何添加3D标签云</h2>
+
+<p>具体的效果就是右边边栏上的那个了。要做两件事情：</p>
+
+<ol>
+<li><p>安生成标签云的插件。具体的做法我已经写在<a href="https://github.com/guori12321/octopress-cumulus">我的github</a>里了。</p></li>
+<li><p>改标签的编码方式。<del>因为3D标签云点击以后，是跳转到用汉字编码的路径，而octopress默认的路径是用<code>汉语拼音</code>标注的（别问我为什么这么神奇，另外多音字怎么办&hellip;），所以说，我们要改下这个默认路径的编码方式。<a href="http://notes.liyaos.com/blog/2013/01/18/octopress/">这位老兄的博客里写了解决方案</a>，但我试了下发现不好用啊，于是我直接从<a href="https://github.com/lastland/octopress">他的github库中的plugins/categories_generator.rb</a>粘过来覆盖了我的。</del>以上方法在preview的时候好使，但deploy以后就不好使了，怀疑和github服务端的编码方式有关。新写了<a href="https://guori12321.githbu.com/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/">一篇文章</a>来解决这个问题。</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[再次回到octopress]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again/"/>
+    <updated>2013-08-05T10:21:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again</id>
+    <content type="html"><![CDATA[<p>一直有搭blog的念头，只可惜，总是反反复复，加上自己太懒。这次，我又回到了Octopress~</p>
+
+<p>和上次一样，搭建Linux下的Octopress总会有各种各样的问题。又折腾了一个晚上，才搞定最基本的环境。</p>
+
+<p>细数下我碰到的问题，也许对以后的各位有帮助吧。</p>
+
+<!-- more -->
+
+
+<ul>
+<li><p>安装RVM:我是通过RVM来安装Ruby的。按照<a href="https://rvm.io/rvm/install">RVM的官方指南</a>，在执行
+<code>
+\curl -L https://get.rvm.io | bash
+</code>
+的时候报错：
+<code>
+ouldn't get RVM from https://github.com/wayneeseguin/rvm/archive/stable.tar.gz
+Curl returned error 22
+</code>
+后来发现是下载时跳转到codeload.github上了，而这个域名下面的东西经常不能访问。不仅仅是在我这里（香港），而且<a href="http://www.v2ex.com/t/76033">其它地方也经常不能访问</a>。找了半天也没找到那个包的其它下载方式。但是，虽然有报错安装失败，但我试了下，rvm的命令是好用的，也就是说已经安上了。总之这个问题莫名其妙的发生了，也莫名其妙的解决了。
+PS: 今天早上再试了一下，就不存在这个问题了。</p></li>
+<li><p>使用RVM install 命令的时候报错：
+<code>
+`RVM is not a function
+</code>
+最后在StackOverflow上查到了<a href="http://stackoverflow.com/questions/9336596/rvm-installation-not-working-rvm-is-not-a-function">答案</a>：要用login形式的Shell.</p></li>
+<li><p>安装依赖的问题:bundle install的时候报错如下
+<code>
+An error occured while installing RedCloth (4.2.9), and Bundler cannot continue.
+Make sure that `gem install RedCloth -v '4.2.9'` succeeds before bundling.
+</code>
+同样在<a href="http://stackoverflow.com/questions/12119138/failed-to-build-gem-native-extension-when-install-redcloth-4-2-9-install-linux">Stackoverflow上找到了答案</a>，但引起这个错误的原因有好几个，别人适用的方法自己不一定适用。我是安装了ruby 1.9.1 full后好用了
+<code>
+sudo apt-get install ruby1.9.1-full
+</code></p></li>
+<li><p>执行rake命令时报错
+<code>
+Could not find rake-0.9.2.2 in any of the sources
+Run `bundle install` to install missing gems.
+</code>
+最后通过以下命令解决：
+```
+sudo gem install rake -v=0.9.2.2
+bundle update</p></li>
+</ul>
+
+
+<p>```</p>
+
+<ul>
+<li><p>版本库的分枝合并问题: 因为之前用过Octopress，所以这次再用的时候，发现没办法合并到原先的库中，因为要合并的两个分枝没有关联。我在octopress/Rakefile中找到了git push的语句，在其中加了个 -f 的参数，也就是强行push，就好了。</p></li>
+<li><p>github.com和github.io的关系:deploy到user.github.com库之后，浏览相应的域名，发现并没有发生变化。这是因为github把personal page从user.github.com移到user.github.io了。把.com的库删掉，重新开个.io的库，再deploy，就好了。</p></li>
+<li><p>Rakefile的修改：在octopress的根目录下修改Rakefile，在第88行加入
+<code>
+system "google-chrome 127.0.0.1:4000"
+</code>
+这样就可以在<code>rake preview</code>之后自动打开浏览器，来预览了。</p></li>
+</ul>
+
+
+<h2>总体感觉</h2>
+
+<p>octopress的配置还是非常麻烦。我第一次用了两周才搞好，这次也花了一个晚上，碰到各种问题。总体来说ruby还不够成熟，除了安装的源不稳定外（我在墙外，所以不能怪GFW了），各个版本，各种依赖之间的关系也非常乱，整个Octopress是要求1.9.3以上的ruby的，但有些依赖，比如上面提到的Redcloth，就要求1.9.1。要解决这些问题，只能多查Stackoverflow和Google了，另外多用英语查询吧，汉语的资料太少。</p>
+]]></content>
+  </entry>
+  
+</feed>
