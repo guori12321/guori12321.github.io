@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 生活剪影 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/sheng-huo-jian-ying/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-10-14T09:50:21+08:00</updated>
+  <updated>2013-10-14T11:34:56+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[我所仰慕的Blog们]]></title>
+    <link href="http://guori12321.github.io/blog/2013/10/14/wo-suo-yang-mu-de-blogmen/"/>
+    <updated>2013-10-14T10:22:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/10/14/wo-suo-yang-mu-de-blogmen</id>
+    <content type="html"><![CDATA[<p>Blog自古以来，就是广大人民群众喜闻乐见的学习交流平台~在各大社交网络盛行的今天，博客依然有着自己独到的优势。比起SNS的浮躁（永远有太多太新太好玩的事情，因此没办法去对这些事情做更深入的了解），我更喜欢用博客来记载自己的生活。虽然写出来也很少有人看，但至少来看的人，都是比较关心我或者博文中提到的事情的。</p>
+
+<p>下面就来讲讲那些我所仰慕的Blog们~</p>
+
+<!--more-->
+
+
+<ul>
+<li><p>第一位当然是<a href="http://www.matrix67.com/">Matrix67的博客</a>。我知道的所有OIer多少都参考过他写的位运算的资料。作为一个OI界不朽的传说(文科生，OI保送，或者说是因为编程保送北京大学，还是中文系)，他的博客可以说影响了几代(年级)人。他的博客上最多的是各种好玩的数学题目，同时也有一些美剧之类的，总之很好玩~</p></li>
+<li><p><a href="http://sizheng.org/">小雪的博客</a>。知道小雪，是因为她拿了微软编程之美2013年的冠军。话说那次比赛，只有三个女生入围&hellip;(PS: 我做过2012年的编程之美，初赛首轮就挂了&hellip;再之后就没做过&hellip;)。她的Blog真是清新唯美~并且配了很多她自己拍的照片。真的好神奇~~</p></li>
+<li><p><a href="http://www.yinwang.org/">王垠的博客</a>。这位大神经常发表各种很突破的观点。他的phd好像quit了两次了吧，不知道现在怎么样了。知道他是因为他的那篇著名的<a href="http://www.cnbeta.com/articles/76147.htm">完全用Linux工作</a>。虽然很偏激，但也确实很值得读。不过他的博客，好多基本功能都没有，比如说返回首页什么的。</p></li>
+</ul>
+
+
+<p>未完待续~</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[给octopress添加3D标签云]]></title>
