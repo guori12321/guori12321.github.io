@@ -33,3 +33,14 @@ categories: [学习笔记]
 ##关于后期
 一点都不会！！所以说，待续...
 
+##关于PS CS5报错
+在打开Nikon的NEF格式的图片时，报错
+```
+无法完成请求，因为该文件似乎来自于已安装版本的 Camera Raw 不支持的相机型号。
+请访问 Camera Raw 帮助文档以获取更多信息。
+```
+然后就去官网下了各种[Camera Raw和DNG Converter](http://www.adobe.com/support/downloads/product.jsp?platform=Macintosh&product=106)，然后发现，还是打不开...
+
+其实，Camera Raw，是一个独立的程序。先把NEF格式的文件，用它转化为DNG格式，再用PS打开DNG格式的就好。并不是说安了它以后，PS就能直接打开NEF了。当然，也有能直接打开的办法，但那好像需要CS6以上的版本了。我没有试过。
+
+
