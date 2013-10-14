@@ -13,10 +13,8 @@ vendor
 node_modules
 #######
 source/_posts/private/*
-source/_posts_private/*
 source/_posts_private
 article
-article/*
 *.~
 *.swp
 *.swo
