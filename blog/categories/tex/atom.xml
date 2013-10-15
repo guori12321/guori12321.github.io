@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tex | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/tex/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2013-10-15T18:39:49+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[mac下安装LaTeX]]></title>
+    <link href="http://guori12321.github.io/blog/2013/10/15/macxia-an-zhuang-latex/"/>
+    <updated>2013-10-15T18:31:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/10/15/macxia-an-zhuang-latex</id>
+    <content type="html"><![CDATA[<p>LaTeX的重要性我就不多说了。这是最靠谱的写论文的方式，比Word靠谱多了。</p>
+
+<p>我是参考<a href="http://blog.renren.com/blog/279888129/773543899">康同学的人人网日志</a>，来配置的。</p>
+
+<!--more-->
+
+
+<p>在Mac下安装Tex非常的简单，首先从<a href="http://tug.org/mactex/mirrorpage.html">源列表</a>里挑一个速度比较快的（我用的是日本的，平均500K的样子），然后打开安装就好。</p>
+
+<p>安装后，打开TeXShop，就可以写TeX文档了。这时，我发现中文显示出来乱码，于是，<a href="http://blog.csdn.net/quantumpo/article/details/9317925">参考了这篇文章</a>，在TeXShop中，在<code>宏</code>下面的<code>Encoding</code>中，选择<code>UTF-8 Unicode</code>，之后就可以正常使用中文了。</p>
+]]></content>
+  </entry>
+  
+</feed>

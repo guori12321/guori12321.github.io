@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 生活剪影 | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/sheng-huo-jian-ying/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2013-10-15T18:39:49+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[我所仰慕的Blog们]]></title>
+    <link href="http://guori12321.github.io/blog/2013/10/14/wo-suo-yang-mu-de-blogmen/"/>
+    <updated>2013-10-14T10:22:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/10/14/wo-suo-yang-mu-de-blogmen</id>
+    <content type="html"><![CDATA[<p>Blog自古以来，就是广大人民群众喜闻乐见的学习交流平台~在各大社交网络盛行的今天，博客依然有着自己独到的优势。比起SNS的浮躁（永远有太多太新太好玩的事情，因此没办法去对这些事情做更深入的了解），我更喜欢用博客来记载自己的生活。虽然写出来也很少有人看，但至少来看的人，都是比较关心我或者博文中提到的事情的。</p>
+
+<p>下面就来讲讲那些我所仰慕的Blog们~</p>
+
+<!--more-->
+
+
+<ul>
+<li><p>第一位当然是<a href="http://www.matrix67.com/">Matrix67的博客</a>。我知道的所有OIer多少都参考过他写的位运算的资料。作为一个OI界不朽的传说(文科生，OI保送，或者说是因为编程保送北京大学，还是中文系)，他的博客可以说影响了几代(年级)人。他的博客上最多的是各种好玩的数学题目，同时也有一些美剧之类的，总之很好玩~</p></li>
+<li><p><a href="http://sizheng.org/">小雪的博客</a>。知道小雪，是因为她拿了微软编程之美2013年的冠军。话说那次比赛，只有三个女生入围&hellip;(PS: 我做过2012年的编程之美，初赛首轮就挂了&hellip;再之后就没做过&hellip;)。她的Blog真是清新唯美~并且配了很多她自己拍的照片。真的好神奇~~</p></li>
+<li><p><a href="http://www.yinwang.org/">王垠的博客</a>。这位大神经常发表各种很突破的观点。他的phd好像quit了两次了吧，不知道现在怎么样了。知道他是因为他的那篇著名的<a href="http://www.cnbeta.com/articles/76147.htm">完全用Linux工作</a>。虽然很偏激，但也确实很值得读。不过他的博客，好多基本功能都没有，比如说返回首页什么的。</p></li>
+</ul>
+
+
+<p>未完待续~</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[给octopress添加3D标签云]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/"/>
+    <updated>2013-08-20T13:26:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian</id>
+    <content type="html"><![CDATA[<p>3D标签云的效果看右栏。很炫很神奇～</p>
+
+<p>具体做法是：</p>
+
+<ol>
+<li><p>从我的github库中<a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">下载源代码</a></p></li>
+<li><p>把相应的文件粘到自己octopress，另外在边栏那里把它显示出来就好。具体参考我的github上的<a href="https://github.com/guori12321/octopress-cumulus">README</a>。</p></li>
+</ol>
+
+
+<h2>Octopress 3D categories/tags-cloud configuration for non-English tags</h2>
+
+<p>You can see my 3D categories-tag at the right sidebar. It&rsquo;s awesome! However, the origin version doesn&rsquo;t support <strong>non-English</strong> tags, so I revised the codes and put them in my github. It now works!</p>
+
+<p>It&rsquo;s easy to configuration:</p>
+
+<ol>
+<li><p>Download the source codes from my <a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">github repo</a></p></li>
+<li><p>Copy the codes to your octopress. The detail is given at <a href="https://github.com/guori12321/octopress-cumulus">my github repo README</a></p></li>
+</ol>
+
+
+<!--more-->
+
+
+<h2>我之前碰到的问题</h2>
+
+<p>主要是不支持汉语标签。虽然这个插件的作者是中国人，但是他俩的博客都是全英文，所以不存在这个问题。我还是很想用汉语标签的。octopress本身支持汉语标签，点击汉语标签后，会发现它把路径中的汉字转成<strong>拼音</strong>了，所以说就不存在汉语路径的问题。</p>
+
+<p>这个插件原本是直接用汉语作路径的，于是我就按照<a href="http://notes.liyaos.com/blog/2013/01/18/octopress/">这篇文章</a>把标签的路径设定为汉语的了。在本地上preview没问题，但deploy到github上就无法识别，会报404错误。怀疑与github那边的编码方式有关。</p>
+
+<p>既然无法用汉语作路径，那还是按octopress原先的办法，用拼音作路径吧。于是我对这个插件进行了<a href="https://github.com/guori12321/octopress-cumulus/commit/0af2339ba1f2ce574a8a17d706e56b3aee6835a1">小小的改动</a>。终于，一切正常了～～</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Happiness and sorrow]]></title>
+    <link href="http://guori12321.github.io/blog/2013/08/09/happiness-and-sorrow/"/>
+    <updated>2013-08-09T17:47:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/08/09/happiness-and-sorrow</id>
+    <content type="html"><![CDATA[<p>今天犯了点小错误：因为着急用台式机布署爬虫，草草的备份了home目录下的内容，同时把之前备份的两块没能mount成功的硬盘镜像给删掉了。这给相关的负责的同学带来了很大的麻烦。也使我很内疚，心情非常不好。</p>
+
+<p>折腾了一下午的爬虫，照例爬到山上去喝红豆冰。最喜欢香港的下午苶时间了，休息一下，爬爬山，到山顶上买整个中大最赞最便宜的红豆冰，多么开心。出了楼才发现，外面是多么阳光明媚。因为香港的地皮太紧张，整个学校都是盖在山上（中大已经是香港占地最大的大学了），而我所在的实验室，只有很小的窗户，整个屋子类似于写字间，白天都要开着灯。这样，我就不知道外面到底是昼是夜。</p>
+
+<!-- more -->
+
+
+<p>不管数据恢复如何困难，也不管现在做的工作多么纠结，原来，屋外一样是阳光，一样是成片成片的森林，一样是波光粼粼的大海。很喜欢中大这种依山傍海，周围环绕着树林的感觉。真有种深山老林的感觉。</p>
+
+<p>一直以来，为了前程，都觉得好闹心，但希望还是那么迷茫。只是，休息一下，出去看看山，看看海，世界还是一样运转。我们还有很多好玩的地方没有去，中大的每个角落都让我觉得神奇；我们还有好多好玩的事情没有做，从摄影，到游泳，再到MongoDB，有太多的东西值得我们去尝试，去学习。</p>
+
+<p>日子，一天天，就在忧伤与欢乐中度过&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>
