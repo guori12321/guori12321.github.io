@@ -41,18 +41,33 @@ LaTeX的重要性我就不多说了。这是最靠谱的写论文的方式，比
 
 接下来，就是要在你的tex文件中引用这个bib中的论文。直接在要引用的地方，输入`\cite{something}`就好。在上面的例子中，是`\cite{guo2013cuvim}`。
 
-这时，你已经完成了tex源代码上的操作。下来就是编译。要编译好几次
+这时，你已经完成了tex源代码上的操作。下来就是编译。要编译好几次(以下操作也可以在TeXShop中完成)
 
 ```
-latex main.tex
+pdflatex main.tex %注意，是pdflatex，不是pdftex
 bibtex main %注意，这里是main，不是main.tex，也不是mybib或mybib.bib
-pdftex main.tex
-pdftex main.tex
+pdflatex main.tex
+pdflatex main.tex
 ```
 
 ###总结一下容易出错的地方
 其实很多地方容易出错。
+
 * 在tex中引用bib文件时，不加.bib
 * 在latex和pdftex时，要加.tex缩写名
 * 在bibtex时，是针对tex编译，而不是bib文件，另外，tex也不加缩写名。
+* 编译时，如果用pdftex而不是pdflatex，会报错。具体参考[这里](http://www.latex-community.org/forum/viewtopic.php?f=5&t=3164)。
 
+##在LaTeX中引用URL
+写论文的时候，有时候要在参考文献中引用一些网址（比如Stanford的SNAP组的数据）。[这里](http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-file)很清楚的讲解了这个问题。
+
+首先在tex中，/usepackage{url}，之后就在bib中插入下面的代码就好
+```
+@misc{bworld,
+  author = {Ingo Lütkebohle},
+  title = {{BWorld Robot Control Software}},
+  howpublished = "\url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/}",
+  year = {2008},
+  note = "[Online; accessed 19-July-2008]"
+}
+```
