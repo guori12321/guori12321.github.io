@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 各种折腾 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/ge-chong-zhe-teng/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-10-15T18:39:54+08:00</updated>
+  <updated>2013-10-18T11:25:41+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -28,6 +28,48 @@
 <p>在Mac下安装Tex非常的简单，首先从<a href="http://tug.org/mactex/mirrorpage.html">源列表</a>里挑一个速度比较快的（我用的是日本的，平均500K的样子），然后打开安装就好。</p>
 
 <p>安装后，打开TeXShop，就可以写TeX文档了。这时，我发现中文显示出来乱码，于是，<a href="http://blog.csdn.net/quantumpo/article/details/9317925">参考了这篇文章</a>，在TeXShop中，在<code>宏</code>下面的<code>Encoding</code>中，选择<code>UTF-8 Unicode</code>，之后就可以正常使用中文了。</p>
+
+<h2>关于参考文献和bibtex</h2>
+
+<p>折腾了一早上总算搞明白怎么在LaTeX里加入参考文献了。</p>
+
+<p>其实很简单，比如说，你有两个文件，一个叫<code>main.tex</code>，一个叫<code>mybib.bib</code>，然后你要在前者中引用后者。后者是一个数据库，也就是说，你可以在后者中加入很多的东西，而不在tex中引用。我们编译的时候，也只针对tex编译，而不针对bib文件。</p>
+
+<p>首先，在main.tex的\end{document}<strong>之前</strong>，加入
+<code>
+\bibliographystyle{model1-num-names} %选择bib的模板，也就是说，参考文献显示出来是什么样子。这种模板一般会由你要投稿的会议或期刊给出。
+\bibliography{mybib} %指定你要引用的bib文件，注意，这里**不加**.tex
+</code></p>
+
+<p>然后，是在你的bib文件中，写入你要引用的论文。在<a href="scholar.google.com">scholar.google.com</a>中可以直接粘出来符合要求的bib格式的引用，直接粘到你的bib文件中就好。不同的论文之间空上一行就好。比如说，下面这篇是我的某篇论文的bib引用
+<code>
+@incollection{guo2013cuvim,
+  title={CUVIM: extracting fresh information from social network},
+  author={Guo, Rui and Wang, Hongzhi and Li, Kaiyu and Li, Jianzhong and Gao, Hong},
+  booktitle={Web-Age Information Management},
+  pages={351--362},
+  year={2013},
+  publisher={Springer}
+}
+</code></p>
+
+<p>接下来，就是要在你的tex文件中引用这个bib中的论文。直接在要引用的地方，输入<code>\cite{something}</code>就好。在上面的例子中，是<code>\cite{guo2013cuvim}</code>。</p>
+
+<p>这时，你已经完成了tex源代码上的操作。下来就是编译。要编译好几次</p>
+
+<p><code>
+latex main.tex
+bibtex main %注意，这里是main，不是main.tex，也不是mybib或mybib.bib
+pdftex main.tex
+pdftex main.tex
+</code></p>
+
+<h3>总结一下容易出错的地方</h3>
+
+<p>其实很多地方容易出错。
+* 在tex中引用bib文件时，不加.bib
+* 在latex和pdftex时，要加.tex缩写名
+* 在bibtex时，是针对tex编译，而不是bib文件，另外，tex也不加缩写名。</p>
 ]]></content>
   </entry>
   
