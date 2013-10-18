@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tex | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/tex/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-10-18T11:25:41+08:00</updated>
+  <updated>2013-10-18T17:21:29+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -55,21 +55,41 @@
 
 <p>接下来，就是要在你的tex文件中引用这个bib中的论文。直接在要引用的地方，输入<code>\cite{something}</code>就好。在上面的例子中，是<code>\cite{guo2013cuvim}</code>。</p>
 
-<p>这时，你已经完成了tex源代码上的操作。下来就是编译。要编译好几次</p>
+<p>这时，你已经完成了tex源代码上的操作。下来就是编译。要编译好几次(以下操作也可以在TeXShop中完成)</p>
 
 <p><code>
-latex main.tex
+pdflatex main.tex %注意，是pdflatex，不是pdftex
 bibtex main %注意，这里是main，不是main.tex，也不是mybib或mybib.bib
-pdftex main.tex
-pdftex main.tex
+pdflatex main.tex
+pdflatex main.tex
 </code></p>
 
 <h3>总结一下容易出错的地方</h3>
 
-<p>其实很多地方容易出错。
-* 在tex中引用bib文件时，不加.bib
-* 在latex和pdftex时，要加.tex缩写名
-* 在bibtex时，是针对tex编译，而不是bib文件，另外，tex也不加缩写名。</p>
+<p>其实很多地方容易出错。</p>
+
+<ul>
+<li>在tex中引用bib文件时，不加.bib</li>
+<li>在latex和pdftex时，要加.tex缩写名</li>
+<li>在bibtex时，是针对tex编译，而不是bib文件，另外，tex也不加缩写名。</li>
+<li>编译时，如果用pdftex而不是pdflatex，会报错。具体参考<a href="http://www.latex-community.org/forum/viewtopic.php?f=5&amp;t=3164">这里</a>。</li>
+</ul>
+
+
+<h2>在LaTeX中引用URL</h2>
+
+<p>写论文的时候，有时候要在参考文献中引用一些网址（比如Stanford的SNAP组的数据）。<a href="http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-file">这里</a>很清楚的讲解了这个问题。</p>
+
+<p>首先在tex中，/usepackage{url}，之后就在bib中插入下面的代码就好
+<code>
+@misc{bworld,
+  author = {Ingo Lütkebohle},
+  title = {{BWorld Robot Control Software}},
+  howpublished = "\url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/}",
+  year = {2008},
+  note = "[Online; accessed 19-July-2008]"
+}
+</code></p>
 ]]></content>
   </entry>
   
