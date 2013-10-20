@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tex | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/tex/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-10-18T17:21:29+08:00</updated>
+  <updated>2013-10-20T22:04:53+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -76,6 +76,13 @@ pdflatex main.tex
 </ul>
 
 
+<p>另外，在写tex时，有以下容易犯的错误</p>
+
+<ul>
+<li>对于下标，如a_b，如果不对单词b加{}，则latex只默认b中的第一个字母为a的下标，其它的字母是和a并列的。也就是说，当单词b多于一个字母的时候，我们要对它加{}。</li>
+</ul>
+
+
 <h2>在LaTeX中引用URL</h2>
 
 <p>写论文的时候，有时候要在参考文献中引用一些网址（比如Stanford的SNAP组的数据）。<a href="http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-file">这里</a>很清楚的讲解了这个问题。</p>
@@ -84,12 +91,69 @@ pdflatex main.tex
 <code>
 @misc{bworld,
   author = {Ingo Lütkebohle},
-  title = {{BWorld Robot Control Software}},
+  title = ,
   howpublished = "\url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/}",
   year = {2008},
   note = "[Online; accessed 19-July-2008]"
 }
 </code></p>
+
+<h2>在LaTeX中用Mathtype</h2>
+
+<p>简单的公式，我也就手写了。可是，复杂的公式，手写完自己都读不懂了。还是老实的用Mathtype吧。</p>
+
+<p>Mac下的Mathtype的安装也十分简单。只是，在Mathtype中写好公式，要粘到LaTeX中，要专门设置一下，不然粘出来的东西很奇怪。</p>
+
+<p>在Mathtype中，找到<code>Preference</code>，再选<code>Cut and Copy Preference</code>，之后选中第二栏<code>MathML or TeX</code>，下拉菜单中选<code>Plain TeX</code>,下面的两个打勾的框都不要打勾。这样，在Mathtype中写好公式，就能直接粘到tex文件中。</p>
+
+<h2>在LaTeX中引用图像</h2>
+
+<p>首先引用包
+<code>
+\usepackage{graphicx}
+</code>
+然后就可以使用以下的语句在需要的地方引用图像了。我只试过png图像(在figures文件夹下的figure1.png)是可以的，其它的<a href="http://bbs.sjtu.edu.cn/bbstcon,board,TeX_LaTeX,reid,1254670022.html">参考这里</a>。</p>
+
+<p>```
+\begin{figure}</p>
+
+<pre><code>\centering
+\includegraphics[width=1\textwidth]{figures/figure1}
+\caption{The Updating Ratio of an Inactive Account}
+\label{figure:inactive}
+</code></pre>
+
+<p>\end{figure}
+<code>``
+之后引用图像的时候，用</code>Figure ~\ref{figure:inactive}`就能引用了。</p>
+
+<h2>使用表格</h2>
+
+<p>下面是一个使用表格的例子
+```
+\begin{table}
+\centering</p>
+
+<pre><code>\begin{tabular}{|c|c|c|c|}
+        \hline
+        Weight &amp; Message Number &amp; Total Crawl Time &amp; Avg \#Msg. with 1 crawling \\
+        \hline
+        0.9 &amp; 1451435 &amp; 50421 &amp; 28.79 \\
+        \hline
+\end{tabular}
+\caption{The Hash Model Experiment Results}
+\label{table:hash}
+</code></pre>
+
+<p>\end{table}
+<code>``
+与图表一样，之后引用的时候，用</code>Table ~\ref{table:hash}`。</p>
+
+<h2>引用伪代码</h2>
+
+<p><a href="http://blog.renren.com/share/302655693/15587298311">这篇清华科协的人人网日志</a>讲的非常清楚。如果安装MacTeX时，是安装的完整版，则不用下载要用的包，MacTeX本身就已经带了。</p>
+
+<p><a href="http://www.cs.dartmouth.edu/~thc/clrscode/clrscode.sty">伪代码包的文档</a>，也许需要用。</p>
 ]]></content>
   </entry>
   

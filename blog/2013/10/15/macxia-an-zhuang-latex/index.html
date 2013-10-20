@@ -174,6 +174,13 @@
 </ul>
 
 
+<p>另外，在写tex时，有以下容易犯的错误</p>
+
+<ul>
+<li>对于下标，如a_b，如果不对单词b加{}，则latex只默认b中的第一个字母为a的下标，其它的字母是和a并列的。也就是说，当单词b多于一个字母的时候，我们要对它加{}。</li>
+</ul>
+
+
 <h2>在LaTeX中引用URL</h2>
 
 <p>写论文的时候，有时候要在参考文献中引用一些网址（比如Stanford的SNAP组的数据）。<a href="http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-file">这里</a>很清楚的讲解了这个问题。</p>
@@ -195,6 +202,78 @@
 </span><span class='line'>  note = "[Online; accessed 19-July-2008]"
 </span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
+
+<h2>在LaTeX中用Mathtype</h2>
+
+<p>简单的公式，我也就手写了。可是，复杂的公式，手写完自己都读不懂了。还是老实的用Mathtype吧。</p>
+
+<p>Mac下的Mathtype的安装也十分简单。只是，在Mathtype中写好公式，要粘到LaTeX中，要专门设置一下，不然粘出来的东西很奇怪。</p>
+
+<p>在Mathtype中，找到<code>Preference</code>，再选<code>Cut and Copy Preference</code>，之后选中第二栏<code>MathML or TeX</code>，下拉菜单中选<code>Plain TeX</code>,下面的两个打勾的框都不要打勾。这样，在Mathtype中写好公式，就能直接粘到tex文件中。</p>
+
+<h2>在LaTeX中引用图像</h2>
+
+<p>首先引用包</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\usepackage{graphicx}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>然后就可以使用以下的语句在需要的地方引用图像了。我只试过png图像(在figures文件夹下的figure1.png)是可以的，其它的<a href="http://bbs.sjtu.edu.cn/bbstcon,board,TeX_LaTeX,reid,1254670022.html">参考这里</a>。</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\begin{figure}
+</span><span class='line'>    \centering
+</span><span class='line'>    \includegraphics[width=1\textwidth]{figures/figure1}
+</span><span class='line'>    \caption{The Updating Ratio of an Inactive Account}
+</span><span class='line'>    \label{figure:inactive}
+</span><span class='line'>\end{figure}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>之后引用图像的时候，用<code>Figure ~\ref{figure:inactive}</code>就能引用了。</p>
+
+<h2>使用表格</h2>
+
+<p>下面是一个使用表格的例子</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>\begin{table}
+</span><span class='line'>\centering
+</span><span class='line'>    \begin{tabular}{|c|c|c|c|}
+</span><span class='line'>            \hline
+</span><span class='line'>            Weight & Message Number & Total Crawl Time & Avg \#Msg. with 1 crawling \\
+</span><span class='line'>            \hline
+</span><span class='line'>            0.9 & 1451435 & 50421 & 28.79 \\
+</span><span class='line'>            \hline
+</span><span class='line'>    \end{tabular}
+</span><span class='line'>    \caption{The Hash Model Experiment Results}
+</span><span class='line'>    \label{table:hash}
+</span><span class='line'>\end{table}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>与图表一样，之后引用的时候，用<code>Table ~\ref{table:hash}</code>。</p>
+
+<h2>引用伪代码</h2>
+
+<p><a href="http://blog.renren.com/share/302655693/15587298311">这篇清华科协的人人网日志</a>讲的非常清楚。如果安装MacTeX时，是安装的完整版，则不用下载要用的包，MacTeX本身就已经带了。</p>
+
+<p><a href="http://www.cs.dartmouth.edu/~thc/clrscode/clrscode.sty">伪代码包的文档</a>，也许需要用。</p>
 </div>
 
 
