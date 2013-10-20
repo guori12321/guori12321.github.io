@@ -37,6 +37,7 @@ ssh config文件具体的位置是在`.ssh/config`，在里面直接写就好，
 ```
 Host alias
 HostName your_host_name
+Port your_host_port
 User your_user_name
 ServerAliveCountMax 20
 ServerdomainverAliveInterval 240

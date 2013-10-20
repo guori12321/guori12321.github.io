@@ -58,6 +58,10 @@ pdflatex main.tex
 * 在bibtex时，是针对tex编译，而不是bib文件，另外，tex也不加缩写名。
 * 编译时，如果用pdftex而不是pdflatex，会报错。具体参考[这里](http://www.latex-community.org/forum/viewtopic.php?f=5&t=3164)。
 
+另外，在写tex时，有以下容易犯的错误
+
+* 对于下标，如a_b，如果不对单词b加{}，则latex只默认b中的第一个字母为a的下标，其它的字母是和a并列的。也就是说，当单词b多于一个字母的时候，我们要对它加{}。
+
 ##在LaTeX中引用URL
 写论文的时候，有时候要在参考文献中引用一些网址（比如Stanford的SNAP组的数据）。[这里](http://tex.stackexchange.com/questions/35977/how-to-add-a-url-to-a-latex-bibtex-file)很清楚的讲解了这个问题。
 
@@ -71,3 +75,51 @@ pdflatex main.tex
   note = "[Online; accessed 19-July-2008]"
 }
 ```
+
+##在LaTeX中用Mathtype
+简单的公式，我也就手写了。可是，复杂的公式，手写完自己都读不懂了。还是老实的用Mathtype吧。
+
+Mac下的Mathtype的安装也十分简单。只是，在Mathtype中写好公式，要粘到LaTeX中，要专门设置一下，不然粘出来的东西很奇怪。
+
+在Mathtype中，找到`Preference`，再选`Cut and Copy Preference`，之后选中第二栏`MathML or TeX`，下拉菜单中选`Plain TeX`,下面的两个打勾的框都不要打勾。这样，在Mathtype中写好公式，就能直接粘到tex文件中。
+
+##在LaTeX中引用图像
+首先引用包
+```
+\usepackage{graphicx}
+```
+然后就可以使用以下的语句在需要的地方引用图像了。我只试过png图像(在figures文件夹下的figure1.png)是可以的，其它的[参考这里](http://bbs.sjtu.edu.cn/bbstcon,board,TeX_LaTeX,reid,1254670022.html)。
+
+```
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{figures/figure1}
+    \caption{The Updating Ratio of an Inactive Account}
+    \label{figure:inactive}
+\end{figure}
+```
+之后引用图像的时候，用`Figure ~\ref{figure:inactive}`就能引用了。
+
+##使用表格
+
+下面是一个使用表格的例子
+```
+\begin{table}
+\centering
+    \begin{tabular}{|c|c|c|c|}
+            \hline
+            Weight & Message Number & Total Crawl Time & Avg \#Msg. with 1 crawling \\
+            \hline
+            0.9 & 1451435 & 50421 & 28.79 \\
+            \hline
+    \end{tabular}
+    \caption{The Hash Model Experiment Results}
+    \label{table:hash}
+\end{table}
+```
+与图表一样，之后引用的时候，用`Table ~\ref{table:hash}`。
+
+##引用伪代码
+[这篇清华科协的人人网日志](http://blog.renren.com/share/302655693/15587298311)讲的非常清楚。如果安装MacTeX时，是安装的完整版，则不用下载要用的包，MacTeX本身就已经带了。
+
+[伪代码包的文档](http://www.cs.dartmouth.edu/~thc/clrscode/clrscode.sty)，也许需要用。
