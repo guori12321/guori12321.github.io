@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 设备 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/she-bei/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-10-20T22:04:53+08:00</updated>
+  <updated>2013-10-21T22:29:10+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -20,6 +20,9 @@
     <id>http://guori12321.github.io/blog/2013/10/14/mac-air-13gan-shou</id>
     <content type="html"><![CDATA[<p>作为在香港的第二个月工资，我纠结再三，还是买了Macbook Air 13。在香港本身价钱就便宜一点，再加上在香港是大学的职员身份，还可以再优惠一点。8000港币（6400人民币左右）的价格还算可以忍。而air的性能，我想也足够我日常使用了，很久都没有碰到让我心动的大型游戏了，而平时跑程序我可以在服务器上跑，不管是中大还是工大，需要的时候都可以用集群机。再加上身边所有买mac的人都告诉我，真的很值。最后，还是买吧~</p>
 
+<!--more-->
+
+
 <h2>Mac初体验</h2>
 
 <p>比较轻薄。拿久了并没有感觉，但和原来的笔记本对比一下，一下就觉得特别明显。Mac的工业设计，有着最为独到的质感，整个笔记本感觉就像工艺品一样，打破了我对传统笔记本的印象。一直不知道它的风扇的换气口在哪里，看了帖子后才发现，是在屏幕的转轴的位置。喇叭也在这里，这样声音经过屏幕反射后，再传入耳朵，就不会觉得奇怪了。</p>
@@ -34,13 +37,22 @@
 
 <h2>Mac的不足</h2>
 
-<p>首先是键盘的适应问题。因为键位与Win的键盘不同，需要特别的适应。比如说，Ctrl键，在这里就是Command键。但在Vim下，Ctrl+[要按Control+[。再比如一些很常用的键，如Page Up，Home，都没有。</p>
+<p>首先是键盘的适应问题。因为键位与Win的键盘不同，需要特别的适应。比如说，Ctrl键，在这里就是Command键。但在Vim下，Ctrl+ [ 要按Control+ [。再比如一些很常用的键，如Page Up，Home，都没有。</p>
 
 <p>其次是应用软件的多少。其实Mac下的软件并不见得比Win下少，只是Mac下软件的收费比较高。换句话说，破解起来比较费力。但用破解软件真的不是好行为。另一方面，Win下也存在破解的情况。</p>
 
 <p>再之后是文件系统的问题。对于NTFS，Mac是只能读不能写。只有exFAT是Mac和Win都可以读写的。对于U盘，我直接格掉就好。但对于移动硬盘，特别是我的1T的硬盘，我就不能直接格了，数据的备份就很麻烦了。</p>
 
 <p>总之，我喜欢Mac~~</p>
+
+<h2>将Home文件夹加入finder</h2>
+
+<p>在OS X的10.6版本后，finder中并没有home文件夹。这让我很纠结。</p>
+
+<p>以下方法可以把home加入finder中。
+<a href="http://forums.macrumors.com/showthread.php?t=1345541">参考的是这个帖子</a>。</p>
+
+<p>Press CMD+SHIFT+H to enter your Home folder in Finder, then press CMD+ArrowUp to get into the Users folder, from there drag the folder of your choice to the Sidebar.</p>
 ]]></content>
   </entry>
   
