@@ -9,7 +9,7 @@
   <meta name="author" content="Ray12321">
 
   
-  <meta name="description" content="现在用vim仅仅是比用记事本高效，很多功能还没搞明白&hellip; 配置vim是个很折腾的过程，我用的是spf13，只可惜用这个配置，一样有很多地方要改动。我的使用习惯是： 在它的.vimrc中把所有&#8217;nowrap&#8217;改为&#8217;wrap&#8217;。 &hellip;">
+  <meta name="description" content="现在用vim仅仅是比用记事本高效，很多功能还没搞明白&hellip; 配置vim是个很折腾的过程，我用的是spf13，只可惜用这个配置，一样有很多地方要改动。我的.vimrc.local。我的使用习惯是： 在它的.vimrc中把所有&#8217;nowrap&#8217;改为&#8217;wrap &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,15 +105,16 @@
 
 <div class="entry-content"><p>现在用vim仅仅是比用记事本高效，很多功能还没搞明白&hellip;</p>
 
-<p>配置vim是个很折腾的过程，我用的是<a href="https://github.com/spf13/spf13-vim">spf13</a>，只可惜用这个配置，一样有很多地方要改动。我的使用习惯是：</p>
+<p>配置vim是个很折腾的过程，我用的是<a href="https://github.com/spf13/spf13-vim">spf13</a>，只可惜用这个配置，一样有很多地方要改动。<a href="https://gist.github.com/guori12321/7211967">我的.vimrc.local</a>。我的使用习惯是：</p>
 
 <!--more-->
 
 
 <ul>
 <li><p>在它的.vimrc中把所有&#8217;nowrap&#8217;改为&#8217;wrap&#8217;。写代码的时候不自动折行还好，但写日志等文本内容，不折行就没法用了。</p></li>
-<li><p>spf13中每次保存的时候都会自动帮你编译一下，并报出所有的语法错误。只是这种做法带来很多问题：语法检查过于严格，声明完变量不使用都会报错；报错时会新建一个分栏，每次报错后我都要自己关掉它；最不能忍的是，有时候保存一下，然后vim就会自动退出。我还没搞明白怎么解决&hellip;</p></li>
-<li><p>我习惯在Insert中把&lt;C-H>绑定为向左，&lt;C-L>为向右。在.vimrc或.vimrc.local中设置都会失效。同没搞明白怎么解决&hellip;</p></li>
+<li><p>spf13中每次保存的时候都会自动帮你编译一下，并报出所有的语法错误。只是这种做法带来很多问题：语法检查过于严格，声明完变量不使用都会报错；报错时会新建一个分栏，每次报错后我都要自己关掉它；最不能忍的是，有时候保存一下，然后vim就会自动退出。解决：<code>echo let\ g:pymode_lint\ =\ 0 &gt;&gt; ~/.vimrc.local</code>。</p></li>
+<li><p>Close the Code Checking \ syntastic in spf13: <code>echo let\ g:pymode_lint\ =\ 0 &gt;&gt; ~/.vimrc.local</code>。</p></li>
+<li><p>我习惯在Insert中把&lt;C-H>绑定为向左，&lt;C-L>为向右。在.vimrc或.vimrc.local中设置都会失效。解决：用<code>imap &lt;C-H&gt; &lt;Left&gt;</code>而不要用<code>inoremap</code>，怀疑是内部的键位绑定冲突。</p></li>
 </ul>
 
 </div>
