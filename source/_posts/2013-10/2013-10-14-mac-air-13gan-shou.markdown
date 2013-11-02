@@ -3,7 +3,7 @@ layout: post
 title: "Mac air 13感受"
 date: 2013-10-14 23:41
 comments: true
-categories: [设备]
+categories: [设备, mac]
 ---
 
 作为在香港的第二个月工资，我纠结再三，还是买了Macbook Air 13。在香港本身价钱就便宜一点，再加上在香港是大学的职员身份，还可以再优惠一点。8000港币（6400人民币左右）的价格还算可以忍。而air的性能，我想也足够我日常使用了，很久都没有碰到让我心动的大型游戏了，而平时跑程序我可以在服务器上跑，不管是中大还是工大，需要的时候都可以用集群机。再加上身边所有买mac的人都告诉我，真的很值。最后，还是买吧~
@@ -38,3 +38,43 @@ Mac，像很多Linux的桌面环境一样，是支持多个桌面的。比较特
 [参考的是这个帖子](http://forums.macrumors.com/showthread.php?t=1345541)。
 
 Press CMD+SHIFT+H to enter your Home folder in Finder, then press CMD+ArrowUp to get into the Users folder, from there drag the folder of your choice to the Sidebar.
+
+## Shell高亮
+参考[这篇文章](http://linfan.info/blog/2012/02/27/colorful-terminal-in-mac/)
+
+## 输入法
+五笔的话，试了一圈，还是百度的最舒服，而且可以和手机上的输入法同步词库
+
+## RAR解压
+我用的是[keka](http://www.kekaosx.com/zh-cn/)，免费，开源，不过从APP Store里下载要收费。这个和mac自带的解压软件一样，点击rar后，就自动解压了，而且文件名不会乱码。
+
+## rm
+我多次因为rm和mv打错，造成很严重的后果。后来同学们给了我两个建议。
+
+FQJ: 搞一段bash命令，每次rm的时候，都输入验证码。我表示无语。
+
+某学长: alias rm='trash'
+
+于是我就把rm绑到trash上了。
+
+首先是安装[osx-trash](http://www.dribin.org/dave/osx-trash/):
+```
+http://www.dribin.org/dave/osx-trash/
+```
+
+之后在`.bash_profile`中加入
+```
+alias rm='trash'
+```
+就好。之后通过`-l`参数查看废纸篓，`-e`清空。下面是官网给出的例子
+```
+% touch foo bar baz
+% trash -l
+% trash foo ba*
+% trash -l
+/Users/dave/.Trash/foo
+/Users/dave/.Trash/bar
+/Users/dave/.Trash/baz
+% trash -e
+% trash -l
+```
