@@ -18,3 +18,5 @@ categories: [vim]
 * Close the Code Checking \ syntastic in spf13: `echo let\ g:pymode_lint\ =\ 0 >> ~/.vimrc.local`。
 
 * 我习惯在Insert中把<C-H>绑定为向左，<C-L>为向右。在.vimrc或.vimrc.local中设置都会失效。解决：用`imap <C-H> <Left>`而不要用`inoremap`，怀疑是内部的键位绑定冲突。
+
+* 按<C-V>是进入Visual Block模式，用它可以很方便的给大段的代码打注释。我之前都是用<C-V>进入Visual再<C-Q>进入Visual Block，就麻烦了一些。
