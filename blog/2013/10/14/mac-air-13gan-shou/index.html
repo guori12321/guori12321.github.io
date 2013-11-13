@@ -138,6 +138,62 @@
 <a href="http://forums.macrumors.com/showthread.php?t=1345541">参考的是这个帖子</a>。</p>
 
 <p>Press CMD+SHIFT+H to enter your Home folder in Finder, then press CMD+ArrowUp to get into the Users folder, from there drag the folder of your choice to the Sidebar.</p>
+
+<h2>Shell高亮</h2>
+
+<p>参考<a href="http://linfan.info/blog/2012/02/27/colorful-terminal-in-mac/">这篇文章</a></p>
+
+<h2>输入法</h2>
+
+<p>五笔的话，试了一圈，还是百度的最舒服，而且可以和手机上的输入法同步词库</p>
+
+<h2>RAR解压</h2>
+
+<p>我用的是<a href="http://www.kekaosx.com/zh-cn/">keka</a>，免费，开源，不过从APP Store里下载要收费。这个和mac自带的解压软件一样，点击rar后，就自动解压了，而且文件名不会乱码。</p>
+
+<h2>rm</h2>
+
+<p>我多次因为rm和mv打错，造成很严重的后果。后来同学们给了我两个建议。</p>
+
+<p>FQJ: 搞一段bash命令，每次rm的时候，都输入验证码。我表示无语。</p>
+
+<p>某学长: alias rm=&lsquo;trash&rsquo;</p>
+
+<p>于是我就把rm绑到trash上了。</p>
+
+<p>首先是安装<a href="http://www.dribin.org/dave/osx-trash/">osx-trash</a>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://www.dribin.org/dave/osx-trash/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>之后在<code>.bash_profile</code>中加入</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias rm='trash'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>就好。之后通过<code>-l</code>参数查看废纸篓，<code>-e</code>清空。下面是官网给出的例子</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>% touch foo bar baz
+</span><span class='line'>% trash -l
+</span><span class='line'>% trash foo ba*
+</span><span class='line'>% trash -l
+</span><span class='line'>/Users/dave/.Trash/foo
+</span><span class='line'>/Users/dave/.Trash/bar
+</span><span class='line'>/Users/dave/.Trash/baz
+</span><span class='line'>% trash -e
+</span><span class='line'>% trash -l</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
@@ -165,7 +221,7 @@
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/she-bei/'>设备</a>
+    <a class='category' href='/blog/categories/mac/'>mac</a>, <a class='category' href='/blog/categories/she-bei/'>设备</a>
   
 </span>
 
@@ -224,12 +280,16 @@
 </section>
 <section>
   <h1>Tag Cloud</h1>
-    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ffcitx%27+style%3D%27font-size%3A+16.666666666666668%25%27%3Efcitx%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgit%27+style%3D%27font-size%3A+16.666666666666668%25%27%3Egit%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhackerrank%27+style%3D%27font-size%3A+16.666666666666668%25%27%3Ehackerrank%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Elinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmongodb%27+style%3D%27font-size%3A+16.666666666666668%25%27%3EMongoDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Foctopress%27+style%3D%27font-size%3A+30.0%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fscott-young%27+style%3D%27font-size%3A+16.666666666666668%25%27%3EScott+Young%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ftex%27+style%3D%27font-size%3A+16.666666666666668%25%27%3Etex%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fubuntu%27+style%3D%27font-size%3A+16.666666666666668%25%27%3Eubuntu%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fvim%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Evim%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshu-ping-ying-ping%27+style%3D%27font-size%3A+16.666666666666668%25%27%3E%E4%B9%A6%E8%AF%84%E5%BD%B1%E8%AF%84%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-zhe-teng%27+style%3D%27font-size%3A+43.333333333333336%25%27%3E%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-she-bei%27+style%3D%27font-size%3A+16.666666666666668%25%27%3E%E5%90%84%E7%A7%8D%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxue-xi-bi-ji%27+style%3D%27font-size%3A+50.0%25%27%3E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxiao-mi%27+style%3D%27font-size%3A+16.666666666666668%25%27%3E%E5%B0%8F%E7%B1%B3%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgong-zuo%27+style%3D%27font-size%3A+16.666666666666668%25%27%3E%E5%B7%A5%E4%BD%9C%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flu-tu-fen-xiang%27+style%3D%27font-size%3A+16.666666666666668%25%27%3E%E6%97%85%E9%80%94%E5%88%86%E4%BA%AB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fsheng-huo-jian-ying%27+style%3D%27font-size%3A+50.0%25%27%3E%E7%94%9F%E6%B4%BB%E5%89%AA%E5%BD%B1%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshe-bei%27+style%3D%27font-size%3A+16.666666666666668%25%27%3E%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmian-shi%27+style%3D%27font-size%3A+16.666666666666668%25%27%3E%E9%9D%A2%E8%AF%95%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fti-jie%27+style%3D%27font-size%3A+16.666666666666668%25%27%3E%E9%A2%98%E8%A7%A3%3C%2Fa%3E+%3C%2Ftags%3E"></span>
+    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ffcitx%27+style%3D%27font-size%3A+15.714285714285715%25%27%3Efcitx%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgit%27+style%3D%27font-size%3A+15.714285714285715%25%27%3Egit%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhackerrank%27+style%3D%27font-size%3A+15.714285714285715%25%27%3Ehackerrank%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+21.42857142857143%25%27%3Elinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmac%27+style%3D%27font-size%3A+15.714285714285715%25%27%3Emac%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmongodb%27+style%3D%27font-size%3A+15.714285714285715%25%27%3EMongoDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Foctopress%27+style%3D%27font-size%3A+27.142857142857142%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fscott-young%27+style%3D%27font-size%3A+15.714285714285715%25%27%3EScott+Young%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ftex%27+style%3D%27font-size%3A+15.714285714285715%25%27%3Etex%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fubuntu%27+style%3D%27font-size%3A+15.714285714285715%25%27%3Eubuntu%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fvim%27+style%3D%27font-size%3A+21.42857142857143%25%27%3Evim%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshu-ping-ying-ping%27+style%3D%27font-size%3A+15.714285714285715%25%27%3E%E4%B9%A6%E8%AF%84%E5%BD%B1%E8%AF%84%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-zhe-teng%27+style%3D%27font-size%3A+38.57142857142857%25%27%3E%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-she-bei%27+style%3D%27font-size%3A+15.714285714285715%25%27%3E%E5%90%84%E7%A7%8D%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxue-xi-bi-ji%27+style%3D%27font-size%3A+44.285714285714285%25%27%3E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxiao-mi%27+style%3D%27font-size%3A+15.714285714285715%25%27%3E%E5%B0%8F%E7%B1%B3%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgong-zuo%27+style%3D%27font-size%3A+15.714285714285715%25%27%3E%E5%B7%A5%E4%BD%9C%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flu-tu-fen-xiang%27+style%3D%27font-size%3A+15.714285714285715%25%27%3E%E6%97%85%E9%80%94%E5%88%86%E4%BA%AB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fsheng-huo-jian-ying%27+style%3D%27font-size%3A+50.0%25%27%3E%E7%94%9F%E6%B4%BB%E5%89%AA%E5%BD%B1%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshe-bei%27+style%3D%27font-size%3A+15.714285714285715%25%27%3E%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmian-shi%27+style%3D%27font-size%3A+15.714285714285715%25%27%3E%E9%9D%A2%E8%AF%95%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fti-jie%27+style%3D%27font-size%3A+15.714285714285715%25%27%3E%E9%A2%98%E8%A7%A3%3C%2Fa%3E+%3C%2Ftags%3E"></span>
 </section>
 
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/11/02/wish-list/">Wish List</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/10/24/tu-hao-da-xue/">土豪大学</a>
@@ -245,10 +305,6 @@
     
       <li class="post">
         <a href="/blog/2013/10/15/macxia-an-zhuang-latex/">mac下安装LaTeX</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/10/14/mac-air-13gan-shou/">Mac Air 13感受</a>
       </li>
     
   </ul>

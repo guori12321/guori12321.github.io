@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-10-31T17:49:05+08:00</updated>
+  <updated>2013-11-13T16:00:25+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wish List]]></title>
+    <link href="http://guori12321.github.io/blog/2013/11/02/wish-list/"/>
+    <updated>2013-11-02T19:18:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/11/02/wish-list</id>
+    <content type="html"><![CDATA[<p>大四上学期，永远是那么焦虑，赶不完的deadline，各种很心动但很难争取到的机会&hellip;如果，能活着度过这个学期，如果，下学期可以很轻闲，那么，我要一点点的，去做下面的事情</p>
+
+<!--more-->
+
+
+<h2>乱七八糟</h2>
+
+<ul>
+<li>研究下单反的使用，PS的初阶</li>
+</ul>
+
+
+<h2>做点好玩的项目</h2>
+
+<ul>
+<li>研究下<a href="http://www.byvoid.com">byvoid</a>的博客，去看看他做过哪些厉害的项目</li>
+</ul>
+
+
+<h2>搬砖技能的提升</h2>
+
+<ul>
+<li>看看算法导论，编译原理</li>
+<li>看看各种数据挖掘的算法</li>
+<li>找找长期并且靠谱的外包</li>
+</ul>
+
+
+<p>未完待续&hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[土豪大学]]></title>
@@ -124,6 +161,24 @@
 <p>纠结&hellip;</p>
 
 <p>越来越怨念了。总之，一点点调整自己的生物钟，多干活就好~~</p>
+
+<h2>2013-11-11</h2>
+
+<p>记录下这混乱的几天。</p>
+
+<p>今天是传统节日光棍节。忧伤的节日。晚上12点40睡的，一直刷支付宝刷不出来。阿里的架构真是NB，没有崩溃，只有各种很有节奏的错误。早上起来刷出来了，付钱买了双鞋。</p>
+
+<p>昨天毕业设计开题答辩。碰到的三位老师都是比较看报告内容的，不像某组的老师，死抠格式，然后问各种像“你做这个项目就是为了毕业是吗？！”，这让人怎么回答啊，毕个业容易吗！不过，我的毕业设计，挂了一项973项目，一项863项目，一项国家自然科学基金项目，应该除了毕业还是有点用的。</p>
+
+<p>答辩完，晚上吃完火锅后，一直在打坦克&hellip;</p>
+
+<p>再前一天，中午找老师签字，然后溜达到思飞科幻社的社团办公室，正好他们打算去看电影，雷神2，就很开心的一起去了。在工大，能碰到这些和自己兴趣相同的人，真的很开心。电影本身倒是一般，有空看看吧，打分的话10分我给个7.5吧。倒是电影中乱入的美国队长实在欢乐。</p>
+
+<p>晚上查了查学校的排名，然后就打坦克了&hellip;</p>
+
+<p>再前两天，就是写开题报告，各种恶心。不少同学因为流程图和用例图，被狠批半天。我倒不担心图画的不对，我担心的是，像我这样一张流程图和用例图的人能不能通过开题&hellip;</p>
+
+<p>总之，这几天，真是什么都没干啊！又陷入这种很焦虑还一点点都不想干活的状态了，真是作死啊！！！</p>
 ]]></content>
   </entry>
   
@@ -370,6 +425,62 @@
 <a href="http://forums.macrumors.com/showthread.php?t=1345541">参考的是这个帖子</a>。</p>
 
 <p>Press CMD+SHIFT+H to enter your Home folder in Finder, then press CMD+ArrowUp to get into the Users folder, from there drag the folder of your choice to the Sidebar.</p>
+
+<h2>Shell高亮</h2>
+
+<p>参考<a href="http://linfan.info/blog/2012/02/27/colorful-terminal-in-mac/">这篇文章</a></p>
+
+<h2>输入法</h2>
+
+<p>五笔的话，试了一圈，还是百度的最舒服，而且可以和手机上的输入法同步词库</p>
+
+<h2>RAR解压</h2>
+
+<p>我用的是<a href="http://www.kekaosx.com/zh-cn/">keka</a>，免费，开源，不过从APP Store里下载要收费。这个和mac自带的解压软件一样，点击rar后，就自动解压了，而且文件名不会乱码。</p>
+
+<h2>rm</h2>
+
+<p>我多次因为rm和mv打错，造成很严重的后果。后来同学们给了我两个建议。</p>
+
+<p>FQJ: 搞一段bash命令，每次rm的时候，都输入验证码。我表示无语。</p>
+
+<p>某学长: alias rm=&lsquo;trash&rsquo;</p>
+
+<p>于是我就把rm绑到trash上了。</p>
+
+<p>首先是安装<a href="http://www.dribin.org/dave/osx-trash/">osx-trash</a>:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://www.dribin.org/dave/osx-trash/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>之后在<code>.bash_profile</code>中加入</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias rm='trash'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>就好。之后通过<code>-l</code>参数查看废纸篓，<code>-e</code>清空。下面是官网给出的例子</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>% touch foo bar baz
+</span><span class='line'>% trash -l
+</span><span class='line'>% trash foo ba*
+</span><span class='line'>% trash -l
+</span><span class='line'>/Users/dave/.Trash/foo
+</span><span class='line'>/Users/dave/.Trash/bar
+</span><span class='line'>/Users/dave/.Trash/baz
+</span><span class='line'>% trash -e
+</span><span class='line'>% trash -l</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
@@ -645,6 +756,25 @@ ssh config文件具体的位置是在<code>.ssh/config</code>，在里面直接�
 
 <p>之后，就直接<code>ssh alias</code>，就相当于你输入了<code>ssh your_user_name@your_host_name</code>了。</p>
 
+<h2>ssh -tt</h2>
+
+<p>经常会遇到要ssh两次的场景：第一次ssh到实验室里，第二次从实验室的机子ssh到集群机上。<a href="http://www.lijinma.com/index.html">金马</a>教我了个命令，可以一次就从实验室外ssh到集群上：</p>
+
+<ol>
+<li><p>首先你要实现，A登陆B，B登陆C不需要密码（生成id_rsa.pub复制到对面机器的authorized_keys，具体参考上文）;</p></li>
+<li><p>ssh yourname@B &lsquo;ssh -tt yourname2@C&rsquo;</p></li>
+</ol>
+
+
+<p>这个命令的关键就是要加参数-tt，否则会出现错误：Pseudo-terminal will not be allocated because stdin is not a terminal</p>
+
+<ol>
+<li>最后为了方便，我每次都会加个alias的</li>
+</ol>
+
+
+<p>alias sshBC=&ldquo;ssh yourname@B &lsquo;ssh -tt yourname2@C&rsquo;&rdquo;</p>
+
 <h2>scp</h2>
 
 <p>通过ssh，来从本地往远程服务器上拷数据，或者从远程往本地拷数据都用这个命令。
@@ -654,25 +784,25 @@ ssh config文件具体的位置是在<code>.ssh/config</code>，在里面直接�
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 root@www.vpser.net:/root/lnmp0.4.tar.gz /home/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#x72;&#x6f;&#111;&#x74;&#x40;&#x77;&#x77;&#x77;&#46;&#x76;&#x70;&#115;&#101;&#x72;&#46;&#x6e;&#101;&#x74;">&#114;&#x6f;&#x6f;&#116;&#x40;&#119;&#119;&#119;&#46;&#x76;&#x70;&#115;&#x65;&#114;&#x2e;&#x6e;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#x72;&#111;&#x6f;&#116;&#64;&#x77;&#119;&#x77;&#46;&#118;&#112;&#115;&#101;&#114;&#46;&#110;&#101;&#116;">&#x72;&#x6f;&#x6f;&#116;&#x40;&#x77;&#119;&#x77;&#x2e;&#118;&#112;&#115;&#x65;&#x72;&#x2e;&#110;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
 
 <p>2、获取远程服务器上的目录
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r root@www.vpser.net:/root/lnmp0.4/ /home/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#114;&#111;&#111;&#116;&#64;&#x77;&#119;&#x77;&#46;&#x76;&#112;&#115;&#x65;&#114;&#46;&#110;&#x65;&#116;">&#x72;&#x6f;&#111;&#x74;&#64;&#119;&#x77;&#x77;&#46;&#118;&#112;&#x73;&#101;&#114;&#x2e;&#110;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#111;&#111;&#116;&#x40;&#x77;&#119;&#119;&#46;&#118;&#112;&#x73;&#101;&#x72;&#x2e;&#x6e;&#x65;&#x74;">&#114;&#x6f;&#111;&#116;&#x40;&#x77;&#x77;&#x77;&#x2e;&#x76;&#x70;&#115;&#101;&#x72;&#46;&#110;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
 
 <p>3、将本地文件上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 /home/lnmp0.4.tar.gz root@www.vpser.net:/root/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x72;&#111;&#x6f;&#x74;&#x40;&#119;&#119;&#119;&#46;&#x76;&#112;&#115;&#x65;&#114;&#46;&#x6e;&#101;&#x74;">&#x72;&#111;&#111;&#x74;&#x40;&#x77;&#119;&#119;&#x2e;&#x76;&#112;&#x73;&#101;&#x72;&#x2e;&#110;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#x72;&#x6f;&#111;&#116;&#64;&#x77;&#119;&#x77;&#46;&#118;&#112;&#x73;&#x65;&#x72;&#x2e;&#x6e;&#101;&#x74;">&#x72;&#111;&#x6f;&#x74;&#64;&#x77;&#x77;&#119;&#x2e;&#118;&#112;&#x73;&#x65;&#x72;&#46;&#x6e;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
 
 <p>4、将本地目录上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#58;&#x72;&#x6f;&#x6f;&#116;&#x40;&#119;&#119;&#x77;&#x2e;&#x76;&#112;&#115;&#101;&#114;&#46;&#x6e;&#101;&#x74;">&#114;&#x6f;&#x6f;&#116;&#x40;&#x77;&#119;&#119;&#46;&#118;&#112;&#x73;&#101;&#x72;&#46;&#x6e;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
+上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#x72;&#111;&#x6f;&#116;&#64;&#119;&#x77;&#119;&#46;&#118;&#112;&#x73;&#x65;&#114;&#46;&#110;&#x65;&#x74;">&#x72;&#111;&#x6f;&#x74;&#64;&#x77;&#119;&#x77;&#x2e;&#x76;&#x70;&#115;&#x65;&#114;&#46;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
 
 <p>5、可能有用的几个参数 :</p>
 
@@ -784,6 +914,7 @@ pili过来查看了下，直接输入一行命令，就干掉了所有的python�
 <li><p>spf13中每次保存的时候都会自动帮你编译一下，并报出所有的语法错误。只是这种做法带来很多问题：语法检查过于严格，声明完变量不使用都会报错；报错时会新建一个分栏，每次报错后我都要自己关掉它；最不能忍的是，有时候保存一下，然后vim就会自动退出。解决：<code>echo let\ g:pymode_lint\ =\ 0 &gt;&gt; ~/.vimrc.local</code>。</p></li>
 <li><p>Close the Code Checking \ syntastic in spf13: <code>echo let\ g:pymode_lint\ =\ 0 &gt;&gt; ~/.vimrc.local</code>。</p></li>
 <li><p>我习惯在Insert中把&lt;C-H>绑定为向左，&lt;C-L>为向右。在.vimrc或.vimrc.local中设置都会失效。解决：用<code>imap &lt;C-H&gt; &lt;Left&gt;</code>而不要用<code>inoremap</code>，怀疑是内部的键位绑定冲突。</p></li>
+<li><p>按&lt;C-V>是进入Visual Block模式，用它可以很方便的给大段的代码打注释。我之前都是用&lt;C-V>进入Visual再&lt;C-Q>进入Visual Block，就麻烦了一些。</p></li>
 </ul>
 
 ]]></content>
@@ -1183,107 +1314,6 @@ pili过来查看了下，直接输入一行命令，就干掉了所有的python�
 <p>之前在Gvim用fcitx，发现每打一个汉字，fcitx就自动退出了。但在vim下就没这个问题。</p>
 
 <p>在<a href="http://www.douban.com/group/topic/36307854/">豆瓣上找到了答案</a>，在使用fcitx时按下Ctrl + Alt + P，关闭预编辑区就好。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[再次回到octopress]]></title>
-    <link href="http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again/"/>
-    <updated>2013-08-05T10:21:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again</id>
-    <content type="html"><![CDATA[<p>一直有搭blog的念头，只可惜，总是反反复复，加上自己太懒。这次，我又回到了Octopress~</p>
-
-<p>和上次一样，搭建Linux下的Octopress总会有各种各样的问题。又折腾了一个晚上，才搞定最基本的环境。</p>
-
-<p>细数下我碰到的问题，也许对以后的各位有帮助吧。</p>
-
-<!-- more -->
-
-
-<ul>
-<li>安装RVM:我是通过RVM来安装Ruby的。按照<a href="https://rvm.io/rvm/install">RVM的官方指南</a>，在执行</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>\curl -L https://get.rvm.io | bash</span></code></pre></td></tr></table></div></figure>
-
-
-<p>的时候报错：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>ouldn't get RVM from https://github.com/wayneeseguin/rvm/archive/stable.tar.gz
-</span><span class='line'>Curl returned error 22</span></code></pre></td></tr></table></div></figure>
-
-
-<p>后来发现是下载时跳转到codeload.github上了，而这个域名下面的东西经常不能访问。不仅仅是在我这里（香港），而且<a href="http://www.v2ex.com/t/76033">其它地方也经常不能访问</a>。找了半天也没找到那个包的其它下载方式。但是，虽然有报错安装失败，但我试了下，rvm的命令是好用的，也就是说已经安上了。总之这个问题莫名其妙的发生了，也莫名其妙的解决了。
-PS: 今天早上再试了一下，就不存在这个问题了。</p>
-
-<ul>
-<li>使用RVM install 命令的时候报错：</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>`RVM is not a function</span></code></pre></td></tr></table></div></figure>
-
-
-<p>最后在StackOverflow上查到了<a href="http://stackoverflow.com/questions/9336596/rvm-installation-not-working-rvm-is-not-a-function">答案</a>：要用login形式的Shell.</p>
-
-<ul>
-<li>安装依赖的问题:bundle install的时候报错如下</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>An error occured while installing RedCloth (4.2.9), and Bundler cannot continue.
-</span><span class='line'>Make sure that `gem install RedCloth -v '4.2.9'` succeeds before bundling.</span></code></pre></td></tr></table></div></figure>
-
-
-<p>同样在<a href="http://stackoverflow.com/questions/12119138/failed-to-build-gem-native-extension-when-install-redcloth-4-2-9-install-linux">Stackoverflow上找到了答案</a>，但引起这个错误的原因有好几个，别人适用的方法自己不一定适用。我是安装了ruby 1.9.1 full后好用了</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install ruby1.9.1-full</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li>执行rake命令时报错</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Could not find rake-0.9.2.2 in any of the sources
-</span><span class='line'>Run `bundle install` to install missing gems.</span></code></pre></td></tr></table></div></figure>
-
-
-<p>最后通过以下命令解决：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gem install rake -v=0.9.2.2
-</span><span class='line'>bundle update
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li><p>版本库的分枝合并问题: 因为之前用过Octopress，所以这次再用的时候，发现没办法合并到原先的库中，因为要合并的两个分枝没有关联。我在octopress/Rakefile中找到了git push的语句，在其中加了个 -f 的参数，也就是强行push，就好了。</p></li>
-<li><p>github.com和github.io的关系:deploy到user.github.com库之后，浏览相应的域名，发现并没有发生变化。这是因为github把personal page从user.github.com移到user.github.io了。把.com的库删掉，重新开个.io的库，再deploy，就好了。</p></li>
-<li><p>Rakefile的修改：在octopress的根目录下修改Rakefile，在第88行加入</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>system "google-chrome 127.0.0.1:4000"</span></code></pre></td></tr></table></div></figure>
-
-
-<p>这样就可以在<code>rake preview</code>之后自动打开浏览器，来预览了。</p>
-
-<h2>总体感觉</h2>
-
-<p>octopress的配置还是非常麻烦。我第一次用了两周才搞好，这次也花了一个晚上，碰到各种问题。总体来说ruby还不够成熟，除了安装的源不稳定外（我在墙外，所以不能怪GFW了），各个版本，各种依赖之间的关系也非常乱，整个Octopress是要求1.9.3以上的ruby的，但有些依赖，比如上面提到的Redcloth，就要求1.9.1。要解决这些问题，只能多查Stackoverflow和Google了，另外多用英语查询吧，汉语的资料太少。</p>
 ]]></content>
   </entry>
   

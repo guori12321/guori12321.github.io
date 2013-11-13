@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-10-31T17:49:12+08:00</updated>
+  <updated>2013-11-13T16:00:25+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -30,6 +30,7 @@
 <li><p>spf13中每次保存的时候都会自动帮你编译一下，并报出所有的语法错误。只是这种做法带来很多问题：语法检查过于严格，声明完变量不使用都会报错；报错时会新建一个分栏，每次报错后我都要自己关掉它；最不能忍的是，有时候保存一下，然后vim就会自动退出。解决：<code>echo let\ g:pymode_lint\ =\ 0 &gt;&gt; ~/.vimrc.local</code>。</p></li>
 <li><p>Close the Code Checking \ syntastic in spf13: <code>echo let\ g:pymode_lint\ =\ 0 &gt;&gt; ~/.vimrc.local</code>。</p></li>
 <li><p>我习惯在Insert中把&lt;C-H>绑定为向左，&lt;C-L>为向右。在.vimrc或.vimrc.local中设置都会失效。解决：用<code>imap &lt;C-H&gt; &lt;Left&gt;</code>而不要用<code>inoremap</code>，怀疑是内部的键位绑定冲突。</p></li>
+<li><p>按&lt;C-V>是进入Visual Block模式，用它可以很方便的给大段的代码打注释。我之前都是用&lt;C-V>进入Visual再&lt;C-Q>进入Visual Block，就麻烦了一些。</p></li>
 </ul>
 
 ]]></content>
