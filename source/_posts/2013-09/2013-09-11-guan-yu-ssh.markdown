@@ -44,6 +44,19 @@ ServerdomainverAliveInterval 240
 ```
 之后，就直接`ssh alias`，就相当于你输入了`ssh your_user_name@your_host_name`了。
 
+##ssh -tt
+经常会遇到要ssh两次的场景：第一次ssh到实验室里，第二次从实验室的机子ssh到集群机上。[金马](http://www.lijinma.com/index.html)教我了个命令，可以一次就从实验室外ssh到集群上：
+
+1. 首先你要实现，A登陆B，B登陆C不需要密码（生成id_rsa.pub复制到对面机器的authorized_keys，具体参考上文）;
+
+2. ssh yourname@B 'ssh -tt yourname2@C'
+
+这个命令的关键就是要加参数-tt，否则会出现错误：Pseudo-terminal will not be allocated because stdin is not a terminal
+
+3. 最后为了方便，我每次都会加个alias的
+
+alias sshBC="ssh yourname@B 'ssh -tt yourname2@C'"
+
 ##scp
 通过ssh，来从本地往远程服务器上拷数据，或者从远程往本地拷数据都用这个命令。
 具体的介绍在[这里](http://www.vpser.net/manage/scp.html)。以下是我粘过来的部分内容。
