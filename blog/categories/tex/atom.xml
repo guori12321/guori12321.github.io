@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tex | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/tex/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-11-13T16:00:25+08:00</updated>
+  <updated>2013-11-24T20:37:36+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -154,6 +154,24 @@ pdflatex main.tex
 <p><a href="http://blog.renren.com/share/302655693/15587298311">这篇清华科协的人人网日志</a>讲的非常清楚。如果安装MacTeX时，是安装的完整版，则不用下载要用的包，MacTeX本身就已经带了。</p>
 
 <p><a href="http://www.cs.dartmouth.edu/~thc/clrscode/clrscode.sty">伪代码包的文档</a>，也许需要用。</p>
+
+<h2>在公式中加入文字</h2>
+
+<p>用<code>\mbox{}</code>，例子如下</p>
+
+<p>```
+$$
+\sum Part_0 &ndash; \sum Part_1 = \left{ \begin{array}{ll}</p>
+
+<pre><code>    0 &amp; n \ \mbox{mod} \ 4=0 \\
+</code></pre>
+
+<p>f_0 &amp; n \ \mbox{mod} \ 4=1 \
+&ndash;\Delta &amp; n \ \mbox{mod} \ 4=2 \
+f_0-\Delta &amp; n \ \mbox{mod} \ 4=3 \
+\end{array} \right.
+$$
+```</p>
 ]]></content>
   </entry>
   
