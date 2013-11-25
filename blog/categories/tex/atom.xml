@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tex | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/tex/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-11-24T20:37:36+08:00</updated>
+  <updated>2013-11-25T08:36:57+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -91,7 +91,7 @@ pdflatex main.tex
 <code>
 @misc{bworld,
   author = {Ingo Lütkebohle},
-  title = ,
+  title = {{BWorld Robot Control Software}},
   howpublished = "\url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/}",
   year = {2008},
   note = "[Online; accessed 19-July-2008]"
