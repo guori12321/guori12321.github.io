@@ -8,6 +8,8 @@ categories: [AsterixDB]
 
 AsterixDB是UC Irvine大学主导开发的一款并行划，分布式的数据库。更多的介绍可以看[这里](http://asterixdb.ics.uci.edu/)。下面是我参与开发过程的一些记录。
 
+<!--more-->
+
 ##获得源代码
 
 首先是下载源代码。在它的[Google Code的Source页面]()中，可以找到下面这句
