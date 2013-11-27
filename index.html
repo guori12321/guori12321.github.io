@@ -164,35 +164,12 @@ The information you provided does not match our records. Please try again 第一
 
   <div class="entry-content"><p>AsterixDB是UC Irvine大学主导开发的一款并行划，分布式的数据库。更多的介绍可以看<a href="http://asterixdb.ics.uci.edu/">这里</a>。下面是我参与开发过程的一些记录。</p>
 
-<h2>获得源代码</h2>
-
-<p>首先是下载源代码。在它的<a href="">Google Code的Source页面</a>中，可以找到下面这句</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://code.google.com/p/asterixdb/</span></code></pre></td></tr></table></div></figure>
-
-
-<p>这样你就可以把它的源代码下载下来了。</p>
-
-<p>查看下，发现除了java文件外，就是XML这种结构文件。</p>
-
-<h2>导入项目</h2>
-
-<p>因为源代码中没有<code>.projecr</code>文件，所以说，没办法像平时一样用Eclipse直接import进去。查来查去，在<a href="http://stackoverflow.com/questions/2638016/why-no-projects-found-to-import">stackoverflow</a>应该这么做</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Goto File &gt; New &gt; Java Project
-</span><span class='line'>Uncheck Use default location
-</span><span class='line'>Click on Browse to navigate to your source folder, or type in the path to your source
-</span><span class='line'>Click Finish</span></code></pre></td></tr></table></div></figure>
-
-
-<p>注意到一点，Eclipse有Bug: 如果你的项目的路径，在你的workspace下，那么，Eclipse会报错<code>folder overlaps the location of an existing project</code>，具体参考<a href="http://stackoverflow.com/questions/10368903/where-is-create-project-from-existing-source-in-eclipse-indigo">这个问题</a>。把默认的workspace删了，别选Use default location，然后选asterixdb的文件夹，就可以了。之后再把workspace加回来。</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/11/25/wo-de-asterixdblu-xian-tu/">Read on &rarr;</a>
+    </footer>
   
 
 
