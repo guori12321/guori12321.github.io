@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: 工作 - Ray12321</title>
+  <title>我的AsterixDB路线图 - Ray12321</title>
   <meta name="author" content="Ray12321">
 
   
-  <meta name="description" content="Category: 工作">
+  <meta name="description" content="AsterixDB是UC Irvine大学主导开发的一款并行划，分布式的数据库。更多的介绍可以看这里。下面是我参与开发过程的一些记录。 获得源代码 首先是下载源代码。在它的Google Code的Source页面中，可以找到下面这句 1
+git clone https://code.google. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://guori12321.github.ioblog/categories/gong-zuo">
+  <link rel="canonical" href="http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Ray12321" type="application/atom+xml">
@@ -74,36 +75,123 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: 工作</h1>
+    
+      <h1 class="entry-title">我的AsterixDB路线图</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-25T10:27:00+08:00" pubdate data-updated="true">Nov 25<span>th</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>AsterixDB是UC Irvine大学主导开发的一款并行划，分布式的数据库。更多的介绍可以看<a href="http://asterixdb.ics.uci.edu/">这里</a>。下面是我参与开发过程的一些记录。</p>
 
-  
-  <h2>2013</h2>
+<h2>获得源代码</h2>
 
-<article>
-  
-<h1><a href="/blog/2013/09/17/zhao-a-zhao-gong-zuo/">找啊找工作</a></h1>
-<time datetime="2013-09-17T14:55:00+08:00" pubdate><span class='month'>Sep</span> <span class='day'>17</span> <span class='year'>2013</span></time>
+<p>首先是下载源代码。在它的<a href="">Google Code的Source页面</a>中，可以找到下面这句</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/gong-zuo/'>工作</a>, <a class='category' href='/blog/categories/mian-shi/'>面试</a></span>
-</footer>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://code.google.com/p/asterixdb/</span></code></pre></td></tr></table></div></figure>
 
 
-</article>
+<p>这样你就可以把它的源代码下载下来了。</p>
 
+<p>查看下，发现除了java文件外，就是XML这种结构文件。</p>
+
+<h2>导入项目</h2>
+
+<p>因为源代码中没有<code>.projecr</code>文件，所以说，没办法像平时一样用Eclipse直接import进去。查来查去，在<a href="http://stackoverflow.com/questions/2638016/why-no-projects-found-to-import">stackoverflow</a>应该这么做</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Goto File &gt; New &gt; Java Project
+</span><span class='line'>Uncheck Use default location
+</span><span class='line'>Click on Browse to navigate to your source folder, or type in the path to your source
+</span><span class='line'>Click Finish</span></code></pre></td></tr></table></div></figure>
+
+
+<p>注意到一点，Eclipse有Bug: 如果你的项目的路径，在你的workspace下，那么，Eclipse会报错<code>folder overlaps the location of an existing project</code>，具体参考<a href="http://stackoverflow.com/questions/10368903/where-is-create-project-from-existing-source-in-eclipse-indigo">这个问题</a>。把默认的workspace删了，别选Use default location，然后选asterixdb的文件夹，就可以了。之后再把workspace加回来。</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Ray12321</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-25T10:27:00+08:00" pubdate data-updated="true">Nov 25<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/asterixdb/'>AsterixDB</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu/" data-via="" data-counturl="http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/11/24/ou-zhou-lu-xing-ji-hua/" title="Previous Post: 欧洲旅行计划">&laquo; 欧洲旅行计划</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/11/27/grecha-fen-de-wen-ti/" title="Next Post: GRE查分的问题">GRE查分的问题 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -212,7 +300,10 @@
       var disqus_shortname = 'ray12321';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu/';
+        var disqus_url = 'http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

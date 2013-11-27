@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-11-25T08:36:51+08:00</updated>
+  <updated>2013-11-27T22:04:37+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,77 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GRE查分的问题]]></title>
+    <link href="http://guori12321.github.io/blog/2013/11/27/grecha-fen-de-wen-ti/"/>
+    <updated>2013-11-27T21:42:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/11/27/grecha-fen-de-wen-ti</id>
+    <content type="html"><![CDATA[<p>我查GRE的分就一直没查出来过。每次都显示</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Important Message
+</span><span class='line'>The information you provided does not match our records. Please try again</span></code></pre></td></tr></table></div></figure>
+
+
+<p>第一次考G之后，因为分太低，也就没有心思去研究下怎么查了。结果第二次考完，分还是特别的低，也还是查不出来分。之后收到了ETS的纸质的GRE成绩单。</p>
+
+<p>一直拖到现在，因为马上要到申请的Deadline了，必须把GRE的成绩寄出去，于是，就只能去想办法查分送成绩了。</p>
+
+<!--more-->
+
+
+<p>解决的办法很简单，用Skype打<a href="http://www.ets.org/gre/contact">GRE的电话</a>。和对方接线员唠了半个小时，最后她帮我重新创立了一个GRE查分的账号，我这边登录成功后，终于可以用<code>NEEA注册号</code>加<code>电子邮箱</code>查出来分了。</p>
+
+<p>对方的接线员很和蔼很nice，说话语速也很慢，很照顾我这种英语不好的人&hellip;最开始，她问了我一些个人信息，姓名，生日，邮箱，地址等，之后就用我的姓名加生日搜索信息，发现我有两次GRE的考试成绩，但没有发现匹配这些信息的GRE查分的账号。一一核对后发现，是生日这一项错误，我填的是1月1号，而不是1月16号。我在我这边看了一下，确实是<strong>生日错误</strong>！而且生日这些信息，不像邮箱之类的，没有办法更改。接线员解释说，这样他们的系统会以为这个账号的所有者和这个成绩的考生是两个人，因为生日不一样。我问她，能不能帮忙改下，她说不行，只能重建一个账号。我非常不愿意重建账号，因为要再等24小时才能查分。她问我要不要帮我创建一个，我说，要（其实当时没怎么听懂&hellip;）然后是很麻烦的告诉她各种信息，选择账号和密码，还有保密问题。最后，我在我的机子上，终于查出来了我的分数。看来接线员创建的账号不用等24小时。</p>
+
+<p>总之，提醒大家，个人信息一定要符合自己注册时的信息。所有的信息，在中国教育部的GRE考试中心发过来的确认信上都有（地址是在信的抬头部分）。</p>
+
+<p>另外，有些同学碰到的问题是，注册查分账号时，姓和名反过来了。</p>
+
+<p>最后，用Skype打美国GRE中心的电话，是不用花钱的。我之前还从淘宝上充了10欧的话费，没有用上。需要考虑的另一点是时差，GRE考试中心用的是美国东海岸的时间（纽约或华盛顿时间），我是晚上9点打过去，那边正好是早上8点。注意节假日他们不上班，比如明天，是感恩节。</p>
+
+<p>出国是很艰难的，祝我，也祝大家，都能有好的归宿~~</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的AsterixDB路线图]]></title>
+    <link href="http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu/"/>
+    <updated>2013-11-25T10:27:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu</id>
+    <content type="html"><![CDATA[<p>AsterixDB是UC Irvine大学主导开发的一款并行划，分布式的数据库。更多的介绍可以看<a href="http://asterixdb.ics.uci.edu/">这里</a>。下面是我参与开发过程的一些记录。</p>
+
+<h2>获得源代码</h2>
+
+<p>首先是下载源代码。在它的<a href="">Google Code的Source页面</a>中，可以找到下面这句</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://code.google.com/p/asterixdb/</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这样你就可以把它的源代码下载下来了。</p>
+
+<p>查看下，发现除了java文件外，就是XML这种结构文件。</p>
+
+<h2>导入项目</h2>
+
+<p>因为源代码中没有<code>.projecr</code>文件，所以说，没办法像平时一样用Eclipse直接import进去。查来查去，在<a href="http://stackoverflow.com/questions/2638016/why-no-projects-found-to-import">stackoverflow</a>应该这么做</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Goto File &gt; New &gt; Java Project
+</span><span class='line'>Uncheck Use default location
+</span><span class='line'>Click on Browse to navigate to your source folder, or type in the path to your source
+</span><span class='line'>Click Finish</span></code></pre></td></tr></table></div></figure>
+
+
+<p>注意到一点，Eclipse有Bug: 如果你的项目的路径，在你的workspace下，那么，Eclipse会报错<code>folder overlaps the location of an existing project</code>，具体参考<a href="http://stackoverflow.com/questions/10368903/where-is-create-project-from-existing-source-in-eclipse-indigo">这个问题</a>。把默认的workspace删了，别选Use default location，然后选asterixdb的文件夹，就可以了。之后再把workspace加回来。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[欧洲旅行计划]]></title>
@@ -710,6 +781,13 @@
 <p>最后说一点，投简历什么的，不要怕挂。我曾经投了很多次简历，都没人理会，搞的我质疑自己能力了。但这次面试，至少算是对我的一个认可吧，让我知道自己还不是太弱。</p>
 
 <p>祝大家找工作什么的愉快～</p>
+
+<h2>另一家公司</h2>
+
+<p>企鹅公司突然在前两天打电话给我，是互动娱乐IEG事业群的面试官。
+刚刚一面完，就是各种谈项目，以及，你怎么理解数组和list的区别这种信口开河的问题。</p>
+
+<p>最后问了下面试官，我有什么不足的地方，想在毕业前弥补下。他说，感觉你语速比较快，其实这种面试，可以再<strong>放松</strong>些。想想也是，程序员面试程序员，哪有那么苦大仇深。</p>
 ]]></content>
   </entry>
   
@@ -846,25 +924,25 @@ ssh config文件具体的位置是在<code>.ssh/config</code>，在里面直接�
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 root@www.vpser.net:/root/lnmp0.4.tar.gz /home/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#x3a;&#x72;&#x6f;&#x6f;&#116;&#x40;&#119;&#x77;&#x77;&#46;&#x76;&#112;&#x73;&#x65;&#114;&#46;&#110;&#x65;&#116;">&#x72;&#x6f;&#111;&#x74;&#64;&#x77;&#119;&#x77;&#x2e;&#x76;&#x70;&#x73;&#101;&#114;&#x2e;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#114;&#x6f;&#x6f;&#116;&#64;&#119;&#x77;&#119;&#x2e;&#118;&#112;&#x73;&#x65;&#x72;&#x2e;&#x6e;&#x65;&#116;">&#x72;&#x6f;&#111;&#116;&#x40;&#119;&#119;&#119;&#46;&#118;&#x70;&#x73;&#101;&#x72;&#x2e;&#x6e;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
 
 <p>2、获取远程服务器上的目录
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r root@www.vpser.net:/root/lnmp0.4/ /home/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x72;&#x6f;&#111;&#x74;&#64;&#119;&#x77;&#x77;&#46;&#118;&#112;&#x73;&#101;&#x72;&#x2e;&#x6e;&#101;&#116;">&#x72;&#111;&#x6f;&#x74;&#64;&#x77;&#x77;&#119;&#46;&#x76;&#112;&#115;&#x65;&#114;&#x2e;&#x6e;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#114;&#x6f;&#x6f;&#x74;&#64;&#x77;&#119;&#x77;&#x2e;&#118;&#x70;&#x73;&#x65;&#x72;&#x2e;&#x6e;&#101;&#116;">&#x72;&#111;&#x6f;&#116;&#x40;&#x77;&#x77;&#119;&#46;&#118;&#x70;&#115;&#101;&#x72;&#x2e;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
 
 <p>3、将本地文件上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 /home/lnmp0.4.tar.gz root@www.vpser.net:/root/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#x72;&#111;&#111;&#116;&#64;&#x77;&#119;&#119;&#46;&#x76;&#x70;&#115;&#101;&#x72;&#46;&#x6e;&#x65;&#116;">&#x72;&#x6f;&#111;&#116;&#x40;&#119;&#119;&#x77;&#x2e;&#118;&#112;&#x73;&#x65;&#x72;&#x2e;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#114;&#x6f;&#x6f;&#x74;&#64;&#x77;&#119;&#119;&#x2e;&#118;&#x70;&#115;&#x65;&#114;&#46;&#x6e;&#x65;&#x74;">&#x72;&#x6f;&#111;&#116;&#x40;&#119;&#119;&#119;&#46;&#x76;&#x70;&#115;&#x65;&#x72;&#46;&#110;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
 
 <p>4、将本地目录上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#114;&#111;&#111;&#116;&#64;&#119;&#x77;&#x77;&#46;&#x76;&#112;&#115;&#x65;&#114;&#46;&#x6e;&#101;&#x74;">&#x72;&#x6f;&#111;&#x74;&#64;&#119;&#119;&#119;&#x2e;&#x76;&#112;&#115;&#x65;&#x72;&#x2e;&#x6e;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
+上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x72;&#x6f;&#x6f;&#x74;&#x40;&#119;&#119;&#119;&#x2e;&#x76;&#x70;&#x73;&#x65;&#x72;&#x2e;&#x6e;&#101;&#116;">&#114;&#x6f;&#111;&#x74;&#x40;&#119;&#x77;&#x77;&#46;&#118;&#x70;&#x73;&#x65;&#x72;&#x2e;&#110;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
 
 <p>5、可能有用的几个参数 :</p>
 
@@ -1250,63 +1328,6 @@ pili过来查看了下，直接输入一行命令，就干掉了所有的python�
 <p>现在看来，各个版本库之间的关系有点乱，很容易出现问题。所以说，大家要小心~另外发现这么一篇<a href="http://codingkilledthecat.wordpress.com/2012/04/28/why-your-company-shouldnt-use-git-submodules/">黑它的文章</a>&hellip;</p>
 
 <p>未完待续&hellip;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Blog的新主题]]></title>
-    <link href="http://guori12321.github.io/blog/2013/08/17/blogde-xin-zhu-ti/"/>
-    <updated>2013-08-17T23:57:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/08/17/blogde-xin-zhu-ti</id>
-    <content type="html"><![CDATA[<p>一直觉得Octopress的旧主题不够欢乐，生活已经够凄凉的了，就不要再看到了黑色风格的默认主题吧。</p>
-
-<p>这个主题是在<a href="http://opthemes.com/">这个网站</a>上挑出来的，来源于<a href="https://github.com/roberto/oct2-orange">这个github项目</a>。我还是很喜欢这个格调的。</p>
-
-<p>不过，对于这个主题，我还想做以下的变动：</p>
-
-<!--more-->
-
-
-<ul>
-<li><p><del>在最上方加一个导航栏，就像默认主题中的那样，因为还是很必要将文章分类的。另外，就算是将页面拉下来以后，导航栏还是保留在浏览器的上方，这样想看其它类别的文章就会很方便。</del>现在觉得在右侧边栏加就好，在上方加太影响美观。<del>不过现在还没开始研究标签功能。</del>努力加入3D标签云中&hellip;另外，应该把标签放到文章的最上面，而不是最下面，此外尝试下在文章的展示目录中就显示出来标签。</p></li>
-<li><p>像原主题一样，在右上方加入email等按钮。</p></li>
-<li><p>在右侧导航栏中加入诸如Github项目之类的条目。</p></li>
-</ul>
-
-
-<p>少花点时间水人人，多花点时间写博客，写代码&hellip;感觉自己好荒费人生&hellip;</p>
-
-<p>最近对blog进行了一些加工，都写在这里吧。</p>
-
-<h2>如何添加3D标签云</h2>
-
-<p>具体的效果就是右边边栏上的那个了。要做两件事情：</p>
-
-<ol>
-<li><p>安生成标签云的插件。具体的做法我已经写在<a href="https://github.com/guori12321/octopress-cumulus">我的github</a>里了。</p></li>
-<li><p>改标签的编码方式。<del>因为3D标签云点击以后，是跳转到用汉字编码的路径，而octopress默认的路径是用<code>汉语拼音</code>标注的（别问我为什么这么神奇，另外多音字怎么办&hellip;），所以说，我们要改下这个默认路径的编码方式。<a href="http://notes.liyaos.com/blog/2013/01/18/octopress/">这位老兄的博客里写了解决方案</a>，但我试了下发现不好用啊，于是我直接从<a href="https://github.com/lastland/octopress">他的github库中的plugins/categories_generator.rb</a>粘过来覆盖了我的。</del>以上方法在preview的时候好使，但deploy以后就不好使了，怀疑和github服务端的编码方式有关。新写了<a href="https://guori12321.githbu.com/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/">一篇文章</a>来解决这个问题。</p></li>
-</ol>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Happiness and sorrow]]></title>
-    <link href="http://guori12321.github.io/blog/2013/08/09/happiness-and-sorrow/"/>
-    <updated>2013-08-09T17:47:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/08/09/happiness-and-sorrow</id>
-    <content type="html"><![CDATA[<p>今天犯了点小错误：因为着急用台式机布署爬虫，草草的备份了home目录下的内容，同时把之前备份的两块没能mount成功的硬盘镜像给删掉了。这给相关的负责的同学带来了很大的麻烦。也使我很内疚，心情非常不好。</p>
-
-<p>折腾了一下午的爬虫，照例爬到山上去喝红豆冰。最喜欢香港的下午苶时间了，休息一下，爬爬山，到山顶上买整个中大最赞最便宜的红豆冰，多么开心。出了楼才发现，外面是多么阳光明媚。因为香港的地皮太紧张，整个学校都是盖在山上（中大已经是香港占地最大的大学了），而我所在的实验室，只有很小的窗户，整个屋子类似于写字间，白天都要开着灯。这样，我就不知道外面到底是昼是夜。</p>
-
-<!-- more -->
-
-
-<p>不管数据恢复如何困难，也不管现在做的工作多么纠结，原来，屋外一样是阳光，一样是成片成片的森林，一样是波光粼粼的大海。很喜欢中大这种依山傍海，周围环绕着树林的感觉。真有种深山老林的感觉。</p>
-
-<p>一直以来，为了前程，都觉得好闹心，但希望还是那么迷茫。只是，休息一下，出去看看山，看看海，世界还是一样运转。我们还有很多好玩的地方没有去，中大的每个角落都让我觉得神奇；我们还有好多好玩的事情没有做，从摄影，到游泳，再到MongoDB，有太多的东西值得我们去尝试，去学习。</p>
-
-<p>日子，一天天，就在忧伤与欢乐中度过&hellip;</p>
 ]]></content>
   </entry>
   
