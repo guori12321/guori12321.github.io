@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-14T17:40:30+08:00</updated>
+  <updated>2013-12-14T18:02:52+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[新的域名]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/14/xin-de-yu-ming/"/>
+    <updated>2013-12-14T17:45:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/14/xin-de-yu-ming</id>
+    <content type="html"><![CDATA[<p>挑来挑去，最后在淘宝上花30块钱买了一年的<code>ruiguo.me</code>的域名。<code>ruiguo.net</code>和<code>ruiguo.com</code>都已经被抢注了。可恨的是，我付完钱才想起来问“以后续费是不是都是30块一年”？回答“不是的，以后是180块一年”&hellip;坑啊！不过，一年后的事情，谁说的准呢。就先这么用着吧。</p>
+
+<p>参考octopress的<a href="http://octopress.org/docs/deploying/github/">自主域名配置</a>。注意，域名生效要24小时左右，因为各级DNS之间的缓存是过一段时间才会更新一次的。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GRE查分的问题]]></title>
@@ -928,25 +939,25 @@ ssh config文件具体的位置是在<code>.ssh/config</code>，在里面直接�
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 root@www.vpser.net:/root/lnmp0.4.tar.gz /home/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#114;&#111;&#111;&#116;&#64;&#x77;&#119;&#x77;&#46;&#118;&#112;&#115;&#x65;&#x72;&#x2e;&#x6e;&#101;&#x74;">&#x72;&#111;&#111;&#x74;&#x40;&#x77;&#x77;&#x77;&#46;&#118;&#112;&#115;&#101;&#114;&#46;&#110;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#114;&#x6f;&#x6f;&#116;&#64;&#119;&#x77;&#x77;&#46;&#x76;&#x70;&#115;&#101;&#x72;&#x2e;&#110;&#x65;&#x74;">&#114;&#111;&#x6f;&#x74;&#64;&#x77;&#119;&#x77;&#x2e;&#118;&#112;&#115;&#x65;&#114;&#x2e;&#110;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
 
 <p>2、获取远程服务器上的目录
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r root@www.vpser.net:/root/lnmp0.4/ /home/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#114;&#111;&#x6f;&#x74;&#64;&#119;&#x77;&#119;&#x2e;&#118;&#112;&#115;&#x65;&#x72;&#46;&#x6e;&#x65;&#116;">&#x72;&#x6f;&#111;&#116;&#x40;&#x77;&#x77;&#119;&#x2e;&#x76;&#112;&#x73;&#101;&#114;&#x2e;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x72;&#111;&#111;&#x74;&#x40;&#x77;&#119;&#x77;&#46;&#x76;&#112;&#x73;&#x65;&#x72;&#46;&#x6e;&#x65;&#116;">&#x72;&#x6f;&#111;&#x74;&#64;&#x77;&#119;&#119;&#46;&#118;&#x70;&#x73;&#x65;&#114;&#x2e;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
 
 <p>3、将本地文件上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 /home/lnmp0.4.tar.gz root@www.vpser.net:/root/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#x3a;&#114;&#x6f;&#x6f;&#x74;&#64;&#119;&#119;&#x77;&#46;&#118;&#x70;&#x73;&#101;&#x72;&#46;&#x6e;&#x65;&#116;">&#x72;&#111;&#x6f;&#x74;&#64;&#x77;&#x77;&#x77;&#46;&#118;&#112;&#115;&#x65;&#114;&#46;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x72;&#x6f;&#x6f;&#116;&#64;&#x77;&#x77;&#119;&#x2e;&#x76;&#112;&#x73;&#x65;&#114;&#x2e;&#x6e;&#x65;&#116;">&#114;&#x6f;&#x6f;&#x74;&#x40;&#x77;&#x77;&#x77;&#x2e;&#x76;&#x70;&#115;&#101;&#114;&#x2e;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
 
 <p>4、将本地目录上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#114;&#111;&#x6f;&#x74;&#64;&#x77;&#119;&#119;&#46;&#x76;&#112;&#115;&#101;&#x72;&#46;&#110;&#x65;&#116;">&#x72;&#x6f;&#111;&#116;&#64;&#x77;&#119;&#x77;&#x2e;&#x76;&#x70;&#115;&#101;&#x72;&#46;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
+上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#114;&#111;&#x6f;&#x74;&#x40;&#x77;&#119;&#119;&#x2e;&#x76;&#112;&#115;&#x65;&#x72;&#x2e;&#110;&#101;&#116;">&#x72;&#111;&#x6f;&#116;&#x40;&#x77;&#x77;&#x77;&#x2e;&#118;&#112;&#x73;&#x65;&#114;&#x2e;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
 
 <p>5、可能有用的几个参数 :</p>
 
@@ -1292,46 +1303,6 @@ pili过来查看了下，直接输入一行命令，就干掉了所有的python�
 <p>这个插件原本是直接用汉语作路径的，于是我就按照<a href="http://notes.liyaos.com/blog/2013/01/18/octopress/">这篇文章</a>把标签的路径设定为汉语的了。在本地上preview没问题，但deploy到github上就无法识别，会报404错误。怀疑与github那边的编码方式有关。</p>
 
 <p>既然无法用汉语作路径，那还是按octopress原先的办法，用拼音作路径吧。于是我对这个插件进行了<a href="https://github.com/guori12321/octopress-cumulus/commit/0af2339ba1f2ce574a8a17d706e56b3aee6835a1">小小的改动</a>。终于，一切正常了～～</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[我的git路线图]]></title>
-    <link href="http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian/"/>
-    <updated>2013-08-18T01:13:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian</id>
-    <content type="html"><![CDATA[<p>Git是广大人民群众喜闻乐见的版本控制器。以前写代码的时候经常碰到这种情况：想尝试着加点新功能，结果发现出了很严重的bug，想回滚代码，却没有办法，只能根据回忆一点点删改新加入的代码。后来，每当要进行大的变动时，就把原来的代码打个包，备份下。这样做非常的笨。Git就解决了这种问题。</p>
-
-<p>可是，虽然所有人都说git简单易用，但我入门时还是费了很多力气的。以下是我使用git的路线图：</p>
-
-<!-- more -->
-
-
-<ul>
-<li><p>入门教材：<a href="http://www.21andy.com/blog/uploads/downloads/2010/12/git_tutorial.pdf">看日记学git</a>，这是我见过的最好的git学习资料了。看了前十几天的内容就好。</p></li>
-<li><p><code>git rm</code>与<code>rm</code>的同步问题：在git下使用<code>rm</code>命令的时候，会将工作区的文件删掉，但是，git仓库中的文件并不会被删掉。也就是说，现在看来，文件确实是没了，但在commit之后再回滚回来，那些文件，又会出来了。解决办法是，用<code>git rm</code>命令，这样，仓库中的文件也被删掉。不过，我经常忘记用<code>git rm</code>，怎么办呢？很简单，下次add的时候，多加个参数：<code>git add -u</code>，这样会自动刷新暂存区，之后暂存区中的文件就与工作区中的文件一一对应了。git add -h中的介绍是</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>-u, --update          update tracked files</span></code></pre></td></tr></table></div></figure>
-
-
-<ul>
-<li><p><code>git rm --cached filename</code>: 与上一条的区别是，这仅仅删除index中的文件，而不会删除working tree中的文件。适用于不小心push了不想公开的文件到github上。这时，在本地rm &mdash;cached之后，别<code>git add .</code>，直接commit就好。</p></li>
-<li><p><code>git reset</code>与<code>git revert</code>的区别：前者是撤销某次commit，后者是回滚代码到某一次commit。此外，前者会删改git的历史（比如说，你撤销了某次commit，这样的话，git的历史中就不会记录这次commit了），而后者不会（事实上，revert会把当前工作区中的代码恢复到以前的某次commit，然后新增加一次新的commit）。有点晕是吧，<a href="http://stackoverflow.com/questions/8358035/whats-the-difference-between-git-revert-checkout-and-reset/8358039#8358039">stackOverflow上有很详细的讲解</a>。当然，更晕的是，通过加不同的参数，这两个命令，有时可以起同样的作用。不要研究太深，需要用到的时候再去查就好。</p></li>
-</ul>
-
-
-<h2>git submodule</h2>
-
-<p>有些时候我们会想在一个版本库中调用另一个版本库的代码，或者像我在香港实习时遇到的要保持本机上和服务器上某些代码一致的问题。这时候，用git submodule就是非常好的选择。</p>
-
-<p><a href="http://git-scm.com/book/en/Git-Tools-Submodules">官方文档</a>对它的介绍已经很完善了。只是，这东西怎么看着都不靠谱啊！比如说，各个submodule的版本问题，<a href="http://blog.devtang.com/blog/2013/05/08/git-submodule-issues/">有些时候会比较坑</a>，另外，就连官方文档里都有&#8221;It’s strange, but it works.&ldquo;和&#8221;Then, you e-mail that guy and yell at him.&#8221;。</p>
-
-<p>现在看来，各个版本库之间的关系有点乱，很容易出现问题。所以说，大家要小心~另外发现这么一篇<a href="http://codingkilledthecat.wordpress.com/2012/04/28/why-your-company-shouldnt-use-git-submodules/">黑它的文章</a>&hellip;</p>
-
-<p>未完待续&hellip;</p>
 ]]></content>
   </entry>
   

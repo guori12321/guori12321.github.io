@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 乱七八糟 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/luan-qi-ba-zao/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-14T17:40:37+08:00</updated>
+  <updated>2013-12-14T18:02:52+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[新的域名]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/14/xin-de-yu-ming/"/>
+    <updated>2013-12-14T17:45:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/14/xin-de-yu-ming</id>
+    <content type="html"><![CDATA[<p>挑来挑去，最后在淘宝上花30块钱买了一年的<code>ruiguo.me</code>的域名。<code>ruiguo.net</code>和<code>ruiguo.com</code>都已经被抢注了。可恨的是，我付完钱才想起来问“以后续费是不是都是30块一年”？回答“不是的，以后是180块一年”&hellip;坑啊！不过，一年后的事情，谁说的准呢。就先这么用着吧。</p>
+
+<p>参考octopress的<a href="http://octopress.org/docs/deploying/github/">自主域名配置</a>。注意，域名生效要24小时左右，因为各级DNS之间的缓存是过一段时间才会更新一次的。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GRE查分的问题]]></title>
