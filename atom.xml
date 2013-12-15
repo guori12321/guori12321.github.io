@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-14T18:05:48+08:00</updated>
+  <updated>2013-12-15T20:23:08+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[科学的松鼠在工大]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/15/ke-xue-de-song-shu-zai-gong-da/"/>
+    <updated>2013-12-15T19:46:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/15/ke-xue-de-song-shu-zai-gong-da</id>
+    <content type="html"><![CDATA[<p>今天，科学松鼠会的组织者之一，姬十三，在工大讲座。我溜达过去，听了一个多小时。之前就看到过很多关于科学松鼠会的内容，特别是姬十三在《科幻世界》的彩页里经常出现。</p>
+
+<p>这次讲座的题目是<strong>创业就像混实验室</strong>，主要讲的是科学松鼠会一路的成长，与姬十三本人的经历。比较老生常谈。我觉得有用的信息，主要有这么几点：</p>
+
+<!--more-->
+
+
+<ul>
+<li><p><strong>理工科/科学家的生活，也可以很精彩</strong>。人们总有种贴标签的习惯，一说到理工科，就觉得无比的深奥与枯燥。相应的，理工科的学生，或者说他们进化后变成的科学家，也是同样的无聊。更多时候，这些贴标签，只是因为<strong>不了解</strong>与<strong>一厢情愿</strong>的猜测。我觉得，一个人是否有趣，与他从事的工作的关系不大。我接触过有趣的顶级的学术大牛，也见过死板的办公室职员。有些喜欢给别人贴标签的人，其实才是最无聊的，因为他们不了解，也不愿意去了解其它人的生活，只满足于自己的猜测。</p></li>
+<li><p><strong>失败是大多数的，成功是少数的</strong>。所以说，我们要学会面对失败。特别是，在尝试新的东西的时候，因为我们是在探索未知的领域，所以失败的可能性很大。不管<strong>创业</strong>，还是<strong>混实验室</strong>，都是这样。要在失败的时候，保持开心。对于我这种智商低的人来说，这点最为重要。</p></li>
+<li><p><strong>做自己认为重要的事情</strong>。这也就是常说的“Follow My Heart”。姬十三本人的例子是，读生物信息的PhD，延期毕业一年，然后去转行写文字去了。这时他面对的，是浪费掉自己这么多年科研经验的质疑。只是，大家都知道，如果接着做下去，只会浪费掉更多的时间。而退出，去做果壳网，这并不是浪费经验，因为这些经验在做果壳的时候，都是有用的。他当时面对的压力，我很清楚，因为写论文什么的确实很纠结，特别是到了延期毕业这一步。很多时候，我们都要面对这样的选择，到底做什么。人们总是有一条规划好的路线，从小学，一直到毕业，再到工作，一路都有很常规的路线。只是，这样的路线，一定是最适合自己的吗？有些选择很艰难，比如工大的老师经常强调，违反纪律出去实习，是要延期毕业的。而出去实习一年，与延期毕业，到底哪个更重要呢？我身边有同学是选择休学一年去实习，而我，真是没这个勇气&hellip;知乎上有句话，叫<strong>普通玩家选择标准配置，高级玩家选择自定义配置</strong>。</p></li>
+</ul>
+
+
+<p>其实我想提问“如何科学相亲”来着，结果有位同学问到了姬十三的个人感情经历，以及为什么不上<code>非诚勿扰</code>，姬十三表示，这个方式相亲，可能不太适合他。听到这里，我也就没什么想问的了，就撤了&hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[新的域名]]></title>
@@ -939,25 +962,25 @@ ssh config文件具体的位置是在<code>.ssh/config</code>，在里面直接�
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 root@www.vpser.net:/root/lnmp0.4.tar.gz /home/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x72;&#x6f;&#x6f;&#116;&#64;&#x77;&#119;&#119;&#46;&#118;&#112;&#115;&#101;&#x72;&#46;&#110;&#101;&#x74;">&#114;&#x6f;&#x6f;&#x74;&#64;&#x77;&#x77;&#x77;&#46;&#x76;&#112;&#x73;&#x65;&#x72;&#46;&#110;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x72;&#111;&#111;&#116;&#x40;&#119;&#119;&#119;&#46;&#x76;&#112;&#115;&#101;&#x72;&#x2e;&#110;&#101;&#x74;">&#x72;&#x6f;&#x6f;&#x74;&#x40;&#x77;&#x77;&#119;&#x2e;&#x76;&#x70;&#115;&#101;&#114;&#46;&#110;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
 
 <p>2、获取远程服务器上的目录
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r root@www.vpser.net:/root/lnmp0.4/ /home/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#58;&#x72;&#111;&#111;&#x74;&#64;&#119;&#x77;&#119;&#x2e;&#118;&#112;&#x73;&#101;&#x72;&#x2e;&#x6e;&#x65;&#116;">&#114;&#x6f;&#x6f;&#x74;&#x40;&#x77;&#119;&#x77;&#46;&#118;&#112;&#x73;&#101;&#x72;&#x2e;&#x6e;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#x72;&#x6f;&#x6f;&#x74;&#64;&#119;&#x77;&#x77;&#x2e;&#118;&#x70;&#115;&#x65;&#x72;&#x2e;&#110;&#101;&#116;">&#114;&#111;&#111;&#116;&#x40;&#119;&#x77;&#x77;&#46;&#118;&#x70;&#115;&#101;&#114;&#46;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
 
 <p>3、将本地文件上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 /home/lnmp0.4.tar.gz root@www.vpser.net:/root/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#114;&#x6f;&#x6f;&#x74;&#x40;&#x77;&#119;&#119;&#46;&#x76;&#x70;&#115;&#x65;&#114;&#46;&#110;&#101;&#x74;">&#114;&#x6f;&#111;&#x74;&#x40;&#x77;&#119;&#x77;&#x2e;&#x76;&#x70;&#x73;&#101;&#x72;&#46;&#x6e;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#114;&#111;&#x6f;&#116;&#64;&#x77;&#119;&#x77;&#x2e;&#118;&#112;&#x73;&#101;&#x72;&#x2e;&#110;&#101;&#116;">&#114;&#x6f;&#111;&#x74;&#x40;&#119;&#x77;&#119;&#x2e;&#118;&#x70;&#115;&#x65;&#x72;&#46;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
 
 <p>4、将本地目录上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x72;&#x6f;&#x6f;&#x74;&#x40;&#119;&#x77;&#x77;&#46;&#x76;&#112;&#115;&#x65;&#x72;&#x2e;&#110;&#101;&#116;">&#x72;&#x6f;&#111;&#116;&#64;&#119;&#x77;&#119;&#x2e;&#x76;&#112;&#115;&#101;&#x72;&#x2e;&#110;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
+上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x72;&#x6f;&#111;&#116;&#x40;&#119;&#119;&#119;&#46;&#118;&#x70;&#115;&#x65;&#x72;&#x2e;&#x6e;&#101;&#x74;">&#114;&#x6f;&#x6f;&#x74;&#64;&#119;&#119;&#x77;&#x2e;&#x76;&#x70;&#x73;&#101;&#114;&#46;&#110;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
 
 <p>5、可能有用的几个参数 :</p>
 
@@ -1263,46 +1286,6 @@ pili过来查看了下，直接输入一行命令，就干掉了所有的python�
 <p>然后就只拿了25分&hellip;做这个题目花了很久的时间，加起来三四个小时了吧，因为一些边界和变量名打错的bug一直没调出来&hellip;写代码还是要头脑清醒啊。</p>
 
 <p>谁会做告诉我下吧&hellip;谢谢&hellip;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[给octopress添加3D标签云]]></title>
-    <link href="http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/"/>
-    <updated>2013-08-20T13:26:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian</id>
-    <content type="html"><![CDATA[<p>3D标签云的效果看右栏。很炫很神奇～</p>
-
-<p>具体做法是：</p>
-
-<ol>
-<li><p>从我的github库中<a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">下载源代码</a></p></li>
-<li><p>把相应的文件粘到自己octopress，另外在边栏那里把它显示出来就好。具体参考我的github上的<a href="https://github.com/guori12321/octopress-cumulus">README</a>。</p></li>
-</ol>
-
-
-<h2>Octopress 3D categories/tags-cloud configuration for non-English tags</h2>
-
-<p>You can see my 3D categories-tag at the right sidebar. It&rsquo;s awesome! However, the origin version doesn&rsquo;t support <strong>non-English</strong> tags, so I revised the codes and put them in my github. It now works!</p>
-
-<p>It&rsquo;s easy to configuration:</p>
-
-<ol>
-<li><p>Download the source codes from my <a href="https://github.com/guori12321/octopress-cumulus/archive/master.zip">github repo</a></p></li>
-<li><p>Copy the codes to your octopress. The detail is given at <a href="https://github.com/guori12321/octopress-cumulus">my github repo README</a></p></li>
-</ol>
-
-
-<!--more-->
-
-
-<h2>我之前碰到的问题</h2>
-
-<p>主要是不支持汉语标签。虽然这个插件的作者是中国人，但是他俩的博客都是全英文，所以不存在这个问题。我还是很想用汉语标签的。octopress本身支持汉语标签，点击汉语标签后，会发现它把路径中的汉字转成<strong>拼音</strong>了，所以说就不存在汉语路径的问题。</p>
-
-<p>这个插件原本是直接用汉语作路径的，于是我就按照<a href="http://notes.liyaos.com/blog/2013/01/18/octopress/">这篇文章</a>把标签的路径设定为汉语的了。在本地上preview没问题，但deploy到github上就无法识别，会报404错误。怀疑与github那边的编码方式有关。</p>
-
-<p>既然无法用汉语作路径，那还是按octopress原先的办法，用拼音作路径吧。于是我对这个插件进行了<a href="https://github.com/guori12321/octopress-cumulus/commit/0af2339ba1f2ce574a8a17d706e56b3aee6835a1">小小的改动</a>。终于，一切正常了～～</p>
 ]]></content>
   </entry>
   
