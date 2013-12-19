@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 乱七八糟 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/luan-qi-ba-zao/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-16T21:50:18+08:00</updated>
+  <updated>2013-12-19T12:33:21+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[同龄人的各种传奇]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/17/tong-ling-ren-de-ge-chong-chuan-qi/"/>
+    <updated>2013-12-17T10:57:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/17/tong-ling-ren-de-ge-chong-chuan-qi</id>
+    <content type="html"><![CDATA[<p>这篇日志，就来罗列下同龄人的各种传奇经历吧。读了他们写的东西，我总有一种白活了的感觉。其实，每个人的背景和经历，都差距的太大，别人的经历，对我来说，也是根本无法复制。所以说，读读，开心就好~(因为根本不是一个level的&hellip;)</p>
+
+<!--more-->
+
+
+<ul>
+<li><a href="http://blog.renren.com/blog/261603044/919258835">桂家勋的关于创业的日志</a></li>
+</ul>
+
+
+<p>读他的日志完全是种不同的视角。在我们以进入BAT拿着一年十几二十万的工资，或是进入美国排名稍微靠前点的学校读研或者博士的时候，他已经拿到UPenn的毕业证，现在在创业了。我甚至感觉，他和我不是同一个世界的人。他真的比我们要敢想敢做多了，而UPenn能提供的，也是一个更高更广的平台。</p>
+
+<p>他还有各种神奇的日志，如<a href="http://blog.renren.com/blog/261603044/872167966">假护照被审问</a>，他在上面那篇日志里也有提到其它的日志。</p>
+
+<p><strong>未完待续</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[科学的松鼠在工大]]></title>
@@ -59,6 +82,14 @@
 <li><p>一直以来有个困惑的地方，就是Github Page中的CNAME文件。实际上，用户自定义的域名，是指向Github Page的服务器，然后Github的服务器，去查找所有git库中的CNAME文件，找到和当前域名匹配的CNAME文件后，就认为这个CNAME文件所在的Github Page，就是这个域名对应的page。同样，在直接输入Github Page的原来的域名时，也会跳转到这个自定义的域名。但这样就有一个问题：如果其它人把我的域名放到他们的CNAME文件中的话，不就把我的域名给劫持了吗？这样，我的域名就会跳转到他们的Github Page那里。写信问了下Github Page的工作人员，他们说，同一个域名只能出现在一个CNAME文件中（我实测一个CNAME中可以写多个域名，但只有第一个域名会被识别出来。此外，Github Page只支持一个自定义域名），如果其它人也用这个域名的话，他们的Github Page在build的时候会失败。我又问，如果他们真的抢先在CNAME中使用我的域名呢？工作人员回答，这时他们就人工来判断和解决这个问题了。</p></li>
 </ul>
 
+
+<h2>电子邮箱</h2>
+
+<p>有了域名，就可以用这个域名来开属于自己的电子邮箱了~我的个人域名的邮箱是<code>ruiguo [at] ruiguo.me</code>。后台用的是<a href="http://exmail.qq.com/">腾讯企业邮箱</a>。具体的开通方法在腾讯的网站已经说的很明白了。</p>
+
+<p>要注意的是，腾讯邮箱似乎没有办法关闭<strong>垃圾邮件</strong>的过滤，这就造成了丢失信件的可能。而我平时也是转发到gmail来管理信件，这样出了问题可能要过很久才会发现。之前就有过因为转发前被当作垃圾邮件的情况。</p>
+
+<p>其实还是用gmail比较好，只是gmail已经不支持免费的企业邮箱了。</p>
 ]]></content>
   </entry>
   

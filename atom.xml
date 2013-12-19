@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-16T21:50:11+08:00</updated>
+  <updated>2013-12-19T12:33:13+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[同龄人的各种传奇]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/17/tong-ling-ren-de-ge-chong-chuan-qi/"/>
+    <updated>2013-12-17T10:57:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/17/tong-ling-ren-de-ge-chong-chuan-qi</id>
+    <content type="html"><![CDATA[<p>这篇日志，就来罗列下同龄人的各种传奇经历吧。读了他们写的东西，我总有一种白活了的感觉。其实，每个人的背景和经历，都差距的太大，别人的经历，对我来说，也是根本无法复制。所以说，读读，开心就好~(因为根本不是一个level的&hellip;)</p>
+
+<!--more-->
+
+
+<ul>
+<li><a href="http://blog.renren.com/blog/261603044/919258835">桂家勋的关于创业的日志</a></li>
+</ul>
+
+
+<p>读他的日志完全是种不同的视角。在我们以进入BAT拿着一年十几二十万的工资，或是进入美国排名稍微靠前点的学校读研或者博士的时候，他已经拿到UPenn的毕业证，现在在创业了。我甚至感觉，他和我不是同一个世界的人。他真的比我们要敢想敢做多了，而UPenn能提供的，也是一个更高更广的平台。</p>
+
+<p>他还有各种神奇的日志，如<a href="http://blog.renren.com/blog/261603044/872167966">假护照被审问</a>，他在上面那篇日志里也有提到其它的日志。</p>
+
+<p><strong>未完待续</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[科学的松鼠在工大]]></title>
@@ -59,6 +82,14 @@
 <li><p>一直以来有个困惑的地方，就是Github Page中的CNAME文件。实际上，用户自定义的域名，是指向Github Page的服务器，然后Github的服务器，去查找所有git库中的CNAME文件，找到和当前域名匹配的CNAME文件后，就认为这个CNAME文件所在的Github Page，就是这个域名对应的page。同样，在直接输入Github Page的原来的域名时，也会跳转到这个自定义的域名。但这样就有一个问题：如果其它人把我的域名放到他们的CNAME文件中的话，不就把我的域名给劫持了吗？这样，我的域名就会跳转到他们的Github Page那里。写信问了下Github Page的工作人员，他们说，同一个域名只能出现在一个CNAME文件中（我实测一个CNAME中可以写多个域名，但只有第一个域名会被识别出来。此外，Github Page只支持一个自定义域名），如果其它人也用这个域名的话，他们的Github Page在build的时候会失败。我又问，如果他们真的抢先在CNAME中使用我的域名呢？工作人员回答，这时他们就人工来判断和解决这个问题了。</p></li>
 </ul>
 
+
+<h2>电子邮箱</h2>
+
+<p>有了域名，就可以用这个域名来开属于自己的电子邮箱了~我的个人域名的邮箱是<code>ruiguo [at] ruiguo.me</code>。后台用的是<a href="http://exmail.qq.com/">腾讯企业邮箱</a>。具体的开通方法在腾讯的网站已经说的很明白了。</p>
+
+<p>要注意的是，腾讯邮箱似乎没有办法关闭<strong>垃圾邮件</strong>的过滤，这就造成了丢失信件的可能。而我平时也是转发到gmail来管理信件，这样出了问题可能要过很久才会发现。之前就有过因为转发前被当作垃圾邮件的情况。</p>
+
+<p>其实还是用gmail比较好，只是gmail已经不支持免费的企业邮箱了。</p>
 ]]></content>
   </entry>
   
@@ -977,25 +1008,25 @@ ssh config文件具体的位置是在<code>.ssh/config</code>，在里面直接�
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 root@www.vpser.net:/root/lnmp0.4.tar.gz /home/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x72;&#x6f;&#x6f;&#116;&#x40;&#119;&#119;&#119;&#x2e;&#118;&#112;&#115;&#x65;&#114;&#x2e;&#110;&#x65;&#x74;">&#x72;&#x6f;&#x6f;&#116;&#64;&#119;&#119;&#x77;&#46;&#118;&#x70;&#x73;&#101;&#114;&#46;&#110;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#x72;&#111;&#111;&#116;&#x40;&#119;&#119;&#119;&#46;&#118;&#x70;&#115;&#101;&#114;&#x2e;&#x6e;&#101;&#x74;">&#x72;&#111;&#x6f;&#x74;&#x40;&#x77;&#x77;&#119;&#x2e;&#118;&#x70;&#115;&#101;&#x72;&#x2e;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
 
 <p>2、获取远程服务器上的目录
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r root@www.vpser.net:/root/lnmp0.4/ /home/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#109;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#x72;&#x6f;&#x6f;&#x74;&#x40;&#x77;&#x77;&#119;&#46;&#x76;&#112;&#115;&#101;&#x72;&#46;&#110;&#101;&#x74;">&#114;&#111;&#x6f;&#116;&#x40;&#x77;&#x77;&#x77;&#46;&#118;&#x70;&#115;&#101;&#114;&#x2e;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#114;&#x6f;&#111;&#x74;&#x40;&#x77;&#119;&#119;&#46;&#x76;&#x70;&#x73;&#101;&#x72;&#46;&#110;&#x65;&#x74;">&#114;&#111;&#111;&#x74;&#x40;&#119;&#x77;&#x77;&#46;&#118;&#x70;&#115;&#x65;&#x72;&#x2e;&#x6e;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
 
 <p>3、将本地文件上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 /home/lnmp0.4.tar.gz root@www.vpser.net:/root/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#58;&#114;&#x6f;&#111;&#116;&#x40;&#119;&#119;&#119;&#x2e;&#x76;&#x70;&#115;&#101;&#114;&#x2e;&#110;&#x65;&#x74;">&#x72;&#x6f;&#111;&#x74;&#x40;&#x77;&#119;&#x77;&#x2e;&#x76;&#x70;&#115;&#x65;&#x72;&#x2e;&#110;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#x72;&#111;&#x6f;&#x74;&#x40;&#119;&#119;&#x77;&#46;&#x76;&#112;&#115;&#101;&#x72;&#x2e;&#x6e;&#101;&#x74;">&#114;&#x6f;&#111;&#116;&#64;&#x77;&#x77;&#x77;&#46;&#118;&#x70;&#x73;&#x65;&#114;&#x2e;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
 
 <p>4、将本地目录上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x72;&#x6f;&#x6f;&#x74;&#64;&#119;&#119;&#119;&#46;&#x76;&#x70;&#x73;&#x65;&#114;&#x2e;&#x6e;&#101;&#x74;">&#114;&#x6f;&#111;&#116;&#x40;&#x77;&#119;&#x77;&#46;&#118;&#112;&#x73;&#101;&#x72;&#46;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
+上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x72;&#x6f;&#x6f;&#116;&#x40;&#119;&#x77;&#x77;&#x2e;&#x76;&#x70;&#115;&#101;&#114;&#x2e;&#110;&#x65;&#116;">&#114;&#111;&#x6f;&#x74;&#64;&#x77;&#119;&#119;&#46;&#118;&#x70;&#x73;&#x65;&#114;&#46;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
 
 <p>5、可能有用的几个参数 :</p>
 
@@ -1153,154 +1184,6 @@ pili过来查看了下，直接输入一行命令，就干掉了所有的python�
 
 
 <p>未完待续&hellip;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[HackerRank K-mismatch题解]]></title>
-    <link href="http://guori12321.github.io/blog/2013/08/25/hackerrank-k-mismatchti-jie/"/>
-    <updated>2013-08-25T14:39:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/08/25/hackerrank-k-mismatchti-jie</id>
-    <content type="html"><![CDATA[<p>其实算不上题解，只是讲讲自己的解题的思路吧。最后也没做出来，50分拿了25分。</p>
-
-<p><a href="https://www.hackerrank.com/contests/quantium/challenges/k-mismatch">题目地址</a></p>
-
-<p>给定一个字符串，对它的任意两个长度相同的子串，若这两个子串的同一位置处的不同的字符的个数少于一个阈值k，就将这两个子串统计下来。问，一共有多少个满足要求的子串对。</p>
-
-<!--more-->
-
-
-<p>同一个字符串，有很多子串，子串对就更多了。因此这道题目对算法的效率的要求就比较高了。最朴素的办法，是，先枚举子串的长度，再枚举第一个和第二个子串的起始位置，之后再比较两个子串的不同字符的个数。这样的话，是O(N<sup>4</sup>)的复杂度。</p>
-
-<p>分析下上面的思路，有哪里做了<strong>重复工作</strong>呢？是最后比较的那里，因为对于长度相同而位置只差一位的两个子串来说，它两只是错了一位而已，没必要全部重新比较下。我们可以用<strong>扩展</strong>的办法，来进行子串的比较。</p>
-
-<p>具体就是：先枚举第一个和第二个子串起点的差值（即这两个子串的距离），再枚举第一，二个子串的起点。刚开始的时候，把两个子串所有位置都比较一次，把不同的字符的个数记录下来。之后，这两二个子串分别向后移动了一位，这时，只用比较移出去的那位字符，和移进来的新字符是否相同就好了，根据这两位字符的情况，在上一次的记录上加减就好了。这样对空间的要求也不高，只用了一个临时的记录不同字符的int而已。（事实上我先是开了很大的数组，后来才发现可以优化）</p>
-
-<p>代码如下：</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'># -*- coding: utf-8 -*-
-</span><span class='line'>
-</span><span class='line'>def mismatch(a, b):
-</span><span class='line'>    global K
-</span><span class='line'>    tot = 0
-</span><span class='line'>    for i in range(len(a)):
-</span><span class='line'>        if a[i] != b[i]:
-</span><span class='line'>            tot += 1
-</span><span class='line'>            if tot &gt; K:
-</span><span class='line'>                return K+1
-</span><span class='line'>    return tot
-</span><span class='line'>
-</span><span class='line'>K = int(raw_input())
-</span><span class='line'>S = raw_input()
-</span><span class='line'>
-</span><span class='line'>ans = 0
-</span><span class='line'>team = []
-</span><span class='line'>
-</span><span class='line'>#先计算小于 或 等于K的子串对
-</span><span class='line'>for i in xrange(1,K+1):
-</span><span class='line'>    ans += ((len(S) - i + 1)*(len(S) - i)) / 2
-</span><span class='line'>
-</span><span class='line'>#枚举两个子串的位置的差值 边界值：第一个子串固定，第二个一直移动到最后
-</span><span class='line'>for i in xrange(1, len(S) - (K+1)+1):
-</span><span class='line'>    #misMatrix[0][i] = mismatch(S[0:K+1], S[i:i+K+1])
-</span><span class='line'>    mis0 = mismatch(S[0:K+1], S[i:i+K+1])
-</span><span class='line'>    if mis0 &lt;= K:
-</span><span class='line'>        ans += 1
-</span><span class='line'>
-</span><span class='line'>    #枚举第一个子串的其它位置，第二个子串和它距离为i
-</span><span class='line'>    for j in xrange(1, len(S)-(K+1)):
-</span><span class='line'>        if j+i+K &gt;= len(S):
-</span><span class='line'>            break
-</span><span class='line'>        #misMatrix[j][j+i] = misMatrix[j-1][j+i-1]
-</span><span class='line'>        mis = mis0
-</span><span class='line'>        if S[j-1] != S[j+i-1]:
-</span><span class='line'>            mis -= 1
-</span><span class='line'>        if S[j+K] != S[j+i+K]:
-</span><span class='line'>            mis += 1
-</span><span class='line'>        if mis &lt;= K:
-</span><span class='line'>            ans += 1
-</span><span class='line'>
-</span><span class='line'>            zz = 0
-</span><span class='line'>            t = mis
-</span><span class='line'>            while j-zz &gt;= 0 and t &lt;= K:
-</span><span class='line'>                zz += 1
-</span><span class='line'>                if j-zz &lt; 0:
-</span><span class='line'>                    break
-</span><span class='line'>                if S[j-zz] != S[j+i-zz]:
-</span><span class='line'>                    t += 1
-</span><span class='line'>                    if t &lt;= K:
-</span><span class='line'>                        ans += 1
-</span><span class='line'>                    else:
-</span><span class='line'>                        break
-</span><span class='line'>                else:
-</span><span class='line'>                    ans += 1
-</span><span class='line'>
-</span><span class='line'>        mis0 = mis
-</span><span class='line'>print ans</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后就只拿了25分&hellip;做这个题目花了很久的时间，加起来三四个小时了吧，因为一些边界和变量名打错的bug一直没调出来&hellip;写代码还是要头脑清醒啊。</p>
-
-<p>谁会做告诉我下吧&hellip;谢谢&hellip;</p>
 ]]></content>
   </entry>
   
