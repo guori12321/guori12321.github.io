@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: YogurtOS | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/yogurtos/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2013-12-23T19:39:19+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Yogurt OS Development Week0]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/22/yogurt-os-development-week0/"/>
+    <updated>2013-12-22T12:25:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/22/yogurt-os-development-week0</id>
+    <content type="html"><![CDATA[<p>After the busy graduate school application period, nowadays I have plenty of time to do what I want. Developing a operating system sounds cool and awesome, and as I always wonder how it is developed, I decide to develop my own one: YogurtOS!</p>
+
+<p>Why Yogurt? Because I love it!</p>
+
+<!--more-->
+
+
+<p>There is a famous OS development tutorial <a href="http://book.douban.com/subject/11530329/">Develop your own OS in 30 days</a>. The book is written in Japanese and I read the Chinese translation version.</p>
+
+<p>The following is my experience in developing such a OS.</p>
+
+<h2>Day 0 2013-12-21</h2>
+
+<p>I read the Day 0 part of the book.</p>
+]]></content>
+  </entry>
+  
+</feed>

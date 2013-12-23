@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-19T12:33:13+08:00</updated>
+  <updated>2013-12-23T19:39:10+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[About Hadoop]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/23/wo-de-hadooplu-xian-tu/"/>
+    <updated>2013-12-23T17:21:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/23/wo-de-hadooplu-xian-tu</id>
+    <content type="html"><![CDATA[<p>在海量数据计算研究中心一年多了，类似&#8221;大数据&#8221;这种专业词汇也听了不知道多少次了。只可惜自己还是一知半解，只知道拿着实验室各位老板的名号出来骗人&hellip;现在总算有一点时间了，来安心的研究Hadoop和Prege什么的吧~</p>
+
+<!--more-->
+
+
+<h2>Mac下安装Hadoop</h2>
+
+<p>显然用<code>homebrew</code>安装是最省事的。<a href="http://importantfish.com/how-to-install-hadoop-on-mac-os-x/">这篇博客</a>中有详细的介绍。</p>
+
+<h2>官方的教程</h2>
+
+<p>Hadoop的资料非常多。当然，我们最先要看的，肯定是<a href="http://hadoop.apache.org/index.pdf">Hadoop的官方教程了</a>。一共42页。这是一部面向<strong>使用者</strong>的教程。</p>
+
+<p>太长了我明天再看&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yogurt OS Development Week0]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/22/yogurt-os-development-week0/"/>
+    <updated>2013-12-22T12:25:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/22/yogurt-os-development-week0</id>
+    <content type="html"><![CDATA[<p>After the busy graduate school application period, nowadays I have plenty of time to do what I want. Developing a operating system sounds cool and awesome, and as I always wonder how it is developed, I decide to develop my own one: YogurtOS!</p>
+
+<p>Why Yogurt? Because I love it!</p>
+
+<!--more-->
+
+
+<p>There is a famous OS development tutorial <a href="http://book.douban.com/subject/11530329/">Develop your own OS in 30 days</a>. The book is written in Japanese and I read the Chinese translation version.</p>
+
+<p>The following is my experience in developing such a OS.</p>
+
+<h2>Day 0 2013-12-21</h2>
+
+<p>I read the Day 0 part of the book.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[同龄人的各种传奇]]></title>
@@ -1008,25 +1052,25 @@ ssh config文件具体的位置是在<code>.ssh/config</code>，在里面直接�
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 root@www.vpser.net:/root/lnmp0.4.tar.gz /home/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#x72;&#111;&#111;&#116;&#x40;&#119;&#119;&#119;&#46;&#118;&#x70;&#115;&#101;&#114;&#x2e;&#x6e;&#101;&#x74;">&#x72;&#111;&#x6f;&#x74;&#x40;&#x77;&#x77;&#119;&#x2e;&#118;&#x70;&#115;&#101;&#x72;&#x2e;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x72;&#x6f;&#111;&#116;&#64;&#119;&#x77;&#119;&#46;&#x76;&#x70;&#x73;&#x65;&#114;&#x2e;&#x6e;&#x65;&#116;">&#114;&#111;&#x6f;&#116;&#x40;&#x77;&#x77;&#119;&#x2e;&#x76;&#x70;&#115;&#101;&#x72;&#x2e;&#110;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示远程服务器上的文件，最后面的/home/lnmp0.4.tar.gz表示保存在本地上的路径和文件名。</p>
 
 <p>2、获取远程服务器上的目录
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r root@www.vpser.net:/root/lnmp0.4/ /home/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#x3a;&#114;&#x6f;&#111;&#x74;&#x40;&#x77;&#119;&#119;&#46;&#x76;&#x70;&#x73;&#101;&#x72;&#46;&#110;&#x65;&#x74;">&#114;&#111;&#111;&#x74;&#x40;&#119;&#x77;&#x77;&#46;&#118;&#x70;&#115;&#x65;&#x72;&#x2e;&#x6e;&#101;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；<a href="&#109;&#97;&#x69;&#x6c;&#x74;&#111;&#58;&#x72;&#111;&#111;&#116;&#x40;&#119;&#x77;&#119;&#46;&#x76;&#x70;&#x73;&#101;&#114;&#46;&#x6e;&#x65;&#116;">&#x72;&#111;&#x6f;&#x74;&#x40;&#119;&#119;&#x77;&#46;&#x76;&#x70;&#115;&#x65;&#114;&#x2e;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示远程服务器上的目录，最后面的/home/lnmp0.4/表示保存在本地上的路径。</p>
 
 <p>3、将本地文件上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 /home/lnmp0.4.tar.gz root@www.vpser.net:/root/lnmp0.4.tar.gz
 &rsquo;&lsquo;&rsquo;
-上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#x72;&#111;&#x6f;&#x74;&#x40;&#119;&#119;&#x77;&#46;&#x76;&#112;&#115;&#101;&#x72;&#x2e;&#x6e;&#101;&#x74;">&#114;&#x6f;&#111;&#116;&#64;&#x77;&#x77;&#x77;&#46;&#118;&#x70;&#x73;&#x65;&#114;&#x2e;&#x6e;&#101;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
+上端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。 /home/lnmp0.4.tar.gz表示本地上准备上传文件的路径和文件名。<a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#x72;&#111;&#x6f;&#x74;&#x40;&#x77;&#119;&#119;&#46;&#118;&#x70;&#115;&#101;&#x72;&#46;&#x6e;&#101;&#x74;">&#114;&#111;&#111;&#116;&#64;&#119;&#119;&#119;&#x2e;&#118;&#x70;&#x73;&#x65;&#114;&#x2e;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4.tar.gz 表示保存在远程服务器上目录和文件名。</p>
 
 <p>4、将本地目录上传到服务器上
 &lsquo;&rsquo;&lsquo;
 scp -P 2222 -r /home/lnmp0.4/ root@www.vpser.net:/root/lnmp0.4/
 &rsquo;&lsquo;&rsquo;
-上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#x6d;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x72;&#x6f;&#x6f;&#116;&#x40;&#119;&#x77;&#x77;&#x2e;&#x76;&#x70;&#115;&#101;&#114;&#x2e;&#110;&#x65;&#116;">&#114;&#111;&#x6f;&#x74;&#64;&#x77;&#119;&#119;&#46;&#118;&#x70;&#x73;&#x65;&#114;&#46;&#110;&#x65;&#116;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
+上 端口大写P 为参数，2222 表示更改SSH端口后的端口，如果没有更改SSH端口可以不用添加该参数。-r 参数表示递归复制（即复制该目录下面的文件和目录）；/home/lnmp0.4/表示准备要上传的目录，<a href="&#x6d;&#97;&#105;&#x6c;&#116;&#111;&#x3a;&#114;&#x6f;&#111;&#x74;&#x40;&#x77;&#x77;&#x77;&#x2e;&#x76;&#x70;&#x73;&#x65;&#x72;&#46;&#x6e;&#101;&#x74;">&#114;&#x6f;&#111;&#116;&#64;&#x77;&#x77;&#119;&#x2e;&#118;&#112;&#x73;&#101;&#114;&#46;&#110;&#x65;&#x74;</a> 表示使用root用户登录远程服务器www.vpser.net，:/root/lnmp0.4/ 表示保存在远程服务器上的目录位置。</p>
 
 <p>5、可能有用的几个参数 :</p>
 
@@ -1118,72 +1162,6 @@ pili过来查看了下，直接输入一行命令，就干掉了所有的python�
 <h2>mkdir</h2>
 
 <p>这个命令就不多说了。只是用它建立新文件夹的时候，要建立多层的文件夹时，是加<code>-p</code>，而不是像其它命令一样是<code>-r</code>。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[折腾vim]]></title>
-    <link href="http://guori12321.github.io/blog/2013/09/04/zhe-teng-vim/"/>
-    <updated>2013-09-04T10:38:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/09/04/zhe-teng-vim</id>
-    <content type="html"><![CDATA[<p>现在用vim仅仅是比用记事本高效，很多功能还没搞明白&hellip;</p>
-
-<p>配置vim是个很折腾的过程，我用的是<a href="https://github.com/spf13/spf13-vim">spf13</a>，只可惜用这个配置，一样有很多地方要改动。<a href="https://gist.github.com/guori12321/7211967">我的.vimrc.local</a>。我的使用习惯是：</p>
-
-<!--more-->
-
-
-<ul>
-<li><p>在它的.vimrc中把所有&#8217;nowrap&#8217;改为&#8217;wrap&#8217;。写代码的时候不自动折行还好，但写日志等文本内容，不折行就没法用了。</p></li>
-<li><p>spf13中每次保存的时候都会自动帮你编译一下，并报出所有的语法错误。只是这种做法带来很多问题：语法检查过于严格，声明完变量不使用都会报错；报错时会新建一个分栏，每次报错后我都要自己关掉它；最不能忍的是，有时候保存一下，然后vim就会自动退出。解决：<code>echo let\ g:pymode_lint\ =\ 0 &gt;&gt; ~/.vimrc.local</code>。</p></li>
-<li><p>Close the Code Checking \ syntastic in spf13: <code>echo let\ g:pymode_lint\ =\ 0 &gt;&gt; ~/.vimrc.local</code>。</p></li>
-<li><p>我习惯在Insert中把&lt;C-H>绑定为向左，&lt;C-L>为向右。在.vimrc或.vimrc.local中设置都会失效。解决：用<code>imap &lt;C-H&gt; &lt;Left&gt;</code>而不要用<code>inoremap</code>，怀疑是内部的键位绑定冲突。</p></li>
-<li><p>按&lt;C-V>是进入Visual Block模式，用它可以很方便的给大段的代码打注释。我之前都是用&lt;C-V>进入Visual再&lt;C-Q>进入Visual Block，就麻烦了一些。</p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MongoDB路线图]]></title>
-    <link href="http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu/"/>
-    <updated>2013-09-02T15:48:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu</id>
-    <content type="html"><![CDATA[<p><code>MongoDB</code>是非常有名的No SQL数据库，话说还真是适应不了No SQL的思维，每次都想着先建表&hellip;。以下是我学习MongoDB的路线图：</p>
-
-<!--more-->
-
-
-<p><strong>2013-10-31 一定要小心使用collection.update()!!!这个命令并不是说，把新的属性加上，而是把档案直接update为你要更新的值!!在程序跑到一半的时候，我查看了下，结果发现数据全丢了！！！心脏都要停止跳动了！！！</strong></p>
-
-<h2>路线图</h2>
-
-<ol>
-<li><p>首先肯定是看看<a href="http://www.mongodb.org/">官网的资料了</a>。这里面有最初级的教程，以及最详细权威的文档。走一遍它的教程后，相信你会对MongoDB有最初步的了解，学习深入后，再来这里查询文档。只是，这里没有难度适中的教程。要么有太多的细节，要么太过简略了。</p></li>
-<li><p>一篇很好的<a href="http://www.eduyo.com/database/nosql/805.html">中文简易教程</a>，看一遍就知道MongoDB有哪些神奇的功能了～</p></li>
-<li><p><a href="http://blog.nosqlfan.com/html/2989.html">python使用Mongo的教程</a></p></li>
-</ol>
-
-
-<h2>关于Mongod和Mongo命令</h2>
-
-<p>听pili讲了好一会，才有了一点概念：Mongod比Mongo高一层，Mongod可以指定路径(&mdash;dbpath)，Mongo则是指定端口。同一个Mongod可以有好几个Mongo。总体感觉Mongod相当于SQL中的connection，如果两个Mongod指向不同的路径，那么它俩就没有交互，可以独立的读写，而不用担心读和写同时进行，而让数据乱掉。</p>
-
-<p>我现在对它俩的关系的理解就是，Mongod相当于C++中的流，Mongo就是具体的文件。</p>
-
-<p>可以为Mongod和Mongo指定端口。不同的Mongod必须使用不同的端口。不同的Mongo可以使用同一端口。当Mongo和Mongod使用同一端口的时候，这个Mongo就挂到Mongod上了。具体在python中，Mongod相当于一个connection。</p>
-
-<h2>其它要注意的</h2>
-
-<ul>
-<li><p>MongoDB的索引值只能为<strong>string</strong>，很神奇~</p></li>
-<li><p>要想指定ObjectID，只用在插入的时候，指定&#8221;_id&#8221;参数就好</p></li>
-<li><p>关于同一个collection的大小：之前在用MySQL存微博上的数据的时候，同一张表中存入10万条微博，读写的速度都在0.04秒左右，一旦上百万级，就要5秒左右，完全不可以接受。当时把百万级的数据分成了十个表。关于MongoDB存多少合适，我的实验结果是四亿条数据（每条数据都只有一个_id和一个int型的属性值）内都没有问题，一早上插入了4亿条数据，耗时在0.1秒以内就找到了，整个库有50多G。在测试时，每插入5万条左右的数据，就会卡那么一秒，之后再接着插入。应该是MongoDB内部在新建一些结构吧。</p></li>
-<li><p>Mongodb的索引只能是string类型，但_id的类型可以是int</p></li>
-</ul>
-
-
-<p>未完待续&hellip;</p>
 ]]></content>
   </entry>
   

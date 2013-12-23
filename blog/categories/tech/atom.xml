@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Tech | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/tech/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2013-12-23T19:39:19+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[About Hadoop]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/23/wo-de-hadooplu-xian-tu/"/>
+    <updated>2013-12-23T17:21:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/23/wo-de-hadooplu-xian-tu</id>
+    <content type="html"><![CDATA[<p>在海量数据计算研究中心一年多了，类似"大数据"这种专业词汇也听了不知道多少次了。只可惜自己还是一知半解，只知道拿着实验室各位老板的名号出来骗人&hellip;现在总算有一点时间了，来安心的研究Hadoop和Prege什么的吧~</p>
+
+<!--more-->
+
+
+<h2>Mac下安装Hadoop</h2>
+
+<p>显然用<code>homebrew</code>安装是最省事的。<a href="http://importantfish.com/how-to-install-hadoop-on-mac-os-x/">这篇博客</a>中有详细的介绍。</p>
+
+<h2>官方的教程</h2>
+
+<p>Hadoop的资料非常多。当然，我们最先要看的，肯定是<a href="http://hadoop.apache.org/index.pdf">Hadoop的官方教程了</a>。一共42页。这是一部面向<strong>使用者</strong>的教程。</p>
+
+<p>太长了我明天再看&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yogurt OS Development Week0]]></title>
+    <link href="http://guori12321.github.io/blog/2013/12/22/yogurt-os-development-week0/"/>
+    <updated>2013-12-22T12:25:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2013/12/22/yogurt-os-development-week0</id>
+    <content type="html"><![CDATA[<p>After the busy graduate school application period, nowadays I have plenty of time to do what I want. Developing a operating system sounds cool and awesome, and as I always wonder how it is developed, I decide to develop my own one: YogurtOS!</p>
+
+<p>Why Yogurt? Because I love it!</p>
+
+<!--more-->
+
+
+<p>There is a famous OS development tutorial <a href="http://book.douban.com/subject/11530329/">Develop your own OS in 30 days</a>. The book is written in Japanese and I read the Chinese translation version.</p>
+
+<p>The following is my experience in developing such a OS.</p>
+
+<h2>Day 0 2013-12-21</h2>
+
+<p>I read the Day 0 part of the book.</p>
+]]></content>
+  </entry>
+  
+</feed>
