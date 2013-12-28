@@ -9,7 +9,7 @@
   <meta name="author" content="Ray12321">
 
   
-  <meta name="description" content="写篇日志来纪念下这个开心的圣诞节~~ ">
+  <meta name="description" content="之前在人人网上看到一张图，说点赞狂魔眼中的赞，已经不赞，而是朕已阅，于是，我就想搞这么个脚本，来实现这个功能~ 先上效果图： 我用的是Tampermonkey(简称TM，也就是俗称的油猴)这个Chrome插件来运行我的脚本。之前有直接写过Chrome插件，但是上架和推广比较麻烦， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +75,112 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/12/28/dian-zan-kuang-mo-de-kai-fa/">人人网点赞狂魔的开发</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-28T10:19:00+08:00" pubdate data-updated="true">Dec 28<span>th</span>, 2013</time>
+        
+         | <a href="/blog/2013/12/28/dian-zan-kuang-mo-de-kai-fa/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>之前在人人网上看到一张图，说点赞狂魔眼中的赞，已经不赞，而是<code>朕已阅</code>，于是，我就想搞这么个脚本，来实现这个功能~</p>
+
+<p>先上效果图：</p>
+
+<p>我用的是<a href="http://tampermonkey.net/">Tampermonkey</a>(简称TM，也就是俗称的油猴)这个Chrome插件来运行我的脚本。之前有直接写过Chrome插件，但是上架和推广比较麻烦，Chrome市场要收费，很坑。这么轻量级的功能，写个小脚本，然后用油猴来运行就好~</p>
+
+<h2>开发过程</h2>
+
+<ul>
+<li>找TM的Example</li>
+</ul>
+
+
+<p>Tampermonkey的官网上竟然没有提供任何的example，这一点都不科学！<a href="http://hibbard.eu/tampermonkey-tutorial/">这位同学</a>写出了很详尽的example。仿照它，我们就可以实现我们想做的功能了。</p>
+
+<p>要注意，TM的程序头的那些，不是注释，而是有意义的类似配置文件的部分。比如说，脚本的名称，就是在<code>@name</code>这一行命名的，而不会在保存的时候输入名称。</p>
+
+<ul>
+<li><p>查找结点
+通过在人人网上审查元素，我发现，有关&#8217;赞&#8217;的控件的id都是以&#8217;ILike&#8217;开头的，于是，DFS找到匹配这些id的node，再改掉它的innerHTML就好了。实测每秒运行一次这个脚本更新innerHTML，不会太卡。</p></li>
+<li><p>上架
+在<a href="http://userscripts.org">userscripts.org</a>上上架。<a href="http://userscripts.org/scripts/show/186905">这里</a>是最终上架后的页面。</p></li>
+</ul>
+
+
+<h2>TODO</h2>
+
+<ol>
+<li><p>每秒运行一次脚本的话，效率太低。最好的办法应该是为人人网点赞的JS加上一小段更新innerHTML的部分。</p></li>
+<li><p>写一个用户友好的前端，然后把这个脚本上架到Chrome应用商店里。这样就可以让更多更小白的用户来使用这个脚本了。</p></li>
+</ol>
+
+
+<p>以上两点现在还懒得搞&hellip;</p>
+
+<h2>一些Debug的笔记</h2>
+
+<ul>
+<li>不友好的Debug</li>
+</ul>
+
+
+<p>即使我一行代码也没写，Chrome加载完TM也会报错。事实上，有些网站本身在Console里就会报错。更严重的是，在Debug我的脚本的时候，TM只给出有错，但并不给出哪一行有错。非常不友好。</p>
+
+<ul>
+<li>关于<code>match</code>部分</li>
+</ul>
+
+
+<p>记得在域名的结尾处加上/*，就像下面这样</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// @match      http://www.baidu.com/*</span></code></pre></td></tr></table></div></figure>
+
+
+<p>而像这样是<strong>不行</strong>的</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>// @match      http://www.baidu.com*</span></code></pre></td></tr></table></div></figure>
+
+
+<p>我觉得很奇怪，因为在正则表达式中<code>*</code>是<a href="http://zh.wikipedia.org/wiki/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F">表示零个或多个字符</a>。</p>
+
+<ul>
+<li>注意你的输入法！</li>
+</ul>
+
+
+<p>小心在JS中输入了汉语的，或者是全角的空格。这种错误是人眼不可见的。我曾经在某配置文件的行尾多打了个空格，导致整个十一假期都在调试，本来都订好去草原上露宿的帐篷了&hellip;</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -477,49 +583,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/11/02/wish-list/">Wish List</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-02T19:18:00+08:00" pubdate data-updated="true">Nov 2<span>nd</span>, 2013</time>
-        
-         | <a href="/blog/2013/11/02/wish-list/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>大四上学期，永远是那么焦虑，赶不完的deadline，各种很心动但很难争取到的机会&hellip;如果，能活着度过这个学期，如果，下学期可以很轻闲，那么，我要一点点的，去做下面的事情</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/11/02/wish-list/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -552,12 +615,16 @@
 </section>
 <section>
   <h1>Tag Cloud</h1>
-    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fasterixdb%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EAsterixDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ffcitx%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Efcitx%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgit%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Egit%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhackerrank%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Ehackerrank%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhadoop%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EHadoop%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+18.88888888888889%25%27%3Elinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmac%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Emac%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmongodb%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EMongoDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Foctopress%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fscott-young%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EScott+Young%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ftech%27+style%3D%27font-size%3A+18.88888888888889%25%27%3ETech%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ftex%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Etex%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fubuntu%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Eubuntu%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fvim%27+style%3D%27font-size%3A+18.88888888888889%25%27%3Evim%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fyogurtos%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EYogurtOS%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshu-ping-ying-ping%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E4%B9%A6%E8%AF%84%E5%BD%B1%E8%AF%84%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fluan-qi-ba-zao%27+style%3D%27font-size%3A+27.77777777777778%25%27%3E%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-zhe-teng%27+style%3D%27font-size%3A+32.22222222222222%25%27%3E%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-she-bei%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E5%90%84%E7%A7%8D%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxue-xi-bi-ji%27+style%3D%27font-size%3A+36.66666666666667%25%27%3E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxiao-mi%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E5%B0%8F%E7%B1%B3%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgong-zuo%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E5%B7%A5%E4%BD%9C%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flu-tu-fen-xiang%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E6%97%85%E9%80%94%E5%88%86%E4%BA%AB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fsheng-huo-jian-ying%27+style%3D%27font-size%3A+50.0%25%27%3E%E7%94%9F%E6%B4%BB%E5%89%AA%E5%BD%B1%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshe-bei%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmian-shi%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E9%9D%A2%E8%AF%95%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fti-jie%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E9%A2%98%E8%A7%A3%3C%2Fa%3E+%3C%2Ftags%3E"></span>
+    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fasterixdb%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EAsterixDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ffcitx%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Efcitx%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgit%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Egit%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhackerrank%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Ehackerrank%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhadoop%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EHadoop%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+18.88888888888889%25%27%3Elinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmac%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Emac%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmongodb%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EMongoDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Foctopress%27+style%3D%27font-size%3A+23.333333333333336%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fscott-young%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EScott+Young%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ftech%27+style%3D%27font-size%3A+23.333333333333336%25%27%3ETech%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ftex%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Etex%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fubuntu%27+style%3D%27font-size%3A+14.444444444444445%25%27%3Eubuntu%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fvim%27+style%3D%27font-size%3A+18.88888888888889%25%27%3Evim%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fyogurtos%27+style%3D%27font-size%3A+14.444444444444445%25%27%3EYogurtOS%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshu-ping-ying-ping%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E4%B9%A6%E8%AF%84%E5%BD%B1%E8%AF%84%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fluan-qi-ba-zao%27+style%3D%27font-size%3A+32.22222222222222%25%27%3E%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-zhe-teng%27+style%3D%27font-size%3A+32.22222222222222%25%27%3E%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-she-bei%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E5%90%84%E7%A7%8D%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxue-xi-bi-ji%27+style%3D%27font-size%3A+36.66666666666667%25%27%3E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxiao-mi%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E5%B0%8F%E7%B1%B3%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgong-zuo%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E5%B7%A5%E4%BD%9C%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flu-tu-fen-xiang%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E6%97%85%E9%80%94%E5%88%86%E4%BA%AB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fsheng-huo-jian-ying%27+style%3D%27font-size%3A+50.0%25%27%3E%E7%94%9F%E6%B4%BB%E5%89%AA%E5%BD%B1%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshe-bei%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmian-shi%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E9%9D%A2%E8%AF%95%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fti-jie%27+style%3D%27font-size%3A+14.444444444444445%25%27%3E%E9%A2%98%E8%A7%A3%3C%2Fa%3E+%3C%2Ftags%3E"></span>
 </section>
 
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/12/28/dian-zan-kuang-mo-de-kai-fa/">人人网点赞狂魔的开发</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/12/25/merry-christmas/">Merry Christmas</a>
@@ -573,10 +640,6 @@
     
       <li class="post">
         <a href="/blog/2013/12/17/tong-ling-ren-de-ge-chong-chuan-qi/">同龄人的各种传奇</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/12/15/ke-xue-de-song-shu-zai-gong-da/">科学的松鼠在工大</a>
       </li>
     
   </ul>
