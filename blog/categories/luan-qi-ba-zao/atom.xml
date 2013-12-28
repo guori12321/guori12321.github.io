@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 乱七八糟 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/luan-qi-ba-zao/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-28T13:52:42+08:00</updated>
+  <updated>2013-12-28T14:10:00+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -19,6 +19,9 @@
     <updated>2013-12-28T10:19:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/28/dian-zan-kuang-mo-de-kai-fa</id>
     <content type="html"><![CDATA[<p>之前在人人网上看到一张图，说点赞狂魔眼中的赞，已经不赞，而是<code>朕已阅</code>，于是，我就想搞这么个脚本，来实现这个功能~</p>
+
+<!--more-->
+
 
 <p>先上效果图：</p>
 
@@ -52,6 +55,10 @@
 
 
 <p>以上两点现在还懒得搞&hellip;</p>
+
+<h2>源代码</h2>
+
+<p>已经上传至<a href="https://github.com/guori12321/clickZan">我的Github</a>。</p>
 
 <h2>一些Debug的笔记</h2>
 
