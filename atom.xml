@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-28T14:10:00+08:00</updated>
+  <updated>2013-12-30T21:11:59+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -94,6 +94,27 @@
 
 
 <p>小心在JS中输入了汉语的，或者是全角的空格。这种错误是人眼不可见的。我曾经在某配置文件的行尾多打了个空格，导致整个十一假期都在调试，本来都订好去草原上露宿的帐篷了&hellip;</p>
+
+<ul>
+<li>DFS</li>
+</ul>
+
+
+<p>刚开始的时候DFS一次全局元素，非常的慢，不过我也懒的改了&hellip;实测document.getElementsByClass()和JQuery中的$(&ldquo;.classname&rdquo;)都不好用，我不知道怎么把单独的一个元素拿出来再修改innerHTML。对于人人网主页，DFS一次的时间开销可以忽略。就这样吧&hellip;</p>
+
+<ul>
+<li>className</li>
+</ul>
+
+
+<p>要取出来元素i的class，要用i.className而不是i.class</p>
+
+<ul>
+<li>TM的加载问题</li>
+</ul>
+
+
+<p>有的时候在本地更新完脚本，TM那里并不会加载进去，这时候让TM检查下更新，还不行的话只能重启浏览器了</p>
 ]]></content>
   </entry>
   
@@ -143,11 +164,276 @@
 
 <p>显然用<code>homebrew</code>安装是最省事的。<a href="http://importantfish.com/how-to-install-hadoop-on-mac-os-x/">这篇博客</a>中有详细的介绍。</p>
 
+<h2>概览</h2>
+
+<p>Hadoop号称是并行划计算的框架。我之前一直以为，我们把程序的源代码直接扔进去，它就会帮我们来并行的执行了。事实上，我们需要把源代码重新改写，然后Hadoop才能去并行化的执行代码。</p>
+
+<p>我们也可以把Hadoop看成一个类库。每个应用Hadoop的程序，总是要包含大量的Hadoop的包。而为了执行Hadoop中的Map和Reduce这两个步骤，我们需要继承一些类和接口，实现它们中的一些方法。此外，我们的输入和输出文件，还需要放在所谓的Hadoop Distributed File System(HDFS)。</p>
+
+<p>做完以上几步，也就能运行简单的基于Hadoop的程序了。当然，进阶一些的话，还有关于诸如cache之类的我们要细致调整的部分。那些内容等到需要的时候再慢慢研究就好。</p>
+
 <h2>官方的教程</h2>
 
-<p>Hadoop的资料非常多。当然，我们最先要看的，肯定是<a href="http://hadoop.apache.org/index.pdf">Hadoop的官方教程了</a>。一共42页。这是一部面向<strong>使用者</strong>的教程。</p>
+<p>Hadoop的资料非常多。当然，我们最先要看的，肯定是<a href="http://hadoop.apache.org/index.pdf">Hadoop的官方教程了</a>。一共42页。这是一部面向<strong>使用者</strong>的教程。当然，后期开发中，也要参考<a href="http://hadoop.apache.org/docs/r0.18.3/">官方的文档</a>。</p>
 
-<p>太长了我明天再看&hellip;</p>
+<p>看完这个教程，我发现，Hadoop远比我想象中的要复杂：涉及到太多的模块了。但是，别害怕，我们只是想做一些Hadoop上的应用，而不是进行Hadoop的开发，我们只要按着别人给出的例子，修改修改，做出我们想做的功能就好了。</p>
+
+<h2>官方教程的笔记</h2>
+
+<p>以下是我自己的笔记，仅供参考&hellip;我的子标题，与教程中的子标题是对应的。</p>
+
+<h3>Overview</h3>
+
+<ul>
+<li><p>Hadoop的输入输出，都在HDFS中。</p></li>
+<li><p>每个Hadoop网络(由集群机中的各个结点组成的网络)，都有一个叫作<code>JobTracker</code>的结点，它负责向各个子结点分配任务，监视各个子结点的状态，并重复执行失败的任务。而每个子结点，都有一个<code>TaskTracker</code>，它负责多进程\线程地执行<code>JobTracker</code>分配给它的任务。</p></li>
+<li><p>虽然Hadoop本身是用Java写的，但基于它的应用，可以用其它语言，比如C/C++来写。</p></li>
+</ul>
+
+
+<h3>Inputs and Outputs</h3>
+
+<p>正常的输入输出过程是这样：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>(input)&lt;k1, v1&gt; -&gt; **map** -&gt; &lt;k2, V2&gt; -&gt; **combine** -&gt; &lt;k2, v2&gt; -&gt; **reduce** -&gt; &lt;k3, v3&gt;(output)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>可以看出，每一步都是键值对(比如&lt;k1, v1>)。就像关系型数据库用table来表示数据之间的关系，Hadoop使用这种键值对。于是，就有了个问题：所有的输入和输出，都能拆成这样的键值对吗？我问过老师，老师说，大家都是想办法拆出来的，很多时候还是在硬拆&hellip;另一方面，老师也说过，大数据的解决方案中，只有Hadoop是相对成熟的。总之，这就是Hadoop的运行规则。也许以后大家会找到更好的解决方案呢~</p>
+
+<p>此外，可以看出，除了map和reduce这两步，中间还多出一个combine。map这一步，是把输入，映射到一个中间层(intermedia)，原先的输入，可能是一个映射到一个，也有可能是多个映射到一个，所以说，map后会比较乱，这时可能需要把映射后的产物合并或排序，这就是所谓的combine。</p>
+
+<p>PS: 我不知道Hadoop的Map能不能一映射多(Prege中应该是可以)，如有知道的同学，请告诉我，谢谢&hellip;</p>
+
+<h3>Example: WordCount V1.0</h3>
+
+<p>官方的教程给了这么个统计单词个数的例子。</p>
+
+<p>InputFile01:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Hello World Bye World</span></code></pre></td></tr></table></div></figure>
+
+
+<p>InputFile02:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Hello Hadoop Goodbye Hadoop</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Output:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Bye 1
+</span><span class='line'>Goodbye 1
+</span><span class='line'>Hadoop 2
+</span><span class='line'>Hello 2
+</span><span class='line'>World 2</span></code></pre></td></tr></table></div></figure>
+
+
+<p>以下是这个例子的源代码。一共58行，不算长。我会在代码中加入汉语的注释来进行解说：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>package org.myorg;
+</span><span class='line'>
+</span><span class='line'>import java.io.IOException;
+</span><span class='line'>import java.util.*;
+</span><span class='line'>
+</span><span class='line'>import org.apache.hadoop.fs.Path;
+</span><span class='line'>import org.apache.hadoop.conf.*;
+</span><span class='line'>import org.apache.hadoop.io.*;
+</span><span class='line'>import org.apache.hadoop.mapred.*;
+</span><span class='line'>import org.apache.hadoop.util.*;
+</span><span class='line'>
+</span><span class='line'>//可以看出，是import了很多
+</span><span class='line'>
+</span><span class='line'>//像其它Java程序一样，我们写的程序，也就是一个WordCount类，其中会有一个main函数。
+</span><span class='line'>public class WordCount {
+</span><span class='line'>
+</span><span class='line'>    //关于Mapper，[官方的文档](https://hadoop.apache.org/docs/stable/api/org/apache/hadoop/mapred/Mapper.html)的解释是: Interface Mapper&lt;K1,V1,K2,V2&gt;，也就是确定一下这四个变量(输入和输出)的类型，类似于C++中的模板
+</span><span class='line'>    public static class Map extends MapReduceBase implements Mapper&lt;LongWritable, Text, Text, IntWritable&gt; {
+</span><span class='line'>    //关于final，是指只可被赋值一次的变量。final类型的变量，永远指向同一个object，但这个object本身可能会改变。更多的内容，参考[Java的文档](http://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.12.4)
+</span><span class='line'>      private final static IntWritable one = new IntWritable(1);
+</span><span class='line'>
+</span><span class='line'>      private Text word = new Text();
+</span><span class='line'>
+</span><span class='line'>      public void map(LongWritable key, Text value, OutputCollector&lt;Text, IntWritable&gt; output, Reporter reporter) throws IOException {
+</span><span class='line'>        String line = value.toString();
+</span><span class='line'>        StringTokenizer tokenizer = new StringTokenizer(line);
+</span><span class='line'>        while (tokenizer.hasMoreTokens()) {
+</span><span class='line'>          word.set(tokenizer.nextToken());
+</span><span class='line'>          output.collect(word, one);
+</span><span class='line'>        }
+</span><span class='line'>      }
+</span><span class='line'>    }
+</span><span class='line'>
+</span><span class='line'>    public static class Reduce extends MapReduceBase implements Reducer&lt;Text, IntWritable, Text, IntWritable&gt; {
+</span><span class='line'>      public void reduce(Text key, Iterator&lt;IntWritable&gt; values, OutputCollector&lt;Text, IntWritable&gt; output, Reporter reporter) throws IOException {
+</span><span class='line'>        int sum = 0;
+</span><span class='line'>        while (values.hasNext()) {
+</span><span class='line'>          sum += values.next().get();
+</span><span class='line'>        }
+</span><span class='line'>        output.collect(key, new IntWritable(sum));
+</span><span class='line'>      }
+</span><span class='line'>    }
+</span><span class='line'>
+</span><span class='line'>    public static void main(String[] args) throws Exception {
+</span><span class='line'>      JobConf conf = new JobConf(WordCount.class);
+</span><span class='line'>      conf.setJobName("wordcount");
+</span><span class='line'>
+</span><span class='line'>      conf.setOutputKeyClass(Text.class);
+</span><span class='line'>      conf.setOutputValueClass(IntWritable.class);
+</span><span class='line'>
+</span><span class='line'>      conf.setMapperClass(Map.class);
+</span><span class='line'>      conf.setCombinerClass(Reduce.class);
+</span><span class='line'>      conf.setReducerClass(Reduce.class);
+</span><span class='line'>
+</span><span class='line'>      conf.setInputFormat(TextInputFormat.class);
+</span><span class='line'>      conf.setOutputFormat(TextOutputFormat.class);
+</span><span class='line'>
+</span><span class='line'>      FileInputFormat.setInputPaths(conf, new Path(args[0]));
+</span><span class='line'>      FileOutputFormat.setOutputPath(conf, new Path(args[1]));
+</span><span class='line'>
+</span><span class='line'>      JobClient.runJob(conf);
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>翻译一下官方的解释吧，这几十行实在看不大懂：</p>
+
+<p>这几行代码真是简洁明快(你妹！)，Mapper类中，通过map方法，每次处理一行(这些输入的行的类型，在main方法中定义了(TextInputFormat))。之后，它把每行都通过空格来分割(通过StringTokenizer)，然后生成一个类似于<code>&lt; &lt;word&gt;, 1&gt;</code>的键值对。</p>
+
+<p>第一个输入文件在map后会生成</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt; Hello, 1&gt;
+</span><span class='line'>&lt; World, 1&gt;
+</span><span class='line'>&lt; Bye, 1&gt;
+</span><span class='line'>&lt; World, 1&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>第二个文件</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt; Hello, 1&gt;
+</span><span class='line'>&lt; Hadoop, 1&gt;
+</span><span class='line'>&lt; Goodbye, 1&gt;
+</span><span class='line'>&lt; Hadoop, 1&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>再之后，是<strong>排序</strong>并把上述的中间结果进行<strong>combine</strong> (main方法中定义了combine的方法)。注意，这里是每个文件的结果各自combine。这里的combine，也可以看作是map。</p>
+
+<p>第一个文件会变成</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt; Bye, 1&gt;
+</span><span class='line'>&lt; Hello, 1&gt;
+</span><span class='line'>&lt; World, 2&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>第二个文件</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt; Goodbye, 1&gt;
+</span><span class='line'>&lt; Hadoop, 2&gt;
+</span><span class='line'>&lt; Hello, 1&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>再之后就是reduce了。它对应的代码与map类似。这时候，两个文件产生的中间结果，就会被排序并合并/缩减到最终的结果：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt; Bye, 1&gt;
+</span><span class='line'>&lt; Goodbye, 1&gt;
+</span><span class='line'>&lt; Hadoop, 2&gt;
+</span><span class='line'>&lt; Hello, 2&gt;
+</span><span class='line'>&lt; World, 2&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>教材中的其它部分</h2>
+
+<p>在上面的例子之后，教材中详细讲了怎样运行这个例子，这一部分需要一些命令行的知识，传的参数也是非常的多。再之后，则是讲Mapper和Reducer等具体和哪些Hadoop中的类相关。这些内容就非常具体了，大家慢慢看就好。</p>
+
+<p>写到这里，不知道算不算有用呢？有需要的时候我再回来补充吧。</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 乱七八糟 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/luan-qi-ba-zao/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-28T14:10:00+08:00</updated>
+  <updated>2013-12-30T21:12:07+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -90,6 +90,27 @@
 
 
 <p>小心在JS中输入了汉语的，或者是全角的空格。这种错误是人眼不可见的。我曾经在某配置文件的行尾多打了个空格，导致整个十一假期都在调试，本来都订好去草原上露宿的帐篷了&hellip;</p>
+
+<ul>
+<li>DFS</li>
+</ul>
+
+
+<p>刚开始的时候DFS一次全局元素，非常的慢，不过我也懒的改了&hellip;实测document.getElementsByClass()和JQuery中的$(&ldquo;.classname&rdquo;)都不好用，我不知道怎么把单独的一个元素拿出来再修改innerHTML。对于人人网主页，DFS一次的时间开销可以忽略。就这样吧&hellip;</p>
+
+<ul>
+<li>className</li>
+</ul>
+
+
+<p>要取出来元素i的class，要用i.className而不是i.class</p>
+
+<ul>
+<li>TM的加载问题</li>
+</ul>
+
+
+<p>有的时候在本地更新完脚本，TM那里并不会加载进去，这时候让TM检查下更新，还不行的话只能重启浏览器了</p>
 ]]></content>
   </entry>
   
