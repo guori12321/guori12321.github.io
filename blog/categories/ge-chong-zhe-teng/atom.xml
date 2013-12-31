@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 各种折腾 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/ge-chong-zhe-teng/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-31T22:09:35+08:00</updated>
+  <updated>2013-12-31T22:10:15+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -91,7 +91,7 @@ pdflatex main.tex
 <code>
 @misc{bworld,
   author = {Ingo Lütkebohle},
-  title = {{BWorld Robot Control Software}},
+  title = ,
   howpublished = "\url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/}",
   year = {2008},
   note = "[Online; accessed 19-July-2008]"
