@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 毕设 | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/bi-she/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2014-01-03T15:05:40+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[毕业设计的那些破事]]></title>
+    <link href="http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi/"/>
+    <updated>2014-01-03T12:26:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi</id>
+    <content type="html"><![CDATA[<p>作为一个即将第三次开题的学渣，我表示，我还是有必要记录下毕业设计中遇到的问题的。</p>
+
+<!--more-->
+
+
+<h2>论文规范</h2>
+
+<p>首先是在教务处网站上下载<a href="http://jwc.hit.edu.cn/news/Showzd.asp?id=2957">本科生毕业论文撰写规范</a>。</p>
+
+<p>毕业论文只有word模板，没有LaTeX模板，好忧伤&hellip;一定是其它的会议和期刊太落后了，我们可是世界一流大学！</p>
+
+<h2>毕业论文与其它论文的不同</h2>
+
+<p>毕业论文的编排，更像是书，而不是论文。</p>
+
+<ul>
+<li>所有的参考文献的引用，都要用上脚标，而不像学术论文一样用正常的[]。</li>
+</ul>
+
+
+<p>似乎只有学位论文是这样的。我看到过的所有其它的论文，包括中英文，会议和期刊，都是用正常的[]，只有一篇博士论文是用的上脚标。</p>
+
+<ul>
+<li>图和表的编号，是以章节-图表数目编号</li>
+</ul>
+
+
+<p>如第一章第一个表，就是<code>表1-1</code>。此外，注意图的标注在图的下方，表的在表上方</p>
+
+<ul>
+<li>参考文献按顺序标注</li>
+</ul>
+
+
+<p>事实上bibTeX是按论文发表时间排的序，学位论文要求是按引用顺序</p>
+
+<ul>
+<li>不要缩进！</li>
+</ul>
+
+
+<p>我很喜欢用word的缩进功能，但老师说，论文中，从来没有缩进的。好吧，我表示我也没看到过有缩进的&hellip;</p>
+
+<ul>
+<li>本人在本科期间发表的论文不应列入参考文献</li>
+</ul>
+
+
+<p>&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>

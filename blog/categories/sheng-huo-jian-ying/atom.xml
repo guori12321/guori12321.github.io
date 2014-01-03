@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 生活剪影 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/sheng-huo-jian-ying/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-31T22:10:15+08:00</updated>
+  <updated>2014-01-03T15:05:50+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -193,13 +193,13 @@
 
 <p>在这位老师讲的空隙中，有工作人员收集了我们填的个人信息，邮箱什么的，然后抽<strong>ipad mini</strong>。全场都静了。最后是一位学号以110开头的同学拿到了。RP啊！</p>
 
-<p><img src="/images/KAUST0.jpg" width="500"></p>
+<p>{% img /images/KAUST0.jpg 500 %}</p>
 
 <p>接下来是一位环境科学的老师，来讲他做的东西。本来他很想用汉语介绍，一看现场对这个建议兴趣不大，就还是用英语了。你有本事你用<strong>陕西话</strong>讲啊！！之后一位女老师，是CS的，竟然还是data mining的！听着她讲各种big data对于人类文明的意义啊什么的，我赶紧查了下手机，结果发现当时我看的KAUST的文章没有一篇是她写的&hellip;不管了，一定要去套一下磁~~</p>
 
 <p>再之后，就是一位本科吉大，在KAUST硕士毕业的学姐，来介绍下她的生活。她给我的印象，很像某位同学，都是胖胖的脸，大大的眼睛，极其优雅的英语，以及隐隐约约的女王气场。当时打工的时候没少被某同学踹&hellip;具体说的就是，什么来了KAUST就有了各种possibility啊。想想在沙特，和各国的同学，一起上学，挑战困难的课程，去潜水，去打高尔夫，去在通宵的图书馆里看太阳从红海升起，去欧洲交换，去美国实习&hellip;太多太多想都想不到的机会。我是多么向往这种生活节奏。</p>
 
-<p><img src="/images/KAUST1.jpg" width="500"></p>
+<p>{%img /images/KAUST1.jpg 500 %}</p>
 
 <p>在这位学姐讲的时候，前三排的同学，都拿到了32G的U盘~~因为他们只带了一百个。32G啊，4个U盘顶我一台机子的硬盘了。这下就不用担心macbook air要不要安windows的问题了。U盘分出来30G安win7，再用2G来拷资料就够了。</p>
 

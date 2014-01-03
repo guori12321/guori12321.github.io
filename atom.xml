@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2013-12-31T22:10:15+08:00</updated>
+  <updated>2014-01-03T15:05:40+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,101 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[毕业设计的那些破事]]></title>
+    <link href="http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi/"/>
+    <updated>2014-01-03T12:26:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi</id>
+    <content type="html"><![CDATA[<p>作为一个即将第三次开题的学渣，我表示，我还是有必要记录下毕业设计中遇到的问题的。</p>
+
+<!--more-->
+
+
+<h2>论文规范</h2>
+
+<p>首先是在教务处网站上下载<a href="http://jwc.hit.edu.cn/news/Showzd.asp?id=2957">本科生毕业论文撰写规范</a>。</p>
+
+<p>毕业论文只有word模板，没有LaTeX模板，好忧伤&hellip;一定是其它的会议和期刊太落后了，我们可是世界一流大学！</p>
+
+<h2>毕业论文与其它论文的不同</h2>
+
+<p>毕业论文的编排，更像是书，而不是论文。</p>
+
+<ul>
+<li>所有的参考文献的引用，都要用上脚标，而不像学术论文一样用正常的[]。</li>
+</ul>
+
+
+<p>似乎只有学位论文是这样的。我看到过的所有其它的论文，包括中英文，会议和期刊，都是用正常的[]，只有一篇博士论文是用的上脚标。</p>
+
+<ul>
+<li>图和表的编号，是以章节-图表数目编号</li>
+</ul>
+
+
+<p>如第一章第一个表，就是<code>表1-1</code>。此外，注意图的标注在图的下方，表的在表上方</p>
+
+<ul>
+<li>参考文献按顺序标注</li>
+</ul>
+
+
+<p>事实上bibTeX是按论文发表时间排的序，学位论文要求是按引用顺序</p>
+
+<ul>
+<li>不要缩进！</li>
+</ul>
+
+
+<p>我很喜欢用word的缩进功能，但老师说，论文中，从来没有缩进的。好吧，我表示我也没看到过有缩进的&hellip;</p>
+
+<ul>
+<li>本人在本科期间发表的论文不应列入参考文献</li>
+</ul>
+
+
+<p>&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[ssh反向连接]]></title>
+    <link href="http://guori12321.github.io/blog/2014/01/02/sshfan-xiang-lian-jie/"/>
+    <updated>2014-01-02T13:26:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2014/01/02/sshfan-xiang-lian-jie</id>
+    <content type="html"><![CDATA[<p>ssh是广大人民喜闻乐见的远程连接方式。有些时候，实验室里的集群机，只有内部的ip，我们没有办法在实验室外远程连接。寒假就来来临，我想在家连实验室的集群机干活(好吧，这只是个美好的愿望，我估计我会玩一寒假&hellip;)，于是，我就开始研究怎么用ssh反向连接。</p>
+
+<!--more-->
+
+
+<p>要想实现在家也能访问实验室的集群，首先，你需要一台有固定ip的VPS。在实验室，把集群机反向连接到这台VPS（反射的意思是，你以后可以通过VPS来连接和使用集群，而不是用集群机来使用VPS）。</p>
+
+<p><a href="http://www.cnblogs.com/eshizhan/archive/2012/07/16/2592902.html">这篇具体的ssh反向连接的教程</a>已经讲的很清楚了。下面就记载下我遇到的问题吧。</p>
+
+<h2>VPS的权限问题</h2>
+
+<p>首先，在我用的VPS上，我并没有root权限（开最低限度的权限是很有必要的，也是最安全的）。所以说，那篇教程中的很多命令，我没办法像平时一样用root权限安装在VPS上。</p>
+
+<p>首先查看一下VPS中的Linux的发行版本信息<code>lsb_release -a</code>，好，发现这台VPS是Fedora。我研究了一会没发现怎么安装<code>ss</code>命令，但ss本身只是一个查看的命令，对于我们要做的事情没有影响。</p>
+
+<h2>root权限</h2>
+
+<p>在执行最后一步，也就是在外网的机器上<code>ssh local -pXXXX</code>的时候i需要输入内网主机B的密码。这一步<strong>需要外网主机A的root权限</strong>。如果没有的话，会出现<code>Permission Denied</code>的警告。其实密码是正确的。另外，这个密码是一定要输入的，我添加了把A，B的ssh都添加到对方的<code>authorized_key</code>里了，但还是要输入密码。</p>
+
+<h2>无响应的情况</h2>
+
+<p>我多次遇到在外网主机A连接内网主机B时无响应的情况。也不报错，就是一直等待。这种情况下只能把内网主机B的有关<code>ssh</code>外网主机A的命令全kill掉，再重连接一次。无响应的原因应该是端口被占用，然后ssh命令在等待端口释放吧。也有可能是实验室的网实在太卡太卡了&hellip;</p>
+
+<h2>Future Work</h2>
+
+<p>如果内网的主机重启了的话，以上的工作就要重做一次。应该把这些命令放到内网主机的开机启动项中。不过，真要出现内网主机挂掉的情况的话，寒假不可能有人来重启的&hellip;所以说，我就先不做这部分内容了。</p>
+
+<h2>Conclusion</h2>
+
+<p>真不容易啊，折腾我半天&hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[写给2013年]]></title>
@@ -1211,83 +1306,6 @@
 </span><span class='line'>% trash -e
 </span><span class='line'>% trash -l</span></code></pre></td></tr></table></div></figure>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[我的摄影路线图]]></title>
-    <link href="http://guori12321.github.io/blog/2013/10/14/wo-de-she-ying-lu-xian/"/>
-    <updated>2013-10-14T12:03:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/10/14/wo-de-she-ying-lu-xian</id>
-    <content type="html"><![CDATA[<p>在香港实习，拿到第一个月的工资的时候，我就做了一件梦寐以求的事：买单反。有些事情，我们会后悔做了，有些事情，我们会后悔没做。一直想用精美的照片来记载那些一点点流逝的岁月。如果说买单反真有什么后悔的，那就是，买的太晚了。</p>
-
-<p>经喵叔推荐，在D3200，D5200中摇摆了一阵子，最后决定多花点钱买D5200好了。其实在D5200和700D中我也摇摆了好一会，后来觉得佳能的入门机确实不怎么地道，参数上比D5200差了很多，多加的功能如触屏对焦，单反真的需要这个功能吗？？</p>
-
-<p>下面是我的摄影路线图~大家见笑了。</p>
-
-<!--more-->
-
-
-<h2>学习资料推荐</h2>
-
-<p><a href="http://camerasim.com/camera-simulator/">一个还不错的单反模拟网站</a>。之所以说还不错，是因为这个模拟起来还是很不爽，不能直接对照之前模拟出的照片。</p>
-
-<p>待续</p>
-
-<h2>各项基本参数</h2>
-
-<p>相机上有很多照相时基本参数的设定。每项参数都有不同的作用。多照一些，多试试，就会对这些参数有感觉了。</p>
-
-<ul>
-<li><p>快门速度: 这个比较好理解，就是照相时，快门打开多久。时间越长，照片就越亮，同时手抖的影响就越大。</p></li>
-<li><p>光圈大小: 就是打开快门的时候，入光孔的直径大小。它和快门速度，一起决定了曝光量的大小。同时，由于小孔成像的原理，光圈对于景深(就是相片中背景的虚化程序，景深越小，则相片中清晰的范围越小，背景越模糊)，有着重要影响。光圈越小，背景就越清晰，光圈越大，背景就越模糊。注意，为了量化光圈大小，人们搞了个叫光圈值的东西，也就是f4，f8这种f后面的数值。而光圈值和光圈是反比的关系。也就是说，光圈值越大，光圈越小。我相信你已经看晕了，我也是。</p></li>
-<li><p>ISO: 这个叫感光度。实际上相当于把光学信息放大的倍数。也就是说，感光度越高，就只需要越少的光，同时画质也会越差。它的作用相当于扩音器，把人的声音放大，但这样，也同时放大了噪音。ISO高的时候，色彩会变得很差，同时会有大量的噪点。</p></li>
-<li><p>白平衡: 也就是说你的照片是偏红还是偏蓝。一般来说，发红的照片让人觉得非常的温暖，而发蓝的让人感觉冷。</p></li>
-</ul>
-
-
-<p>我现在照相，还处于用A档，开最大光圈，如果光线比较暗再把ISO调大一点的水平。</p>
-
-<h2>关于后期</h2>
-
-<p>一点都不会！！所以说，待续&hellip;</p>
-
-<h2>关于PS CS5报错</h2>
-
-<p>在打开Nikon的NEF格式的图片时，报错</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>无法完成请求，因为该文件似乎来自于已安装版本的 Camera Raw 不支持的相机型号。
-</span><span class='line'>请访问 Camera Raw 帮助文档以获取更多信息。</span></code></pre></td></tr></table></div></figure>
-
-
-<p>然后就去官网下了各种<a href="http://www.adobe.com/support/downloads/product.jsp?platform=Macintosh&amp;product=106">Camera Raw和DNG Converter</a>，然后发现，还是打不开&hellip;</p>
-
-<p>其实，Camera Raw，是一个独立的程序。先把NEF格式的文件，用它转化为DNG格式，再用PS打开DNG格式的就好。并不是说安了它以后，PS就能直接打开NEF了。当然，也有能直接打开的办法，但那好像需要CS6以上的版本了。我没有试过。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[我所仰慕的Blog们]]></title>
-    <link href="http://guori12321.github.io/blog/2013/10/14/wo-suo-yang-mu-de-blogmen/"/>
-    <updated>2013-10-14T10:22:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/10/14/wo-suo-yang-mu-de-blogmen</id>
-    <content type="html"><![CDATA[<p>Blog自古以来，就是广大人民群众喜闻乐见的学习交流平台~在各大社交网络盛行的今天，博客依然有着自己独到的优势。比起SNS的浮躁（永远有太多太新太好玩的事情，因此没办法去对这些事情做更深入的了解），我更喜欢用博客来记载自己的生活。虽然写出来也很少有人看，但至少来看的人，都是比较关心我或者博文中提到的事情的。</p>
-
-<p>下面就来讲讲那些我所仰慕的Blog们~</p>
-
-<!--more-->
-
-
-<ul>
-<li><p>第一位当然是<a href="http://www.matrix67.com/">Matrix67的博客</a>。我知道的所有OIer多少都参考过他写的位运算的资料。作为一个OI界不朽的传说(文科生，OI保送，或者说是因为编程保送北京大学，还是中文系)，他的博客可以说影响了几代(年级)人。他的博客上最多的是各种好玩的数学题目，同时也有一些美剧之类的，总之很好玩~</p></li>
-<li><p><a href="http://sizheng.org/">小雪的博客</a>。知道小雪，是因为她拿了微软编程之美2013年的冠军。话说那次比赛，只有三个女生入围&hellip;(PS: 我做过2012年的编程之美，初赛首轮就挂了&hellip;再之后就没做过&hellip;)。她的Blog真是清新唯美~并且配了很多她自己拍的照片。真的好神奇~~</p></li>
-<li><p><a href="http://www.yinwang.org/">王垠的博客</a>。这位大神经常发表各种很突破的观点。他的phd好像quit了两次了吧，不知道现在怎么样了。知道他是因为他的那篇著名的<a href="http://www.cnbeta.com/articles/76147.htm">完全用Linux工作</a>。虽然很偏激，但也确实很值得读。不过他的博客，好多基本功能都没有，比如说返回首页什么的。</p></li>
-</ul>
-
-
-<p>未完待续~</p>
 ]]></content>
   </entry>
   
