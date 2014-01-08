@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-01-03T15:05:40+08:00</updated>
+  <updated>2014-01-08T10:16:21+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -18,10 +18,22 @@
     <link href="http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi/"/>
     <updated>2014-01-03T12:26:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi</id>
-    <content type="html"><![CDATA[<p>作为一个即将第三次开题的学渣，我表示，我还是有必要记录下毕业设计中遇到的问题的。</p>
+    <content type="html"><![CDATA[<p>记录下毕业设计中遇到的各种问题&hellip;</p>
 
 <!--more-->
 
+
+<p>一切的一切，还是<strong>清楚</strong>。写清楚自己要做什么，做了什么，以及怎么做的，让大家都了解你为什么做，做的怎么样，就足够了。</p>
+
+<h2>开题的感受</h2>
+
+<p>第四次开题，终于过了&hellip;回想一下，之前的报告，都是没有注意到<strong>层次</strong>。报告本身，是分好几个层次的，每一层有哪些内容，它之下又有哪些内容。传统的报告，总体上是一个树状的结构。之前一口气列了十几项功能，每一章都加入不同的功能，搞的十分的混乱。写好<strong>层次</strong>，大家也就能看清楚报告的结构了。</p>
+
+<p>但实际操作中，各个功能之间是有重叠的。对于写不明白的功能，我最后还是删掉了。</p>
+
+<h2>模块划分</h2>
+
+<p>报告中，具体的系统结构，是通过模块来体现的。每个模块的功能一定要写清楚。实际开发中，一个模块不一定会有很多代码，比如说，数据库的读取就是一行代码，但是它的功能是很重要的，所以说要单独列一个数据存储的模块出来。</p>
 
 <h2>论文规范</h2>
 
@@ -94,9 +106,23 @@
 
 <p>在执行最后一步，也就是在外网的机器上<code>ssh local -pXXXX</code>的时候i需要输入内网主机B的密码。这一步<strong>需要外网主机A的root权限</strong>。如果没有的话，会出现<code>Permission Denied</code>的警告。其实密码是正确的。另外，这个密码是一定要输入的，我添加了把A，B的ssh都添加到对方的<code>authorized_key</code>里了，但还是要输入密码。</p>
 
+<h2>查看端口占用情况</h2>
+
+<p>输入命令<code>netstat -ap|grep 12345</code>即可查看12345端口的使用情况。没有输出表示端口未被占用。</p>
+
+<h2>在后台运行autossh</h2>
+
+<p>使用命令<code>nohup autossh -M 1234 -NR 5678:localhost:9101 username@ip &amp;</code>，重点是<code>nohup</code>和结尾处的<code>&amp;</code>，这样输出就会被送到<code>nohup.out</code>而不是终端中了。</p>
+
 <h2>无响应的情况</h2>
 
 <p>我多次遇到在外网主机A连接内网主机B时无响应的情况。也不报错，就是一直等待。这种情况下只能把内网主机B的有关<code>ssh</code>外网主机A的命令全kill掉，再重连接一次。无响应的原因应该是端口被占用，然后ssh命令在等待端口释放吧。也有可能是实验室的网实在太卡太卡了&hellip;</p>
+
+<p>在<code>autossh</code>之前，记得先把ssh的public key加到外网主机中，不然会报错<code>Exit 1</code>。</p>
+
+<p>如果绑定的时候，出现各种奇怪的错误，出现溜达一圈，买瓶酸奶，回来重新绑定一次，可能就会解决了。谁知道我第一次是哪里输错了&hellip;</p>
+
+<p>如果还是连不上，那么，还是祈祷吧&hellip;三台物理机我都绑定了，但因为实验室的网络实在太差，时断时续，三台基本上只有一台能连过来。</p>
 
 <h2>Future Work</h2>
 
