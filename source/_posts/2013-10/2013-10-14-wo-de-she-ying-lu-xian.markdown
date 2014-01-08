@@ -3,7 +3,7 @@ layout: post
 title: "我的摄影路线图"
 date: 2013-10-14 12:03
 comments: true
-categories: [学习笔记]
+categories: [摄影, 学习笔记]
 ---
 
 在香港实习，拿到第一个月的工资的时候，我就做了一件梦寐以求的事：买单反。有些事情，我们会后悔做了，有些事情，我们会后悔没做。一直想用精美的照片来记载那些一点点流逝的岁月。如果说买单反真有什么后悔的，那就是，买的太晚了。
@@ -16,6 +16,8 @@ categories: [学习笔记]
 
 ##学习资料推荐
 [一个还不错的单反模拟网站](http://camerasim.com/camera-simulator/)。之所以说还不错，是因为这个模拟起来还是很不爽，不能直接对照之前模拟出的照片。
+
+[RAW和JPEG的取舍](http://www.elite-view.com/Art_Of_Life_Photo_Tour/27439.html)。一般来说，存RAW就好。我的相机有两个选项，一个是RAW，一个是RAW+JPEG。只用RAW就好。
 
 待续
 
@@ -44,5 +46,4 @@ categories: [学习笔记]
 然后就去官网下了各种[Camera Raw和DNG Converter](http://www.adobe.com/support/downloads/product.jsp?platform=Macintosh&product=106)，然后发现，还是打不开...
 
 其实，Camera Raw，是一个独立的程序。先把NEF格式的文件，用它转化为DNG格式，再用PS打开DNG格式的就好。并不是说安了它以后，PS就能直接打开NEF了。当然，也有能直接打开的办法，但那好像需要CS6以上的版本了。我没有试过。
-
 
