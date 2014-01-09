@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: book | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/book/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2014-01-09T19:42:10+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[读观止]]></title>
+    <link href="http://guori12321.github.io/blog/2014/01/09/du-guan-zhi/"/>
+    <updated>2014-01-09T19:10:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2014/01/09/du-guan-zhi</id>
+    <content type="html"><![CDATA[<p>《观止》，全称是《观止-微软创建NT和未来的夺命狂奔》 (Show Stopper!: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft)。花了一周的时间读完此书。我的心情，就像下面这张照片一样：</p>
+
+<p><img class="center" src="/images/showStopper.jpg"></p>
+
+<!--more-->
+
+
+<p>为了做个操作系统，做的妻离子散，家破人亡，还一连做了五年，何苦啊！再牛逼也是听别人吹的，而作痛，则是自己的。十分怀疑在选专业之前看到这本书，我还会不会投入这个苦海。十分庆幸的是，在看完这本书之后，我暂时还没有出家的打算。</p>
+
+<p>《观止》中记录了Windows NT框架的开发历程。可以说，从九十年代，一直到Windows 7之前的时代，NT占据了计算机历史上最最重要的部分。多么可歌可泣的历史地位。可是，对于开发它的程序员，那段开发的日子，也就是可泣了吧。在书的最后章节，也就是进入开发周期后的第五年，进行发布的冲刺的时候，那种巨大的压力，真是感同身受。加班加到自己的孩子都不认识自己了，这样真的大丈夫吗&hellip;</p>
+
+<p>书中写道，程序员们通过购物放松。在一个周末，他们会出去买一套<strong>房</strong>，再加四辆车&hellip;西雅图的房价能不涨吗&hellip;</p>
+
+<p>当然，除了压力，NT也为程序员们带着了巨大的财富。真的是工作五年，就退休的节奏&hellip;我想对于开发者来说，钱还不是第一驱动力。编程的快乐，来自完成程序时巨大的成就感。就像书中主人公卡特勒所说的，我就是喜欢写程序，然后看到它跑起来，就这样简单~~</p>
+
+<p>这本书的写法很经典，时时刻刻让我想到了《乔布斯传》，也许这些传记作者都受过同样的写作培训吧。有大的角度，但书中更多的则是入微的细节。读完此书的收获之一，是了解了世界上还有这么多种类的程序员。比如说，卡特勒，脾气暴躁却管理细致，再比如说，那位写代码写累了通过空手道放松的女程序员。此外，当年的微软，可是全球最顶尖的软件公司，那开放的氛围真的是不敢想像。</p>
+
+<p>读完一本这样震撼的书，那种复杂的感觉，我还真说不清楚。不过，最起码，我觉得我应该注意经营好自己的生活了。这两天，真是眼睛和腰都不舒服了&hellip;各位程序员们，大家也要保重啊！如果真有一天身体不行了，去卖烧饼时，记得跟我说一声，大家一起去卖，还当同行&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>

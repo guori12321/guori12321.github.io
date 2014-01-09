@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-01-08T10:16:21+08:00</updated>
+  <updated>2014-01-09T19:42:10+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[读观止]]></title>
+    <link href="http://guori12321.github.io/blog/2014/01/09/du-guan-zhi/"/>
+    <updated>2014-01-09T19:10:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2014/01/09/du-guan-zhi</id>
+    <content type="html"><![CDATA[<p>《观止》，全称是《观止-微软创建NT和未来的夺命狂奔》 (Show Stopper!: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft)。花了一周的时间读完此书。我的心情，就像下面这张照片一样：</p>
+
+<p><img class="center" src="http://guori12321.github.io/images/showStopper.jpg"></p>
+
+<!--more-->
+
+
+<p>为了做个操作系统，做的妻离子散，家破人亡，还一连做了五年，何苦啊！再牛逼也是听别人吹的，而作痛，则是自己的。十分怀疑在选专业之前看到这本书，我还会不会投入这个苦海。十分庆幸的是，在看完这本书之后，我暂时还没有出家的打算。</p>
+
+<p>《观止》中记录了Windows NT框架的开发历程。可以说，从九十年代，一直到Windows 7之前的时代，NT占据了计算机历史上最最重要的部分。多么可歌可泣的历史地位。可是，对于开发它的程序员，那段开发的日子，也就是可泣了吧。在书的最后章节，也就是进入开发周期后的第五年，进行发布的冲刺的时候，那种巨大的压力，真是感同身受。加班加到自己的孩子都不认识自己了，这样真的大丈夫吗&hellip;</p>
+
+<p>书中写道，程序员们通过购物放松。在一个周末，他们会出去买一套<strong>房</strong>，再加四辆车&hellip;西雅图的房价能不涨吗&hellip;</p>
+
+<p>当然，除了压力，NT也为程序员们带着了巨大的财富。真的是工作五年，就退休的节奏&hellip;我想对于开发者来说，钱还不是第一驱动力。编程的快乐，来自完成程序时巨大的成就感。就像书中主人公卡特勒所说的，我就是喜欢写程序，然后看到它跑起来，就这样简单~~</p>
+
+<p>这本书的写法很经典，时时刻刻让我想到了《乔布斯传》，也许这些传记作者都受过同样的写作培训吧。有大的角度，但书中更多的则是入微的细节。读完此书的收获之一，是了解了世界上还有这么多种类的程序员。比如说，卡特勒，脾气暴躁却管理细致，再比如说，那位写代码写累了通过空手道放松的女程序员。此外，当年的微软，可是全球最顶尖的软件公司，那开放的氛围真的是不敢想像。</p>
+
+<p>读完一本这样震撼的书，那种复杂的感觉，我还真说不清楚。不过，最起码，我觉得我应该注意经营好自己的生活了。这两天，真是眼睛和腰都不舒服了&hellip;各位程序员们，大家也要保重啊！如果真有一天身体不行了，去卖烧饼时，记得跟我说一声，大家一起去卖，还当同行&hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[毕业设计的那些破事]]></title>
@@ -1232,105 +1258,6 @@
 </span><span class='line'>$$</span></code></pre></td></tr></table></div></figure>
 
 
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Mac air 13感受]]></title>
-    <link href="http://guori12321.github.io/blog/2013/10/14/mac-air-13gan-shou/"/>
-    <updated>2013-10-14T23:41:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/10/14/mac-air-13gan-shou</id>
-    <content type="html"><![CDATA[<p>作为在香港的第二个月工资，我纠结再三，还是买了Macbook Air 13。在香港本身价钱就便宜一点，再加上在香港是大学的职员身份，还可以再优惠一点。8000港币（6400人民币左右）的价格还算可以忍。而air的性能，我想也足够我日常使用了，很久都没有碰到让我心动的大型游戏了，而平时跑程序我可以在服务器上跑，不管是中大还是工大，需要的时候都可以用集群机。再加上身边所有买mac的人都告诉我，真的很值。最后，还是买吧~</p>
-
-<!--more-->
-
-
-<h2>Mac初体验</h2>
-
-<p>比较轻薄。拿久了并没有感觉，但和原来的笔记本对比一下，一下就觉得特别明显。Mac的工业设计，有着最为独到的质感，整个笔记本感觉就像工艺品一样，打破了我对传统笔记本的印象。一直不知道它的风扇的换气口在哪里，看了帖子后才发现，是在屏幕的转轴的位置。喇叭也在这里，这样声音经过屏幕反射后，再传入耳朵，就不会觉得奇怪了。</p>
-
-<p>电池是13寸air的亮点之一。号称12小时续航。同学实测说是全功率跑着也能用9小时以上。我没有测过，不过确实很high~</p>
-
-<p>背光键盘也算是业界良心。本来我觉得这个功能并不实用，毕竟顶级的程序员都用不刻字的键盘。后来晚上写博客的时候发现，一些特殊的符号，比如^&amp;什么的，我还是要找一下才能打出来。晚上，特别是熄灯后，用夜光键盘，有着特别的情调。</p>
-
-<p>之后要说触摸板。在Win下我也不怎么带鼠标，觉得麻烦。Mac的触摸板更大，更光滑，也更灵敏。这是一种全新的交互的体验。多指的不同的滑动方式，实现了各种常用的操作。只是，这触摸板过于高端，我都不怎么舍得按下去。</p>
-
-<p>Mac，像很多Linux的桌面环境一样，是支持多个桌面的。比较特殊的是，你可以点击大部分应用程序的右上角，将它们全屏显示到一个新的桌面下。比如说我现在就是在全屏的Vim下写作。这样可以避免其它的干扰，你甚至无法看到系统状态栏中的时间。如果要切换出去，直接四指滑动就好。非常赞的设计~</p>
-
-<h2>Mac的不足</h2>
-
-<p>首先是键盘的适应问题。因为键位与Win的键盘不同，需要特别的适应。比如说，Ctrl键，在这里就是Command键。但在Vim下，Ctrl+ [ 要按Control+ [。再比如一些很常用的键，如Page Up，Home，都没有。</p>
-
-<p>其次是应用软件的多少。其实Mac下的软件并不见得比Win下少，只是Mac下软件的收费比较高。换句话说，破解起来比较费力。但用破解软件真的不是好行为。另一方面，Win下也存在破解的情况。</p>
-
-<p>再之后是文件系统的问题。对于NTFS，Mac是只能读不能写。只有exFAT是Mac和Win都可以读写的。对于U盘，我直接格掉就好。但对于移动硬盘，特别是我的1T的硬盘，我就不能直接格了，数据的备份就很麻烦了。</p>
-
-<p>总之，我喜欢Mac~~</p>
-
-<h2>将Home文件夹加入finder</h2>
-
-<p>在OS X的10.6版本后，finder中并没有home文件夹。这让我很纠结。</p>
-
-<p>以下方法可以把home加入finder中。
-<a href="http://forums.macrumors.com/showthread.php?t=1345541">参考的是这个帖子</a>。</p>
-
-<p>Press CMD+SHIFT+H to enter your Home folder in Finder, then press CMD+ArrowUp to get into the Users folder, from there drag the folder of your choice to the Sidebar.</p>
-
-<h2>Shell高亮</h2>
-
-<p>参考<a href="http://linfan.info/blog/2012/02/27/colorful-terminal-in-mac/">这篇文章</a></p>
-
-<h2>输入法</h2>
-
-<p>五笔的话，试了一圈，还是百度的最舒服，而且可以和手机上的输入法同步词库</p>
-
-<h2>RAR解压</h2>
-
-<p>我用的是<a href="http://www.kekaosx.com/zh-cn/">keka</a>，免费，开源，不过从APP Store里下载要收费。这个和mac自带的解压软件一样，点击rar后，就自动解压了，而且文件名不会乱码。</p>
-
-<h2>rm</h2>
-
-<p>我多次因为rm和mv打错，造成很严重的后果。后来同学们给了我两个建议。</p>
-
-<p>FQJ: 搞一段bash命令，每次rm的时候，都输入验证码。我表示无语。</p>
-
-<p>某学长: alias rm=&lsquo;trash&rsquo;</p>
-
-<p>于是我就把rm绑到trash上了。</p>
-
-<p>首先是安装<a href="http://www.dribin.org/dave/osx-trash/">osx-trash</a>:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>http://www.dribin.org/dave/osx-trash/</span></code></pre></td></tr></table></div></figure>
-
-
-<p>之后在<code>.bash_profile</code>中加入</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>alias rm='trash'</span></code></pre></td></tr></table></div></figure>
-
-
-<p>就好。之后通过<code>-l</code>参数查看废纸篓，<code>-e</code>清空。下面是官网给出的例子</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>% touch foo bar baz
-</span><span class='line'>% trash -l
-</span><span class='line'>% trash foo ba*
-</span><span class='line'>% trash -l
-</span><span class='line'>/Users/dave/.Trash/foo
-</span><span class='line'>/Users/dave/.Trash/bar
-</span><span class='line'>/Users/dave/.Trash/baz
-</span><span class='line'>% trash -e
-</span><span class='line'>% trash -l</span></code></pre></td></tr></table></div></figure>
 
 ]]></content>
   </entry>
