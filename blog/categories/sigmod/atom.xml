@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sigmod | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/sigmod/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2014-03-21T22:23:43+01:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[写在SIGMOD Undergrad Poster 2014投稿后]]></title>
+    <link href="http://guori12321.github.io/blog/2014/03/21/xie-zai-sigmod-undergrad-poster-2014tou-gao-hou/"/>
+    <updated>2014-03-21T21:42:00+01:00</updated>
+    <id>http://guori12321.github.io/blog/2014/03/21/xie-zai-sigmod-undergrad-poster-2014tou-gao-hou</id>
+    <content type="html"><![CDATA[<p>其实两天前就已经投稿了，但还是想写点东西，来纪念下这次投稿。毕竟下次再投就不是Undergraduate了。</p>
+
+<!--more-->
+
+
+<p>Sigmod对于搞database的人来说，是最顶级的，也是最难的会议了。因此尝试一下Sigmod也是我本科的梦想之一。二月份的时候，就已经在想应该怎么做了，但因为三月的时候要来法国，就先放着了，老板给我了个idea，但我一直没搞明白到底是什么意思&hellip;他的想法是对现有的大数据的框架进行改进，但他访问过两个顶尖的做大数据框架的组，每次都访问一年，而对他们做的框架，我了解的，几乎只有名字&hellip;到了法国之后，日子一天天的接近deadline了。我到法国是报着度假的目的来的，但是这可是Sigmod啊，放弃总有那么一点不甘心。后来师兄们又喊我出去玩，毕竟我们拿的申根签证是世界上最适合旅行的签证了，欧洲这么大点地方却有着十几个国家，都可以随意去。我的签证只有三个月，因此每次出去玩都是很珍贵的机会。很痛苦的思考了两天，还是不去了，安心 干活&hellip;但活也干不下去啊&hellip;</p>
+
+<p>日子一天天临近deadline了，但我还是不清楚要做什么&hellip;每天都找老板讨论，每天都有进展，但每天都觉得进展的太少&hellip;毕竟自己的资历太浅，对要做的东西了解的不够&hellip;能做的就是把论文写个框架出来，然后再也写不下去，让老板来补充，然后再讨论，再改动&hellip;最后一天终于定下来怎么写了(最后一天啊&hellip;)，然后就是通宵写&hellip;然后找老板改&hellip;</p>
+
+<p>我表示我和老板经常不在一个时区&hellip;大三一年他在美国，现在这三个月我在法国&hellip;讨论问题什么的时间就比较紧张。但好处就是，我每天晚上写完，发给他，他那里就是早上，他改完我给我，我就起床了，修改起来比较高效。最后一天我写到晚上一点多，终于写出来一篇差不多的初稿，然后找他改。他要在早上10点才有时间，我就等到三点&hellip;之后改到早上六点多，投完了&hellip;</p>
+
+<p>投完查了一上这个poster的中稿率，结果发现某年中国只中了一篇(<a href="http://www.ustcif.org/default.php/content/841/">reference</a>，话说大家的经历都好相似，我一直想去MSRA实习来着&hellip;)&hellip;早知道这么难，我不如就多在欧洲玩两个国家好了&hellip;坑&hellip;但怎么说，也是坚持下来了，投不了SIGMOD，投点二类会应该也是可以的吧。最重要的是，至少我在本科时投进SIGMOD，算是一个小小的梦想的实现吧。</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ssh | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/ssh/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-02-14T08:11:56+08:00</updated>
+  <updated>2014-03-21T22:23:43+01:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[ssh反向连接]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/02/sshfan-xiang-lian-jie/"/>
-    <updated>2014-01-02T13:26:00+08:00</updated>
+    <updated>2014-01-02T13:26:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/02/sshfan-xiang-lian-jie</id>
     <content type="html"><![CDATA[<p>ssh是广大人民喜闻乐见的远程连接方式。有些时候，实验室里的集群机，只有内部的ip，我们没有办法在实验室外远程连接。寒假就来来临，我想在家连实验室的集群机干活(好吧，这只是个美好的愿望，我估计我会玩一寒假&hellip;)，于是，我就开始研究怎么用ssh反向连接。</p>
 

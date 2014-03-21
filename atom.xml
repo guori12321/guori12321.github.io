@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-02-14T08:11:45+08:00</updated>
+  <updated>2014-03-21T22:23:43+01:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -14,9 +14,115 @@
 
   
   <entry>
+    <title type="html"><![CDATA[写在SIGMOD Undergrad Poster 2014投稿后]]></title>
+    <link href="http://guori12321.github.io/blog/2014/03/21/xie-zai-sigmod-undergrad-poster-2014tou-gao-hou/"/>
+    <updated>2014-03-21T21:42:00+01:00</updated>
+    <id>http://guori12321.github.io/blog/2014/03/21/xie-zai-sigmod-undergrad-poster-2014tou-gao-hou</id>
+    <content type="html"><![CDATA[<p>其实两天前就已经投稿了，但还是想写点东西，来纪念下这次投稿。毕竟下次再投就不是Undergraduate了。</p>
+
+<!--more-->
+
+
+<p>Sigmod对于搞database的人来说，是最顶级的，也是最难的会议了。因此尝试一下Sigmod也是我本科的梦想之一。二月份的时候，就已经在想应该怎么做了，但因为三月的时候要来法国，就先放着了，老板给我了个idea，但我一直没搞明白到底是什么意思&hellip;他的想法是对现有的大数据的框架进行改进，但他访问过两个顶尖的做大数据框架的组，每次都访问一年，而对他们做的框架，我了解的，几乎只有名字&hellip;到了法国之后，日子一天天的接近deadline了。我到法国是报着度假的目的来的，但是这可是Sigmod啊，放弃总有那么一点不甘心。后来师兄们又喊我出去玩，毕竟我们拿的申根签证是世界上最适合旅行的签证了，欧洲这么大点地方却有着十几个国家，都可以随意去。我的签证只有三个月，因此每次出去玩都是很珍贵的机会。很痛苦的思考了两天，还是不去了，安心 干活&hellip;但活也干不下去啊&hellip;</p>
+
+<p>日子一天天临近deadline了，但我还是不清楚要做什么&hellip;每天都找老板讨论，每天都有进展，但每天都觉得进展的太少&hellip;毕竟自己的资历太浅，对要做的东西了解的不够&hellip;能做的就是把论文写个框架出来，然后再也写不下去，让老板来补充，然后再讨论，再改动&hellip;最后一天终于定下来怎么写了(最后一天啊&hellip;)，然后就是通宵写&hellip;然后找老板改&hellip;</p>
+
+<p>我表示我和老板经常不在一个时区&hellip;大三一年他在美国，现在这三个月我在法国&hellip;讨论问题什么的时间就比较紧张。但好处就是，我每天晚上写完，发给他，他那里就是早上，他改完我给我，我就起床了，修改起来比较高效。最后一天我写到晚上一点多，终于写出来一篇差不多的初稿，然后找他改。他要在早上10点才有时间，我就等到三点&hellip;之后改到早上六点多，投完了&hellip;</p>
+
+<p>投完查了一上这个poster的中稿率，结果发现某年中国只中了一篇(<a href="http://www.ustcif.org/default.php/content/841/">reference</a>，话说大家的经历都好相似，我一直想去MSRA实习来着&hellip;)&hellip;早知道这么难，我不如就多在欧洲玩两个国家好了&hellip;坑&hellip;但怎么说，也是坚持下来了，投不了SIGMOD，投点二类会应该也是可以的吧。最重要的是，至少我在本科时投进SIGMOD，算是一个小小的梦想的实现吧。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[写在reject之后]]></title>
+    <link href="http://guori12321.github.io/blog/2014/03/10/xie-zai-rejectzhi-hou/"/>
+    <updated>2014-03-10T16:08:00+01:00</updated>
+    <id>http://guori12321.github.io/blog/2014/03/10/xie-zai-rejectzhi-hou</id>
+    <content type="html"><![CDATA[<p>中欧标准时间的下午两点半，收到某高校的邮件，让我上网查看自己的申请状态(能不要这么高贵冷艳吗&hellip;)，于是乎，</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>With regret, I must inform you that it will not be possible to offer you admission to the Computer Science program.</span></code></pre></td></tr></table></div></figure>
+
+
+<!--more-->
+
+
+<p>看到reject的第一感觉，是希望的破灭。在漫长的等待，面试，以及忐忑之后，终于知道，这一切都白费了。第二感觉，则是无尽的自责。如果当初再努力一点，如果再多利用一点时间，结果，应该会是不一样吧。我多么用以前的付出与努力，来换取现在的好一点的结果。最后的最后，则是无比的烦躁。书看不进去，电影也不想看，饭，我估计倒是能吃下&hellip;</p>
+
+<p>细细想来，虽然这是北美高校的第一所的reject，但是，在漫长的求学生涯中，这远远不是最让我难过的rej，我拿到过的reject，也远远不只这么一家。虽然很仰慕他家的篮球和计算机，但是，错过也就只能错过，能做的，也就是下午多跑两圈然后多吃点饭。毕竟，错过了学校，别再错过年华。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Movie:中国合伙人]]></title>
+    <link href="http://guori12321.github.io/blog/2014/03/05/movie-zhong-guo-he-huo-ren/"/>
+    <updated>2014-03-05T15:51:00+01:00</updated>
+    <id>http://guori12321.github.io/blog/2014/03/05/movie-zhong-guo-he-huo-ren</id>
+    <content type="html"><![CDATA[<p>作为一个大一暑假在新东方打工当助教，大二开始刷单词，大三开始搞论文，大四开始申请并且现在在等录取结果的人，看了这部电影，还是有些想说的东西。</p>
+
+<!--more-->
+
+
+<p>这部电影拍的看起来比较假。中国的很多电影拍出来我都觉得假&hellip;比如说，你要拍一个大学校园的故事，为什么要找一个毕业了二十年的人来拍，黄晓明这几个人看起来就是留级了很多年没能毕业的样子好吗&hellip;</p>
+
+<p>接下来来讲讲梦想。在新东方打工的时候，我跟堂的第一节课我都很感动，但第二次跟的时候，就发现，怎么还是上个班讲过的段子&hellip;有些东西讲起来非常的酷炫，但经历起来，并不是那样，只有事后，才能笑的出来。我不愿意将梦想定义为一个高端大气上档次的词汇。梦想，应该是具体的。就像美食，美景，以及美丽的姑娘们，这些，都是支撑我在这么艰难的人生中一步步走过来的理由。</p>
+
+<p>再然后，是人生的艰难&hellip;我大一的时候，特别不喜欢喝酒，但有些情况，比如说和新东方的领导和同事们一起吃饭时，就比较纠结了。我曾经说，我不想喝，然后那位领导直接问，你工资要不要了。我纠结了一下，喝掉了&hellip;之后，那位领导讲起他在新东方总部年会的时候，那喝的就没边了，现在他已经喝出来了。至于新东方总部的那位领导，老俞，在北京奥运会之前，曾经和各方面的领导各种喝，一天喝两斤白酒，然后住进医院，输完液出来接着喝。因为当时北京奥运期间是禁止所有大型集会的，这种情况下就要靠喝酒来解决问题。老俞进医院的成就是，奥运期间，北京只有两个地方有大型的集会，一个是奥运场馆，一个是新东方的教室。那位领导说，每当他见到老俞的时候，不管有多大的委屈，都觉得不是个事了。人在江湖，身不由已啊&hellip;人生就是这么艰难&hellip;</p>
+
+<p>最后想说的是坚持。我们从小到大的教育，都告诉我们，天道酬勤，你不是不聪明，你是不用功。这么多年，直到GRE，我才真正认了，自己就是笨，真记不住。所以说，有些人用两个月专心背单词就够了，有些人用半年的时间才可以稍微解决一点问题。那些说&#8217;以绝大多数人的努力程度，根本轮不到拼天赋&#8217;的人，多半是没真正努力过，不知道那种力不从心的感觉，再或者，他们所在的领域，不需要天赋。至少，我想对于GRE的单词，还是要天赋的。我想自己还是不够坚持吧，真从一开始就有花半年时间的觉悟的话，应该还是可以的。这些英语考试不会再考了，而我之后要面对的，是PhD，和全世界最聪明的学者或全球最优秀的程序员一起竞争，希望自己能坚持下来吧&hellip;当然，如果没学校要我，我就不说什么了&hellip;</p>
+
+<p>申请求RP啊&hellip;今天已经3.5了，申请的9所学校依然没有任何消息&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[去法国的路上~]]></title>
+    <link href="http://guori12321.github.io/blog/2014/03/01/qu-fa-guo/"/>
+    <updated>2014-03-01T23:11:00+01:00</updated>
+    <id>http://guori12321.github.io/blog/2014/03/01/qu-fa-guo</id>
+    <content type="html"><![CDATA[<p>在一天天的懒散生活中，时间渐渐来到了2014年的2月28日。这一天，是我，大师，还有小黑三个人一起去法国UBP学校交换三个月的起点。在28号的早上，在照例刷了几次邮件，发现我的学校申请并没有新动向后，我又来回打滚了好多次，做出了一个艰难的决定，起床！</p>
+
+<p>之前的两天，已经把该洗的衣服洗好晒干，应该采购的都购买齐全了，但是28号我依然忙碌的各种收拾，并且不断回忆还有什么应该带上。最后收拾到我都不想去法国了&hellip;下午四点半，出发去机场前，大师还告诉我，突然有那么一点点不想去，因为在寝室的日子实在太安逸了。深有同感&hellip;每天最发愁的是吃什么，这样的日子真是舍不得&hellip;</p>
+
+<!--more-->
+
+
+<h2>在国内登机</h2>
+
+<p>这部分经历比较无聊，不过可能对其它同学有帮助，我就写到这节里吧。</p>
+
+<p>三个人，从哈尔滨一起飞到北京后，按计划，是从北京坐晚上1：55的俄罗斯航空的飞机，飞莫斯科，在莫斯科等候9小时后，再坐上飞往巴黎的航班，到巴黎再等上四个小时，最终飞往UBP所在的城市克莱蒙。为什么这么折腾呢，因为便宜&hellip;28号的晚上8点半我们到达北京机场，休整过后，在排队领登机牌时，有位机场经理模样的人问，有没有经莫斯科中转去巴黎的，我们三个就应了一声。经理说，如果俄罗斯航空柜台对面的法国航空1:50直飞巴黎有空位的话，可以帮我们改成直飞的。我们自然答应下来，毕竟在莫斯科等9小时太漫长&hellip;经理就让我们等到11点半，看能不能改签。我们等啊等啊，眼前不时有各种战斗民族的人种走过，真心能感觉到满满的战斗力啊&hellip;在我还穿着哈尔滨全套衣服的时候，战斗民族们就穿着短袖了&hellip;</p>
+
+<p>等到11点半，我们就去找经理了，他说，改签没问题，要了我们三个的护照，帮忙办手续，然后让我们去对面的法航领登机牌。<strong>北京机场法航的秤偏重</strong>，大家一定要小心！我坐的海航过来的，当时行李只有19.7kg（他们要求20kg以内，我用体重秤称出来应该是19.6-19.7kg之间，至少他们的秤和我的比较接近），但在法航这里是20点几kg。还好国际航班的限额是23kg。因为之前经理帮忙改签等环节都用了比较长的时间，等我拿到登机牌时，已经12：45了。也就是说，离要求登机的1：05只差20分钟，这20分钟要过安检就无比的困难。问了好多工作员工模样的人，后来发现找管边防的人比较好使，他们直接新开了一个窗口，来办理我们这些改签的人。过了边防，还要过安检。我看了眼安检的人，一看表，只有10分钟就要登机了。和大师，小黑跟第一个安检窗口的人说，我们着急，结果安检的人表示，你们最多一个窗口插队一个，不可能一下子插队4个（当时有另一个改签的人在身边），于是，我就往后跑了几个窗口，乞求着插队&hellip;安检员表示，你别跟我说，你跟排队的人说，排队的人都等了半天了！我一听，有戏，然后就保持30度到45度鞠躬的姿态，一个个求情&hellip;队伍最前面的两个人比较狠，他们说，我们的已经开始登机了，你这还有五分钟呢！到了第三个人时，那个叔叔比较和气，直接挥手，说，行！插队成功后，安检时也碰到些问题。国际航班的安检，要求把电脑，移动电源，iPad等都拿出来。我的两个笔记本让我塞一个内胆包里了，也让我分开拿出来。但我随身的包还是说不符合要求，在过完安检仪后，工作人员问我，你这是不是很多充电线？都拿出来。我包里充电线能不多吗&hellip;行李差300g就超重了&hellip;各种掏，这下没问题了。收拾好东西后，直奔登机口，结果发现登机口排队好长&hellip;我上了飞机，小黑和大师还没上来。等了近20分钟，才出现。他们说，他们安检没插队，因为前面的所有人都是同一班改签过来的&hellip;</p>
+
+<h2>从北京到巴黎的法国航空航班</h2>
+
+<p>这是我第一次坐国际航班，激动着心，颤抖着手，坐上了我的位置&hellip;机型是波音777，机身非常长，我走了很久才到属于我的最后一排的位置。想当年CS有一款地图，就是波音777，解救人质的。今天，终于能体会一下了。</p>
+
+<p>法航的空乘人员非常友好，工作的时候也很开心。某个空姐发现被我注视后，还伸出大拇指说，Good。飞机上有两名乘务是中国人，其它的目测都是法国人。我和法国人讲两句英语后，他们就会让我直接去找中国人，这伤透了我的心，我英语有那么差吗&hellip;</p>
+
+<p>法航最让我不能忍的一点是，起飞前会<strong>喷香水</strong>，而且是满机厢的喷！想像一下你把喷雾型的空气清新剂给扎漏了，然后拿着满世界溜达。两名空姐，每人三瓶喷雾型的香水，来回溜达了一圈，让我立即想下飞机了。我家喷农药也没这么玩过啊！而且这香水味浓到已经和农药味着不多了。</p>
+
+<p>喷完香水，机长再讲完各种话，再放一遍安全教育的视频，就暂时没什么事了。我就研究起来了我面前的液晶屏幕。它挂在前一个人的椅子后面，看上去很高档的样子。用这个屏幕，可以看电影，打游戏什么的。我先是打开了一个Carveman的游戏，然后发现，这货不是推箱子吗&hellip;我推了三关后不玩了&hellip;然后开始找电影，发现有《环太平洋》，《怪兽大学》等不错的电影，可惜没有汉语字幕&hellip;后来我又重看了遍《环太平洋》&hellip;这个液晶屏幕不大，分辨率也不高，但最不能忍的是这货是电阻屏的，屏幕上可以清楚的看到电阻屏的网格线，对看电影的影响很大。而且这货卡的不是一点，经常是我按了关机，然后卡死了，过上个十分钟才能关掉。不过它的操控面板的设计思想很先进，可以从椅背上拉出来，当作游戏手柄使用，我还想着能和大师来局魂斗罗，后来发现想多了，也就能推个箱子。之所以说是设计思想先进，是因为这个小屏幕实在太卡，用着不爽。</p>
+
+<p>大师的屏幕打不开，找了空姐后，他们说会修理，然后，我们眼睁睁的看着它被人远程打开，出现了字符界面。大师看了一眼，说，是Win CE操作系统！过了一会，出现要求输入管理员密码的指令，然后我们看到出现了一长串的*&hellip;原来，你们的修理就是重穿系统啊&hellip;后来重装完也不好使，倒是过了七个小时后又能正常使用了。波音公司就不能把它的配套设备搞完善点吗&hellip;我这边出现的问题是，看电影时显示链接数已满，请等待。我想了想，那些电影不可能存在液晶屏所在的设备中，飞机上应该是有一个服务器，用户进行操作后，液晶屏再向服务器请求数据，而服务器没办法同时响应太多液晶屏的要求。我等大部分人都睡了后，再看电影，果然就好使了&hellip;我们要去的ISIMA组，最强大的就是嵌入式了，这不会是他们做的吧&hellip;这么个产品放我们学院绝对毕不了业的。在长达11小时的飞行中，我无比想知道现在几点了，结果这货连个系统时间都没有&hellip;需求分析都不到位。</p>
+
+<p>小液晶屏摆弄差不多后，开始发吃的。之前给过我们一张类似菜单的纸，我就很纠结要点什么。想着好不容易坐次飞机，就点些没吃过的吧。于是，饮料我点了<strong>香槟</strong>。有点酸，有点气泡，度数不高。味道只能说一般。没想到我第一次喝香槟是在飞机上&hellip;大师之前还问我，香槟怎么读啊，你那发音明明是<strong>冠军</strong>啊&hellip;我发现给我上餐的空姐之一是中国人，于是，就没那么多问题了&hellip;大师就比较纠结，只能<strong>认识什么单词喝什么饮料</strong>。于是，他依次喝了milk, tea, water&hellip;其中tea还分Chinese Tea和England Tea。英国茶我没喝过，但我在香港实习了两个月，那个奶茶的味道，还是算了吧&hellip;我还点了份西餐做为主食，结果发现，就是嫩的煎蛋，一根小香肠什么的&hellip;还真和我在香港吃的东西差不多&hellip;要了杯橙汁，结果发现，法国的橙汁酸的要死，我的牙都受不了&hellip;总之尝试了不少好东西，基本上达到了每样点一次的目的&hellip;没吃饱的话，可以直接跟空姐要些小吃，也就是小面包什么的，我刚开始没好意思要，后来吃了三个实在太甜&hellip;水也要了很多杯&hellip;</p>
+
+<p>在兴奋的劲头过后，我发现人生还是很艰难的&hellip;因为这次从北京飞巴黎要用11个小时。经济舱的待遇，基本上就是硬座，而且坐在中间的人还没办法出去，除非让边上的人让开，但边上的人睡着了就没办法了。我是实在睡不着，硬坐着也就睡了三个小时吧，但小黑和大师这两个人渣睡的无比开心&hellip;</p>
+
+<p>到机场后，因为机票是改签的法航，之前的行程单是俄罗斯航空的，我们要去办法航的行程单，因为怕学校报销时要行程单。找到法航的柜台，结果说英语说不明白&hellip;问他们有没有说中文的，于是有个工作人员打电话，一个中国人接了，再帮我翻译成法语（也不知道我英语不行还是柜台上那位不行&hellip;）。后来告诉我们办不了，因为没有订票的信息&hellip;好吧&hellip;</p>
+
+<p>在戴高乐机场，取行李要先出海关&hellip;本以为会和国内一样查半天，结果，只有一道岗，看了下签证，再看看我，就这么出来了&hellip;终于踏上了法律意义上的法国领土~~（机场公共区在法律上是公界）。这个破机场太大，取行李还要先坐类似于地铁的东西，到另一个航站楼。到了那里，只见我们三个的行李箱孤零零的在皮带上滚动着&hellip;戴高乐机场也不查行李票，还好我们的行李没丢&hellip;</p>
+
+<p>之后，就是寄存行李，然后，出去玩几个小时~去了铁塔和凯旋门，很开心~</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[旅途心情]]></title>
     <link href="http://guori12321.github.io/blog/2014/02/14/lu-tu-xin-qing/"/>
-    <updated>2014-02-14T07:30:00+08:00</updated>
+    <updated>2014-02-14T07:30:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2014/02/14/lu-tu-xin-qing</id>
     <content type="html"><![CDATA[<p>此时，是2014年2月14日，元宵节，也是情人节的早上七点半。天一点点的亮起来了。我正一个人坐在太原火车站边上的德克士。刚才从运城坐了6小时卧铺来到太原，在这里再等待6小时后，是下一段28小时的卧铺回到哈尔滨开学。旅途的总时间超过40小时。</p>
 
@@ -50,7 +156,7 @@
   <entry>
     <title type="html"><![CDATA[记一次心跳的抢票历程]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/21/ji-%5B%3F%5D-ci-xin-tiao-de-qiang-piao-li-cheng/"/>
-    <updated>2014-01-21T19:54:00+08:00</updated>
+    <updated>2014-01-21T19:54:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/21/ji-[?]-ci-xin-tiao-de-qiang-piao-li-cheng</id>
     <content type="html"><![CDATA[<p>上周拿到了签证，之后我们三个拖延症患者一直想着，明天把机票买了吧，于是就拖到了现在&hellip;</p>
 
@@ -72,7 +178,7 @@
   <entry>
     <title type="html"><![CDATA[写给21岁~]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/17/xie-gei-21sui/"/>
-    <updated>2014-01-17T00:10:00+08:00</updated>
+    <updated>2014-01-17T00:10:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/17/xie-gei-21sui</id>
     <content type="html"><![CDATA[<p>今天，是21岁的第一天~许个愿吧~</p>
 
@@ -99,7 +205,7 @@
   <entry>
     <title type="html"><![CDATA[读观止]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/09/du-guan-zhi/"/>
-    <updated>2014-01-09T19:10:00+08:00</updated>
+    <updated>2014-01-09T19:10:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/09/du-guan-zhi</id>
     <content type="html"><![CDATA[<p>《观止》，全称是《观止-微软创建NT和未来的夺命狂奔》 (Show Stopper!: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft)。花了一周的时间读完此书。我的心情，就像下面这张照片一样：</p>
 
@@ -125,7 +231,7 @@
   <entry>
     <title type="html"><![CDATA[毕业设计的那些破事]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi/"/>
-    <updated>2014-01-03T12:26:00+08:00</updated>
+    <updated>2014-01-03T12:26:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi</id>
     <content type="html"><![CDATA[<p>记录下毕业设计中遇到的各种问题&hellip;</p>
 
@@ -194,7 +300,7 @@
   <entry>
     <title type="html"><![CDATA[ssh反向连接]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/02/sshfan-xiang-lian-jie/"/>
-    <updated>2014-01-02T13:26:00+08:00</updated>
+    <updated>2014-01-02T13:26:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/02/sshfan-xiang-lian-jie</id>
     <content type="html"><![CDATA[<p>ssh是广大人民喜闻乐见的远程连接方式。有些时候，实验室里的集群机，只有内部的ip，我们没有办法在实验室外远程连接。寒假就来来临，我想在家连实验室的集群机干活(好吧，这只是个美好的愿望，我估计我会玩一寒假&hellip;)，于是，我就开始研究怎么用ssh反向连接。</p>
 
@@ -246,7 +352,7 @@
   <entry>
     <title type="html"><![CDATA[写给2013年]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/31/xie-gei-2013nian/"/>
-    <updated>2013-12-31T20:56:00+08:00</updated>
+    <updated>2013-12-31T20:56:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/31/xie-gei-2013nian</id>
     <content type="html"><![CDATA[<p>时间终于到了2013年12月31日的晚上。是时候写写这一年的回顾了。再不写就真来不及了&hellip;</p>
 
@@ -302,7 +408,7 @@
   <entry>
     <title type="html"><![CDATA[About Pregelix]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/31/wo-de-pregelixlu-xian-tu/"/>
-    <updated>2013-12-31T11:16:00+08:00</updated>
+    <updated>2013-12-31T11:16:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/31/wo-de-pregelixlu-xian-tu</id>
     <content type="html"><![CDATA[<p><a href="http://hyracks.org/projects/pregelix/">Pregelix</a> is an open-source implementation of the bulk-synchronous vertex-oriented programming model (<a href="http://googleresearch.blogspot.com/2009/06/large-scale-graph-computing-at-google.html">Pregel API</a>) for large-scale graph analytics, which scales to very large clusters and very large graphs.</p>
 
@@ -313,7 +419,7 @@
   <entry>
     <title type="html"><![CDATA[人人网点赞狂魔的开发]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/28/dian-zan-kuang-mo-de-kai-fa/"/>
-    <updated>2013-12-28T10:19:00+08:00</updated>
+    <updated>2013-12-28T10:19:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/28/dian-zan-kuang-mo-de-kai-fa</id>
     <content type="html"><![CDATA[<p>之前在人人网上看到一张图，说点赞狂魔眼中的赞，已经不赞，而是<code>朕已阅</code>，于是，我就想搞这么个脚本，来实现这个功能~</p>
 
@@ -418,7 +524,7 @@
   <entry>
     <title type="html"><![CDATA[Merry Christmas]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/25/merry-christmas/"/>
-    <updated>2013-12-25T21:09:00+08:00</updated>
+    <updated>2013-12-25T21:09:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/25/merry-christmas</id>
     <content type="html"><![CDATA[<p>写篇日志来纪念下这个开心的圣诞节~~</p>
 
@@ -450,7 +556,7 @@
   <entry>
     <title type="html"><![CDATA[About Hadoop]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/23/wo-de-hadooplu-xian-tu/"/>
-    <updated>2013-12-23T17:21:00+08:00</updated>
+    <updated>2013-12-23T17:21:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/23/wo-de-hadooplu-xian-tu</id>
     <content type="html"><![CDATA[<p>在海量数据计算研究中心一年多了，类似&#8221;大数据&#8221;这种专业词汇也听了不知道多少次了。只可惜自己还是一知半解，只知道拿着实验室各位老板的名号出来骗人&hellip;现在总算有一点时间了，来安心的研究Hadoop和Prege什么的吧~</p>
 
@@ -737,7 +843,7 @@
   <entry>
     <title type="html"><![CDATA[Yogurt OS Development Week0]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/22/yogurt-os-development-week0/"/>
-    <updated>2013-12-22T12:25:00+08:00</updated>
+    <updated>2013-12-22T12:25:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/22/yogurt-os-development-week0</id>
     <content type="html"><![CDATA[<p>After the busy graduate school application period, nowadays I have plenty of time to do what I want. Developing a operating system sounds cool and awesome, and as I always wonder how it is developed, I decide to develop my own one: YogurtOS!</p>
 
@@ -759,7 +865,7 @@
   <entry>
     <title type="html"><![CDATA[同龄人的各种传奇]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/17/tong-ling-ren-de-ge-chong-chuan-qi/"/>
-    <updated>2013-12-17T10:57:00+08:00</updated>
+    <updated>2013-12-17T10:57:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/17/tong-ling-ren-de-ge-chong-chuan-qi</id>
     <content type="html"><![CDATA[<p>这篇日志，就来罗列下同龄人的各种传奇经历吧。读了他们写的东西，我总有一种白活了的感觉。其实，每个人的背景和经历，都差距的太大，别人的经历，对我来说，也是根本无法复制。所以说，读读，开心就好~(因为根本不是一个level的&hellip;)</p>
 
@@ -782,7 +888,7 @@
   <entry>
     <title type="html"><![CDATA[科学的松鼠在工大]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/15/ke-xue-de-song-shu-zai-gong-da/"/>
-    <updated>2013-12-15T19:46:00+08:00</updated>
+    <updated>2013-12-15T19:46:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/15/ke-xue-de-song-shu-zai-gong-da</id>
     <content type="html"><![CDATA[<p>今天，科学松鼠会的组织者之一，姬十三，在工大讲座。我溜达过去，听了一个多小时。之前就看到过很多关于科学松鼠会的内容，特别是姬十三在《科幻世界》的彩页里经常出现。</p>
 
@@ -805,7 +911,7 @@
   <entry>
     <title type="html"><![CDATA[新的域名]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/14/xin-de-yu-ming/"/>
-    <updated>2013-12-14T17:45:00+08:00</updated>
+    <updated>2013-12-14T17:45:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/14/xin-de-yu-ming</id>
     <content type="html"><![CDATA[<p>挑来挑去，最后在淘宝上花30块钱买了一年的<code>ruiguo.me</code>的域名。<code>ruiguo.net</code>和<code>ruiguo.com</code>都已经被抢注了。可恨的是，我付完钱才想起来问“以后续费是不是都是30块一年”？回答“不是的，以后是180块一年”&hellip;坑啊！不过，一年后的事情，谁说的准呢。就先这么用着吧。</p>
 
@@ -839,7 +945,7 @@
   <entry>
     <title type="html"><![CDATA[GRE查分的问题]]></title>
     <link href="http://guori12321.github.io/blog/2013/11/27/grecha-fen-de-wen-ti/"/>
-    <updated>2013-11-27T21:42:00+08:00</updated>
+    <updated>2013-11-27T21:42:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2013/11/27/grecha-fen-de-wen-ti</id>
     <content type="html"><![CDATA[<p>我查GRE的分就一直没查出来过。每次都显示</p>
 
@@ -867,164 +973,6 @@
 <p>最后，用Skype打美国GRE中心的电话，是不用花钱的。我之前还从淘宝上充了10欧的话费，没有用上。需要考虑的另一点是时差，GRE考试中心用的是美国东海岸的时间（纽约或华盛顿时间），我是晚上9点打过去，那边正好是早上8点。注意节假日他们不上班，比如明天，是感恩节。</p>
 
 <p>出国是很艰难的，祝我，也祝大家，都能有好的归宿~~</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[我的AsterixDB路线图]]></title>
-    <link href="http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu/"/>
-    <updated>2013-11-25T10:27:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu</id>
-    <content type="html"><![CDATA[<p>AsterixDB是UC Irvine大学主导开发的一款并行划，分布式的数据库。更多的介绍可以看<a href="http://asterixdb.ics.uci.edu/">这里</a>。下面是我参与开发过程的一些记录。</p>
-
-<!--more-->
-
-
-<h2>获得源代码</h2>
-
-<p>首先是下载源代码。在它的<a href="">Google Code的Source页面</a>中，可以找到下面这句</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git clone https://code.google.com/p/asterixdb/</span></code></pre></td></tr></table></div></figure>
-
-
-<p>这样你就可以把它的源代码下载下来了。</p>
-
-<p>查看下，发现除了java文件外，就是XML这种结构文件。</p>
-
-<h2>导入项目</h2>
-
-<p>因为源代码中没有<code>.projecr</code>文件，所以说，没办法像平时一样用Eclipse直接import进去。查来查去，在<a href="http://stackoverflow.com/questions/2638016/why-no-projects-found-to-import">stackoverflow</a>应该这么做</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Goto File &gt; New &gt; Java Project
-</span><span class='line'>Uncheck Use default location
-</span><span class='line'>Click on Browse to navigate to your source folder, or type in the path to your source
-</span><span class='line'>Click Finish</span></code></pre></td></tr></table></div></figure>
-
-
-<p>注意到一点，Eclipse有Bug: 如果你的项目的路径，在你的workspace下，那么，Eclipse会报错<code>folder overlaps the location of an existing project</code>，具体参考<a href="http://stackoverflow.com/questions/10368903/where-is-create-project-from-existing-source-in-eclipse-indigo">这个问题</a>。把默认的workspace删了，别选Use default location，然后选asterixdb的文件夹，就可以了。之后再把workspace加回来。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[欧洲旅行计划]]></title>
-    <link href="http://guori12321.github.io/blog/2013/11/24/ou-zhou-lu-xing-ji-hua/"/>
-    <updated>2013-11-24T20:14:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/11/24/ou-zhou-lu-xing-ji-hua</id>
-    <content type="html"><![CDATA[<p>在长春的万达广场，很开心的和YYJ同学聊天。自她从法国从来，我就还没见过她呢。转眼就到了各奔前程的时候了。谈的最多的，除了初高中那几个NB人物外，就是她在法国的经历了。同时也帮我小小规划了下去法国交换时的旅行计划~</p>
-
-<!--more-->
-
-
-<p>首先，去法国，是所谓的<code>申根签证</code>，也就是传说中的在欧盟几乎可以到处溜达的签证。不能去的地方是英国，以及其它一些边境上的小岛。想去英国的话，需要在巴黎提前一周办理签证，具体手续比较麻烦，需要相关的财产证明，另外最好有来自英国的朋友的邀请信。不知道在英国的同学可不可以开这个邀请信，到时候再说。</p>
-
-<p>另外，在欧洲，吃饭是个大问题。在香港贵点，三十多一顿，我都吃的肉疼，在欧洲肯定是要自己做了。想想当年意大利的学长，各种意大利面各种煮啊。我在香港两个月，看到意粉，都想吐了&hellip;</p>
-
-<p>她在法国的时候，除了法国本身，主要去了意大利，西班牙，北欧，雅典几个国家。因为她平时还要上课，不怎么有机会出去玩。我想我过去以后应该是大把的时间玩了。</p>
-
-<p>她的建议是，首先，在<strong>一月</strong>的时候去北欧，挪威什么的。在这种靠近北极的地方，可以去看极光~另外，在<strong>四月</strong>的时候去雅典，这个时候雅典比较暖和。雅典本身，据她所说，破破烂烂的，没一点首都的样子。倒是雅典的各个小岛，很美，此外雅典人也很热情。想想这些小岛，就是千百年前的雅典城邦了吧。</p>
-
-<p>西班牙最有名的建筑，就是圣家堡大教堂了。看她的照片，我很惊讶这玩意后面怎么还有吊车，查了wiki后才发现，这个教堂，现在<strong>还在建</strong>，建了200多年，还没有建完。也也是世界上唯一一个还没建完就被列为世界文化遗产的建筑。看完了它，世界上其它教堂就都没感觉了。</p>
-
-<p>至于意大利，她提到了大卫雕像，为了看个雕像，还专门花了12欧的门票。意大利不怎么有学生票，满大街却都是各种博物馆，没办法，古罗马帝国的传承。在法国，拿着学生证（有些地方要查护照上的学生签证），就可以免费或花很少的钱游览各种博物馆了。</p>
-
-<p>我最羡慕的一点是滑雪。在法国的某座山头上（阿尔卑斯山的分支），她们十几个女生，租了一周的<strong>小木屋</strong>，有两个法国人会滑雪，就教了她们三四天。在她下山的时候，已经可以滑倒数第二难的雪道了。我在哈尔滨滑过一次，撞的比较狠，之后的三天都头晕。希望法国的雪道人能少点吧。</p>
-
-<p>最后要说的一点，就是安全。她没怎么玩的原因之一，也是安全问题，毕竟一个女生不怎么敢到处走。她们学校去年的一位学姐就在法国被杀害了。我出去玩的时候，人稍微少点的地方都不敢去啊&hellip;到时候还是多叫几个人，一起滑雪什么的吧，如果能叫到的话&hellip;另外，问了某个在意大利上学的学长，他很淡定的告诉我，要防寒，防偷抢&hellip;回忆起他当年发的各种在罗马和当小偷的孩子斗智斗勇的故事，哎&hellip;</p>
-
-<p>虽然，生活的本质，还是很痛苦的。不管是我还是她，现在都是为各种前程的事情担心。法国，我想以后对我来说，也只能是一段回忆，但是，现在，还是好好期待下吧~在工大，好好学习使用在香港实习时买的单反，多在欧洲拍点好照片出来。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Wish List]]></title>
-    <link href="http://guori12321.github.io/blog/2013/11/02/wish-list/"/>
-    <updated>2013-11-02T19:18:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/11/02/wish-list</id>
-    <content type="html"><![CDATA[<p>大四上学期，永远是那么焦虑，赶不完的deadline，各种很心动但很难争取到的机会&hellip;如果，能活着度过这个学期，如果，下学期可以很轻闲，那么，我要一点点的，去做下面的事情</p>
-
-<!--more-->
-
-
-<h2>乱七八糟</h2>
-
-<ul>
-<li><p>研究下单反的使用，PS的初阶</p></li>
-<li><p>学跳舞啊学跳舞！！什么快三慢三快四慢四，什么拉丁什么伦巴！！</p></li>
-</ul>
-
-
-<h2>做点好玩的项目</h2>
-
-<ul>
-<li>研究下<a href="http://www.byvoid.com">byvoid</a>的博客，去看看他做过哪些厉害的项目</li>
-</ul>
-
-
-<h2>搬砖技能的提升</h2>
-
-<ul>
-<li>看看算法导论，编译原理</li>
-<li>看看各种数据挖掘的算法</li>
-<li>找找长期并且靠谱的外包</li>
-</ul>
-
-
-<p>未完待续&hellip;</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[土豪大学]]></title>
-    <link href="http://guori12321.github.io/blog/2013/10/24/tu-hao-da-xue/"/>
-    <updated>2013-10-24T22:07:00+08:00</updated>
-    <id>http://guori12321.github.io/blog/2013/10/24/tu-hao-da-xue</id>
-    <content type="html"><![CDATA[<p>上帝说，要有土豪，然后，有了KAUST。</p>
-
-<p>今天晚上听了KAUST的宣讲，心情久久不能平静。激动着心，颤抖着手，我还是写篇日志记录下这个过程：</p>
-
-<!--more-->
-
-
-<p>和所有国外高校的宣讲一样，来了几个中国的老师，几个外国的老师。大家的目光，都在搜索，说好的<strong>来了就给32G U盘</strong>的U盘，到底在哪里!</p>
-
-<p>第一排没坐满，KAUST的老师招手，让我们坐到第一排边上的两个位子上，然后我就过去了&hellip;得到了一个比较好的视野。在KAUST的老师做基本介绍时，他拿出了个U盘，说&#8221;这是我们的一点小小心意，不过，你们肯定不是为了这个来的&#8221;。我果断的点点头。是的，我是为了<strong>U盘</strong>和<strong>抽ipad mini</strong>的机会来的。然后，他又拿出来了一个小盒子，ipad mini，然后说，“我们还带来一个小礼物，ipad mini，这个是从沙特带来的，上面都是阿拉伯语”。边上一哥们很机智的问了一句<strong>是纯金的吗</strong>。不是纯金的我也要！</p>
-
-<p>接下来，是常务副校长（应该是吧），来介绍一下KAUST。这个就很常规了。KAUST因为在沙特，比较偏重海水淡化一类的化学和环境科学的研究。介绍了半天他们的各种NB实验室，但很少涉及到CS的。也讲到了他们的学生有多么好找实习，但，那些都是<strong>石油</strong>相关行业的。什么世界最大石油公司，什么什么的，总之，中石油跟人家就不是一个档次。我考虑了下转行去做石油，只可惜，当初年少不懂事学了CS啊！</p>
-
-<p>之后是学生生活的介绍。工大的学生，在这种场合下，很容易激动。对于住在有着60年历史的二公寓的孩子，我们，是有理由激动的。什么<strong>海景宿舍</strong>，单人间，听学长说，还是一人<strong>三层</strong>的，带着各种电视电脑什么的，什么高端大气上档次的图书馆，有着落地窗的<strong>海景自习室</strong>，在香港我也看习惯了，只是，照片上看着，还是比香港的高级好多。介绍到学生的活动时，什么<strong>潜水</strong>，什么<strong>高尔夫球</strong>，老师说，我们来KAUST，不是为了打高尔夫，但是，我们来了，确实可以打。工大的同学，就像坐过山车一样，我身后不时传来各种<strong>哇塞</strong>。同样是学生，回到了有着优良传统的二公寓，一下子觉得落差，好大。</p>
-
-<p>另外这位副校长同学，反复强调，来KAUST，不是让你成名，而是给你一个成名的机会,我们一起来改变世界什么的。大家脑补下我们是怎么宣传社会主义的优越就好。</p>
-
-<p>在这位老师讲的空隙中，有工作人员收集了我们填的个人信息，邮箱什么的，然后抽<strong>ipad mini</strong>。全场都静了。最后是一位学号以110开头的同学拿到了。RP啊！</p>
-
-<p><img src="http://guori12321.github.io/images/KAUST0.jpg" width="500"></p>
-
-<p>接下来是一位环境科学的老师，来讲他做的东西。本来他很想用汉语介绍，一看现场对这个建议兴趣不大，就还是用英语了。你有本事你用<strong>陕西话</strong>讲啊！！之后一位女老师，是CS的，竟然还是data mining的！听着她讲各种big data对于人类文明的意义啊什么的，我赶紧查了下手机，结果发现当时我看的KAUST的文章没有一篇是她写的&hellip;不管了，一定要去套一下磁~~</p>
-
-<p>再之后，就是一位本科吉大，在KAUST硕士毕业的学姐，来介绍下她的生活。她给我的印象，很像某位同学，都是胖胖的脸，大大的眼睛，极其优雅的英语，以及隐隐约约的女王气场。当时打工的时候没少被某同学踹&hellip;具体说的就是，什么来了KAUST就有了各种possibility啊。想想在沙特，和各国的同学，一起上学，挑战困难的课程，去潜水，去打高尔夫，去在通宵的图书馆里看太阳从红海升起，去欧洲交换，去美国实习&hellip;太多太多想都想不到的机会。我是多么向往这种生活节奏。</p>
-
-<p><img src="http://guori12321.github.io/images/KAUST1.jpg" width="500"></p>
-
-<p>在这位学姐讲的时候，前三排的同学，都拿到了32G的U盘~~因为他们只带了一百个。32G啊，4个U盘顶我一台机子的硬盘了。这下就不用担心macbook air要不要安windows的问题了。U盘分出来30G安win7，再用2G来拷资料就够了。</p>
-
-<p>最后是Q&amp;A环节。我问了下，CS的学生，实习机会多吗？副校长同学说，多，&hellip;但再怎么听着，也没有加州那边的学校有吸引力啊。毕竟开个车就去实习了。什么去IBM Research的同学很多，但在中国还是MSRA的名气更大吧。比较好玩的是，有个女生问，中国的学校和你们学校比，有什么区别。这哥们扯了半天，什么，你们都很优秀，我们来这些学校，因为这些学校的学生，最有可能在未来20年内带领人类做出新的贡献&hellip;最后回来，最大的区别，是，我们用<strong>英文</strong>上课。真机智啊。真有政治家的风范，避重就轻，还造成一种讲的很有水平的感觉。</p>
-
-<p>接下来，就散场了，大家就围着老师套磁~~无比欢乐。KAUST的PHD项目，可以先读两年，然后决定是拿MS走人还是接着在KAUST读。这点很重要。我们实验室一哥们直接把打印好的CV和成绩单给了老师。老师说，这是她收到的第三份。之前在清华和中科大各有一位同学申请她的phd。我回来以后，也发了份CV过去。</p>
-
-<p>欢乐的土豪大学的宣讲，就这么结束了。真心希望这种<del>抽ipad的</del>机会多一些。我甚至想着明天去合肥，接着抽。算了，安心研究在U盘上安windows吧。</p>
-
-<p>PS:</p>
-
-<ul>
-<li><p>之前<a href="http://blog.renren.com/share/352882625/16531118673?from=0101010202&amp;ref=hotnewsfeed&amp;sfet=102&amp;fin=51&amp;fid=24005834040&amp;ff_id=352882625&amp;platform=0&amp;expose_time=1382669097">交大关于KAUST的宣讲</a>中提到，教育部不承认KAUST，在工大讲的时候，已经说承认了</p></li>
-<li><p>在和那位CS的老师聊天的时候，她说，哈工大我们都知道是C9的高校。在场的工大同学都惊呆了，老师，您竟然知道C9和哈工大！！回来一查，这个老师的本科，果然是<strong>西交大</strong>&hellip;</p></li>
-</ul>
-
 ]]></content>
   </entry>
   

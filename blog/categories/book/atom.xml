@@ -4,7 +4,7 @@
   <title><![CDATA[Category: book | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/book/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-02-14T08:11:56+08:00</updated>
+  <updated>2014-03-21T22:23:43+01:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -16,11 +16,11 @@
   <entry>
     <title type="html"><![CDATA[读观止]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/09/du-guan-zhi/"/>
-    <updated>2014-01-09T19:10:00+08:00</updated>
+    <updated>2014-01-09T19:10:00+01:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/09/du-guan-zhi</id>
     <content type="html"><![CDATA[<p>《观止》，全称是《观止-微软创建NT和未来的夺命狂奔》 (Show Stopper!: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft)。花了一周的时间读完此书。我的心情，就像下面这张照片一样：</p>
 
-<p>{% img center /images/showStopper.jpg %}</p>
+<p><img class="center" src="/images/showStopper.jpg"></p>
 
 <!--more-->
 
