@@ -67,3 +67,22 @@ system "google-chrome 127.0.0.1:4000"
 ##总体感觉
 
 octopress的配置还是非常麻烦。我第一次用了两周才搞好，这次也花了一个晚上，碰到各种问题。总体来说ruby还不够成熟，除了安装的源不稳定外（我在墙外，所以不能怪GFW了），各个版本，各种依赖之间的关系也非常乱，整个Octopress是要求1.9.3以上的ruby的，但有些依赖，比如上面提到的Redcloth，就要求1.9.1。要解决这些问题，只能多查Stackoverflow和Google了，另外多用英语查询吧，汉语的资料太少。
+
+# 2014-04-16更新
+
+坑爹啊...Mac OS X升级了一下，然后就是各种各样的问题...
+
+遇到的问题有：
+
+1. openssl的位置的问题: 默认的openssl是安在`usr/bin`下面的，但homebrew的openssl是安在`/usr/local/bin`下面的。如果有默认安装openssl的话，homebrew不会再安一次，但很多程序，包括octopress的使用的包的依赖中，会用homebrew的openssl。解决方案在[这里](http://stackoverflow.com/questions/15185661/openssl-version-macosx-homebrew)。此外，注意一下自己的PATH设置。在终端中输入`echo $PATH`来确保`/usr/local/bin`在`/usr/bin`之前。
+
+2. Ruby 1.9.3的安装问题。一直抱错编译不了。网上所有的资料都说，是不是没安command line tools呢？我安了的...后来发现，似乎是XCode 5.1升级之后，编译器有所变化。安装的时候，指定用clang编译就好。对于命令行参数不熟悉的我，在这上面折腾了好久。参考[这里](http://stackoverflow.com/questions/14072524/error-installing-ruby-with-rvm-osx-10-8)。
+```
+rvm install 1.9.3 --with-gcc=clang
+```
+
+3. 还是XCode的编译器问题。在安装一些依赖的时候，说是出现了非法的编译参数。后来发现是XCode升级后，参数列表有变动，把那边引起报错的参数忽略掉就好。用以下的很长的前缀再加上要用的命令就好。具体参考[这里](http://kaspermunck.github.io/2014/03/fixing-clang-error/)。
+```
+ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future gem install GemName
+```
+
