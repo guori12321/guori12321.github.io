@@ -2,7 +2,7 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://guori12321.github.io/blog/2013/08/05/back-to-octopress-again/</loc>
-        <lastmod>2013-10-13T07:37:18+02:00</lastmod>
+        <lastmod>2014-04-16T17:09:23+02:00</lastmod>
     </url>
     <url>
         <loc>http://guori12321.github.io/blog/2013/08/05/all-about-my-ubuntu/</loc>
@@ -179,20 +179,24 @@
         <lastmod>2014-03-21T22:18:52+01:00</lastmod>
     </url>
     <url>
+        <loc>http://guori12321.github.io/blog/2014/03/24/extract-google-flight/</loc>
+        <lastmod>2014-03-24T17:10:12+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://guori12321.github.io/about/</loc>
         <lastmod>2013-10-13T07:37:18+02:00</lastmod>
     </url>
     <url>
         <loc>http://guori12321.github.io/archives/</loc>
-        <lastmod>2014-03-21T22:22:35+01:00</lastmod>
+        <lastmod>2014-04-16T17:09:23+02:00</lastmod>
     </url>
     <url>
         <loc>http://guori12321.github.io/blog/archives/</loc>
-        <lastmod>2014-03-21T22:22:35+01:00</lastmod>
+        <lastmod>2014-04-16T17:09:23+02:00</lastmod>
     </url>
     <url>
         <loc>http://guori12321.github.io/</loc>
-        <lastmod>2014-03-21T22:22:35+01:00</lastmod>
+        <lastmod>2014-04-16T17:09:23+02:00</lastmod>
     </url>
     <url>
         <loc>http://guori12321.github.io/robots.txt</loc>

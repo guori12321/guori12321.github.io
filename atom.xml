@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-03-21T22:34:16+01:00</updated>
+  <updated>2014-04-16T17:10:09+02:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[extract Google Flight]]></title>
+    <link href="http://guori12321.github.io/blog/2014/03/24/extract-google-flight/"/>
+    <updated>2014-03-24T15:34:00+01:00</updated>
+    <id>http://guori12321.github.io/blog/2014/03/24/extract-google-flight</id>
+    <content type="html"><![CDATA[<p>One of my recent job is to extract the flight information from flight websites. I never did something like that before, and I&rsquo;m not familiar with web techs, either. This article is the note of the flight crawler I developed.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[写在SIGMOD Undergrad Poster 2014投稿后]]></title>
@@ -939,40 +948,6 @@
 <p>要注意的是，腾讯邮箱似乎没有办法关闭<strong>垃圾邮件</strong>的过滤，这就造成了丢失信件的可能。而我平时也是转发到gmail来管理信件，这样出了问题可能要过很久才会发现。之前就有过因为转发前被当作垃圾邮件的情况。</p>
 
 <p>其实还是用gmail比较好，只是gmail已经不支持免费的企业邮箱了。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[GRE查分的问题]]></title>
-    <link href="http://guori12321.github.io/blog/2013/11/27/grecha-fen-de-wen-ti/"/>
-    <updated>2013-11-27T21:42:00+01:00</updated>
-    <id>http://guori12321.github.io/blog/2013/11/27/grecha-fen-de-wen-ti</id>
-    <content type="html"><![CDATA[<p>我查GRE的分就一直没查出来过。每次都显示</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Important Message
-</span><span class='line'>The information you provided does not match our records. Please try again</span></code></pre></td></tr></table></div></figure>
-
-
-<p>第一次考G之后，因为分太低，也就没有心思去研究下怎么查了。结果第二次考完，分还是特别的低，也还是查不出来分。之后收到了ETS的纸质的GRE成绩单。</p>
-
-<p>一直拖到现在，因为马上要到申请的Deadline了，必须把GRE的成绩寄出去，于是，就只能去想办法查分送成绩了。</p>
-
-<!--more-->
-
-
-<p>解决的办法很简单，用Skype打<a href="http://www.ets.org/gre/contact">GRE的电话</a>。和对方接线员唠了半个小时，最后她帮我重新创立了一个GRE查分的账号，我这边登录成功后，终于可以用<code>NEEA注册号</code>加<code>电子邮箱</code>查出来分了。</p>
-
-<p>对方的接线员很和蔼很nice，说话语速也很慢，很照顾我这种英语不好的人&hellip;最开始，她问了我一些个人信息，姓名，生日，邮箱，地址等，之后就用我的姓名加生日搜索信息，发现我有两次GRE的考试成绩，但没有发现匹配这些信息的GRE查分的账号。一一核对后发现，是生日这一项错误，我填的是1月1号，而不是1月16号。我在我这边看了一下，确实是<strong>生日错误</strong>！而且生日这些信息，不像邮箱之类的，没有办法更改。接线员解释说，这样他们的系统会以为这个账号的所有者和这个成绩的考生是两个人，因为生日不一样。我问她，能不能帮忙改下，她说不行，只能重建一个账号。我非常不愿意重建账号，因为要再等24小时才能查分。她问我要不要帮我创建一个，我说，要（其实当时没怎么听懂&hellip;）然后是很麻烦的告诉她各种信息，选择账号和密码，还有保密问题。最后，我在我的机子上，终于查出来了我的分数。看来接线员创建的账号不用等24小时。</p>
-
-<p>总之，提醒大家，个人信息一定要符合自己注册时的信息。所有的信息，在中国教育部的GRE考试中心发过来的确认信上都有（地址是在信的抬头部分）。</p>
-
-<p>另外，有些同学碰到的问题是，注册查分账号时，姓和名反过来了。</p>
-
-<p>最后，用Skype打美国GRE中心的电话，是不用花钱的。我之前还从淘宝上充了10欧的话费，没有用上。需要考虑的另一点是时差，GRE考试中心用的是美国东海岸的时间（纽约或华盛顿时间），我是晚上9点打过去，那边正好是早上8点。注意节假日他们不上班，比如明天，是感恩节。</p>
-
-<p>出国是很艰难的，祝我，也祝大家，都能有好的归宿~~</p>
 ]]></content>
   </entry>
   
