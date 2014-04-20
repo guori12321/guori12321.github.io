@@ -1,0 +1,82 @@
+---
+layout: post
+title: "Mac air 13感受"
+date: 2013-10-14 23:41
+comments: true
+categories: [设备, mac]
+---
+
+作为在香港的第二个月工资，我纠结再三，还是买了Macbook Air 13。在香港本身价钱就便宜一点，再加上在香港是大学的职员身份，还可以再优惠一点。8000港币（6400人民币左右）的价格还算可以忍。而air的性能，我想也足够我日常使用了，很久都没有碰到让我心动的大型游戏了，而平时跑程序我可以在服务器上跑，不管是中大还是工大，需要的时候都可以用集群机。再加上身边所有买mac的人都告诉我，真的很值。最后，还是买吧~
+
+<!--more-->
+
+## Mac初体验
+比较轻薄。拿久了并没有感觉，但和原来的笔记本对比一下，一下就觉得特别明显。Mac的工业设计，有着最为独到的质感，整个笔记本感觉就像工艺品一样，打破了我对传统笔记本的印象。一直不知道它的风扇的换气口在哪里，看了帖子后才发现，是在屏幕的转轴的位置。喇叭也在这里，这样声音经过屏幕反射后，再传入耳朵，就不会觉得奇怪了。
+
+电池是13寸air的亮点之一。号称12小时续航。同学实测说是全功率跑着也能用9小时以上。我没有测过，不过确实很high~
+
+背光键盘也算是业界良心。本来我觉得这个功能并不实用，毕竟顶级的程序员都用不刻字的键盘。后来晚上写博客的时候发现，一些特殊的符号，比如^&什么的，我还是要找一下才能打出来。晚上，特别是熄灯后，用夜光键盘，有着特别的情调。
+
+之后要说触摸板。在Win下我也不怎么带鼠标，觉得麻烦。Mac的触摸板更大，更光滑，也更灵敏。这是一种全新的交互的体验。多指的不同的滑动方式，实现了各种常用的操作。只是，这触摸板过于高端，我都不怎么舍得按下去。
+
+Mac，像很多Linux的桌面环境一样，是支持多个桌面的。比较特殊的是，你可以点击大部分应用程序的右上角，将它们全屏显示到一个新的桌面下。比如说我现在就是在全屏的Vim下写作。这样可以避免其它的干扰，你甚至无法看到系统状态栏中的时间。如果要切换出去，直接四指滑动就好。非常赞的设计~
+
+## Mac的不足
+首先是键盘的适应问题。因为键位与Win的键盘不同，需要特别的适应。比如说，Ctrl键，在这里就是Command键。但在Vim下，Ctrl+ \[ 要按Control+ \[。再比如一些很常用的键，如Page Up，Home，都没有。
+
+其次是应用软件的多少。其实Mac下的软件并不见得比Win下少，只是Mac下软件的收费比较高。换句话说，破解起来比较费力。但用破解软件真的不是好行为。另一方面，Win下也存在破解的情况。
+
+再之后是文件系统的问题。对于NTFS，Mac是只能读不能写。只有exFAT是Mac和Win都可以读写的。对于U盘，我直接格掉就好。但对于移动硬盘，特别是我的1T的硬盘，我就不能直接格了，数据的备份就很麻烦了。
+
+总之，我喜欢Mac~~
+
+##将Home文件夹加入finder
+
+在OS X的10.6版本后，finder中并没有home文件夹。这让我很纠结。
+
+以下方法可以把home加入finder中。
+[参考的是这个帖子](http://forums.macrumors.com/showthread.php?t=1345541)。
+
+Press CMD+SHIFT+H to enter your Home folder in Finder, then press CMD+ArrowUp to get into the Users folder, from there drag the folder of your choice to the Sidebar.
+
+## Shell高亮
+参考[这篇文章](http://linfan.info/blog/2012/02/27/colorful-terminal-in-mac/)
+
+## 输入法
+五笔的话，试了一圈，还是百度的最舒服，而且可以和手机上的输入法同步词库
+
+## RAR解压
+我用的是[keka](http://www.kekaosx.com/zh-cn/)，免费，开源，不过从APP Store里下载要收费。这个和mac自带的解压软件一样，点击rar后，就自动解压了，而且文件名不会乱码。
+
+## rm
+我多次因为rm和mv打错，造成很严重的后果。后来同学们给了我两个建议。
+
+FQJ: 搞一段bash命令，每次rm的时候，都输入验证码。我表示无语。
+
+某学长: alias rm='trash'
+
+于是我就把rm绑到trash上了。
+
+首先是安装[osx-trash](http://www.dribin.org/dave/osx-trash/):
+```
+http://www.dribin.org/dave/osx-trash/
+```
+
+之后在`.bash_profile`中加入
+```
+alias rm='trash'
+```
+就好。之后通过`-l`参数查看废纸篓，`-e`清空。下面是官网给出的例子
+```
+% touch foo bar baz
+% trash -l
+% trash foo ba*
+% trash -l
+/Users/dave/.Trash/foo
+/Users/dave/.Trash/bar
+/Users/dave/.Trash/baz
+% trash -e
+% trash -l
+```
+
+**注意**: Ruby会自动在`/usr/bin`下创造一个trash文件。也就是说，安了ruby后，我的`rm`命令就不能使用了，每次都报错说是什么gem没找到。没办法，把这个trash文件重命名为trash.bk，然后再把上面的命令安装一下，就好。希望这样对ruby没有影响吧。
