@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-04-16T19:01:50+02:00</updated>
+  <updated>2014-04-20T21:12:35+02:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Vim自动更新Tags]]></title>
+    <link href="http://guori12321.github.io/blog/2014/04/20/vimzi-dong-geng-xin-tags/"/>
+    <updated>2014-04-20T21:01:00+02:00</updated>
+    <id>http://guori12321.github.io/blog/2014/04/20/vimzi-dong-geng-xin-tags</id>
+    <content type="html"><![CDATA[<p>毕业设计做到现在，函数比较多，自己一点点用文本查找的方式来跳转就比较慢了。之前一直知道有个叫<code>ctags</code>的东西，但一直没用。这次就试试吧~~</p>
+
+<!--more-->
+
+
+<p>首先，你要安装它。在Mac下
+<code>
+brew install ctags
+</code></p>
+
+<p>然后，在你要生成tag的地方，比如说你的项目的根目录下，输入
+<code>
+ctags -R .
+</code></p>
+
+<p>这样，整个项目的tag就都生成好了。ls一下，可以看到有个叫<code>tag</code>的文件。这就是生成的tag。</p>
+
+<p>如果不想生成整个项目的tag，可以用
+<code>
+ctags fileName
+</code>
+来生成fileName文件的tag。</p>
+
+<p>之后，你想查看某个函数定义的时候，就可以按<code>Ctrl + ]</code>来跳转到光标所在处的函数的定义处了。想跳回来，要按<code>Ctrl + T</code>。按<code>&lt;Leader&gt;''</code>可以在屏幕右侧打开一个小面板，显示左边的函数的定义。在右边的函数处按<CR>（其实就是回车），就可以跳转到左边的函数定义处。</p>
+
+<h2>如何自动生成tag?</h2>
+
+<p>tag用起来是挺方便，但是，每次都要手动更新，很多人，比如我，都会觉得很麻烦。怎么解决这个问题呢？？</p>
+
+<p>查了挺多资料，最后还是决定用<a href="https://github.com/xolox/vim-easytags">easy-tags</a>插件。我是通过Vundle来安装的。话说Vundle更新了一下，结果命令都从Bundle变成了Plugin了&hellip;好不习惯&hellip;在vimrc中自己的Vundle的位置，加上
+<code>
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
+</code>
+之后在Vim中输入<code>:BundleInstall</code>命令，就安好了。之后重启Vim就好。</p>
+
+<h2>总结</h2>
+
+<p>这么个问题搞了一个晚上&hellip;本来是想写码，结果光折腾了&hellip;折腾的很累&hellip;真是过了折腾的年纪了&hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[折腾vim]]></title>

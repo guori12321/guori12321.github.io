@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>用Python来抓取网页 - Ray12321</title>
+  <meta name="author" content="Ray12321">
+
+  
+  <meta name="description" content="最近有些工作要用到Python来抓取网页的内容。就在博客上记篇笔记吧。因为是笔记，所以就比较零散&hellip; 主要用到的Python库是requests，ggithub上有些很些Nice的人，在我遇到问题的时候热心帮助我，比如说被python和json坑了的帖子&hellip; &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://guori12321.github.io/blog/2014/04/16/yong-pythonlai-zhua-qu-wang-ye">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Ray12321" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43183679-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+</hgroup>
+
+</header>
+  <!-- <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:guori12321.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav> -->
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">用Python来抓取网页</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-16T19:08:00+02:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>最近有些工作要用到Python来抓取网页的内容。就在博客上记篇笔记吧。因为是笔记，所以就比较零散&hellip;</p>
+
+<!--more-->
+
+
+<p>主要用到的Python库是<a href="http://docs.python-requests.org/en/latest/">requests</a>，ggithub上有些很些Nice的人，在我遇到问题的时候热心帮助我，比如说<a href="https://github.com/kennethreitz/requests/issues/1974">被python和json坑了</a>的帖子&hellip;Requests这个库最大的好处就是，封装的很人性化，就像它号称的for humans。很多的项目都用这个库，它在github上已经有9000多个star了。</p>
+
+<p>另外，主要的教程是<a href="http://blog.csdn.net/column/details/why-bug.html">这位同学的博客</a>，是山东大学软件工程的一位同学。不过他的教程中用的是urllib2之类的库，比requests底一个层次，写起来也要麻烦一点。但看看他对抓取过程的分析，还是非常有帮助的。教程就应该像他这样写，写的具体一些，看起来更明白。其中给出的代码，我试过的都能运行。</p>
+
+<h2>抓取过程</h2>
+
+<p>Python抓取网页的过程，和我们用浏览器打开网页的过程是一样的，都是通过HTTP协议来通信。也就是说，发一个请求过去，收到一些数据回来。我们要抓取的东西，也就是网页的源代码，在Chrome之类的浏览器中，直接右键就有查看源代码的选项。</p>
+
+<p>但有些时候，会遇到Ajax的情况。也就是说，我们直接抓取到的，是含有ajax的js代码，浏览器的真实数据，是不时的通过这些js代码，来发送新的请求，来局部更新页面的数据。我们抓取到的ajax代码对我们来说没有用，我们要抓取的是数据，而不是代码。这个时候，就要我们自己模拟http请求，来获取这些信息。</p>
+
+<p>如何模拟呢？在Chrome中，右键有<code>审查元素</code>的选项，其中第二个标签页是<code>Network</code>，打开以后，会发现有各种各样的<code>GET</code>和<code>POST</code>请求。这些就是Ajax为了局部更新页面而进行的通信了。我们要做的，就是模拟这些通信，来获取数据。</p>
+
+<h2>举个例子吧~</h2>
+
+<p>就拿<a href="http://www.w3school.com.cn/ajax/ajax_example.asp">W3School</a>的ajax例子来练习抓取好了。大家可以看到，页面中间有个按钮<code>通过 AJAX 改变内容</code>，按下它，按钮上方的文字会改变（但是注意，按下文字就改不回来了&hellip;只能刷新页面了。只能说写这个例子的人太懒&hellip;）。</p>
+
+<p>如果我们直接抓取这个页面，就抓取不到改变后的文字，只能抓取到改变前的文字。通过查看<code>Network</code>选项，我们会发现，其实也就是<code>GET</code>了<code>http://www.w3school.com.cn/ajax/test1.txt</code>，所以我们也来GET一下就好了&hellip;以下就是简单的代码&hellip;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&gt;&gt;&gt; import requests
+</span><span class='line'>&gt;&gt;&gt; r = requests.get('http://www.w3school.com.cn/ajax/test1.txt')
+</span><span class='line'>&gt;&gt;&gt; r.text
+</span><span class='line'>u'&lt;p&gt;AJAX is not a programming language.&lt;/p&gt;\r\n&lt;p&gt;It is just a technique for creating better and more interactive web applications.&lt;/p&gt;'</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>那，如果要传参数呢？</h2>
+
+<p>上面这个例子太过简单，很多时候我们想抓取一些需要提交数据的东西。那就简单的把在Network中的headers，data，都封装到requests中就好。</p>
+
+<p>如</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import requests
+</span><span class='line'>headers = {
+</span><span class='line'>'Host': 'matrix.itasoftware.com',
+</span><span class='line'>'Connection': 'keep-alive',
+</span><span class='line'>'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+</span><span class='line'>'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36',
+</span><span class='line'>'Accept-Encoding': 'gzip,deflate,sdch',
+</span><span class='line'>'Accept-Language': 'en,en-US;q=0.8,zh-CN;q=0.6,zh;q=0.4,zh-TW;q=0.2'
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>url = 'http://matrix.itasoftware.com/'
+</span><span class='line'>r = requests.get(url, headers = headers, allow_redirects = False)
+</span><span class='line'>cookie = r.headers['set-cookie']</span></code></pre></td></tr></table></div></figure>
+
+
+<p>就是去抓取第一次访问<code>url = 'http://matrix.itasoftware.com/'</code>时产生的cookie。为什么要抓取这个cookie呢？因为后面有用~</p>
+
+<h2>举个实际抓取的例子~~</h2>
+
+<p>还是上面的那个网站<a href="http://matrix.itasoftware.com/%EF%BC%8C%E6%88%91%E6%83%B3%E6%8A%93%E5%8F%96%E4%B8%8A%E9%9D%A2%E7%9A%84%E6%9C%BA%E7%A5%A8%E7%9A%84%E4%BF%A1%E6%81%AF%E3%80%82%E6%88%91%E4%BB%AC%E9%A6%96%E5%85%88%E8%A6%81%E5%81%9A%E7%9A%84%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%88%86%E6%9E%90%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E4%BB%8E%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99%E4%B8%AD%E5%BE%97%E5%88%B0%E6%9C%BA%E7%A5%A8%E4%BF%A1%E6%81%AF%E7%9A%84%E3%80%82%E6%88%91%E4%BB%AC%E6%89%93%E5%BC%80%E4%B8%8A%E9%9D%A2%E6%8F%90%E5%88%B0%E7%9A%84Network%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%9D%A5%E8%BF%9B%E8%A1%8C%E5%88%86%E6%9E%90%E3%80%82">http://matrix.itasoftware.com/%EF%BC%8C%E6%88%91%E6%83%B3%E6%8A%93%E5%8F%96%E4%B8%8A%E9%9D%A2%E7%9A%84%E6%9C%BA%E7%A5%A8%E7%9A%84%E4%BF%A1%E6%81%AF%E3%80%82%E6%88%91%E4%BB%AC%E9%A6%96%E5%85%88%E8%A6%81%E5%81%9A%E7%9A%84%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%88%86%E6%9E%90%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E5%A6%82%E4%BD%95%E4%BB%8E%E8%BF%99%E4%B8%AA%E7%BD%91%E7%AB%99%E4%B8%AD%E5%BE%97%E5%88%B0%E6%9C%BA%E7%A5%A8%E4%BF%A1%E6%81%AF%E7%9A%84%E3%80%82%E6%88%91%E4%BB%AC%E6%89%93%E5%BC%80%E4%B8%8A%E9%9D%A2%E6%8F%90%E5%88%B0%E7%9A%84Network%E5%B7%A5%E5%85%B7%EF%BC%8C%E6%9D%A5%E8%BF%9B%E8%A1%8C%E5%88%86%E6%9E%90%E3%80%82</a></p>
+
+<p>可以看到，有大量的HTTP请求。其中，只有一个POST，其它的都是GET。我们当然重点关注这个POST了。可以观察到，它POST过去了一堆东西，然后得到了一个很长很长的JSON文件。观察一下那个JSON文件，会发现，它就是我们要的机票的结果~~</p>
+
+<p>先不管POST过去的东西有什么意义，我们先把Network里的的Request Headers都放到Python中的一个dict中(就叫这个dict变量headers吧)。同样把Request中的data部分放入一个叫data的dict变量中。然后就</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>r = requests.post(url, data = data, headers = headers, allow_redirects=False)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>上面语句中的allow_redirects参数可以不加，因为默认就是False。它的作用我们后面再讲。</p>
+
+<p>好了，在经过十多秒的等待后，我们的程序终于执行完了。可以看出，以上POST命令达到了我们的目的，抓取到了我们想要的数据。接下来是分析Requests的headers和data。我们发现，除了要我们输入的信息（如出发城市和出发日期）之外，还有两个部分，一部分是cookie，一部分是session，这两个数据是我们不能确定的。那么，这两个数据是抓取时一定需要的吗？经过测试，我们发现，cookie是一定要的，session这部分可以不要。</p>
+
+<p>于是，cookie是从哪里得到的呢？我刚开始的时候，是在按下<code>Search</code>按钮的时候才开始监听Network的。但这样的话，得到的第一条HTTP请求中就已经有cookie了。也就是说，cookie是在按下<code>Search</code>之前就已经存在了。于是，我打开了一个空白的标签页，先打开Network工具，之后再输入这个网站的网址，发现，cookie还是已经存在了的&hellip;别急，我们先把cookie清空一下，然后再从空白标签页开始，重复上述操作，这下发现，第一次访问这个网站的时候，会自动生成一个cookie。这样，我们就拿到这个cookie了~~之后就可以进行抓取了。</p>
+
+<p>在用Python抓取这个cookie的时候，我们发现，会报错，超过30个redirects之类的错误。查了下官方的文档，解决办法是，GET的时候，传一个allow_redirects = True的参数。因为这个GET的过程中是有跳转的（HTTP编码302的操作）。具体我不清楚是怎样的原理。对于POST，如果我们也传一个True进去，反而会报错，所以那里就不传，或者传False了。</p>
+
+<p>我知道上面讲的很粗糙，一篇好的教程应该是很详细，有每步的截图的。但我也知道，我的这个博客也没多少人看&hellip;就先这样吧。之后有需要再补。另外，代码我想等项目结束的时候，再开源。</p>
+
+<h2>总体的感受</h2>
+
+<p>用Python来抓取数据，比我想像的要底层一些，也要烦琐一些。首先要做的，还是分析浏览器获取数据的过程。这就需要进行一些底层的分析，如浏览器提交表单时，是以什么格式，向哪个地址提交的。而不是像我之前想的，像按键精灵一样，直接在浏览器中填写表单，然后得到浏览器返回的结果。应该是有能模拟浏览器的Python的库，但是我没找到大家比较公认的库，而requests这个库，大家都评价很高。</p>
+
+<p>低层有低层的好处，如对session或cookie的操作就非常简单。高层的话就不好办了。但是，因为这个订票的网站非常复杂，非常多的HTTP请求，网站的JS也是拆成了几十块，搞的我没办法分析<code>Search</code>按钮按下时到底把数据提交到了哪里。但后来发现，不用搞明白这些，就可以抓取到数据。当然，这之间也是花了很多时间的。</p>
+
+<p>总之，通过这次抓取，掌握了不少东西~</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ray12321</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-16T19:08:00+02:00" pubdate data-updated="true">Apr 16<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/python/'>Python</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://guori12321.github.io/blog/2014/04/16/yong-pythonlai-zhua-qu-wang-ye/" data-via="" data-counturl="http://guori12321.github.io/blog/2014/04/16/yong-pythonlai-zhua-qu-wang-ye/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/03/21/xie-zai-sigmod-undergrad-poster-2014tou-gao-hou/" title="Previous Post: 写在SIGMOD Undergrad Poster 2014投稿后">&laquo; 写在SIGMOD Undergrad Poster 2014投稿后</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/04/20/vimzi-dong-geng-xin-tags/" title="Next Post: Vim自动更新Tags">Vim自动更新Tags &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+<h1>Category</h1>
+<ul>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/sheng-huo-jian-ying/">生活剪影</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/xue-xi-bi-ji/">学习笔记</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/lu-tu-fen-xiang/">旅途分享</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/shu-ping-ying-ping/">书评影评</a>
+    </li>
+    <li>
+    <a href="https://guori12321.github.com/blog/categories/ge-chong-zhe-teng/">各种折腾</a>
+    </li>
+</ul>
+</section>
+<section>
+  <h1>Tag Cloud</h1>
+    <span id="tag-cloud"><embed type='application/x-shockwave-flash' src='/javascripts/tagcloud.swf'width='100%' height='250' bgcolor='#f2f2f2' id='tagcloudflash' name='tagcloudflash' quality='high' allowscriptaccess='always'flashvars="tcolor=0x333333&amp;tcolor2=0x333333&amp;hicolor=0x000000&amp;tspeed=100&amp;distr=true&amp;mode=tags&amp;tagcloud=%3Ctags%3E%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fasterixdb%27+style%3D%27font-size%3A+14.0%25%27%3EAsterixDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fbook%27+style%3D%27font-size%3A+14.0%25%27%3Ebook%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fenglish%27+style%3D%27font-size%3A+14.0%25%27%3EEnglish%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ffcitx%27+style%3D%27font-size%3A+14.0%25%27%3Efcitx%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ffrance%27+style%3D%27font-size%3A+14.0%25%27%3EFrance%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgit%27+style%3D%27font-size%3A+14.0%25%27%3Egit%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhackerrank%27+style%3D%27font-size%3A+14.0%25%27%3Ehackerrank%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fhadoop%27+style%3D%27font-size%3A+14.0%25%27%3EHadoop%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flife%27+style%3D%27font-size%3A+26.0%25%27%3Elife%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flinux%27+style%3D%27font-size%3A+18.0%25%27%3Elinux%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmac%27+style%3D%27font-size%3A+14.0%25%27%3Emac%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmongodb%27+style%3D%27font-size%3A+14.0%25%27%3EMongoDB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmovie%27+style%3D%27font-size%3A+14.0%25%27%3EMovie%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Foctopress%27+style%3D%27font-size%3A+22.0%25%27%3Eoctopress%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fphd%27+style%3D%27font-size%3A+14.0%25%27%3EPhD%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fpregelix%27+style%3D%27font-size%3A+14.0%25%27%3EPregelix%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fpython%27+style%3D%27font-size%3A+14.0%25%27%3EPython%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fresearch%27+style%3D%27font-size%3A+14.0%25%27%3Eresearch%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fscott-young%27+style%3D%27font-size%3A+14.0%25%27%3EScott+Young%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fsigmod%27+style%3D%27font-size%3A+14.0%25%27%3Esigmod%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fssh%27+style%3D%27font-size%3A+14.0%25%27%3Essh%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ftech%27+style%3D%27font-size%3A+30.0%25%27%3ETech%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Ftex%27+style%3D%27font-size%3A+14.0%25%27%3Etex%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fubuntu%27+style%3D%27font-size%3A+14.0%25%27%3Eubuntu%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fvim%27+style%3D%27font-size%3A+22.0%25%27%3Evim%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fyogurtos%27+style%3D%27font-size%3A+14.0%25%27%3EYogurtOS%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshu-ping-ying-ping%27+style%3D%27font-size%3A+14.0%25%27%3E%E4%B9%A6%E8%AF%84%E5%BD%B1%E8%AF%84%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fluan-qi-ba-zao%27+style%3D%27font-size%3A+30.0%25%27%3E%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-zhe-teng%27+style%3D%27font-size%3A+30.0%25%27%3E%E5%90%84%E7%A7%8D%E6%8A%98%E8%85%BE%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fge-chong-she-bei%27+style%3D%27font-size%3A+14.0%25%27%3E%E5%90%84%E7%A7%8D%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxue-xi-bi-ji%27+style%3D%27font-size%3A+34.0%25%27%3E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fxiao-mi%27+style%3D%27font-size%3A+14.0%25%27%3E%E5%B0%8F%E7%B1%B3%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fgong-zuo%27+style%3D%27font-size%3A+14.0%25%27%3E%E5%B7%A5%E4%BD%9C%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshe-ying%27+style%3D%27font-size%3A+14.0%25%27%3E%E6%91%84%E5%BD%B1%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Flu-tu-fen-xiang%27+style%3D%27font-size%3A+14.0%25%27%3E%E6%97%85%E9%80%94%E5%88%86%E4%BA%AB%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fbi-she%27+style%3D%27font-size%3A+14.0%25%27%3E%E6%AF%95%E8%AE%BE%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fsheng-huo-jian-ying%27+style%3D%27font-size%3A+50.0%25%27%3E%E7%94%9F%E6%B4%BB%E5%89%AA%E5%BD%B1%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fshe-bei%27+style%3D%27font-size%3A+14.0%25%27%3E%E8%AE%BE%E5%A4%87%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fmian-shi%27+style%3D%27font-size%3A+14.0%25%27%3E%E9%9D%A2%E8%AF%95%3C%2Fa%3E+%3Ca+href%3D%27http%3A%2F%2Fguori12321.github.io%2Fblog%2Fcategories%2Fti-jie%27+style%3D%27font-size%3A+14.0%25%27%3E%E9%A2%98%E8%A7%A3%3C%2Fa%3E+%3C%2Ftags%3E"></span>
+</section>
+
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/04/20/vimzi-dong-geng-xin-tags/">Vim自动更新Tags</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/04/16/yong-pythonlai-zhua-qu-wang-ye/">用Python来抓取网页</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/21/xie-zai-sigmod-undergrad-poster-2014tou-gao-hou/">写在SIGMOD Undergrad Poster 2014投稿后</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/10/xie-zai-rejectzhi-hou/">写在reject之后</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/05/movie-zhong-guo-he-huo-ren/">Movie:中国合伙人</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/guori12321">@guori12321</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'guori12321',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Ray12321 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'ray12321';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://guori12321.github.io/blog/2014/04/16/yong-pythonlai-zhua-qu-wang-ye/';
+        var disqus_url = 'http://guori12321.github.io/blog/2014/04/16/yong-pythonlai-zhua-qu-wang-ye/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

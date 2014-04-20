@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mac | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-04-16T19:01:50+02:00</updated>
+  <updated>2014-04-20T21:12:35+02:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -97,6 +97,8 @@ alias rm='trash'
 % trash -e
 % trash -l
 </code></p>
+
+<p><strong>注意</strong>: Ruby会自动在<code>/usr/bin</code>下创造一个trash文件。也就是说，安了ruby后，我的<code>rm</code>命令就不能使用了，每次都报错说是什么gem没找到。没办法，把这个trash文件重命名为trash.bk，然后再把上面的命令安装一下，就好。希望这样对ruby没有影响吧。</p>
 ]]></content>
   </entry>
   
