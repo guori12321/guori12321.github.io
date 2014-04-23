@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: 毕设 - Ray12321</title>
+  <title>Mac下安装MySQL - Ray12321</title>
   <meta name="author" content="Ray12321">
 
   
-  <meta name="description" content="Category: 毕设">
+  <meta name="description" content="今天被MySQL坑了&hellip;记载一下&hellip; 安装 首先是下载 ，从Oracle的官网下载(丫的下载还要注册&hellip;)，然后就是dmg包安装。具体的教程请看这里，但到了18步就不用往下看了，下面的操作也太高端点了&hellip; 安装其实是个很简单的操作， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://guori12321.github.ioblog/categories/bi-she">
+  <link rel="canonical" href="http://guori12321.github.io/blog/2014/04/23/macxia-an-zhuang-mysql">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Ray12321" type="application/atom+xml">
@@ -74,36 +74,142 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Category: 毕设</h1>
+    
+      <h1 class="entry-title">Mac下安装MySQL</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-23T23:57:00+02:00" pubdate data-updated="true">Apr 23<span>rd</span>, 2014</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives" class="category">
 
 
+<div class="entry-content"><p>今天被MySQL坑了&hellip;记载一下&hellip;</p>
 
-  
-  <h2>2014</h2>
-
-<article>
-  
-<h1><a href="/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi/">毕业设计的那些破事</a></h1>
-<time datetime="2014-01-03T12:26:00+01:00" pubdate><span class='month'>Jan</span> <span class='day'>03</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/bi-she/'>毕设</a></span>
-</footer>
+<!--more-->
 
 
-</article>
+<h2>安装</h2>
 
+<p>首先是下载 ，从<a href="http://dev.mysql.com/downloads/mysql/">Oracle的官网</a>下载(丫的下载还要注册&hellip;)，然后就是dmg包安装。具体的教程请看<a href="http://blog.mclaughlinsoftware.com/2011/02/10/mac-os-x-mysql-install/">这里</a>，但到了18步就不用往下看了，下面的操作也太高端点了&hellip;</p>
+
+<p>安装其实是个很简单的操作，就是记得把安装包中的两个pkg都点了安上就行（一个是安装MySQL，另外一个是开机自动启动）。以上都很简单。坑的是下面：</p>
+
+<p>当我<code>create database newdatabase</code>的时候报错</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>CREATE DATABASE failed; error: 'Access denied for user: '@localhost'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>因为是用root登录进MySQL的，而且<code>show databases;</code>命令也没有问题。我就以为是MySQL之前的设置出问题了，删了又安，又重启电脑好几次。结果，参考<a href="https://drupal.org/node/34335">这篇博客</a>，才发现，root如果没有密码的话，就不能create database，但是可以show databases，这是要多坑爹&hellip;Mac下安装默认是没有密码的，而且也没有什么提示，直接deny了，搞的我一直以为是MySQL的安装出问题了。</p>
+
+<h2>添加密码</h2>
+
+<p>上述的博客中就给了解决办法：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mysqladmin -u root password mypassword (obviously don't take that literally! Change 'mypassword' into your password!)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>注意，password这个词是参数，但是不带<code>-</code>。</p>
+
+<p>之后，create就没问题了。</p>
+
+<h2>导入与导出</h2>
+
+<p>直接在shell中输入以下命令就好，导入和导出是大于或小于号</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mysql -uUserName -pPassword abc &lt; abc.sql
+</span><span class='line'>$ mysql -uUserName -pPassword abc &gt; abc.sql</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>其它常用操作</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>show databases;
+</span><span class='line'>create databases;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>待续&hellip;</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Ray12321</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-23T23:57:00+02:00" pubdate data-updated="true">Apr 23<span>rd</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/mysql/'>MySQL</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://guori12321.github.io/blog/2014/04/23/macxia-an-zhuang-mysql/" data-via="" data-counturl="http://guori12321.github.io/blog/2014/04/23/macxia-an-zhuang-mysql/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/04/21/guan-yu-nai-cha-de-liang-xin-you-xi/" title="Previous Post: 关于奶茶的良心游戏">&laquo; 关于奶茶的良心游戏</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -212,7 +318,10 @@
       var disqus_shortname = 'ray12321';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://guori12321.github.io/blog/2014/04/23/macxia-an-zhuang-mysql/';
+        var disqus_url = 'http://guori12321.github.io/blog/2014/04/23/macxia-an-zhuang-mysql/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

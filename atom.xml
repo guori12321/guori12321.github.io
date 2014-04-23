@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-04-21T11:46:14+02:00</updated>
+  <updated>2014-04-24T00:10:04+02:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -12,6 +12,64 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mac下安装MySQL]]></title>
+    <link href="http://guori12321.github.io/blog/2014/04/23/macxia-an-zhuang-mysql/"/>
+    <updated>2014-04-23T23:57:00+02:00</updated>
+    <id>http://guori12321.github.io/blog/2014/04/23/macxia-an-zhuang-mysql</id>
+    <content type="html"><![CDATA[<p>今天被MySQL坑了&hellip;记载一下&hellip;</p>
+
+<!--more-->
+
+
+<h2>安装</h2>
+
+<p>首先是下载 ，从<a href="http://dev.mysql.com/downloads/mysql/">Oracle的官网</a>下载(丫的下载还要注册&hellip;)，然后就是dmg包安装。具体的教程请看<a href="http://blog.mclaughlinsoftware.com/2011/02/10/mac-os-x-mysql-install/">这里</a>，但到了18步就不用往下看了，下面的操作也太高端点了&hellip;</p>
+
+<p>安装其实是个很简单的操作，就是记得把安装包中的两个pkg都点了安上就行（一个是安装MySQL，另外一个是开机自动启动）。以上都很简单。坑的是下面：</p>
+
+<p>当我<code>create database newdatabase</code>的时候报错</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>CREATE DATABASE failed; error: 'Access denied for user: '@localhost'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>因为是用root登录进MySQL的，而且<code>show databases;</code>命令也没有问题。我就以为是MySQL之前的设置出问题了，删了又安，又重启电脑好几次。结果，参考<a href="https://drupal.org/node/34335">这篇博客</a>，才发现，root如果没有密码的话，就不能create database，但是可以show databases，这是要多坑爹&hellip;Mac下安装默认是没有密码的，而且也没有什么提示，直接deny了，搞的我一直以为是MySQL的安装出问题了。</p>
+
+<h2>添加密码</h2>
+
+<p>上述的博客中就给了解决办法：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mysqladmin -u root password mypassword (obviously don't take that literally! Change 'mypassword' into your password!)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>注意，password这个词是参数，但是不带<code>-</code>。</p>
+
+<p>之后，create就没问题了。</p>
+
+<h2>导入与导出</h2>
+
+<p>直接在shell中输入以下命令就好，导入和导出是大于或小于号</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ mysql -uUserName -pPassword abc &lt; abc.sql
+</span><span class='line'>$ mysql -uUserName -pPassword abc &gt; abc.sql</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>其它常用操作</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>show databases;
+</span><span class='line'>create databases;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>待续&hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[关于奶茶的良心游戏]]></title>
@@ -1032,29 +1090,6 @@
 <h2>Day 0 2013-12-21</h2>
 
 <p>I read the Day 0 part of the book.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[同龄人的各种传奇]]></title>
-    <link href="http://guori12321.github.io/blog/2013/12/17/tong-ling-ren-de-ge-chong-chuan-qi/"/>
-    <updated>2013-12-17T10:57:00+01:00</updated>
-    <id>http://guori12321.github.io/blog/2013/12/17/tong-ling-ren-de-ge-chong-chuan-qi</id>
-    <content type="html"><![CDATA[<p>这篇日志，就来罗列下同龄人的各种传奇经历吧。读了他们写的东西，我总有一种白活了的感觉。其实，每个人的背景和经历，都差距的太大，别人的经历，对我来说，也是根本无法复制。所以说，读读，开心就好~(因为根本不是一个level的&hellip;)</p>
-
-<!--more-->
-
-
-<ul>
-<li><a href="http://blog.renren.com/blog/261603044/919258835">桂家勋的关于创业的日志</a></li>
-</ul>
-
-
-<p>读他的日志完全是种不同的视角。在我们以进入BAT拿着一年十几二十万的工资，或是进入美国排名稍微靠前点的学校读研或者博士的时候，他已经拿到UPenn的毕业证，现在在创业了。我甚至感觉，他和我不是同一个世界的人。他真的比我们要敢想敢做多了，而UPenn能提供的，也是一个更高更广的平台。</p>
-
-<p>他还有各种神奇的日志，如<a href="http://blog.renren.com/blog/261603044/872167966">假护照被审问</a>，他在上面那篇日志里也有提到其它的日志。</p>
-
-<p><strong>未完待续</strong></p>
 ]]></content>
   </entry>
   
