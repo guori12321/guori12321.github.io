@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 学习笔记 | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/xue-xi-bi-ji/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-05-13T15:42:54+02:00</updated>
+  <updated>2014-06-17T22:25:28+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[mac下安装LaTeX]]></title>
     <link href="http://guori12321.github.io/blog/2013/10/15/macxia-an-zhuang-latex/"/>
-    <updated>2013-10-15T18:31:00+02:00</updated>
+    <updated>2013-10-15T18:31:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/10/15/macxia-an-zhuang-latex</id>
     <content type="html"><![CDATA[<p>LaTeX的重要性我就不多说了。这是最靠谱的写论文的方式，比Word靠谱多了。</p>
 
@@ -178,7 +178,7 @@ $$
   <entry>
     <title type="html"><![CDATA[我的摄影路线图]]></title>
     <link href="http://guori12321.github.io/blog/2013/10/14/wo-de-she-ying-lu-xian/"/>
-    <updated>2013-10-14T12:03:00+02:00</updated>
+    <updated>2013-10-14T12:03:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/10/14/wo-de-she-ying-lu-xian</id>
     <content type="html"><![CDATA[<p>在香港实习，拿到第一个月的工资的时候，我就做了一件梦寐以求的事：买单反。有些事情，我们会后悔做了，有些事情，我们会后悔没做。一直想用精美的照片来记载那些一点点流逝的岁月。如果说买单反真有什么后悔的，那就是，买的太晚了。</p>
 
@@ -231,7 +231,7 @@ $$
   <entry>
     <title type="html"><![CDATA[MongoDB路线图]]></title>
     <link href="http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu/"/>
-    <updated>2013-09-02T15:48:00+02:00</updated>
+    <updated>2013-09-02T15:48:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/09/02/mongodblu-xian-tu</id>
     <content type="html"><![CDATA[<p><code>MongoDB</code>是非常有名的No SQL数据库，话说还真是适应不了No SQL的思维，每次都想着先建表&hellip;。以下是我学习MongoDB的路线图：</p>
 
@@ -274,7 +274,7 @@ $$
   <entry>
     <title type="html"><![CDATA[给octopress添加3D标签云]]></title>
     <link href="http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian/"/>
-    <updated>2013-08-20T13:26:00+02:00</updated>
+    <updated>2013-08-20T13:26:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/08/20/gei-octopresstian-jia-3dyun-biao-qian</id>
     <content type="html"><![CDATA[<p>3D标签云的效果看右栏。很炫很神奇～</p>
 
@@ -314,7 +314,7 @@ $$
   <entry>
     <title type="html"><![CDATA[我的git路线图]]></title>
     <link href="http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian/"/>
-    <updated>2013-08-18T01:13:00+02:00</updated>
+    <updated>2013-08-18T01:13:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/08/18/wo-de-gitlu-xian</id>
     <content type="html"><![CDATA[<p>Git是广大人民群众喜闻乐见的版本控制器。以前写代码的时候经常碰到这种情况：想尝试着加点新功能，结果发现出了很严重的bug，想回滚代码，却没有办法，只能根据回忆一点点删改新加入的代码。后来，每当要进行大的变动时，就把原来的代码打个包，备份下。这样做非常的笨。Git就解决了这种问题。</p>
 

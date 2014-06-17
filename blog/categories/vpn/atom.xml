@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: VPN | Ray12321]]></title>
+  <link href="http://guori12321.github.io/blog/categories/vpn/atom.xml" rel="self"/>
+  <link href="http://guori12321.github.io/"/>
+  <updated>2014-06-17T22:25:28+08:00</updated>
+  <id>http://guori12321.github.io/</id>
+  <author>
+    <name><![CDATA[Ray12321]]></name>
+    <email><![CDATA[guori12321@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[在Ubuntu下搭建VPN服务器]]></title>
+    <link href="http://guori12321.github.io/blog/2014/06/17/zai-ubuntuxia-da-jian-vpnfu-wu-qi/"/>
+    <updated>2014-06-17T22:18:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2014/06/17/zai-ubuntuxia-da-jian-vpnfu-wu-qi</id>
+    <content type="html"><![CDATA[<p>人在天朝就活着特别艰难&hellip;我回来以后，因为不能访问Twitter的原因，我差点没办法演示我的基于Twitter的毕业设计。可恨这种时候，我也不能说，请到综合楼七楼找方老师&hellip;以前方老师和我的导师在同一个组里，自己人何苦为难自己人&hellip;</p>
+
+<p>根据<a href="http://yansu.org/2013/12/11/deploy-pptp-vpn-in-ubuntu.html">这篇博客</a>，为了在Ubuntu下搭建VPN服务器，我们需要
+<code>
+wget -c https://raw2.github.com/suyan/Scripts/master/Setup/pptp.sh
+chmod +x pptp.sh
+./pptp.sh
+</code>
+原作者把VPN的搭建写成了一个脚本，我和他都用的是<code>digitalocean</code>，我实测是可以用的。这是我在网上找到的第六篇教程，终于有一个能用的了&hellip;哎，一晚上就这么过去了&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>

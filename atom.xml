@@ -4,7 +4,7 @@
   <title><![CDATA[Ray12321]]></title>
   <link href="http://guori12321.github.io/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-05-13T15:42:35+02:00</updated>
+  <updated>2014-06-17T22:25:09+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -14,9 +14,30 @@
 
   
   <entry>
+    <title type="html"><![CDATA[在Ubuntu下搭建VPN服务器]]></title>
+    <link href="http://guori12321.github.io/blog/2014/06/17/zai-ubuntuxia-da-jian-vpnfu-wu-qi/"/>
+    <updated>2014-06-17T22:18:00+08:00</updated>
+    <id>http://guori12321.github.io/blog/2014/06/17/zai-ubuntuxia-da-jian-vpnfu-wu-qi</id>
+    <content type="html"><![CDATA[<p>人在天朝就活着特别艰难&hellip;我回来以后，因为不能访问Twitter的原因，我差点没办法演示我的基于Twitter的毕业设计。可恨这种时候，我也不能说，请到综合楼七楼找方老师&hellip;以前方老师和我的导师在同一个组里，自己人何苦为难自己人&hellip;</p>
+
+<p>根据<a href="http://yansu.org/2013/12/11/deploy-pptp-vpn-in-ubuntu.html">这篇博客</a>，为了在Ubuntu下搭建VPN服务器，我们需要</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>wget -c https://raw2.github.com/suyan/Scripts/master/Setup/pptp.sh
+</span><span class='line'>chmod +x pptp.sh
+</span><span class='line'>./pptp.sh</span></code></pre></td></tr></table></div></figure>
+
+
+<p>原作者把VPN的搭建写成了一个脚本，我和他都用的是<code>digitalocean</code>，我实测是可以用的。这是我在网上找到的第六篇教程，终于有一个能用的了&hellip;哎，一晚上就这么过去了&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[法国交换生巴塞罗那护照丢失与补办]]></title>
     <link href="http://guori12321.github.io/blog/2014/05/13/fa-guo-jiao-huan-sheng-ba-sai-luo-na-hu-zhao-diu-shi-yu-bu-ban/"/>
-    <updated>2014-05-13T14:44:00+02:00</updated>
+    <updated>2014-05-13T14:44:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/05/13/fa-guo-jiao-huan-sheng-ba-sai-luo-na-hu-zhao-diu-shi-yu-bu-ban</id>
     <content type="html"><![CDATA[<p>早上九点多，在巴塞罗那燥热的阳光下，我们三人走进宾馆楼下的一家小餐馆，坐在吧台对面，某人把背包放到身边，坐下，点饭，然后转头，哎我包呢！</p>
 
@@ -75,13 +96,31 @@
 <p>这次因为是在申根区丢失的，还比较好办。如果是在英国玩的话，估计就只能先回国了，因为在境外补办护照实在是太慢了，在英国等的话可能会变成黑户而被遣返。但先回国再回来很耽误事情。如果赶上考试的时候，回国再出来，肯定因为挂科退学了。一定要看好护照。</p>
 
 <p>但如果护照，真的丢失了，比如像我们这次一样，也不要慌，事情总有解决的办法。丢失护照，也是比较常见的意外，已经有很成熟的办法来解决这些问题了。一定要冷静。Don&rsquo;t panic。</p>
+
+<h2>终于回国了&hellip;</h2>
+
+<p>拿着旅行证，我们踏上了回国的路&hellip;一路上都比较顺利~</p>
+
+<p>首先是在巴黎机场取登机牌，工作人员很疑惑的看着我们的旅行证，因为没找到我们机票上的护照号（旅行证的编号和护照号不同，是以T(ravel)开头的），她就把我们的旅行证给边上的人传阅了一下&hellip;三个工作人员都没找到护照号&hellip;我们解释说，我们护照丢了，这是Travel Document。然后他们点点头，出票了。</p>
+
+<p>出巴黎机场海关的时候，查看了我的VISA复印件，然后就过关了。有个小插曲是，海关工作人员一直跟我说你这个日期不对，你什么时候丢的护照什么的，后来发现，我是13 May 2014丢的，他一直把13当成2013年了&hellip;边上的同学也出了同样的问题，不过后来他们搞明白也就放行了。</p>
+
+<p>安检之前也查了证件，不过没有核对护照号，只看了证件上的名字和照片，看是否与登机牌和本人长相符合&hellip;登机牌上也没有护照号对吧&hellip;</p>
+
+<p>登机前再次检查证件，与安检前那次类似。</p>
+
+<p>上飞机后，在俄罗斯转机时，也要查证和安检，不过都没问题。安检时什么东西都没掏，包括包里的酒和电脑都没有拿。在俄罗斯机场免税店，我买了两小瓶酒，后来发现，写的是法国的酒&hellip;</p>
+
+<p>再后来，就到了中国海关，第一次走“中国居民通道”好激动，以前都是走“大陆居民通道”什么的，排队非常长，这次几乎没有排。跟海关说我们护照丢了，海关查了下我的飞行信息，问是不是俄罗斯航空回来的，捎带问了下是怎么丢的，没有查看我的护照和签证复印件。然后问身份证在不在，我们三个的都在，然后就在另一个柜台扫了下身份证，就回来了~~</p>
+
+<p>总体上还是比较顺利~~护照丢失的报案单和护照复印件没有用上，签证的复印件用上了。不过还都需要准备好。</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Movie List]]></title>
     <link href="http://guori12321.github.io/blog/2014/04/24/movie-list/"/>
-    <updated>2014-04-24T23:30:00+02:00</updated>
+    <updated>2014-04-24T23:30:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/04/24/movie-list</id>
     <content type="html"><![CDATA[<p>在这里列一下我看过的比较好的电影吧~~</p>
 
@@ -106,7 +145,7 @@
   <entry>
     <title type="html"><![CDATA[Mac下安装MySQL]]></title>
     <link href="http://guori12321.github.io/blog/2014/04/23/macxia-an-zhuang-mysql/"/>
-    <updated>2014-04-23T23:57:00+02:00</updated>
+    <updated>2014-04-23T23:57:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/04/23/macxia-an-zhuang-mysql</id>
     <content type="html"><![CDATA[<p>今天被MySQL坑了&hellip;记载一下&hellip;</p>
 
@@ -164,7 +203,7 @@
   <entry>
     <title type="html"><![CDATA[关于奶茶的良心游戏]]></title>
     <link href="http://guori12321.github.io/blog/2014/04/21/guan-yu-nai-cha-de-liang-xin-you-xi/"/>
-    <updated>2014-04-21T11:02:00+02:00</updated>
+    <updated>2014-04-21T11:02:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/04/21/guan-yu-nai-cha-de-liang-xin-you-xi</id>
     <content type="html"><![CDATA[<p>我太喜欢这个游戏了，做工精良，很触动人心啊。<a href="http://www.66rpg.com/game/48389">女神，等等我</a>。</p>
 
@@ -177,7 +216,7 @@
   <entry>
     <title type="html"><![CDATA[Vim自动更新Tags]]></title>
     <link href="http://guori12321.github.io/blog/2014/04/20/vimzi-dong-geng-xin-tags/"/>
-    <updated>2014-04-20T21:01:00+02:00</updated>
+    <updated>2014-04-20T21:01:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/04/20/vimzi-dong-geng-xin-tags</id>
     <content type="html"><![CDATA[<p>毕业设计做到现在，函数比较多，自己一点点用文本查找的方式来跳转就比较慢了。之前一直知道有个叫<code>ctags</code>的东西，但一直没用。这次就试试吧~~</p>
 
@@ -231,7 +270,7 @@
   <entry>
     <title type="html"><![CDATA[用Python来抓取网页]]></title>
     <link href="http://guori12321.github.io/blog/2014/04/16/yong-pythonlai-zhua-qu-wang-ye/"/>
-    <updated>2014-04-16T19:08:00+02:00</updated>
+    <updated>2014-04-16T19:08:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/04/16/yong-pythonlai-zhua-qu-wang-ye</id>
     <content type="html"><![CDATA[<p>最近有些工作要用到Python来抓取网页的内容。就在博客上记篇笔记吧。因为是笔记，所以就比较零散&hellip;</p>
 
@@ -337,7 +376,7 @@
   <entry>
     <title type="html"><![CDATA[写在SIGMOD Undergrad Poster 2014投稿后]]></title>
     <link href="http://guori12321.github.io/blog/2014/03/21/xie-zai-sigmod-undergrad-poster-2014tou-gao-hou/"/>
-    <updated>2014-03-21T21:42:00+01:00</updated>
+    <updated>2014-03-21T21:42:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/03/21/xie-zai-sigmod-undergrad-poster-2014tou-gao-hou</id>
     <content type="html"><![CDATA[<p>其实两天前就已经投稿了，但还是想写点东西，来纪念下这次投稿。毕竟下次再投就不是Undergraduate了。</p>
 
@@ -357,7 +396,7 @@
   <entry>
     <title type="html"><![CDATA[写在reject之后]]></title>
     <link href="http://guori12321.github.io/blog/2014/03/10/xie-zai-rejectzhi-hou/"/>
-    <updated>2014-03-10T16:08:00+01:00</updated>
+    <updated>2014-03-10T16:08:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/03/10/xie-zai-rejectzhi-hou</id>
     <content type="html"><![CDATA[<p>中欧标准时间的下午两点半，收到某高校的邮件，让我上网查看自己的申请状态(能不要这么高贵冷艳吗&hellip;)，于是乎，</p>
 
@@ -377,7 +416,7 @@
   <entry>
     <title type="html"><![CDATA[Movie:中国合伙人]]></title>
     <link href="http://guori12321.github.io/blog/2014/03/05/movie-zhong-guo-he-huo-ren/"/>
-    <updated>2014-03-05T15:51:00+01:00</updated>
+    <updated>2014-03-05T15:51:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/03/05/movie-zhong-guo-he-huo-ren</id>
     <content type="html"><![CDATA[<p>作为一个大一暑假在新东方打工当助教，大二开始刷单词，大三开始搞论文，大四开始申请并且现在在等录取结果的人，看了这部电影，还是有些想说的东西。</p>
 
@@ -399,7 +438,7 @@
   <entry>
     <title type="html"><![CDATA[去法国的路上~]]></title>
     <link href="http://guori12321.github.io/blog/2014/03/01/qu-fa-guo/"/>
-    <updated>2014-03-01T23:11:00+01:00</updated>
+    <updated>2014-03-01T23:11:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/03/01/qu-fa-guo</id>
     <content type="html"><![CDATA[<p>在一天天的懒散生活中，时间渐渐来到了2014年的2月28日。这一天，是我，大师，还有小黑三个人一起去法国UBP学校交换三个月的起点。在28号的早上，在照例刷了几次邮件，发现我的学校申请并没有新动向后，我又来回打滚了好多次，做出了一个艰难的决定，起床！</p>
 
@@ -443,7 +482,7 @@
   <entry>
     <title type="html"><![CDATA[旅途心情]]></title>
     <link href="http://guori12321.github.io/blog/2014/02/14/lu-tu-xin-qing/"/>
-    <updated>2014-02-14T07:30:00+01:00</updated>
+    <updated>2014-02-14T07:30:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/02/14/lu-tu-xin-qing</id>
     <content type="html"><![CDATA[<p>此时，是2014年2月14日，元宵节，也是情人节的早上七点半。天一点点的亮起来了。我正一个人坐在太原火车站边上的德克士。刚才从运城坐了6小时卧铺来到太原，在这里再等待6小时后，是下一段28小时的卧铺回到哈尔滨开学。旅途的总时间超过40小时。</p>
 
@@ -477,7 +516,7 @@
   <entry>
     <title type="html"><![CDATA[记一次心跳的抢票历程]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/21/ji-%5B%3F%5D-ci-xin-tiao-de-qiang-piao-li-cheng/"/>
-    <updated>2014-01-21T19:54:00+01:00</updated>
+    <updated>2014-01-21T19:54:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/21/ji-[?]-ci-xin-tiao-de-qiang-piao-li-cheng</id>
     <content type="html"><![CDATA[<p>上周拿到了签证，之后我们三个拖延症患者一直想着，明天把机票买了吧，于是就拖到了现在&hellip;</p>
 
@@ -499,7 +538,7 @@
   <entry>
     <title type="html"><![CDATA[写给21岁~]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/17/xie-gei-21sui/"/>
-    <updated>2014-01-17T00:10:00+01:00</updated>
+    <updated>2014-01-17T00:10:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/17/xie-gei-21sui</id>
     <content type="html"><![CDATA[<p>今天，是21岁的第一天~许个愿吧~</p>
 
@@ -526,7 +565,7 @@
   <entry>
     <title type="html"><![CDATA[读观止]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/09/du-guan-zhi/"/>
-    <updated>2014-01-09T19:10:00+01:00</updated>
+    <updated>2014-01-09T19:10:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/09/du-guan-zhi</id>
     <content type="html"><![CDATA[<p>《观止》，全称是《观止-微软创建NT和未来的夺命狂奔》 (Show Stopper!: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft)。花了一周的时间读完此书。我的心情，就像下面这张照片一样：</p>
 
@@ -552,7 +591,7 @@
   <entry>
     <title type="html"><![CDATA[毕业设计的那些破事]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi/"/>
-    <updated>2014-01-03T12:26:00+01:00</updated>
+    <updated>2014-01-03T12:26:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/03/bi-ye-she-ji-de-na-xie-po-shi</id>
     <content type="html"><![CDATA[<p>记录下毕业设计中遇到的各种问题&hellip;</p>
 
@@ -621,7 +660,7 @@
   <entry>
     <title type="html"><![CDATA[ssh反向连接]]></title>
     <link href="http://guori12321.github.io/blog/2014/01/02/sshfan-xiang-lian-jie/"/>
-    <updated>2014-01-02T13:26:00+01:00</updated>
+    <updated>2014-01-02T13:26:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2014/01/02/sshfan-xiang-lian-jie</id>
     <content type="html"><![CDATA[<p>ssh是广大人民喜闻乐见的远程连接方式。有些时候，实验室里的集群机，只有内部的ip，我们没有办法在实验室外远程连接。寒假就来来临，我想在家连实验室的集群机干活(好吧，这只是个美好的愿望，我估计我会玩一寒假&hellip;)，于是，我就开始研究怎么用ssh反向连接。</p>
 
@@ -673,7 +712,7 @@
   <entry>
     <title type="html"><![CDATA[写给2013年]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/31/xie-gei-2013nian/"/>
-    <updated>2013-12-31T20:56:00+01:00</updated>
+    <updated>2013-12-31T20:56:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/31/xie-gei-2013nian</id>
     <content type="html"><![CDATA[<p>时间终于到了2013年12月31日的晚上。是时候写写这一年的回顾了。再不写就真来不及了&hellip;</p>
 
@@ -729,7 +768,7 @@
   <entry>
     <title type="html"><![CDATA[About Pregelix]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/31/wo-de-pregelixlu-xian-tu/"/>
-    <updated>2013-12-31T11:16:00+01:00</updated>
+    <updated>2013-12-31T11:16:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/31/wo-de-pregelixlu-xian-tu</id>
     <content type="html"><![CDATA[<p><a href="http://hyracks.org/projects/pregelix/">Pregelix</a> is an open-source implementation of the bulk-synchronous vertex-oriented programming model (<a href="http://googleresearch.blogspot.com/2009/06/large-scale-graph-computing-at-google.html">Pregel API</a>) for large-scale graph analytics, which scales to very large clusters and very large graphs.</p>
 
@@ -740,7 +779,7 @@
   <entry>
     <title type="html"><![CDATA[人人网点赞狂魔的开发]]></title>
     <link href="http://guori12321.github.io/blog/2013/12/28/dian-zan-kuang-mo-de-kai-fa/"/>
-    <updated>2013-12-28T10:19:00+01:00</updated>
+    <updated>2013-12-28T10:19:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/12/28/dian-zan-kuang-mo-de-kai-fa</id>
     <content type="html"><![CDATA[<p>之前在人人网上看到一张图，说点赞狂魔眼中的赞，已经不赞，而是<code>朕已阅</code>，于是，我就想搞这么个脚本，来实现这个功能~</p>
 
@@ -839,38 +878,6 @@
 
 
 <p>有的时候在本地更新完脚本，TM那里并不会加载进去，这时候让TM检查下更新，还不行的话只能重启浏览器了</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Merry Christmas]]></title>
-    <link href="http://guori12321.github.io/blog/2013/12/25/merry-christmas/"/>
-    <updated>2013-12-25T21:09:00+01:00</updated>
-    <id>http://guori12321.github.io/blog/2013/12/25/merry-christmas</id>
-    <content type="html"><![CDATA[<p>写篇日志来纪念下这个开心的圣诞节~~</p>
-
-<!--more-->
-
-
-<p>首先，把时间线回退到平安夜的下午。圣诞节对我来说，又不放假，出去玩又冷。存在的唯一的意义，是跟老师套磁的时候，可以在邮件末尾加一句&#8217;Happy Christmas!&lsquo;，但转眼一想，Happy毛线啊，明明是<strong>Merry Christmas</strong>&hellip;不过两位老师都很愉快的回答，&#8217;Happy Holiday to you too!&#8217;。下午一到实验室开始干活，就没有了任何节日的氛围，似乎整个世界都只有<a href="http://ruiguo.me/blog/2013/12/23/wo-de-hadooplu-xian-tu/">Hadoop</a>。到了下午五点，寂寞的师兄们开始研究吃什么的问题了。用东哥的话说，平安夜，怎么着也要吃的好一点啊！大家一起讨论吃什么，研究了各家饭店的口味，地理位置，团购信息等，一直折腾到六点，然后我们决定去雾都馋嘴楼吃~~</p>
-
-<p>师兄师姐们真是太有节操了，为了避免一盘菜上来，大家都一筷子下去，就都没了，然后再接着等待的场景，我们决定等上了三四盘菜的时候再开始吃。于是我的口水一直嘀嗒到酸菜鱼上来为止&hellip;吃的各种开心之后，到了结账的时候，我是真没带钱，想着师兄们先结了，回去我再付，结果，师兄们纷纷表示，“<strong>我真的没带钱</strong>”！我们都以为其他人肯定会有带钱的，结果&hellip;在坐唯一的师姐表示很生气&hellip;然后去结了账&hellip;</p>
-
-<p>吃完饭拐到了台球店，打了一个半小时&hellip;基本上处于，开球，然后等师兄清台，然后再开球的节奏。生命，就是这么一种循环啊&hellip;我总算知道这几位师兄吃完饭之后过一两个小时再回实验室的时间里，都干什么了&hellip;那个准啊&hellip;</p>
-
-<p>再之后，被拉到Box Bar&hellip;十几个人包了吧台上几个位置，一人几十块，然后点了十瓶左右的酒和饮料什么的。我表示，我至少吃够本了&hellip;Bar的氛围就是各种High，音乐响到已经听不到身边的人说什么，于是，就只能尽情摇摆&hellip;我不习惯这种氛围，但是，好不容易来了，就High一点~几个人上窜下跳，好开心~到了零点的时候，碰到了倒计时，数到了eight的时候我才反应过来，然后大家一起尖叫着数完剩下的数，之后屏幕上爆炸着出现了<strong>Merry Christmas</strong>!!作为圣诞节的特殊节目，黑人大叔Rap，大妈飙歌，俄罗斯的舞女各种秀钢管舞&hellip;</p>
-
-<p>我不在吃喝，就在蹦哒，要么在二层乱窜&hellip;只是，在这种纷乱的节奏中，我一眼看到的，不是比基尼，而是DJ在用的两台iMac&hellip;我一定是没救了&hellip;</p>
-
-<p>一点的时候实在无力，于是就出来了，在KFC搞点喝的，然后回公寓，喊起来大爷开门，两点的时候终于睡下了。</p>
-
-<p>圣诞节这天早上学院点人，就不多说了。其它时间，要么在打坦克（今天早上第一次拿到了<code>勇士</code>这个勋章，这说明，在对方的15名成员中，我拿到了至少六个人头，好开心），要么在睡觉&hellip;下午睡到6点，一看消息，发现有舞会，就过去了~</p>
-
-<p>在舞会中，用我实习时买的单反照了几张，可惜技术不好，根本体现不出现场霓虹的灯光，轻柔的旋律&hellip;小学妹们实在<strong>太美太美</strong>，我真想在工大多陪她们几年，只可惜，匆匆之间，就已经大四。前程时不时的迷茫，又一点点变得清晰，只是，我想，此生也没有机会，在工大的舞会上，像各位师兄一样，低调的介绍“我研一”，“我博四”&hellip;跳舞时学妹们说的最多的，还是考试，还有10天，还有4门，工大的考试就是这么的不科学。而且，一点点书都没看，还是出来玩了。举手投足间，像极了两年前的自己。</p>
-
-<p>我想我在毕业之前，又多了一个目标，多学会几种舞步。现在想想，大学这几年，真的是满满的遗憾。很多事情，是后悔做错了，而更多的事情，则是后悔没有去做。现在犯的错误，有的是机会弥补，而错过的，就真的只能是错过了。不过想想那些错过的人，那些错过的事，这种不完美的经历，才能算的上的青春的成长吧。</p>
-
-<p>最后，这两天很开心！Merry Christmas!!明天再接着看Hadoop&hellip;</p>
 ]]></content>
   </entry>
   

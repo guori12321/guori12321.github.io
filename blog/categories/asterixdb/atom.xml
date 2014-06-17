@@ -4,7 +4,7 @@
   <title><![CDATA[Category: AsterixDB | Ray12321]]></title>
   <link href="http://guori12321.github.io/blog/categories/asterixdb/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-05-13T15:42:54+02:00</updated>
+  <updated>2014-06-17T22:25:28+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
     <name><![CDATA[Ray12321]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[我的AsterixDB路线图]]></title>
     <link href="http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu/"/>
-    <updated>2013-11-25T10:27:00+01:00</updated>
+    <updated>2013-11-25T10:27:00+08:00</updated>
     <id>http://guori12321.github.io/blog/2013/11/25/wo-de-asterixdblu-xian-tu</id>
     <content type="html"><![CDATA[<p>AsterixDB是UC Irvine大学主导开发的一款并行划，分布式的数据库。更多的介绍可以看<a href="http://asterixdb.ics.uci.edu/">这里</a>。下面是我参与开发过程的一些记录。</p>
 
