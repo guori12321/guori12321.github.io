@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: fcitx | Ray12321]]></title>
+  <title><![CDATA[Category: fcitx | RayLazy]]></title>
   <link href="http://guori12321.github.io/blog/categories/fcitx/atom.xml" rel="self"/>
   <link href="http://guori12321.github.io/"/>
-  <updated>2014-06-17T22:25:28+08:00</updated>
+  <updated>2014-07-10T01:33:48+08:00</updated>
   <id>http://guori12321.github.io/</id>
   <author>
-    <name><![CDATA[Ray12321]]></name>
+    <name><![CDATA[RayLazy]]></name>
     <email><![CDATA[guori12321@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
